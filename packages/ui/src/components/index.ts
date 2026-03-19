@@ -7,6 +7,10 @@ export { default as Flex } from './flex'
 export { default as Divider } from './divider'
 
 // Batch 1: Layout & Structure
+// Batch 2: Typography
+export { default as Typography } from './typography'
+export { TypographyText, TypographyTitle, TypographyParagraph, TypographyLink } from './typography'
+
 export { Row, Col } from './grid'
 export { default as Space } from './space'
 export { SpaceCompact } from './space'

@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Typography demos > demo: Basic 1`] = `
+"<div>
+  <h1 class="ant-typography">Introduction
+    <!--v-if-->
+    <!--v-if-->
+  </h1>
+  <div class="ant-typography"> Ant Design Vue is an enterprise-class UI design language and Vue-based implementation.
+    <!--v-if-->
+    <!--v-if-->
+  </div>
+  <h2 class="ant-typography">Heading Levels
+    <!--v-if-->
+    <!--v-if-->
+  </h2>
+  <h1 class="ant-typography">h1. Heading
+    <!--v-if-->
+    <!--v-if-->
+  </h1>
+  <h2 class="ant-typography">h2. Heading
+    <!--v-if-->
+    <!--v-if-->
+  </h2>
+  <h3 class="ant-typography">h3. Heading
+    <!--v-if-->
+    <!--v-if-->
+  </h3>
+  <h4 class="ant-typography">h4. Heading
+    <!--v-if-->
+    <!--v-if-->
+  </h4>
+  <h5 class="ant-typography">h5. Heading
+    <!--v-if-->
+    <!--v-if-->
+  </h5>
+</div>"
+`;
+
+exports[`Typography demos > demo: Copyable 1`] = `
+"<div>
+  <div class="ant-typography">This is a copyable text.
+    <!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span>
+  </div>
+  <div class="ant-typography"> Copy different text than shown.
+    <!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span>
+  </div><span class="ant-typography">Inline copyable text<!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span></span>
+</div>"
+`;
+
+exports[`Typography demos > demo: Ellipsis 1`] = `
+"<div style="max-width: 400px;"><strong>Single-line ellipsis:</strong>
+  <div class="ant-typography" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"> Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
+    <!--v-if-->
+    <!--v-if-->
+  </div><strong>Multi-line (3 rows) ellipsis:</strong>
+  <div class="ant-typography" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3;"> Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
+    <!--v-if-->
+    <!--v-if-->
+  </div><strong>Expandable:</strong>
+  <div class="ant-typography" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;"> Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. <a class="ant-typography-expand">Expand</a>
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`Typography demos > demo: LinkDemo 1`] = `
+"<div class="ant-space ant-space-vertical" style="column-gap: 8px; row-gap: 8px;"><a class="ant-typography" href="https://vue.ant.design" target="_blank" rel="noopener noreferrer">Ant Design Vue
+    <!--v-if-->
+  </a><a class="ant-typography ant-typography-danger" href="https://vue.ant.design">Danger Link
+    <!--v-if-->
+  </a><a class="ant-typography ant-typography-disabled">Disabled Link
+    <!--v-if-->
+  </a></div>"
+`;
+
+exports[`Typography demos > demo: TextDemo 1`] = `"<div class="ant-space ant-space-vertical" style="column-gap: 8px; row-gap: 8px;"><span class="ant-typography">Default text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-secondary">Secondary text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-success">Success text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-warning">Warning text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-danger">Danger text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-disabled">Disabled text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-strong">Bold text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-italic">Italic text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-underline">Underline text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-delete">Deleted text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-mark">Marked text<!--v-if--><!--v-if--></span><span class="ant-typography"><code>Code text</code><!--v-if--><!--v-if--></span><span class="ant-typography"><kbd>Ctrl + C</kbd><!--v-if--><!--v-if--></span></div>"`;

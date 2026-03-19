@@ -1,0 +1,126 @@
+@reference '../../../style/tailwind.css';
+
+/* Base */
+:where(.ant-typography) {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  overflow-wrap: break-word;
+}
+
+/* Headings */
+:where(h1.ant-typography) {
+  @apply text-4xl font-bold mb-3 mt-0 leading-tight;
+}
+:where(h2.ant-typography) {
+  @apply text-3xl font-bold mb-3 mt-0 leading-tight;
+}
+:where(h3.ant-typography) {
+  @apply text-2xl font-bold mb-3 mt-0 leading-snug;
+}
+:where(h4.ant-typography) {
+  @apply text-xl font-bold mb-3 mt-0 leading-snug;
+}
+:where(h5.ant-typography) {
+  @apply text-lg font-bold mb-3 mt-0 leading-normal;
+}
+
+/* Paragraph */
+:where(div.ant-typography) {
+  @apply mb-4;
+}
+
+/* Link */
+:where(a.ant-typography) {
+  color: var(--color-accent, #1677ff);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+:where(a.ant-typography):hover {
+  color: var(--color-accent-hover, #4096ff);
+}
+
+/* Types */
+:where(.ant-typography).ant-typography-secondary {
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+:where(.ant-typography).ant-typography-success {
+  color: var(--color-success, #52c41a);
+}
+:where(.ant-typography).ant-typography-warning {
+  color: var(--color-warning, #faad14);
+}
+:where(.ant-typography).ant-typography-danger {
+  color: var(--color-error, #ff4d4f);
+}
+:where(.ant-typography).ant-typography-disabled {
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  cursor: not-allowed;
+  user-select: none;
+}
+
+/* Decorations via CSS */
+:where(.ant-typography).ant-typography-strong {
+  font-weight: 600;
+}
+:where(.ant-typography).ant-typography-underline {
+  text-decoration: underline;
+}
+:where(.ant-typography).ant-typography-delete {
+  text-decoration: line-through;
+}
+:where(.ant-typography).ant-typography-mark {
+  background-color: #ffe58f;
+  padding: 0;
+}
+:where(.ant-typography).ant-typography-italic {
+  font-style: italic;
+}
+
+/* Code / Keyboard */
+:where(.ant-typography) code {
+  @apply text-sm;
+  margin: 0 0.2em;
+  padding: 0.2em 0.4em;
+  background: rgba(150, 150, 150, 0.1);
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+:where(.ant-typography) kbd {
+  @apply text-sm;
+  margin: 0 0.2em;
+  padding: 0.15em 0.4em;
+  background: rgba(150, 150, 150, 0.06);
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+/* Copy button */
+:where(.ant-typography) .ant-typography-copy {
+  @apply inline-block ml-1 cursor-pointer select-none;
+  color: var(--color-accent, #1677ff);
+  font-size: 0.85em;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+:where(.ant-typography):hover .ant-typography-copy {
+  opacity: 1;
+}
+
+:where(.ant-typography) .ant-typography-copy-success {
+  color: var(--color-success, #52c41a);
+  opacity: 1;
+}
+
+/* Expand link */
+:where(.ant-typography) .ant-typography-expand {
+  @apply ml-2 cursor-pointer;
+  color: var(--color-accent, #1677ff);
+  font-weight: normal;
+  font-size: inherit;
+  white-space: nowrap;
+}
