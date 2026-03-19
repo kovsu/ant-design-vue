@@ -1,18 +1,18 @@
 @reference '../../../style/tailwind.css';
 
 :where(.ant-divider) {
-  @apply box-border m-0 p-0 text-sm list-none border-solid border-[var(--color-neutral-border,theme(colors.neutral.200))];
+  @apply box-border m-0 p-0 text-sm list-none;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  --divider-color: var(--color-neutral-border, #d9d9d9);
 }
 
 :where(.ant-divider).ant-divider-horizontal {
   @apply flex clear-both w-full min-w-full my-6 mx-0;
-  border-block-start: 0 solid transparent;
 
   &::before,
   &::after {
-    @apply relative top-1/2 w-1/2;
-    border-block-start: 1px solid transparent;
-    border-block-start-color: inherit;
+    @apply relative w-1/2;
+    border-block-start: 1px solid var(--divider-color);
     border-block-end: 0;
     content: '';
     transform: translateY(50%);
@@ -21,14 +21,10 @@
 
 :where(.ant-divider).ant-divider-vertical {
   @apply relative top-[-0.06em] inline-block h-[0.9em] mx-2 my-0 align-middle;
-  border-block-start: 0;
-  border-inline-start: 1px solid var(--color-neutral-border, theme(colors.neutral.200));
+  border-inline-start: 1px solid var(--divider-color);
 }
 
-:where(.ant-divider).ant-divider-dashed {
-  @apply border-dashed border-0;
-}
-
+/* Dashed */
 :where(.ant-divider).ant-divider-horizontal.ant-divider-dashed {
   &::before,
   &::after {
@@ -43,15 +39,13 @@
 /* Divider with text */
 :where(.ant-divider).ant-divider-with-text {
   @apply items-center my-4 mx-0;
-  border-block-start: 0 solid transparent;
   white-space: nowrap;
   text-align: center;
 
   &::before,
   &::after {
     @apply relative w-1/2;
-    border-block-start: 1px solid transparent;
-    border-block-start-color: inherit;
+    border-block-start: 1px solid var(--divider-color);
     border-block-end: 0;
     content: '';
     transform: translateY(50%);

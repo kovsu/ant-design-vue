@@ -26,7 +26,9 @@
       "Bash(git cherry-pick:*)",
       "Bash(git branch:*)",
       "Bash(kill %1)",
-      "Bash(pkill -f \"vite.*vite.dev.config\")"
+      "Bash(pkill -f \"vite.*vite.dev.config\")",
+      "Bash(curl:*)",
+      "Skill(browse)"
     ]
   }
 }
