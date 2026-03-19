@@ -1,0 +1,50 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-trigger-wrapper) {
+  @apply inline-flex;
+}
+
+:where(.ant-trigger-popup) {
+  @apply absolute;
+  z-index: 1070;
+  box-sizing: border-box;
+}
+
+:where(.ant-trigger-arrow) {
+  @apply absolute w-2 h-2;
+  background: inherit;
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+  z-index: -1;
+}
+
+/* Zoom-big-fast transition */
+.ant-zoom-big-fast-enter-active {
+  animation: antZoomBigIn var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-zoom-big-fast-leave-active {
+  animation: antZoomBigOut var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+@keyframes antZoomBigIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes antZoomBigOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}

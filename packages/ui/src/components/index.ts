@@ -61,3 +61,8 @@ export { RadioGroup, RadioButton } from './radio'
 export { default as Switch } from './switch'
 export { default as Rate } from './rate'
 export { default as Slider } from './slider'
+
+// Batch 7: Trigger + Tooltip
+export { default as Tooltip } from './tooltip'
+export { default as Popover } from './popover'
+export { default as Popconfirm } from './popconfirm'

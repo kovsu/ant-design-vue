@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Popconfirm > is disabled when disabled prop is true 1`] = `
+"<span class="ant-trigger-wrapper"><span>Delete</span></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
+`;
+
+exports[`Popconfirm > should render correctly 1`] = `
+"<span class="ant-trigger-wrapper"><span>Delete</span></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
+`;

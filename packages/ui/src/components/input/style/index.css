@@ -4,7 +4,10 @@
    Base Input
    ============================== */
 
-:where(.ant-input) {
+/* Not using :where() in this file because Tailwind v4 preflight targets
+   native elements (input, textarea, button) at specificity (0,0,1) with
+   border:0/padding:0/bg:transparent — :where() at (0,0,0) would lose. */
+.ant-input {
   @apply box-border w-full bg-white text-neutral;
   @apply border border-solid border-neutral-border rounded-md;
   @apply px-3 py-1 text-sm leading-normal;
@@ -29,27 +32,27 @@
 
 /* --- Sizes --- */
 
-:where(.ant-input.ant-input-sm) {
+.ant-input.ant-input-sm {
   @apply px-2 py-0 text-xs;
   border-radius: var(--ant-border-radius-sm, 4px);
 }
 
-:where(.ant-input.ant-input-lg) {
+.ant-input.ant-input-lg {
   @apply px-3 py-2 text-base;
   border-radius: var(--ant-border-radius-lg, 8px);
 }
 
 /* --- Disabled --- */
 
-:where(.ant-input.ant-input-disabled),
-:where(.ant-input:disabled) {
+.ant-input.ant-input-disabled,
+.ant-input:disabled {
   @apply bg-neutral-disabled-bg text-neutral-disabled cursor-not-allowed;
   @apply border-neutral-border;
 }
 
 /* --- Borderless --- */
 
-:where(.ant-input.ant-input-borderless) {
+.ant-input.ant-input-borderless {
   @apply border-transparent shadow-none;
 
   &:hover,
@@ -60,7 +63,7 @@
 
 /* --- Status --- */
 
-:where(.ant-input.ant-input-status-error) {
+.ant-input.ant-input-status-error {
   @apply border-error;
 
   &:hover {
@@ -73,7 +76,7 @@
   }
 }
 
-:where(.ant-input.ant-input-status-warning) {
+.ant-input.ant-input-status-warning {
   @apply border-warning;
 
   &:hover {
@@ -90,7 +93,7 @@
    Affix Wrapper (prefix/suffix)
    ============================== */
 
-:where(.ant-input-affix-wrapper) {
+.ant-input-affix-wrapper {
   @apply inline-flex items-center w-full;
   @apply box-border bg-white text-neutral;
   @apply border border-solid border-neutral-border rounded-md;
@@ -119,26 +122,26 @@
 
 /* --- Affix sizes --- */
 
-:where(.ant-input-affix-wrapper-sm) {
+.ant-input-affix-wrapper-sm {
   @apply px-2 py-0 text-xs;
   border-radius: var(--ant-border-radius-sm, 4px);
 }
 
-:where(.ant-input-affix-wrapper-lg) {
+.ant-input-affix-wrapper-lg {
   @apply px-3 py-2 text-base;
   border-radius: var(--ant-border-radius-lg, 8px);
 }
 
 /* --- Affix disabled --- */
 
-:where(.ant-input-affix-wrapper-disabled) {
+.ant-input-affix-wrapper-disabled {
   @apply bg-neutral-disabled-bg text-neutral-disabled cursor-not-allowed;
   @apply border-neutral-border;
 }
 
 /* --- Affix borderless --- */
 
-:where(.ant-input-affix-wrapper-borderless) {
+.ant-input-affix-wrapper-borderless {
   @apply border-transparent shadow-none;
 
   &:hover,
@@ -149,7 +152,7 @@
 
 /* --- Affix status --- */
 
-:where(.ant-input-affix-wrapper-status-error) {
+.ant-input-affix-wrapper-status-error {
   @apply border-error;
 
   &:hover {
@@ -162,7 +165,7 @@
   }
 }
 
-:where(.ant-input-affix-wrapper-status-warning) {
+.ant-input-affix-wrapper-status-warning {
   @apply border-warning;
 
   &:hover {
@@ -179,11 +182,11 @@
    Prefix / Suffix
    ============================== */
 
-:where(.ant-input-prefix) {
+.ant-input-prefix {
   @apply flex items-center mr-1 text-neutral-secondary;
 }
 
-:where(.ant-input-suffix) {
+.ant-input-suffix {
   @apply flex items-center ml-1 text-neutral-secondary;
 }
 
@@ -191,7 +194,7 @@
    Clear Icon
    ============================== */
 
-:where(.ant-input-clear-icon) {
+.ant-input-clear-icon {
   @apply inline-flex items-center justify-center cursor-pointer;
   @apply text-neutral-disabled transition-colors border-none bg-transparent p-0;
   @apply hover:text-neutral-secondary;
@@ -199,7 +202,7 @@
   line-height: 1;
 }
 
-:where(.ant-input-clear-icon-inner) {
+.ant-input-clear-icon-inner {
   @apply inline-flex items-center justify-center;
   @apply w-4 h-4 rounded-full bg-neutral-disabled text-white text-xs leading-none;
 }
@@ -208,7 +211,7 @@
    Show Count Suffix
    ============================== */
 
-:where(.ant-input-show-count-suffix) {
+.ant-input-show-count-suffix {
   @apply text-neutral-secondary text-xs whitespace-nowrap;
 }
 
@@ -216,15 +219,15 @@
    Group / Addon
    ============================== */
 
-:where(.ant-input-group-wrapper) {
+.ant-input-group-wrapper {
   @apply inline-flex w-full;
 }
 
-:where(.ant-input-wrapper.ant-input-group) {
+.ant-input-wrapper.ant-input-group {
   @apply flex items-stretch w-full;
 }
 
-:where(.ant-input-group-addon) {
+.ant-input-group-addon {
   @apply flex items-center;
   @apply bg-neutral-disabled-bg text-neutral;
   @apply border border-solid border-neutral-border;
@@ -240,7 +243,7 @@
   }
 }
 
-:where(.ant-input-group) {
+.ant-input-group {
   > .ant-input,
   > .ant-input-affix-wrapper {
     @apply rounded-none flex-1;
@@ -261,7 +264,7 @@
    TextArea
    ============================== */
 
-:where(.ant-input-textarea) {
+.ant-input-textarea {
   @apply relative inline-block w-full;
 
   > .ant-input {
@@ -269,19 +272,19 @@
   }
 }
 
-:where(.ant-input-textarea-show-count) {
+.ant-input-textarea-show-count {
   > .ant-input {
     @apply pb-5;
   }
 }
 
-:where(.ant-input-textarea-suffix) {
+.ant-input-textarea-suffix {
   @apply absolute right-3 bottom-1 text-neutral-secondary text-xs;
 }
 
 /* --- TextArea status --- */
 
-:where(.ant-input-textarea-status-error) > .ant-input {
+.ant-input-textarea-status-error > .ant-input {
   @apply border-error;
 
   &:focus {
@@ -290,7 +293,7 @@
   }
 }
 
-:where(.ant-input-textarea-status-warning) > .ant-input {
+.ant-input-textarea-status-warning > .ant-input {
   @apply border-warning;
 
   &:focus {
@@ -303,11 +306,11 @@
    Password
    ============================== */
 
-:where(.ant-input-password) {
+.ant-input-password {
   @apply inline-block w-full;
 }
 
-:where(.ant-input-password-icon) {
+.ant-input-password-icon {
   @apply inline-flex items-center justify-center cursor-pointer;
   @apply border-none bg-transparent p-0 text-neutral-secondary;
   @apply hover:text-neutral;
@@ -315,8 +318,8 @@
   line-height: 1;
 }
 
-:where(.ant-input-password-icon-visible),
-:where(.ant-input-password-icon-hidden) {
+.ant-input-password-icon-visible,
+.ant-input-password-icon-hidden {
   @apply select-none;
 }
 
@@ -324,11 +327,11 @@
    Search
    ============================== */
 
-:where(.ant-input-search) {
+.ant-input-search {
   @apply inline-block w-full;
 }
 
-:where(.ant-input-search-icon) {
+.ant-input-search-icon {
   @apply inline-flex items-center justify-center cursor-pointer;
   @apply border-none bg-transparent p-0 text-neutral-secondary;
   @apply hover:text-accent;
@@ -340,11 +343,11 @@
   }
 }
 
-:where(.ant-input-search-icon-loading) {
+.ant-input-search-icon-loading {
   @apply animate-spin;
 }
 
-:where(.ant-input-search-button) {
+.ant-input-search-button {
   @apply inline-flex items-center justify-center cursor-pointer;
   @apply bg-accent text-accent-content border-none;
   @apply px-4 py-1 text-sm rounded-none;
@@ -357,10 +360,10 @@
   }
 }
 
-:where(.ant-input-search-button-loading) {
+.ant-input-search-button-loading {
   @apply opacity-65 cursor-default;
 }
 
-:where(.ant-input-search-loading) {
+.ant-input-search-loading {
   @apply animate-spin inline-block;
 }

@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tooltip > accepts title slot 1`] = `
+"<span class="ant-trigger-wrapper"><span>Trigger</span></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
+`;
+
+exports[`Tooltip > does not show popup when title is empty 1`] = `
+"<span class="ant-trigger-wrapper"><span>Trigger</span></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
+`;
+
+exports[`Tooltip > should render correctly 1`] = `
+"<span class="ant-trigger-wrapper"><span>Trigger</span></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
+`;

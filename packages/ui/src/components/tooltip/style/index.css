@@ -1,0 +1,70 @@
+@reference '../../../style/tailwind.css';
+@import '../../../_internal/trigger/style/index.css';
+
+:where(.ant-tooltip) {
+  --tooltip-bg: rgba(0, 0, 0, 0.85);
+  --tooltip-color: #fff;
+  --tooltip-border-radius: var(--ant-border-radius);
+  --tooltip-max-width: 250px;
+}
+
+:where(.ant-tooltip) .ant-tooltip-inner {
+  @apply px-2 py-1.5 text-sm leading-normal break-words;
+  min-width: 32px;
+  min-height: 32px;
+  max-width: var(--tooltip-max-width);
+  color: var(--tooltip-color);
+  background: var(--tooltip-bg);
+  border-radius: var(--tooltip-border-radius);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+:where(.ant-tooltip) .ant-trigger-arrow {
+  background: var(--tooltip-bg);
+}
+
+/* Preset colors */
+:where(.ant-tooltip-pink) {
+  --tooltip-bg: #eb2f96;
+}
+:where(.ant-tooltip-magenta) {
+  --tooltip-bg: #eb2f96;
+}
+:where(.ant-tooltip-red) {
+  --tooltip-bg: #f5222d;
+}
+:where(.ant-tooltip-volcano) {
+  --tooltip-bg: #fa541c;
+}
+:where(.ant-tooltip-orange) {
+  --tooltip-bg: #fa8c16;
+}
+:where(.ant-tooltip-yellow) {
+  --tooltip-bg: #fadb14;
+  --tooltip-color: rgba(0, 0, 0, 0.85);
+}
+:where(.ant-tooltip-gold) {
+  --tooltip-bg: #faad14;
+}
+:where(.ant-tooltip-cyan) {
+  --tooltip-bg: #13c2c2;
+}
+:where(.ant-tooltip-lime) {
+  --tooltip-bg: #a0d911;
+  --tooltip-color: rgba(0, 0, 0, 0.85);
+}
+:where(.ant-tooltip-green) {
+  --tooltip-bg: #52c41a;
+}
+:where(.ant-tooltip-blue) {
+  --tooltip-bg: #1677ff;
+}
+:where(.ant-tooltip-purple) {
+  --tooltip-bg: #722ed1;
+}
+:where(.ant-tooltip-geekblue) {
+  --tooltip-bg: #2f54eb;
+}

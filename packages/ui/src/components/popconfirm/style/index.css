@@ -1,0 +1,51 @@
+@reference '../../../style/tailwind.css';
+@import '../../../_internal/trigger/style/index.css';
+
+:where(.ant-popconfirm) {
+  --popconfirm-bg: #fff;
+  --popconfirm-color: var(--color-neutral);
+  --popconfirm-border-radius: var(--ant-border-radius-lg);
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-inner {
+  @apply text-sm;
+  color: var(--popconfirm-color);
+  background: var(--popconfirm-bg);
+  border-radius: var(--popconfirm-border-radius);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  padding: 12px 16px;
+  min-width: 200px;
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-message {
+  @apply flex items-start gap-2;
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-message-icon {
+  @apply text-base leading-none shrink-0 mt-0.5;
+  color: var(--color-warning);
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-message-text {
+  @apply flex-1;
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-title {
+  @apply font-semibold leading-normal;
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-description {
+  @apply mt-1 leading-normal;
+  color: var(--color-neutral-secondary);
+}
+
+:where(.ant-popconfirm) .ant-popconfirm-buttons {
+  @apply flex justify-end gap-2 mt-3;
+}
+
+:where(.ant-popconfirm) .ant-trigger-arrow {
+  background: var(--popconfirm-bg);
+}
