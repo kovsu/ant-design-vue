@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export type ButtonVariant = 'solid' | 'outlined' | 'text' | 'link' | 'dashed' | 'filled'
 export type ButtonSize = 'sm' | 'md' | 'lg'
 export type ButtonShape = 'default' | 'circle' | 'round'
@@ -51,9 +53,9 @@ export interface ButtonEmits {
 }
 
 export interface ButtonSlots {
-  default?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
-  loading?: (props: Record<string, never>) => any
+  default?: Slot
+  icon?: Slot
+  loading?: Slot
 }
 
 // --- Legacy mapping helpers ---

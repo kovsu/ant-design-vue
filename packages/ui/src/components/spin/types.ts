@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export interface SpinProps {
   /** Whether to show spinning state */
   spinning?: boolean
@@ -15,7 +17,7 @@ export const spinDefaultProps = {
 } as const
 
 export interface SpinSlots {
-  default?: (props: Record<string, never>) => any
-  tip?: (props: Record<string, never>) => any
-  indicator?: (props: Record<string, never>) => any
+  default?: Slot
+  tip?: Slot
+  indicator?: Slot
 }

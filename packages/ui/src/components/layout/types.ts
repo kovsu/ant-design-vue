@@ -1,5 +1,6 @@
 import type { InjectionKey, Ref } from 'vue'
 import type { Breakpoint } from '@/hooks'
+import type { Slot, ScopedSlot } from '@/utils/types'
 
 export interface LayoutProps {
   /** Manually declare that Layout has a Sider (auto-detected if omitted) */
@@ -41,8 +42,8 @@ export interface SiderEmits {
 }
 
 export interface SiderSlots {
-  default?: (props: Record<string, never>) => any
-  trigger?: (props: { collapsed: boolean }) => any
+  default?: Slot
+  trigger?: ScopedSlot<{ collapsed: boolean }>
 }
 
 // Injection keys

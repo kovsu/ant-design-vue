@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export type PresetStatusColor = 'success' | 'processing' | 'error' | 'default' | 'warning'
 
 export interface BadgeProps {
@@ -33,9 +35,9 @@ export const badgeDefaultProps = {
 } as const
 
 export interface BadgeSlots {
-  default?: (props: Record<string, never>) => any
-  count?: (props: Record<string, never>) => any
-  text?: (props: Record<string, never>) => any
+  default?: Slot
+  count?: Slot
+  text?: Slot
 }
 
 export interface RibbonProps {
@@ -52,8 +54,8 @@ export const ribbonDefaultProps = {
 } as const
 
 export interface RibbonSlots {
-  default?: (props: Record<string, never>) => any
-  text?: (props: Record<string, never>) => any
+  default?: Slot
+  text?: Slot
 }
 
 const PRESET_STATUS_COLORS = ['success', 'processing', 'error', 'default', 'warning']

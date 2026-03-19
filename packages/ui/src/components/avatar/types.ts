@@ -1,4 +1,5 @@
 import type { InjectionKey, Ref } from 'vue'
+import type { Slot } from '@/utils/types'
 
 export type AvatarSize = 'large' | 'small' | 'default' | number
 export type AvatarShape = 'circle' | 'square'
@@ -33,8 +34,8 @@ export interface AvatarEmits {
 }
 
 export interface AvatarSlots {
-  default?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
+  default?: Slot
+  icon?: Slot
 }
 
 export interface AvatarGroupProps {
@@ -54,7 +55,7 @@ export const avatarGroupDefaultProps = {
 } as const
 
 export interface AvatarGroupSlots {
-  default?: (props: Record<string, never>) => any
+  default?: Slot
 }
 
 // Context for group -> avatar communication

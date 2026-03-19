@@ -53,15 +53,19 @@ export const buttonDefaultProps = {
   size: 'md',
 } as const
 
-// Emits: TypeScript interface
+// Emits: TypeScript interface (Vue handles array handlers at runtime, no wrapping needed)
 export interface ButtonEmits {
   (e: 'click', event: MouseEvent): void
 }
 
-// Slots: TypeScript interface
+// Slots: use Slot (no props) or ScopedSlot<T> (with props) from @/utils/types
+// - NEVER use multiple parameters — always single object, destructured by user
+// - No-props slots: Slot
+// - Scoped slots: ScopedSlot<{ key: Type }>
+import type { Slot, ScopedSlot } from '@/utils/types'
 export interface ButtonSlots {
-  default?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
+  default?: Slot
+  icon?: Slot
 }
 ```
 

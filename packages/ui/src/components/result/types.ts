@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export type ResultStatus = 'success' | 'error' | 'info' | 'warning' | 403 | 404 | 500
 
 export interface ResultProps {
@@ -14,9 +16,9 @@ export const resultDefaultProps = {
 } as const
 
 export interface ResultSlots {
-  default?: (props: Record<string, never>) => any
-  title?: (props: Record<string, never>) => any
-  subTitle?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
-  extra?: (props: Record<string, never>) => any
+  default?: Slot
+  title?: Slot
+  subTitle?: Slot
+  icon?: Slot
+  extra?: Slot
 }

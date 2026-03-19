@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export type SpaceSizePreset = 'small' | 'middle' | 'large'
 export type SpaceSize = SpaceSizePreset | number
 
@@ -18,8 +20,8 @@ export const spaceDefaultProps = {
 } as const
 
 export interface SpaceSlots {
-  default?: (props: Record<string, never>) => any
-  split?: (props: Record<string, never>) => any
+  default?: Slot
+  split?: Slot
 }
 
 export interface SpaceCompactProps {

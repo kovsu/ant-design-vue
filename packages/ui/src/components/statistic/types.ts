@@ -1,3 +1,5 @@
+import type { Slot, ScopedSlot } from '@/utils/types'
+
 export interface StatisticProps {
   /** Title text */
   title?: string
@@ -26,11 +28,11 @@ export const statisticDefaultProps = {
 } as const
 
 export interface StatisticSlots {
-  default?: (props: Record<string, never>) => any
-  title?: (props: Record<string, never>) => any
-  prefix?: (props: Record<string, never>) => any
-  suffix?: (props: Record<string, never>) => any
-  formatter?: (props: { value: number | string }) => any
+  default?: Slot
+  title?: Slot
+  prefix?: Slot
+  suffix?: Slot
+  formatter?: ScopedSlot<{ value: number | string }>
 }
 
 export interface CountdownProps {
@@ -54,7 +56,7 @@ export interface CountdownEmits {
 }
 
 export interface CountdownSlots {
-  title?: (props: Record<string, never>) => any
-  prefix?: (props: Record<string, never>) => any
-  suffix?: (props: Record<string, never>) => any
+  title?: Slot
+  prefix?: Slot
+  suffix?: Slot
 }

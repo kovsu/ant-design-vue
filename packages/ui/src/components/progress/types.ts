@@ -1,3 +1,5 @@
+import type { ScopedSlot } from '@/utils/types'
+
 export type ProgressType = 'line' | 'circle' | 'dashboard'
 export type ProgressStatus = 'normal' | 'exception' | 'active' | 'success'
 export type StrokeLinecap = 'butt' | 'square' | 'round'
@@ -52,6 +54,6 @@ export const progressDefaultProps = {
 } as const
 
 export interface ProgressSlots {
-  default?: (props: { percent: number }) => any
-  format?: (props: { percent: number }) => any
+  default?: ScopedSlot<{ percent: number }>
+  format?: ScopedSlot<{ percent: number }>
 }

@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export interface AlertProps {
   /** Alert type */
   type?: 'success' | 'info' | 'warning' | 'error'
@@ -27,11 +29,11 @@ export interface AlertEmits {
 }
 
 export interface AlertSlots {
-  default?: (props: Record<string, never>) => any
-  message?: (props: Record<string, never>) => any
-  description?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
-  closeIcon?: (props: Record<string, never>) => any
-  closeText?: (props: Record<string, never>) => any
-  action?: (props: Record<string, never>) => any
+  default?: Slot
+  message?: Slot
+  description?: Slot
+  icon?: Slot
+  closeIcon?: Slot
+  closeText?: Slot
+  action?: Slot
 }

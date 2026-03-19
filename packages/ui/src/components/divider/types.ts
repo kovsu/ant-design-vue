@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export interface DividerProps {
   /** Direction type */
   type?: 'horizontal' | 'vertical'
@@ -19,5 +21,5 @@ export const dividerDefaultProps = {
 } as const
 
 export interface DividerSlots {
-  default?: (props: Record<string, never>) => any
+  default?: Slot
 }

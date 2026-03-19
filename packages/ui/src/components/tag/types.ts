@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export type PresetColor =
   | 'blue'
   | 'purple'
@@ -35,9 +37,9 @@ export interface TagEmits {
 }
 
 export interface TagSlots {
-  default?: (props: Record<string, never>) => any
-  icon?: (props: Record<string, never>) => any
-  closeIcon?: (props: Record<string, never>) => any
+  default?: Slot
+  icon?: Slot
+  closeIcon?: Slot
 }
 
 export interface CheckableTagProps {
@@ -52,7 +54,7 @@ export interface CheckableTagEmits {
 }
 
 export interface CheckableTagSlots {
-  default?: (props: Record<string, never>) => any
+  default?: Slot
 }
 
 // Helper to detect preset colors

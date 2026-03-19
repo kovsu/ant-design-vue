@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export interface EmptyProps {
   /** Custom description text */
   description?: string | false
@@ -10,7 +12,7 @@ export interface EmptyProps {
 export const emptyDefaultProps = {} as const
 
 export interface EmptySlots {
-  default?: (props: Record<string, never>) => any
-  description?: (props: Record<string, never>) => any
-  image?: (props: Record<string, never>) => any
+  default?: Slot
+  description?: Slot
+  image?: Slot
 }

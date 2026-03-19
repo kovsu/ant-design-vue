@@ -1,3 +1,5 @@
+import type { Slot } from '@/utils/types'
+
 export interface SkeletonAvatarProps {
   /** Avatar size */
   size?: 'small' | 'default' | 'large' | number
@@ -62,5 +64,5 @@ export interface SkeletonImageProps {
 }
 
 export interface SkeletonSlots {
-  default?: (props: Record<string, never>) => any
+  default?: Slot
 }
