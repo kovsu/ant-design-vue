@@ -13,8 +13,7 @@ exports[`Layout demos > demo: SiderDemo 1`] = `
   <aside class="ant-layout-sider ant-layout-sider-dark ant-layout-sider-has-trigger" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
     <div class="ant-layout-sider-children">
       <div style="padding: 16px; color: rgb(255, 255, 255);">Sider </div>
-    </div>
-    <div class="ant-layout-sider-trigger" style="width: 200px;"><span class="ant-layout-sider-trigger-icon">◀</span></div>
+    </div><button type="button" class="ant-layout-sider-trigger" style="width: 200px;" aria-expanded="true" aria-label="Collapse sidebar"><span class="ant-layout-sider-trigger-icon" aria-hidden="true">◀</span></button>
   </aside>
   <section class="ant-layout">
     <header class="ant-layout-header" style="background: rgb(255, 255, 255); padding: 0px 16px;"> Header </header>

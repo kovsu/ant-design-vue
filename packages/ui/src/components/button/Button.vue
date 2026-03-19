@@ -5,6 +5,8 @@
     :class="rootClass"
     :style="cssVars"
     :disabled="isDisabled || undefined"
+    :aria-disabled="isDisabled || undefined"
+    :aria-busy="isLoading || undefined"
     :href="href || undefined"
     :target="href ? target : undefined"
     :type="!href ? htmlType : undefined"

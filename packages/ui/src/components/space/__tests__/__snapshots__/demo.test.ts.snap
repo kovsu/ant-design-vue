@@ -14,7 +14,7 @@ exports[`Space demos > demo: Basic 1`] = `
 `;
 
 exports[`Space demos > demo: Compact 1`] = `
-"<div class="ant-space-compact ant-space-compact-horizontal"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+"<div class="ant-space-compact ant-space-compact-horizontal" role="group"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
     <wave-stub disabled="false"></wave-stub>
     <!--v-if--><span class="ant-btn-content">Button 1</span>
   </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">

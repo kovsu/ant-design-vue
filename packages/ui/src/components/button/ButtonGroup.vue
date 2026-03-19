@@ -1,5 +1,5 @@
 <template>
-  <div :class="rootClass">
+  <div :class="rootClass" role="group">
     <slot />
   </div>
 </template>

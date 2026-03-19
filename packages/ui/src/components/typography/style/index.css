@@ -105,6 +105,11 @@
   font-size: 0.85em;
   opacity: 0;
   transition: opacity 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  line-height: inherit;
 }
 
 :where(.ant-typography):hover .ant-typography-copy {
@@ -116,11 +121,16 @@
   opacity: 1;
 }
 
-/* Expand link */
+/* Expand button */
 :where(.ant-typography) .ant-typography-expand {
   @apply ml-2 cursor-pointer;
   color: var(--color-accent, #1677ff);
   font-weight: normal;
   font-size: inherit;
   white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  line-height: inherit;
 }

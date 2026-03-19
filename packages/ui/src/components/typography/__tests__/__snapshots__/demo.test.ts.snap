@@ -40,11 +40,11 @@ exports[`Typography demos > demo: Basic 1`] = `
 exports[`Typography demos > demo: Copyable 1`] = `
 "<div>
   <div class="ant-typography">This is a copyable text.
-    <!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span>
+    <!--v-if--><button type="button" class="ant-typography-copy" aria-label="Copy">⎘</button>
   </div>
   <div class="ant-typography"> Copy different text than shown.
-    <!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span>
-  </div><span class="ant-typography">Inline copyable text<!--v-if--><span class="ant-typography-copy" role="button" tabindex="0">⎘</span></span>
+    <!--v-if--><button type="button" class="ant-typography-copy" aria-label="Copy">⎘</button>
+  </div><span class="ant-typography">Inline copyable text<!--v-if--><button type="button" class="ant-typography-copy" aria-label="Copy">⎘</button></span>
 </div>"
 `;
 
@@ -58,7 +58,7 @@ exports[`Typography demos > demo: Ellipsis 1`] = `
     <!--v-if-->
     <!--v-if-->
   </div><strong>Expandable:</strong>
-  <div class="ant-typography" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;"> Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. <a class="ant-typography-expand">Expand</a>
+  <div class="ant-typography" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;"> Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. <button type="button" class="ant-typography-expand">Expand</button>
     <!--v-if-->
   </div>
 </div>"

@@ -33,7 +33,7 @@ const innerStyle = computed(() => {
 </script>
 
 <template>
-  <div :class="classes" role="separator">
+  <div :class="classes" role="separator" :aria-orientation="type">
     <span
       v-if="hasContent"
       class="ant-divider-inner-text"

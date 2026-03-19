@@ -23,15 +23,15 @@ const rel = computed(() => props.target === '_blank' ? 'noopener noreferrer' : u
 <template>
   <a :class="classes" :style="ellipsisStyle" :href="props.href" :target="props.target" :rel="rel">
     <slot />
-    <span
+    <button
       v-if="copyConfig"
+      type="button"
       class="ant-typography-copy"
       :class="{ 'ant-typography-copy-success': copied }"
-      role="button"
-      tabindex="0"
+      :aria-label="copied ? 'Copied' : 'Copy'"
       @click.stop.prevent="handleCopy"
     >
       {{ copied ? '✓' : '⎘' }}
-    </span>
+    </button>
   </a>
 </template>

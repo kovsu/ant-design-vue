@@ -23,18 +23,18 @@ const { config: copyConfig, copied, handleCopy } = useCopyable(props, textConten
   <div :class="classes" :style="ellipsisStyle">
     <code v-if="props.code"><slot /></code>
     <slot v-else />
-    <a v-if="ellipsisConfig?.expandable && !expanded" class="ant-typography-expand" @click.prevent="toggleExpand">
+    <button v-if="ellipsisConfig?.expandable && !expanded" type="button" class="ant-typography-expand" @click="toggleExpand">
       {{ ellipsisConfig.symbol ?? 'Expand' }}
-    </a>
-    <span
+    </button>
+    <button
       v-if="copyConfig"
+      type="button"
       class="ant-typography-copy"
       :class="{ 'ant-typography-copy-success': copied }"
-      role="button"
-      tabindex="0"
+      :aria-label="copied ? 'Copied' : 'Copy'"
       @click="handleCopy"
     >
       {{ copied ? '✓' : '⎘' }}
-    </span>
+    </button>
   </div>
 </template>

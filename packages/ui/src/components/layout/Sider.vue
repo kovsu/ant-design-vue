@@ -117,17 +117,20 @@ const showTrigger = computed(() => props.collapsible)
     <div class="ant-layout-sider-children">
       <slot />
     </div>
-    <div
+    <button
       v-if="showTrigger"
+      type="button"
       class="ant-layout-sider-trigger"
       :style="{ width: siderWidth }"
+      :aria-expanded="!isCollapsed"
+      :aria-label="isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'"
       @click="handleTriggerClick"
     >
       <slot name="trigger" :collapsed="isCollapsed">
-        <span class="ant-layout-sider-trigger-icon">
+        <span class="ant-layout-sider-trigger-icon" aria-hidden="true">
           {{ isCollapsed ? (reverseArrow ? '◀' : '▶') : (reverseArrow ? '▶' : '◀') }}
         </span>
       </slot>
-    </div>
+    </button>
   </aside>
 </template>
