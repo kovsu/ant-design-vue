@@ -3,8 +3,11 @@ import { mount } from '@vue/test-utils'
 import Basic from '../demo/basic.vue'
 import Size from '../demo/size.vue'
 import Group from '../demo/group.vue'
+import BadgeDemo from '../demo/badge.vue'
+import Dynamic from '../demo/dynamic.vue'
+import Type from '../demo/type.vue'
 
-const demos = { Basic, Size, Group }
+const demos = { Basic, Size, Group, BadgeDemo, Dynamic, Type }
 
 describe('Avatar demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

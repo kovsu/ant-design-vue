@@ -9,11 +9,56 @@ exports[`Badge demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Badge demos > demo: Colors 1`] = `
+"<div>
+  <h4>Presets</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span>
+  </div>
+  <h4 style="margin-top: 16px;">Custom</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span><!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><!--v-if--></transition-stub></span>
+  </div>
+</div>"
+`;
+
 exports[`Badge demos > demo: Dot 1`] = `
 "<div style="display: flex; gap: 24px; align-items: center;">
   <!-- Status badge (no children, dot + text) -->
   <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-dot"></sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
   <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-dot" title="0"></sup></transition-stub></span>
+</div>"
+`;
+
+exports[`Badge demos > demo: Link 1`] = `
+"<a href="#">
+  <!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="5">5</sup></transition-stub></span>
+</a>"
+`;
+
+exports[`Badge demos > demo: NoWrapper 1`] = `
+"<div style="display: flex; gap: 24px; align-items: center;">
+  <!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count ant-badge-multiple-words" title="25">25</sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" style="background-color: rgb(82, 196, 26);" title="4">4</sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge ant-badge-not-a-wrapper"><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count ant-badge-multiple-words" style="background-color: rgb(250, 173, 20);" title="109">99+</sup></transition-stub></span>
 </div>"
 `;
 
@@ -53,5 +98,13 @@ exports[`Badge demos > demo: RibbonDemo 1`] = `
 exports[`Badge demos > demo: Status 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 8px;">
   <!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-success"></span><span class="ant-badge-status-text">Success</span></span><!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-processing"></span><span class="ant-badge-status-text">Processing</span></span><!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-error"></span><span class="ant-badge-status-text">Error</span></span><!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-default"></span><span class="ant-badge-status-text">Default</span></span><!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-warning"></span><span class="ant-badge-status-text">Warning</span></span>
+</div>"
+`;
+
+exports[`Badge demos > demo: Title 1`] = `
+"<div style="display: flex; gap: 24px; align-items: center;">
+  <!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="Custom hover text">5</sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="Zero items">0</sup></transition-stub></span>
 </div>"
 `;

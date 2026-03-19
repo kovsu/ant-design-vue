@@ -75,3 +75,28 @@ exports[`Typography demos > demo: LinkDemo 1`] = `
 `;
 
 exports[`Typography demos > demo: TextDemo 1`] = `"<div class="ant-space ant-space-vertical" style="column-gap: 8px; row-gap: 8px;"><span class="ant-typography">Default text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-secondary">Secondary text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-success">Success text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-warning">Warning text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-danger">Danger text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-disabled">Disabled text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-strong">Bold text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-italic">Italic text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-underline">Underline text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-delete">Deleted text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-mark">Marked text<!--v-if--><!--v-if--></span><span class="ant-typography"><code>Code text</code><!--v-if--><!--v-if--></span><span class="ant-typography"><kbd>Ctrl + C</kbd><!--v-if--><!--v-if--></span></div>"`;
+
+exports[`Typography demos > demo: Title 1`] = `
+"<div>
+  <h1 class="ant-typography">h1. Ant Design Vue
+    <!--v-if-->
+    <!--v-if-->
+  </h1>
+  <h2 class="ant-typography">h2. Ant Design Vue
+    <!--v-if-->
+    <!--v-if-->
+  </h2>
+  <h3 class="ant-typography">h3. Ant Design Vue
+    <!--v-if-->
+    <!--v-if-->
+  </h3>
+  <h4 class="ant-typography">h4. Ant Design Vue
+    <!--v-if-->
+    <!--v-if-->
+  </h4>
+  <h5 class="ant-typography">h5. Ant Design Vue
+    <!--v-if-->
+    <!--v-if-->
+  </h5>
+</div>"
+`;

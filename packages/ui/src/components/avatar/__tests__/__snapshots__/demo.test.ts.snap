@@ -1,6 +1,23 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Avatar demos > demo: BadgeDemo 1`] = `
+"<div style="display: flex; gap: 24px;">
+  <!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge"><span class="ant-avatar ant-avatar-square ant-avatar-image" role="img"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" draggable="false"></span>
+  <transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="1">1</sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
+  <!-- Badge with children or standalone count --><span class="ant-badge"><span class="ant-avatar ant-avatar-square ant-avatar-image" role="img"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=2" draggable="false"></span>
+  <transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-dot"></sup></transition-stub></span>
+</div>"
+`;
+
 exports[`Avatar demos > demo: Basic 1`] = `"<div style="display: flex; gap: 16px; align-items: center;"><span class="ant-avatar ant-avatar-circle ant-avatar-image" role="img" aria-label="User avatar"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" alt="User avatar" draggable="false"></span><span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">U</span></span><span class="ant-avatar ant-avatar-circle ant-avatar-icon" role="img"><span style="font-size: 18px;">👤</span></span><span class="ant-avatar ant-avatar-square" role="img"><span class="ant-avatar-string">S</span></span><span class="ant-avatar ant-avatar-square ant-avatar-image" role="img" aria-label="Square avatar"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=2" alt="Square avatar" draggable="false"></span></div>"`;
+
+exports[`Avatar demos > demo: Dynamic 1`] = `
+"<div style="display: flex; gap: 16px; align-items: center;"><span class="ant-avatar ant-avatar-circle" style="background-color: rgb(245, 106, 0); vertical-align: middle;" role="img"><span class="ant-avatar-string">U</span></span><button class="ant-btn ant-btn-solid ant-btn-sm" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Change</span>
+  </button></div>"
+`;
 
 exports[`Avatar demos > demo: Group 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 16px;">
@@ -11,3 +28,5 @@ exports[`Avatar demos > demo: Group 1`] = `
 `;
 
 exports[`Avatar demos > demo: Size 1`] = `"<div style="display: flex; gap: 16px; align-items: center;"><span class="ant-avatar ant-avatar-circle ant-avatar-lg" role="img"><span class="ant-avatar-string">L</span></span><span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">D</span></span><span class="ant-avatar ant-avatar-circle ant-avatar-sm" role="img"><span class="ant-avatar-string">S</span></span><span class="ant-avatar ant-avatar-circle" style="width: 64px; height: 64px; line-height: 64px; font-size: 32px;" role="img"><span class="ant-avatar-string">64</span></span><span class="ant-avatar ant-avatar-circle" style="width: 20px; height: 20px; line-height: 20px; font-size: 10px;" role="img"><span class="ant-avatar-string">20</span></span></div>"`;
+
+exports[`Avatar demos > demo: Type 1`] = `"<div style="display: flex; gap: 16px; align-items: center;"><span class="ant-avatar ant-avatar-circle ant-avatar-image" role="img"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" draggable="false"></span><span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">U</span></span><span class="ant-avatar ant-avatar-circle" style="background-color: rgb(135, 208, 104);" role="img"><span class="ant-avatar-string">A</span></span><span class="ant-avatar ant-avatar-square" role="img"><span class="ant-avatar-string">Square</span></span></div>"`;

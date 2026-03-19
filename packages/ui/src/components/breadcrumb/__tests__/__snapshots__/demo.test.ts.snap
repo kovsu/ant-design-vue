@@ -19,3 +19,13 @@ exports[`Breadcrumb demos > demo: Separator 1`] = `
   </ol>
 </nav>"
 `;
+
+exports[`Breadcrumb demos > demo: WithIcon 1`] = `
+"<nav class="ant-breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><a href="/"><span style="margin-right: 4px;">🏠</span> Home </a></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span></li>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><a href="/users"><span style="margin-right: 4px;">👤</span> Users </a></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span></li>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><span><span style="margin-right: 4px;">📄</span> Profile </span></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span></li>
+  </ol>
+</nav>"
+`;

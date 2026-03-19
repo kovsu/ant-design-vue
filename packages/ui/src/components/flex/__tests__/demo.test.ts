@@ -5,8 +5,9 @@ import Align from '../demo/align.vue'
 import Gap from '../demo/gap.vue'
 import Vertical from '../demo/vertical.vue'
 import Wrap from '../demo/wrap.vue'
+import Combination from '../demo/combination.vue'
 
-const demos = { Basic, Align, Gap, Vertical, Wrap }
+const demos = { Basic, Align, Gap, Vertical, Wrap, Combination }
 
 describe('Flex demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

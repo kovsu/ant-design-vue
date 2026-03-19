@@ -3,8 +3,10 @@ import { mount } from '@vue/test-utils'
 import Basic from '../demo/basic.vue'
 import Prefix from '../demo/prefix.vue'
 import Countdown from '../demo/countdown.vue'
+import CardDemo from '../demo/card.vue'
+import Unit from '../demo/unit.vue'
 
-const demos = { Basic, Prefix }
+const demos = { Basic, Prefix, CardDemo, Unit }
 
 describe('Statistic demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

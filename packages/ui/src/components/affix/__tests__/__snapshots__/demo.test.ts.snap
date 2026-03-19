@@ -28,3 +28,17 @@ exports[`Affix demos > demo: OnChange 1`] = `
     </button></div>
 </div>"
 `;
+
+exports[`Affix demos > demo: Target 1`] = `
+"<div style="height: 200px; overflow-y: auto; border: 1px solid rgb(217, 217, 217); border-radius: 6px; padding: 16px;">
+  <div style="height: 600px; padding-top: 60px;">
+    <div data-measure-status="0">
+      <!--v-if-->
+      <div style="z-index: 10;" class=""><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+          <wave-stub disabled="false"></wave-stub>
+          <!--v-if--><span class="ant-btn-content">Fixed to container top</span>
+        </button></div>
+    </div>
+  </div>
+</div>"
+`;

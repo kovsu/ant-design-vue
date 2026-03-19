@@ -40,6 +40,80 @@ exports[`Flex demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Flex demos > demo: Combination 1`] = `
+"<div class="ant-flex ant-flex-vertical" style="flex-wrap: false; gap: 16px;">
+  <div class="ant-flex" style="flex-wrap: false; gap: 16px;">
+    <div class="ant-card ant-card-bordered" style="flex: 1 1 0%;">
+      <div class="ant-card-head">
+        <div class="ant-card-head-wrapper">
+          <div class="ant-card-head-title">Card A</div>
+          <!--v-if-->
+        </div>
+      </div>
+      <!--v-if-->
+      <div class="ant-card-body">
+        <p>Content of Card A</p>
+      </div>
+      <!--v-if-->
+    </div>
+    <div class="ant-card ant-card-bordered" style="flex: 1 1 0%;">
+      <div class="ant-card-head">
+        <div class="ant-card-head-wrapper">
+          <div class="ant-card-head-title">Card B</div>
+          <!--v-if-->
+        </div>
+      </div>
+      <!--v-if-->
+      <div class="ant-card-body">
+        <p>Content of Card B</p>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-flex" style="flex-wrap: false; gap: 16px;">
+    <div class="ant-card ant-card-bordered" style="flex: 1 1 0%;">
+      <div class="ant-card-head">
+        <div class="ant-card-head-wrapper">
+          <div class="ant-card-head-title">Card C</div>
+          <!--v-if-->
+        </div>
+      </div>
+      <!--v-if-->
+      <div class="ant-card-body">
+        <p>Content of Card C</p>
+      </div>
+      <!--v-if-->
+    </div>
+    <div class="ant-card ant-card-bordered" style="flex: 1 1 0%;">
+      <div class="ant-card-head">
+        <div class="ant-card-head-wrapper">
+          <div class="ant-card-head-title">Card D</div>
+          <!--v-if-->
+        </div>
+      </div>
+      <!--v-if-->
+      <div class="ant-card-body">
+        <p>Content of Card D</p>
+      </div>
+      <!--v-if-->
+    </div>
+    <div class="ant-card ant-card-bordered" style="flex: 1 1 0%;">
+      <div class="ant-card-head">
+        <div class="ant-card-head-wrapper">
+          <div class="ant-card-head-title">Card E</div>
+          <!--v-if-->
+        </div>
+      </div>
+      <!--v-if-->
+      <div class="ant-card-body">
+        <p>Content of Card E</p>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Flex demos > demo: Gap 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 16px;">
   <div><strong>gap: small (8px)</strong>

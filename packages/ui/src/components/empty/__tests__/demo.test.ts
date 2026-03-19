@@ -3,8 +3,9 @@ import { mount } from '@vue/test-utils'
 import Basic from '../demo/basic.vue'
 import Simple from '../demo/simple.vue'
 import Customize from '../demo/customize.vue'
+import Description from '../demo/description.vue'
 
-const demos = { Basic, Simple, Customize }
+const demos = { Basic, Simple, Customize, Description }
 
 describe('Empty demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

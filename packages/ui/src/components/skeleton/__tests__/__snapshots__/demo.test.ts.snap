@@ -28,6 +28,23 @@ exports[`Skeleton demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Skeleton demos > demo: Children 1`] = `
+"<div>
+  <div style="margin-bottom: 16px;"><label><input type="checkbox" checked=""> Loading </label></div>
+  <div class="ant-skeleton ant-skeleton-active" role="status" aria-busy="true" aria-label="Loading content">
+    <!--v-if-->
+    <div class="ant-skeleton-content">
+      <h3 class="ant-skeleton-title"></h3>
+      <ul class="ant-skeleton-paragraph">
+        <li></li>
+        <li></li>
+        <li style="width: 61%;"></li>
+      </ul>
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Skeleton demos > demo: Complex 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 24px;">
   <div class="ant-skeleton ant-skeleton-active ant-skeleton-with-avatar" role="status" aria-busy="true" aria-label="Loading content">

@@ -39,6 +39,43 @@ exports[`Statistic demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Statistic demos > demo: CardDemo 1`] = `
+"<div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
+  <div class="ant-col" style="flex: 0 0 50%; max-width: 50%; padding-left: 8px; padding-right: 8px;">
+    <div class="ant-card ant-card-bordered">
+      <!--v-if-->
+      <!--v-if-->
+      <div class="ant-card-body">
+        <div class="ant-statistic" role="group">
+          <div class="ant-statistic-title">Active Users</div>
+          <div class="ant-statistic-content" style="color: rgb(63, 134, 0);" aria-live="polite"><span class="ant-statistic-content-prefix">⬆</span><span class="ant-statistic-content-value"><span class="ant-statistic-content-value-int">112,893</span>
+            <!--v-if--></span>
+            <!--v-if-->
+          </div>
+        </div>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-col" style="flex: 0 0 50%; max-width: 50%; padding-left: 8px; padding-right: 8px;">
+    <div class="ant-card ant-card-bordered">
+      <!--v-if-->
+      <!--v-if-->
+      <div class="ant-card-body">
+        <div class="ant-statistic" role="group">
+          <div class="ant-statistic-title">Idle Users</div>
+          <div class="ant-statistic-content" style="color: rgb(207, 19, 34);" aria-live="polite"><span class="ant-statistic-content-prefix">⬇</span><span class="ant-statistic-content-value"><span class="ant-statistic-content-value-int">9,280</span>
+            <!--v-if--></span>
+            <!--v-if-->
+          </div>
+        </div>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Statistic demos > demo: Prefix 1`] = `
 "<div style="display: flex; gap: 48px;">
   <div class="ant-statistic" role="group">
@@ -52,6 +89,24 @@ exports[`Statistic demos > demo: Prefix 1`] = `
     <div class="ant-statistic-title">Unmerged</div>
     <div class="ant-statistic-content" aria-live="polite">
       <!--v-if--><span class="ant-statistic-content-value"><span class="ant-statistic-content-value-int">93</span>
+      <!--v-if--></span><span class="ant-statistic-content-suffix">/ 100</span>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Statistic demos > demo: Unit 1`] = `
+"<div style="display: flex; gap: 48px;">
+  <div class="ant-statistic" role="group">
+    <div class="ant-statistic-title">Feedback</div>
+    <div class="ant-statistic-content" aria-live="polite"><span class="ant-statistic-content-prefix">👍</span><span class="ant-statistic-content-value"><span class="ant-statistic-content-value-int">1,128</span>
+      <!--v-if--></span>
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-statistic" role="group">
+    <div class="ant-statistic-title">Unmerged</div>
+    <div class="ant-statistic-content" aria-live="polite"><span class="ant-statistic-content-prefix">🚀</span><span class="ant-statistic-content-value"><span class="ant-statistic-content-value-int">93</span>
       <!--v-if--></span><span class="ant-statistic-content-suffix">/ 100</span>
     </div>
   </div>

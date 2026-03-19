@@ -5,13 +5,16 @@ import TimelineItem from '../TimelineItem.vue'
 import Basic from '../demo/basic.vue'
 import Alternate from '../demo/alternate.vue'
 import Color from '../demo/color.vue'
+import Custom from '../demo/custom.vue'
+import Pending from '../demo/pending.vue'
+import Right from '../demo/right.vue'
 
 const globalComponents = {
   ATimeline: Timeline,
   ATimelineItem: TimelineItem,
 }
 
-const demos = { Basic, Alternate, Color }
+const demos = { Basic, Alternate, Color, Custom, Pending, Right }
 
 describe('Timeline demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

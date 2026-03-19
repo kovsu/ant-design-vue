@@ -7,6 +7,35 @@ exports[`Tag demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Tag demos > demo: BorderLess 1`] = `
+"<div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;"><span class="ant-tag ant-tag-borderless"><span class="ant-tag-text">Tag 1</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-borderless"><span class="ant-tag-text">Tag 2</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-borderless"><span class="ant-tag-text">Tag 3</span><button type="button" class="ant-tag-close-icon" aria-label="Remove tag"><span class="ant-tag-close-x">×</span></button></span><span class="ant-tag ant-tag-borderless"><span class="ant-tag-text">Tag 4</span><button type="button" class="ant-tag-close-icon" aria-label="Remove tag"><span class="ant-tag-close-x">×</span></button></span>
+  </div>
+  <div class="ant-divider ant-divider-horizontal" role="separator" aria-orientation="horizontal">
+    <!--v-if-->
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-processing ant-tag-borderless"><span class="ant-tag-text">processing</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-success ant-tag-borderless"><span class="ant-tag-text">success</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-error ant-tag-borderless"><span class="ant-tag-text">error</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-warning ant-tag-borderless"><span class="ant-tag-text">warning</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-magenta ant-tag-borderless"><span class="ant-tag-text">magenta</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-red ant-tag-borderless"><span class="ant-tag-text">red</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-volcano ant-tag-borderless"><span class="ant-tag-text">volcano</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-orange ant-tag-borderless"><span class="ant-tag-text">orange</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-gold ant-tag-borderless"><span class="ant-tag-text">gold</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-lime ant-tag-borderless"><span class="ant-tag-text">lime</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-green ant-tag-borderless"><span class="ant-tag-text">green</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-cyan ant-tag-borderless"><span class="ant-tag-text">cyan</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-blue ant-tag-borderless"><span class="ant-tag-text">blue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-geekblue ant-tag-borderless"><span class="ant-tag-text">geekblue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-purple ant-tag-borderless"><span class="ant-tag-text">purple</span>
+    <!--v-if--></span>
+  </div>
+</div>"
+`;
+
 exports[`Tag demos > demo: Checkable 1`] = `"<div style="display: flex; gap: 8px;"><span class="ant-tag ant-tag-checkable ant-tag-checkable-checked" role="checkbox" aria-checked="true" tabindex="0">Movies</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Books</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Music</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Sports</span></div>"`;
 
 exports[`Tag demos > demo: Color 1`] = `
@@ -32,6 +61,45 @@ exports[`Tag demos > demo: Color 1`] = `
     <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(16, 142, 233); border-color: rgb(16, 142, 233); color: rgb(255, 255, 255);"><span class="ant-tag-text">#108ee9</span>
     <!--v-if--></span>
   </div>
+</div>"
+`;
+
+exports[`Tag demos > demo: Colorful 1`] = `
+"<div>
+  <h4 style="margin-bottom: 16px;">Presets:</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;"><span class="ant-tag ant-tag-magenta"><span class="ant-tag-text">magenta</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-red"><span class="ant-tag-text">red</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-volcano"><span class="ant-tag-text">volcano</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-orange"><span class="ant-tag-text">orange</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-gold"><span class="ant-tag-text">gold</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-lime"><span class="ant-tag-text">lime</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-green"><span class="ant-tag-text">green</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-cyan"><span class="ant-tag-text">cyan</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-blue"><span class="ant-tag-text">blue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-geekblue"><span class="ant-tag-text">geekblue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-purple"><span class="ant-tag-text">purple</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-pink"><span class="ant-tag-text">pink</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-yellow"><span class="ant-tag-text">yellow</span>
+    <!--v-if--></span>
+  </div>
+  <h4 style="margin-bottom: 16px;">Custom:</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-has-color" style="background-color: rgb(255, 85, 0); border-color: rgb(255, 85, 0); color: rgb(255, 255, 255);"><span class="ant-tag-text">#f50</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(45, 183, 245); border-color: rgb(45, 183, 245); color: rgb(255, 255, 255);"><span class="ant-tag-text">#2db7f5</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(135, 208, 104); border-color: rgb(135, 208, 104); color: rgb(255, 255, 255);"><span class="ant-tag-text">#87d068</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(16, 142, 233); border-color: rgb(16, 142, 233); color: rgb(255, 255, 255);"><span class="ant-tag-text">#108ee9</span>
+    <!--v-if--></span>
+  </div>
+</div>"
+`;
+
+exports[`Tag demos > demo: HotTags 1`] = `"<div style="display: flex; align-items: center; gap: 8px;"><span>Categories:</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Movies</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Books</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Music</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Sports</span></div>"`;
+
+exports[`Tag demos > demo: Icon 1`] = `
+"<div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-has-color" style="background-color: rgb(85, 172, 238); border-color: rgb(85, 172, 238); color: rgb(255, 255, 255);"><span style="margin-right: 4px;">🐦</span><span class="ant-tag-text"> Twitter </span>
+  <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(205, 32, 31); border-color: rgb(205, 32, 31); color: rgb(255, 255, 255);"><span style="margin-right: 4px;">▶</span><span class="ant-tag-text"> Youtube </span>
+  <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(59, 89, 153); border-color: rgb(59, 89, 153); color: rgb(255, 255, 255);"><span style="margin-right: 4px;">f</span><span class="ant-tag-text"> Facebook </span>
+  <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(85, 172, 238); border-color: rgb(85, 172, 238); color: rgb(255, 255, 255);"><span style="margin-right: 4px;">🔗</span><span class="ant-tag-text"> LinkedIn </span>
+  <!--v-if--></span>
 </div>"
 `;
 

@@ -140,6 +140,104 @@ exports[`Descriptions demos > demo: Bordered 1`] = `
 </div>"
 `;
 
+exports[`Descriptions demos > demo: Responsive 1`] = `
+"<div>
+  <div class="ant-descriptions ant-descriptions-bordered">
+    <div class="ant-descriptions-header">
+      <div class="ant-descriptions-title">Responsive Layout</div>
+      <!--v-if-->
+    </div>
+    <div class="ant-descriptions-view">
+      <table>
+        <tbody>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Product</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">Cloud Database</span>
+            </td>
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Billing Mode</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">Prepaid</span>
+            </td>
+          </tr>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Automatic Renewal</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">YES</span>
+            </td>
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Order time</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">2024-01-01 12:00:00</span>
+            </td>
+          </tr>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Usage Info</th>
+            <td class="ant-descriptions-item-content" colspan="3">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner"> February - March 2024 </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="margin-top: 24px;"></div>
+  <div class="ant-descriptions ant-descriptions-bordered">
+    <div class="ant-descriptions-header">
+      <div class="ant-descriptions-title">Single Column</div>
+      <!--v-if-->
+    </div>
+    <div class="ant-descriptions-view">
+      <table>
+        <tbody>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Product</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">Cloud Database</span>
+            </td>
+          </tr>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Billing Mode</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">Prepaid</span>
+            </td>
+          </tr>
+          <tr class="ant-descriptions-row">
+            <th class="ant-descriptions-item-label ant-descriptions-item-colon">Order time</th>
+            <td class="ant-descriptions-item-content" colspan="1">
+              <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">2024-01-01 12:00:00</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Descriptions demos > demo: Size 1`] = `
 "<div>
   <div style="margin-bottom: 16px;"><span style="margin-right: 8px;">Size:</span><label style="margin-right: 8px;"><input type="radio" value="default"> Default </label><label style="margin-right: 8px;"><input type="radio" value="middle"> Middle </label><label><input type="radio" value="small"> Small </label></div>

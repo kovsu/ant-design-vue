@@ -138,6 +138,166 @@ exports[`Alert demos > demo: Closable 1`] = `
 </div>"
 `;
 
+exports[`Alert demos > demo: CloseText 1`] = `
+"<transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+  <div class="ant-alert ant-alert-info ant-alert-closable ant-alert-no-icon" role="alert">
+    <!--v-if-->
+    <div class="ant-alert-content">
+      <div class="ant-alert-message">Info Text</div>
+      <!--v-if-->
+    </div>
+    <!--v-if--><button type="button" class="ant-alert-close-icon" aria-label="Close">Close Now</button>
+  </div>
+</transition-stub>"
+`;
+
+exports[`Alert demos > demo: CustomIcon 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">showIcon = false</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 14px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Success Tips</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-info" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 14px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Informational Notes</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-warning" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 14px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Warning</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-error" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 14px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Error</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success ant-alert-with-description" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 24px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Success Tips</div>
+        <div class="ant-alert-description">Detailed description and advices about successful copywriting.</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-info ant-alert-with-description" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 24px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Informational Notes</div>
+        <div class="ant-alert-description">Additional description and information about copywriting.</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-warning ant-alert-with-description" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 24px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Warning</div>
+        <div class="ant-alert-description">This is a warning notice about copywriting.</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-error ant-alert-with-description" role="alert"><span class="ant-alert-icon" aria-hidden="true"><span style="font-size: 24px;">☺</span></span>
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Error</div>
+        <div class="ant-alert-description">This is an error message about copywriting.</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+</div>"
+`;
+
+exports[`Alert demos > demo: Description 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Success Text</div>
+        <div class="ant-alert-description">
+          <p> Success Description <span style="color: red;">Success</span> Description Success Description </p>
+        </div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Info Text</div>
+        <div class="ant-alert-description">Info Description Info Description Info Description Info Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-warning ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Warning Text</div>
+        <div class="ant-alert-description">Warning Description Warning Description Warning Description Warning Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Error Text</div>
+        <div class="ant-alert-description">Error Description Error Description Error Description Error Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+</div>"
+`;
+
 exports[`Alert demos > demo: Icon 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 16px;">
   <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
@@ -185,6 +345,112 @@ exports[`Alert demos > demo: Icon 1`] = `
       <div class="ant-alert-content">
         <div class="ant-alert-message">Success Tips</div>
         <div class="ant-alert-description">Detailed description and advices about successful copywriting.</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+</div>"
+`;
+
+exports[`Alert demos > demo: SmoothClosed 1`] = `
+"<transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+  <div class="ant-alert ant-alert-success ant-alert-closable ant-alert-no-icon" role="alert">
+    <!--v-if-->
+    <div class="ant-alert-content">
+      <div class="ant-alert-message">Alert Message Text</div>
+      <!--v-if-->
+    </div>
+    <!--v-if--><button type="button" class="ant-alert-close-icon" aria-label="Close"><span class="anticon anticon-close"><svg viewBox="64 64 896 896" width="1em" height="1em" fill="currentColor"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L512 442.2 295.9 191.7c-3-3.6-7.5-5.7-12.3-5.7H203.8c-6.8 0-10.5 7.9-6.1 13.1L460.2 512 197.7 824.9A7.95 7.95 0 00203.8 838h79.8c4.7 0 9.2-2.1 12.3-5.7L512 581.8l216.1 250.5c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></span></button>
+  </div>
+</transition-stub>"
+`;
+
+exports[`Alert demos > demo: Style 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Success Text</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-info ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Info Text</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-warning ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Warning Text</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-error ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Error Text</div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-success ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Success Text</div>
+        <div class="ant-alert-description">Success Description Success Description Success Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Info Text</div>
+        <div class="ant-alert-description">Info Description Info Description Info Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-warning ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Warning Text</div>
+        <div class="ant-alert-description">Warning Description Warning Description Warning Description</div>
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </transition-stub>
+  <transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+    <div class="ant-alert ant-alert-error ant-alert-with-description ant-alert-no-icon" role="alert">
+      <!--v-if-->
+      <div class="ant-alert-content">
+        <div class="ant-alert-message">Error Text</div>
+        <div class="ant-alert-description">Error Description Error Description Error Description</div>
       </div>
       <!--v-if-->
       <!--v-if-->

@@ -7,15 +7,12 @@ export { default as Timeline } from './Timeline.vue'
 export { default as TimelineItem } from './TimelineItem.vue'
 export * from './types'
 
-Timeline.install = function (app: App) {
+const install = (app: App) => {
   app.component('ATimeline', Timeline)
   app.component('ATimelineItem', TimelineItem)
   return app
 }
 
-TimelineItem.install = function (app: App) {
-  app.component('ATimelineItem', TimelineItem)
-  return app
-}
+Timeline.install = install
 
 export default Timeline as typeof Timeline & Plugin

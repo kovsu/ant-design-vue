@@ -7,15 +7,12 @@ export { default as Collapse } from './Collapse.vue'
 export { default as CollapsePanel } from './CollapsePanel.vue'
 export * from './types'
 
-Collapse.install = function (app: App) {
+const install = (app: App) => {
   app.component('ACollapse', Collapse)
   app.component('ACollapsePanel', CollapsePanel)
   return app
 }
 
-CollapsePanel.install = function (app: App) {
-  app.component('ACollapsePanel', CollapsePanel)
-  return app
-}
+Collapse.install = install
 
 export default Collapse as typeof Collapse & Plugin
