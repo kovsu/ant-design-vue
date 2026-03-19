@@ -1,0 +1,120 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card demos > demo: Basic 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px;">
+  <div class="ant-card ant-card-bordered">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">Card Title</div>
+        <div class="ant-card-extra"><a href="#">More</a></div>
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`Card demos > demo: Border 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; padding: 24px; background: rgb(236, 236, 236);">
+  <div class="ant-card ant-card-bordered">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">With Border</div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <p>Card content</p>
+    </div>
+    <!--v-if-->
+  </div>
+  <div class="ant-card">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">No Border</div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <p>Card content</p>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`Card demos > demo: Grid 1`] = `
+"<div style="max-width: 600px;">
+  <div class="ant-card ant-card-bordered">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">Card Grid</div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 1</div>
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 2</div>
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 3</div>
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 4</div>
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 5</div>
+      <div class="ant-card-grid ant-card-grid-hoverable" style="width: 33.33%; text-align: center;"> Content 6</div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`Card demos > demo: Loading 1`] = `
+"<div style="max-width: 400px;">
+  <div class="ant-card ant-card-bordered ant-card-loading">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">Loading Card</div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <div class="ant-card-loading-content">
+        <div class="ant-card-loading-block" style="width:94%;"></div>
+        <div class="ant-card-loading-block" style="width:28%;"></div>
+        <div class="ant-card-loading-block" style="width:62%;"></div>
+        <div class="ant-card-loading-block" style="width:22%;"></div>
+        <div class="ant-card-loading-block" style="width:66%;"></div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`Card demos > demo: Meta 1`] = `
+"<div style="max-width: 300px;">
+  <div class="ant-card ant-card-bordered ant-card-hoverable">
+    <!--v-if-->
+    <div class="ant-card-cover"><img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"></div>
+    <div class="ant-card-body">
+      <div class="ant-card-meta">
+        <div class="ant-card-meta-avatar">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background: rgb(22, 119, 255);"></div>
+        </div>
+        <div class="ant-card-meta-detail">
+          <div class="ant-card-meta-title">Card Title</div>
+          <div class="ant-card-meta-description">This is the description</div>
+        </div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;

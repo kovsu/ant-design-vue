@@ -1,0 +1,97 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Timeline demos > demo: Alternate 1`] = `
+"<ul class="ant-timeline ant-timeline-alternate">
+  <li class="ant-timeline-item">
+    <div class="ant-timeline-item-label">2015-09-01</div>
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Create a services site</div>
+  </li>
+  <li class="ant-timeline-item">
+    <div class="ant-timeline-item-label">2015-09-01</div>
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-green"></div>
+    <div class="ant-timeline-item-content">Solve initial network problems</div>
+  </li>
+  <li class="ant-timeline-item">
+    <div class="ant-timeline-item-label">2015-09-01</div>
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue ant-timeline-item-head-custom"><span style="font-size: 16px;">☆</span></div>
+    <div class="ant-timeline-item-content"> Technical testing </div>
+  </li>
+  <li class="ant-timeline-item">
+    <div class="ant-timeline-item-label">2015-09-01</div>
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-red"></div>
+    <div class="ant-timeline-item-content">Network problems being solved</div>
+  </li>
+  <!--v-if-->
+</ul>"
+`;
+
+exports[`Timeline demos > demo: Basic 1`] = `
+"<ul class="ant-timeline">
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Create a services site 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Solve initial network problems 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Technical testing 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Network problems being solved 2015-09-01</div>
+  </li>
+  <!--v-if-->
+</ul>"
+`;
+
+exports[`Timeline demos > demo: Color 1`] = `
+"<ul class="ant-timeline">
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Create a services site 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-green"></div>
+    <div class="ant-timeline-item-content">Solve initial network problems 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-red"></div>
+    <div class="ant-timeline-item-content">Technical testing 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-gray"></div>
+    <div class="ant-timeline-item-content">Network problems being solved 2015-09-01</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head" style="border-color: rgb(0, 204, 255); color: rgb(0, 204, 255);"></div>
+    <div class="ant-timeline-item-content">Custom color 2015-09-01</div>
+  </li>
+  <!--v-if-->
+</ul>"
+`;

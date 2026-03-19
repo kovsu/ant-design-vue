@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card > should render correctly 1`] = `
+"<div class="ant-card ant-card-bordered">
+  <!--v-if-->
+  <!--v-if-->
+  <div class="ant-card-body">Card content</div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`CardGrid > should render correctly 1`] = `"<div class="ant-card-grid ant-card-grid-hoverable">Grid content</div>"`;
+
+exports[`CardMeta > should render correctly 1`] = `
+"<div class="ant-card-meta">
+  <!--v-if-->
+  <div class="ant-card-meta-detail">
+    <div class="ant-card-meta-title">Meta Title</div>
+    <div class="ant-card-meta-description">Meta Description</div>
+  </div>
+</div>"
+`;

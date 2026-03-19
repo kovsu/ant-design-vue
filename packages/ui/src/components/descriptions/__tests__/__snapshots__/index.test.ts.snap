@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Descriptions > should render snapshot correctly 1`] = `
+"<div class="ant-descriptions ant-descriptions-bordered">
+  <div class="ant-descriptions-header">
+    <div class="ant-descriptions-title">Info</div>
+    <!--v-if-->
+  </div>
+  <div class="ant-descriptions-view">
+    <table>
+      <tbody>
+        <tr class="ant-descriptions-row">
+          <th class="ant-descriptions-item-label ant-descriptions-item-colon">Name</th>
+          <td class="ant-descriptions-item-content" colspan="1">
+            <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">John</span>
+          </td>
+          <th class="ant-descriptions-item-label ant-descriptions-item-colon">Phone</th>
+          <td class="ant-descriptions-item-content" colspan="1">
+            <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">123456</span>
+          </td>
+          <th class="ant-descriptions-item-label ant-descriptions-item-colon">Address</th>
+          <td class="ant-descriptions-item-content" colspan="1">
+            <!--
+    DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
+    The parent handles the table cell layout; this component just renders its content.
+  --><span class="ant-descriptions-item-content-inner">Some Place</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>"
+`;

@@ -1,0 +1,128 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-descriptions) {
+  @apply box-border;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ---- Header ---- */
+:where(.ant-descriptions) .ant-descriptions-header {
+  @apply flex items-center mb-5;
+}
+
+:where(.ant-descriptions) .ant-descriptions-title {
+  @apply flex-auto overflow-hidden font-semibold;
+  font-size: 16px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-descriptions) .ant-descriptions-extra {
+  @apply flex-none ml-auto pl-4;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ---- View / Table ---- */
+:where(.ant-descriptions) .ant-descriptions-view {
+  @apply w-full overflow-auto;
+}
+
+:where(.ant-descriptions) .ant-descriptions-view table {
+  @apply w-full table-fixed;
+  border-collapse: collapse;
+}
+
+/* ---- Row ---- */
+:where(.ant-descriptions) .ant-descriptions-row > th,
+:where(.ant-descriptions) .ant-descriptions-row > td {
+  @apply pb-4;
+}
+
+/* ---- Label ---- */
+:where(.ant-descriptions) .ant-descriptions-item-label {
+  @apply font-normal text-start whitespace-nowrap;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-weight: normal;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5715;
+  padding-inline-end: 16px;
+}
+
+:where(.ant-descriptions) .ant-descriptions-item-label.ant-descriptions-item-colon::after {
+  content: ':';
+  @apply relative ml-0.5;
+  margin-inline-end: 8px;
+}
+
+/* ---- Content ---- */
+:where(.ant-descriptions) .ant-descriptions-item-content {
+  @apply text-start;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5715;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ---- Bordered ---- */
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-view {
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 8px);
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-view table {
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row > th,
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row > td {
+  @apply py-3 px-6;
+  border-inline-end: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row > th:last-child,
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row > td:last-child {
+  border-inline-end: none;
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row:not(:last-child) > th,
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-row:not(:last-child) > td {
+  border-bottom: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-item-label {
+  background: var(--color-neutral-bg, #fafafa);
+  padding-inline-end: 24px;
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered .ant-descriptions-item-label.ant-descriptions-item-colon::after {
+  content: none;
+}
+
+/* ---- Middle size ---- */
+:where(.ant-descriptions).ant-descriptions-middle .ant-descriptions-row > th,
+:where(.ant-descriptions).ant-descriptions-middle .ant-descriptions-row > td {
+  @apply pb-3;
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-row > th,
+:where(.ant-descriptions).ant-descriptions-bordered.ant-descriptions-middle .ant-descriptions-row > td {
+  @apply py-2.5 px-4;
+}
+
+/* ---- Small size ---- */
+:where(.ant-descriptions).ant-descriptions-small .ant-descriptions-row > th,
+:where(.ant-descriptions).ant-descriptions-small .ant-descriptions-row > td {
+  @apply pb-2;
+}
+
+:where(.ant-descriptions).ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-row > th,
+:where(.ant-descriptions).ant-descriptions-bordered.ant-descriptions-small .ant-descriptions-row > td {
+  @apply py-2 px-3;
+}

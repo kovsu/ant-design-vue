@@ -1,0 +1,51 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-breadcrumb) {
+  @apply box-border text-sm leading-relaxed;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-breadcrumb) ol {
+  @apply flex flex-wrap m-0 p-0;
+  list-style: none;
+}
+
+/* ---- Breadcrumb item ---- */
+:where(.ant-breadcrumb) .ant-breadcrumb-item {
+  @apply inline-flex items-center;
+}
+
+/* ---- Link ---- */
+:where(.ant-breadcrumb) .ant-breadcrumb-link {
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-breadcrumb) .ant-breadcrumb-link a {
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  text-decoration: none;
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-breadcrumb) .ant-breadcrumb-link a:hover {
+  color: var(--color-accent, #1677ff);
+}
+
+/* ---- Separator ---- */
+:where(.ant-breadcrumb) .ant-breadcrumb-separator {
+  margin-inline: 8px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+/* ---- Last item: no separator, active text color ---- */
+:where(.ant-breadcrumb) .ant-breadcrumb-item:last-child .ant-breadcrumb-separator {
+  display: none;
+}
+
+:where(.ant-breadcrumb) .ant-breadcrumb-item:last-child .ant-breadcrumb-link {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-breadcrumb) .ant-breadcrumb-item:last-child .ant-breadcrumb-link a {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}

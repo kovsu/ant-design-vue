@@ -1,0 +1,138 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-collapse) {
+  @apply box-border text-sm leading-relaxed;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  background-color: var(--color-neutral-bg-container-alt, rgba(0, 0, 0, 0.02));
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-bottom: 0;
+  border-radius: var(--ant-border-radius, 8px);
+}
+
+/* ---- Panel item ---- */
+:where(.ant-collapse) .ant-collapse-item {
+  border-bottom: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-collapse) .ant-collapse-item:last-child {
+  border-radius: 0 0 var(--ant-border-radius, 8px) var(--ant-border-radius, 8px);
+}
+
+:where(.ant-collapse) .ant-collapse-item:last-child > .ant-collapse-header {
+  border-radius: 0 0 var(--ant-border-radius, 8px) var(--ant-border-radius, 8px);
+}
+
+:where(.ant-collapse) .ant-collapse-item:first-child > .ant-collapse-header {
+  border-radius: var(--ant-border-radius, 8px) var(--ant-border-radius, 8px) 0 0;
+}
+
+/* ---- Header ---- */
+:where(.ant-collapse) .ant-collapse-header {
+  @apply flex items-center cursor-pointer select-none;
+  padding: 12px 16px;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1.5715;
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-collapse) .ant-collapse-header:focus-visible {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: -2px;
+}
+
+/* ---- Arrow icon ---- */
+:where(.ant-collapse) .ant-collapse-arrow {
+  @apply flex-none inline-flex items-center;
+  margin-inline-end: 12px;
+  font-size: 12px;
+  transition: transform var(--ant-motion-duration, 0.2s);
+  transform: rotate(0deg);
+}
+
+:where(.ant-collapse) .ant-collapse-arrow svg {
+  display: block;
+}
+
+:where(.ant-collapse) .ant-collapse-arrow-active {
+  transform: rotate(90deg);
+}
+
+/* ---- Header text ---- */
+:where(.ant-collapse) .ant-collapse-header-text {
+  @apply flex-1 min-w-0;
+}
+
+/* ---- Extra ---- */
+:where(.ant-collapse) .ant-collapse-extra {
+  @apply flex-none;
+  margin-inline-start: auto;
+  padding-inline-start: 16px;
+}
+
+/* ---- Content ---- */
+:where(.ant-collapse) .ant-collapse-content {
+  border-top: 1px solid var(--color-neutral-border, #d9d9d9);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  background-color: var(--color-neutral-bg-container, #fff);
+}
+
+:where(.ant-collapse) .ant-collapse-content-box {
+  padding: 16px;
+}
+
+/* ---- No arrow ---- */
+:where(.ant-collapse) .ant-collapse-no-arrow > .ant-collapse-header {
+  padding-inline-start: 16px;
+}
+
+/* ---- Disabled ---- */
+:where(.ant-collapse) .ant-collapse-item-disabled > .ant-collapse-header {
+  @apply cursor-not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ---- Borderless ---- */
+:where(.ant-collapse).ant-collapse-borderless {
+  background-color: var(--color-neutral-bg-container-alt, rgba(0, 0, 0, 0.02));
+  border: 0;
+}
+
+:where(.ant-collapse).ant-collapse-borderless > .ant-collapse-item {
+  border-bottom: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-collapse).ant-collapse-borderless > .ant-collapse-item:last-child {
+  border-bottom: 0;
+}
+
+:where(.ant-collapse).ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+  border-top: 0;
+  background-color: transparent;
+}
+
+/* ---- Ghost ---- */
+:where(.ant-collapse).ant-collapse-ghost {
+  background-color: transparent;
+  border: 0;
+}
+
+:where(.ant-collapse).ant-collapse-ghost > .ant-collapse-item {
+  border-bottom: 0;
+}
+
+:where(.ant-collapse).ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content {
+  border-top: 0;
+  background-color: transparent;
+}
+
+/* ---- Icon position end ---- */
+:where(.ant-collapse).ant-collapse-icon-position-end .ant-collapse-header {
+  flex-direction: row;
+}
+
+:where(.ant-collapse).ant-collapse-icon-position-end .ant-collapse-arrow {
+  margin-inline-end: 0;
+  margin-inline-start: 12px;
+  order: 1;
+}

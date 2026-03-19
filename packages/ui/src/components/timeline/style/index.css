@@ -1,0 +1,183 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-timeline) {
+  @apply box-border m-0 p-0 text-sm leading-relaxed list-none;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ---- Timeline item ---- */
+:where(.ant-timeline) .ant-timeline-item {
+  @apply relative m-0 pb-5;
+  padding-inline-start: 26px;
+  list-style: none;
+}
+
+:where(.ant-timeline) .ant-timeline-item:last-child {
+  @apply pb-0;
+}
+
+/* ---- Tail (vertical line) ---- */
+:where(.ant-timeline) .ant-timeline-item-tail {
+  @apply absolute top-[10px];
+  inset-inline-start: 5px;
+  height: calc(100% - 10px);
+  border-inline-start: 2px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-timeline) .ant-timeline-item:last-child .ant-timeline-item-tail {
+  display: none;
+}
+
+/* ---- Head (dot) ---- */
+:where(.ant-timeline) .ant-timeline-item-head {
+  @apply absolute;
+  width: 12px;
+  height: 12px;
+  inset-inline-start: 0;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: var(--color-neutral-bg-container, #fff);
+}
+
+:where(.ant-timeline) .ant-timeline-item-head-blue {
+  border-color: var(--color-accent, #1677ff);
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-timeline) .ant-timeline-item-head-green {
+  border-color: var(--color-success, #52c41a);
+  color: var(--color-success, #52c41a);
+}
+
+:where(.ant-timeline) .ant-timeline-item-head-red {
+  border-color: var(--color-error, #ff4d4f);
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-timeline) .ant-timeline-item-head-gray {
+  border-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ---- Custom dot ---- */
+:where(.ant-timeline) .ant-timeline-item-head-custom {
+  @apply text-center;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  inset-inline-start: 5px;
+  top: 5px;
+  transform: translate(-50%, 0);
+  line-height: 1;
+}
+
+/* ---- Content ---- */
+:where(.ant-timeline) .ant-timeline-item-content {
+  @apply relative top-[-6px];
+  margin-inline-start: 0;
+  word-break: break-word;
+  min-height: 24px;
+}
+
+/* ---- Label (for alternate/right modes) ---- */
+:where(.ant-timeline) .ant-timeline-item-label {
+  @apply absolute top-[-6px];
+  width: calc(50% - 14px);
+  text-align: end;
+}
+
+/* ---- Pending ---- */
+:where(.ant-timeline) .ant-timeline-item-pending .ant-timeline-item-content {
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-timeline) .ant-timeline-item-head-loading {
+  @apply inline-flex items-center;
+  font-size: 14px;
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-timeline) .ant-timeline-loading-icon {
+  animation: ant-timeline-spin 1s linear infinite;
+}
+
+@keyframes ant-timeline-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---- Pending tail visible ---- */
+:where(.ant-timeline).ant-timeline-pending .ant-timeline-item:nth-last-child(2) .ant-timeline-item-tail {
+  display: block;
+  border-inline-start-style: dashed;
+}
+
+/* ---- Right mode ---- */
+:where(.ant-timeline).ant-timeline-right .ant-timeline-item {
+  padding-inline-start: 0;
+  padding-inline-end: 26px;
+}
+
+:where(.ant-timeline).ant-timeline-right .ant-timeline-item-tail {
+  inset-inline-start: auto;
+  inset-inline-end: 5px;
+}
+
+:where(.ant-timeline).ant-timeline-right .ant-timeline-item-head {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+:where(.ant-timeline).ant-timeline-right .ant-timeline-item-content {
+  text-align: end;
+}
+
+/* ---- Alternate mode ---- */
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item {
+  padding-inline-start: 0;
+}
+
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-tail {
+  inset-inline-start: 50%;
+}
+
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-head {
+  inset-inline-start: 50%;
+  margin-inline-start: -6px;
+}
+
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-content {
+  width: calc(50% - 14px);
+  margin-inline-start: calc(50% + 14px);
+  text-align: start;
+}
+
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-label {
+  inset-inline-start: 0;
+}
+
+/* Alternate right items */
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-right .ant-timeline-item-content {
+  margin-inline-start: 0;
+  text-align: end;
+  width: calc(50% - 14px);
+}
+
+:where(.ant-timeline).ant-timeline-alternate .ant-timeline-item-right .ant-timeline-item-label {
+  inset-inline-start: calc(50% + 14px);
+  text-align: start;
+  width: calc(50% - 14px);
+}
+
+/* ---- Reverse ---- */
+:where(.ant-timeline).ant-timeline-reverse {
+  @apply flex flex-col-reverse;
+}

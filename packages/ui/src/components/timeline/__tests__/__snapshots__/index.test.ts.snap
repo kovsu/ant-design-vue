@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Timeline > should render correctly 1`] = `
+"<ul class="ant-timeline">
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Event 1</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Event 2</div>
+  </li>
+  <li class="ant-timeline-item">
+    <!--v-if-->
+    <div class="ant-timeline-item-tail"></div>
+    <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+    <div class="ant-timeline-item-content">Event 3</div>
+  </li>
+  <!--v-if-->
+</ul>"
+`;
