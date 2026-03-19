@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar > should render correctly 1`] = `"<span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">U</span></span>"`;
+
+exports[`AvatarGroup > should render correctly 1`] = `"<div class="ant-avatar-group" role="group" aria-label="Avatar group"><span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">A</span></span><span class="ant-avatar ant-avatar-circle" role="img"><span class="ant-avatar-string">B</span></span></div>"`;

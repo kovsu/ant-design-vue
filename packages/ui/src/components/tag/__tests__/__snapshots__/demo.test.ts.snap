@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tag demos > demo: Basic 1`] = `
+"<div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag"><span class="ant-tag-text">Tag 1</span>
+  <!--v-if--></span><span class="ant-tag"><span>🔗</span><span class="ant-tag-text"> Link </span>
+  <!--v-if--></span><span class="ant-tag"><span class="ant-tag-text">Closable</span><button type="button" class="ant-tag-close-icon" aria-label="Remove tag"><span class="ant-tag-close-x">×</span></button></span><span class="ant-tag"><span class="ant-tag-text">Prevent Default</span><button type="button" class="ant-tag-close-icon" aria-label="Remove tag"><span class="ant-tag-close-x">×</span></button></span>
+</div>"
+`;
+
+exports[`Tag demos > demo: Checkable 1`] = `"<div style="display: flex; gap: 8px;"><span class="ant-tag ant-tag-checkable ant-tag-checkable-checked" role="checkbox" aria-checked="true" tabindex="0">Movies</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Books</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Music</span><span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Sports</span></div>"`;
+
+exports[`Tag demos > demo: Color 1`] = `
+"<div>
+  <h4 style="margin-bottom: 8px;">Preset Colors</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;"><span class="ant-tag ant-tag-magenta"><span class="ant-tag-text">magenta</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-red"><span class="ant-tag-text">red</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-volcano"><span class="ant-tag-text">volcano</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-orange"><span class="ant-tag-text">orange</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-gold"><span class="ant-tag-text">gold</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-lime"><span class="ant-tag-text">lime</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-green"><span class="ant-tag-text">green</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-cyan"><span class="ant-tag-text">cyan</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-blue"><span class="ant-tag-text">blue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-geekblue"><span class="ant-tag-text">geekblue</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-purple"><span class="ant-tag-text">purple</span>
+    <!--v-if--></span>
+  </div>
+  <h4 style="margin-bottom: 8px;">Custom Colors</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-has-color" style="background-color: rgb(255, 85, 0); border-color: rgb(255, 85, 0); color: rgb(255, 255, 255);"><span class="ant-tag-text">#f50</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(45, 183, 245); border-color: rgb(45, 183, 245); color: rgb(255, 255, 255);"><span class="ant-tag-text">#2db7f5</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(135, 208, 104); border-color: rgb(135, 208, 104); color: rgb(255, 255, 255);"><span class="ant-tag-text">#87d068</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-has-color" style="background-color: rgb(16, 142, 233); border-color: rgb(16, 142, 233); color: rgb(255, 255, 255);"><span class="ant-tag-text">#108ee9</span>
+    <!--v-if--></span>
+  </div>
+</div>"
+`;
+
+exports[`Tag demos > demo: Status 1`] = `
+"<div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-success"><span class="ant-tag-text">success</span>
+  <!--v-if--></span><span class="ant-tag ant-tag-processing"><span class="ant-tag-text">processing</span>
+  <!--v-if--></span><span class="ant-tag ant-tag-error"><span class="ant-tag-text">error</span>
+  <!--v-if--></span><span class="ant-tag ant-tag-warning"><span class="ant-tag-text">warning</span>
+  <!--v-if--></span><span class="ant-tag ant-tag-default"><span class="ant-tag-text">default</span>
+  <!--v-if--></span>
+</div>"
+`;

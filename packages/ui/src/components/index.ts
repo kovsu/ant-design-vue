@@ -26,3 +26,13 @@ export { default as Spin } from './spin'
 export { default as Skeleton } from './skeleton'
 export { SkeletonButton, SkeletonInput, SkeletonImage, SkeletonAvatar } from './skeleton'
 export { default as Progress } from './progress'
+
+// Batch 4: Data Atoms
+export { default as Tag } from './tag'
+export { CheckableTag } from './tag'
+export { default as Badge } from './badge'
+export { BadgeRibbon } from './badge'
+export { default as Avatar } from './avatar'
+export { AvatarGroup } from './avatar'
+export { default as Statistic } from './statistic'
+export { StatisticCountdown } from './statistic'

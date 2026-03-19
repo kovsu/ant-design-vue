@@ -1,0 +1,37 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-statistic) {
+  font-family: var(--ant-font-family);
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-statistic) .ant-statistic-title {
+  @apply mb-1;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-statistic) .ant-statistic-content {
+  font-size: 24px;
+  font-family: var(--ant-font-family);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-statistic) .ant-statistic-content-value {
+  @apply inline-block;
+  direction: ltr;
+}
+
+:where(.ant-statistic) .ant-statistic-content-value-decimal {
+  font-size: 16px;
+}
+
+:where(.ant-statistic) .ant-statistic-content-prefix {
+  @apply inline-block mr-1;
+}
+
+:where(.ant-statistic) .ant-statistic-content-suffix {
+  @apply inline-block ml-1;
+  font-size: 16px;
+}

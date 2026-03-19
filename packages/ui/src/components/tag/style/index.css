@@ -1,0 +1,232 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Base Tag ── */
+:where(.ant-tag) {
+  @apply inline-flex items-center px-2 py-0 text-xs leading-5 rounded;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  background: var(--color-neutral-bg-container, #fafafa);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+:where(.ant-tag-text) {
+  display: inline-block;
+}
+
+/* ── Hidden ── */
+:where(.ant-tag-hidden) {
+  display: none;
+}
+
+/* ── Borderless ── */
+:where(.ant-tag-borderless) {
+  border-color: transparent;
+}
+
+/* ── Custom color ── */
+:where(.ant-tag-has-color) {
+  border-color: transparent;
+}
+
+:where(.ant-tag-has-color) :where(.ant-tag-close-x) {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+:where(.ant-tag-has-color) :where(.ant-tag-close-icon):hover :where(.ant-tag-close-x) {
+  color: #fff;
+}
+
+/* ── Close button ── */
+:where(.ant-tag-close-icon) {
+  @apply inline-flex items-center justify-center cursor-pointer;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-inline-start: 4px;
+  font-size: 10px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+:where(.ant-tag-close-icon):hover {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-tag-close-x) {
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* ── Preset Colors ── */
+:where(.ant-tag-blue) {
+  color: #1677ff;
+  background: #e6f4ff;
+  border-color: #91caff;
+}
+
+:where(.ant-tag-green) {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+:where(.ant-tag-red) {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+:where(.ant-tag-orange) {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+:where(.ant-tag-yellow) {
+  color: #fadb14;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+:where(.ant-tag-cyan) {
+  color: #13c2c2;
+  background: #e6fffb;
+  border-color: #87e8de;
+}
+
+:where(.ant-tag-purple) {
+  color: #722ed1;
+  background: #f9f0ff;
+  border-color: #d3adf7;
+}
+
+:where(.ant-tag-magenta),
+:where(.ant-tag-pink) {
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+
+:where(.ant-tag-gold) {
+  color: #faad14;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+:where(.ant-tag-lime) {
+  color: #a0d911;
+  background: #fcffe6;
+  border-color: #eaff8f;
+}
+
+:where(.ant-tag-volcano) {
+  color: #fa541c;
+  background: #fff2e8;
+  border-color: #ffbb96;
+}
+
+:where(.ant-tag-geekblue) {
+  color: #2f54eb;
+  background: #f0f5ff;
+  border-color: #adc6ff;
+}
+
+/* ── Status Colors ── */
+:where(.ant-tag-success),
+:where(.ant-tag-processing),
+:where(.ant-tag-error),
+:where(.ant-tag-warning),
+:where(.ant-tag-default) {
+  @apply inline-flex items-center gap-1;
+  border-color: var(--color-neutral-border, #d9d9d9);
+  background: var(--color-neutral-bg-container, #fafafa);
+}
+
+:where(.ant-tag-success)::before,
+:where(.ant-tag-processing)::before,
+:where(.ant-tag-error)::before,
+:where(.ant-tag-warning)::before,
+:where(.ant-tag-default)::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+:where(.ant-tag-success) {
+  color: #52c41a;
+}
+
+:where(.ant-tag-success)::before {
+  background: #52c41a;
+}
+
+:where(.ant-tag-processing) {
+  color: #1677ff;
+}
+
+:where(.ant-tag-processing)::before {
+  background: #1677ff;
+}
+
+:where(.ant-tag-error) {
+  color: #ff4d4f;
+}
+
+:where(.ant-tag-error)::before {
+  background: #ff4d4f;
+}
+
+:where(.ant-tag-warning) {
+  color: #faad14;
+}
+
+:where(.ant-tag-warning)::before {
+  background: #faad14;
+}
+
+:where(.ant-tag-default) {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-tag-default)::before {
+  background: var(--color-neutral-border, #d9d9d9);
+}
+
+/* ── Checkable Tag ── */
+:where(.ant-tag-checkable) {
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  transition: all 0.2s;
+}
+
+:where(.ant-tag-checkable):hover {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-tag-checkable-checked) {
+  background: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+  color: #fff;
+}
+
+:where(.ant-tag-checkable-checked):hover {
+  background: var(--color-accent-hover, #4096ff);
+  border-color: var(--color-accent-hover, #4096ff);
+  color: #fff;
+}
+
+:where(.ant-tag-checkable):focus-visible {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+}

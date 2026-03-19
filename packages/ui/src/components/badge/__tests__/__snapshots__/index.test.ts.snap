@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Badge > should render correctly 1`] = `
+"<!-- Status badge (no children, dot + text) -->
+<!-- Badge with children or standalone count -->
+<span class="ant-badge"><div class="target">child</div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="5">5</sup></transition-stub></span>"
+`;
+
+exports[`Ribbon > should render correctly 1`] = `
+"<div class="ant-ribbon-wrapper">
+  <div class="content">Content</div>
+  <div class="ant-ribbon ant-ribbon-placement-end"><span class="ant-ribbon-text">Hello</span>
+    <div class="ant-ribbon-corner"></div>
+  </div>
+</div>"
+`;

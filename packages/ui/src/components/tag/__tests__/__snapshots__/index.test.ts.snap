@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CheckableTag > should render correctly 1`] = `"<span class="ant-tag ant-tag-checkable" role="checkbox" aria-checked="false" tabindex="0">Checkable</span>"`;
+
+exports[`Tag > should render correctly 1`] = `
+"<span class="ant-tag"><span class="ant-tag-text">Tag 1</span>
+<!--v-if--></span>"
+`;

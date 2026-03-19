@@ -1,0 +1,226 @@
+@reference '../../../style/tailwind.css';
+
+/* Badge base */
+:where(.ant-badge) {
+  @apply relative inline-flex;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-badge).ant-badge-not-a-wrapper .ant-badge-count {
+  position: relative;
+  top: auto;
+  display: block;
+  transform: none;
+}
+
+/* Count badge */
+:where(.ant-badge) .ant-badge-count {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  z-index: auto;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  background: var(--color-error, #ff4d4f);
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #fff;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0%;
+}
+
+:where(.ant-badge) .ant-badge-count-sm {
+  min-width: 14px;
+  height: 14px;
+  padding: 0;
+  font-size: 10px;
+  line-height: 14px;
+  border-radius: 7px;
+}
+
+:where(.ant-badge) .ant-badge-multiple-words {
+  padding: 0 8px;
+}
+
+/* Dot badge */
+:where(.ant-badge) .ant-badge-dot {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  z-index: auto;
+  width: 6px;
+  min-width: 6px;
+  height: 6px;
+  background: var(--color-error, #ff4d4f);
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px #fff;
+  transform: translate(50%, -50%);
+  transform-origin: 100% 0%;
+}
+
+/* Status badge */
+:where(.ant-badge).ant-badge-status {
+  @apply inline-flex items-center leading-normal;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+:where(.ant-badge) .ant-badge-status-dot {
+  @apply relative inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: -1px;
+}
+
+:where(.ant-badge) .ant-badge-status-text {
+  @apply ml-2;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-size: var(--ant-font-size, 14px);
+}
+
+/* Status colors */
+:where(.ant-badge) .ant-badge-status-success,
+:where(.ant-badge) .ant-badge-status-success.ant-badge-dot {
+  background: var(--color-success, #52c41a);
+}
+
+:where(.ant-badge) .ant-badge-status-processing {
+  position: relative;
+  background: var(--color-accent, #1677ff);
+}
+
+:where(.ant-badge) .ant-badge-status-processing::after {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-accent, #1677ff);
+  border-radius: 50%;
+  animation: ant-badge-status-processing 1.2s infinite ease-in-out;
+  content: '';
+}
+
+:where(.ant-badge) .ant-badge-status-error,
+:where(.ant-badge) .ant-badge-status-error.ant-badge-dot {
+  background: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-badge) .ant-badge-status-default,
+:where(.ant-badge) .ant-badge-status-default.ant-badge-dot {
+  background: var(--color-neutral-disabled, #d9d9d9);
+}
+
+:where(.ant-badge) .ant-badge-status-warning,
+:where(.ant-badge) .ant-badge-status-warning.ant-badge-dot {
+  background: var(--color-warning, #faad14);
+}
+
+@keyframes ant-badge-status-processing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* Preset badge colors */
+:where(.ant-badge) .ant-badge-color-blue { background: var(--color-accent, #1677ff); }
+:where(.ant-badge) .ant-badge-color-green { background: var(--color-success, #52c41a); }
+:where(.ant-badge) .ant-badge-color-red { background: var(--color-error, #ff4d4f); }
+:where(.ant-badge) .ant-badge-color-cyan { background: #13c2c2; }
+:where(.ant-badge) .ant-badge-color-purple { background: #722ed1; }
+:where(.ant-badge) .ant-badge-color-pink,
+:where(.ant-badge) .ant-badge-color-magenta { background: #eb2f96; }
+:where(.ant-badge) .ant-badge-color-orange { background: #fa8c16; }
+:where(.ant-badge) .ant-badge-color-yellow { background: #fadb14; }
+:where(.ant-badge) .ant-badge-color-volcano { background: #fa541c; }
+:where(.ant-badge) .ant-badge-color-geekblue { background: #2f54eb; }
+:where(.ant-badge) .ant-badge-color-lime { background: #a0d911; }
+:where(.ant-badge) .ant-badge-color-gold { background: #faad14; }
+
+/* Zoom animation */
+.ant-badge-zoom-enter-active,
+.ant-badge-zoom-leave-active {
+  transition: all 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  animation-fill-mode: both;
+}
+
+.ant-badge-zoom-enter-from,
+.ant-badge-zoom-leave-to {
+  transform: translate(50%, -50%) scale(0);
+  opacity: 0;
+}
+
+/* ---- Ribbon ---- */
+:where(.ant-ribbon-wrapper) {
+  @apply relative;
+}
+
+:where(.ant-ribbon) {
+  @apply absolute top-2;
+  padding: 0 8px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 22px;
+  white-space: nowrap;
+  color: #fff;
+  background: var(--color-accent, #1677ff);
+  border-radius: var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-ribbon).ant-ribbon-placement-end {
+  right: -8px;
+  border-radius: var(--ant-border-radius-sm, 4px) 0 0 var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-ribbon).ant-ribbon-placement-start {
+  left: -8px;
+  border-radius: 0 var(--ant-border-radius-sm, 4px) var(--ant-border-radius-sm, 4px) 0;
+}
+
+:where(.ant-ribbon) .ant-ribbon-corner {
+  position: absolute;
+  bottom: 0;
+  height: 8px;
+  color: currentColor;
+  border: 4px solid;
+  transform: scaleY(0.75);
+  transform-origin: top;
+}
+
+:where(.ant-ribbon).ant-ribbon-placement-end .ant-ribbon-corner {
+  right: 0;
+  border-color: currentColor transparent transparent currentColor;
+}
+
+:where(.ant-ribbon).ant-ribbon-placement-start .ant-ribbon-corner {
+  left: 0;
+  border-color: currentColor currentColor transparent transparent;
+}
+
+/* Ribbon preset colors */
+:where(.ant-ribbon).ant-ribbon-color-blue { background: var(--color-accent, #1677ff); }
+:where(.ant-ribbon).ant-ribbon-color-green { background: var(--color-success, #52c41a); }
+:where(.ant-ribbon).ant-ribbon-color-red { background: var(--color-error, #ff4d4f); }
+:where(.ant-ribbon).ant-ribbon-color-cyan { background: #13c2c2; }
+:where(.ant-ribbon).ant-ribbon-color-purple { background: #722ed1; }
+:where(.ant-ribbon).ant-ribbon-color-pink,
+:where(.ant-ribbon).ant-ribbon-color-magenta { background: #eb2f96; }
+:where(.ant-ribbon).ant-ribbon-color-orange { background: #fa8c16; }
+:where(.ant-ribbon).ant-ribbon-color-yellow { background: #fadb14; }
+:where(.ant-ribbon).ant-ribbon-color-volcano { background: #fa541c; }
+:where(.ant-ribbon).ant-ribbon-color-geekblue { background: #2f54eb; }
+:where(.ant-ribbon).ant-ribbon-color-lime { background: #a0d911; }
+:where(.ant-ribbon).ant-ribbon-color-gold { background: #faad14; }

@@ -1,0 +1,76 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-avatar) {
+  @apply relative inline-flex items-center justify-center overflow-hidden;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  background: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+}
+
+:where(.ant-avatar).ant-avatar-square {
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+/* Size */
+:where(.ant-avatar).ant-avatar-lg {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+:where(.ant-avatar).ant-avatar-sm {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+/* Image */
+:where(.ant-avatar).ant-avatar-image {
+  background: transparent;
+}
+
+:where(.ant-avatar) img {
+  @apply block w-full h-full;
+  object-fit: cover;
+}
+
+/* Text string */
+:where(.ant-avatar) .ant-avatar-string {
+  @apply absolute left-1/2;
+  transform-origin: 0 center;
+}
+
+/* Icon */
+:where(.ant-avatar).ant-avatar-icon {
+  font-size: 18px;
+}
+
+:where(.ant-avatar).ant-avatar-icon.ant-avatar-sm {
+  font-size: 14px;
+}
+
+:where(.ant-avatar).ant-avatar-icon.ant-avatar-lg {
+  font-size: 24px;
+}
+
+/* Avatar Group */
+:where(.ant-avatar-group) {
+  @apply inline-flex;
+}
+
+:where(.ant-avatar-group) .ant-avatar {
+  border: 2px solid #fff;
+}
+
+:where(.ant-avatar-group) .ant-avatar:not(:first-child) {
+  margin-inline-start: -8px;
+}
