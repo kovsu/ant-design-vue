@@ -32,6 +32,7 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 | A11y pass | ARIA roles, keyboard, screen reader support across all Batch 0–3 components | [x] |
 | Batch 4 | Tag+CheckableTag, Badge+Ribbon, Avatar+AvatarGroup, Statistic+Countdown | [x] |
 | Batch 5 | Card+Meta+Grid, Collapse+Panel, Descriptions+Item, Timeline+Item, Steps+Step, Breadcrumb+Item | [x] |
+| Batch 6 | Input+TextArea+Password+Search, InputNumber, Checkbox+Group, Radio+Group+Button, Switch, Rate, Slider | [x] |
 
 ### ~~Batch 2: Typography~~ (done)
 > 文本组件家族，互相共享 ellipsis/copyable/editable 逻辑
