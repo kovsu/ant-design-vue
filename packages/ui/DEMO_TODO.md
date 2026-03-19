@@ -2,9 +2,9 @@
 
 Missing demos compared to old ant-design-vue. Categorized by blocking dependency.
 
-## Can Add Now (no missing dependencies)
+## ~~Can Add Now~~ — DONE
 
-These demos only use components already refactored. Should be added ASAP.
+All ~60 demos that only depend on already-refactored components have been added.
 
 | Component | Demo | Feature |
 |-----------|------|---------|
