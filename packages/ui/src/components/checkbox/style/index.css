@@ -1,0 +1,133 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Checkbox Wrapper ── */
+:where(.ant-checkbox-wrapper) {
+  @apply inline-flex items-center cursor-pointer;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+:where(.ant-checkbox-wrapper) + :where(.ant-checkbox-wrapper) {
+  margin-inline-start: 8px;
+}
+
+:where(.ant-checkbox-wrapper-disabled) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Checkbox ── */
+:where(.ant-checkbox) {
+  @apply relative inline-block leading-none;
+  top: 0;
+  box-sizing: border-box;
+}
+
+/* Hidden native input — covers full area for click target */
+:where(.ant-checkbox-input) {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+:where(.ant-checkbox-disabled) :where(.ant-checkbox-input) {
+  cursor: not-allowed;
+}
+
+/* ── Custom Checkbox Inner (the visual box) ── */
+:where(.ant-checkbox-inner) {
+  @apply relative block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius-sm, 4px);
+  background-color: #fff;
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-checkbox-inner)::after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 50%;
+  inset-inline-start: 21.5%;
+  width: 5.71px;
+  height: 9.14px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-inline-start: 0;
+  transform: rotate(45deg) scale(0) translate(-50%, -50%);
+  transition: all var(--ant-motion-duration, 0.2s) cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+/* ── Checked State ── */
+:where(.ant-checkbox-checked) :where(.ant-checkbox-inner) {
+  background-color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-checkbox-checked) :where(.ant-checkbox-inner)::after {
+  display: block;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+}
+
+/* ── Indeterminate State ── */
+:where(.ant-checkbox-indeterminate) :where(.ant-checkbox-inner)::after {
+  display: block;
+  top: 50%;
+  inset-inline-start: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent, #1677ff);
+  border: 0;
+  border-radius: 1px;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ── Disabled State ── */
+:where(.ant-checkbox-disabled) :where(.ant-checkbox-inner) {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-checkbox-disabled.ant-checkbox-checked) :where(.ant-checkbox-inner) {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-checkbox-disabled.ant-checkbox-checked) :where(.ant-checkbox-inner)::after {
+  border-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-checkbox-disabled.ant-checkbox-indeterminate) :where(.ant-checkbox-inner)::after {
+  background-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Hover State ── */
+:where(.ant-checkbox-wrapper):not(.ant-checkbox-wrapper-disabled):hover
+  :where(.ant-checkbox-inner) {
+  border-color: var(--color-accent, #1677ff);
+}
+
+/* ── Focus State ── */
+:where(.ant-checkbox-input):focus-visible + :where(.ant-checkbox-inner) {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+}
+
+/* ── Label ── */
+:where(.ant-checkbox-label) {
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+}
+
+/* ── Checkbox Group ── */
+:where(.ant-checkbox-group) {
+  @apply inline-flex flex-wrap;
+  gap: 0;
+}

@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input demos > demo: Addon 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper --><span class="ant-input-group-wrapper"><span class="ant-input-wrapper ant-input-group"><span class="ant-input-group-addon">https://</span><!-- affix wrapper inside addon -->
+  <!-- plain input inside addon --><input class="" type="text" placeholder="mysite" value=""><span class="ant-input-group-addon">.com</span></span></span><!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><span class="ant-input-prefix">$</span><input class="ant-input" type="text" placeholder="Enter amount" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if-->USD</span></span><!-- With addon wrapper --><span class="ant-input-group-wrapper"><span class="ant-input-wrapper ant-input-group"><span class="ant-input-group-addon">Site</span><!-- affix wrapper inside addon --><span class="ant-input-affix-wrapper"><span class="ant-input-prefix">@</span><input class="ant-input" type="text" placeholder="With prefix and addon" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--></span></span>
+  <!--v-if--></span></span>
+</div>"
+`;
+
+exports[`Input demos > demo: AllowClear 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="text" placeholder="Type and clear" value="Clearable text"><span class="ant-input-suffix"><button type="button" class="ant-input-clear-icon" aria-label="Clear input"><span class="ant-input-clear-icon-inner">×</span></button>
+  <!--v-if--></span></span><!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><span class="ant-input-prefix">$</span><input class="ant-input" type="text" placeholder="With prefix and clear" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--></span></span>
+</div>"
+`;
+
+exports[`Input demos > demo: Basic 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input" type="text" placeholder="Basic usage" value=""><!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input" type="text" value="With initial value">
+</div>"
+`;
+
+exports[`Input demos > demo: PasswordDemo 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <div class="ant-input-password">
+    <!-- With addon wrapper -->
+    <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="password" placeholder="Enter password" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--><button type="button" class="ant-input-password-icon" aria-label="Show password" tabindex="-1"><span class="ant-input-password-icon-hidden">○</span></button></span></span>
+  </div>
+  <div class="ant-input-password">
+    <!-- With addon wrapper -->
+    <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="password" placeholder="No toggle" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--></span></span>
+  </div>
+</div>"
+`;
+
+exports[`Input demos > demo: SearchDemo 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <div class="ant-input-search">
+    <!-- With addon wrapper -->
+    <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="text" placeholder="Search..." value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--><button type="button" class="ant-input-search-icon" tabindex="-1" aria-label="Search"><span>🔍</span></button></span></span>
+  </div>
+  <div class="ant-input-search ant-input-search-with-button">
+    <!-- With addon wrapper --><span class="ant-input-group-wrapper"><span class="ant-input-wrapper ant-input-group"><!--v-if--><!-- affix wrapper inside addon --><!-- plain input inside addon --><input class="" type="text" placeholder="With button" value=""><span class="ant-input-group-addon"><button type="button" class="ant-input-search-button"><span>Search</span></button></span></span></span>
+  </div>
+  <div class="ant-input-search ant-input-search-with-button">
+    <!-- With addon wrapper --><span class="ant-input-group-wrapper"><span class="ant-input-wrapper ant-input-group"><!--v-if--><!-- affix wrapper inside addon --><!-- plain input inside addon --><input class="" type="text" placeholder="Custom button text" value=""><span class="ant-input-group-addon"><button type="button" class="ant-input-search-button"><span>Go</span></button></span></span></span>
+  </div>
+  <div class="ant-input-search ant-input-search-with-button">
+    <!-- With addon wrapper --><span class="ant-input-group-wrapper"><span class="ant-input-wrapper ant-input-group"><!--v-if--><!-- affix wrapper inside addon --><!-- plain input inside addon --><input class="" type="text" placeholder="Loading" value=""><span class="ant-input-group-addon"><button type="button" class="ant-input-search-button ant-input-search-button-loading"><span class="ant-input-search-loading">⌛</span></button></span></span></span>
+  </div>
+</div>"
+`;
+
+exports[`Input demos > demo: ShowCount 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="text" placeholder="With count" maxlength="20" value=""><span class="ant-input-suffix"><!--v-if--><span class="ant-input-show-count-suffix">0 / 20</span></span></span><!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="text" placeholder="Count without max" value=""><span class="ant-input-suffix"><!--v-if--><span class="ant-input-show-count-suffix">0</span></span></span><span class="ant-input-textarea ant-input-textarea-show-count" data-count="0 / 200"><textarea class="ant-input" placeholder="TextArea with count" rows="4" maxlength="200" value=""></textarea><span class="ant-input-textarea-suffix"><span class="ant-input-show-count-suffix">0 / 200</span></span></span>
+</div>"
+`;
+
+exports[`Input demos > demo: Size 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input ant-input-sm" type="text" placeholder="Small" value=""><!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input" type="text" placeholder="Middle (default)" value=""><!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input ant-input-lg" type="text" placeholder="Large" value="">
+</div>"
+`;
+
+exports[`Input demos > demo: Status 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
+  <!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input ant-input-status-error" type="text" placeholder="Error status" value=""><!-- With addon wrapper -->
+  <!-- Plain input --><input class="ant-input ant-input-status-warning" type="text" placeholder="Warning status" value=""><!-- With addon wrapper -->
+  <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper ant-input-affix-wrapper-status-error"><span class="ant-input-prefix">!</span><input class="ant-input" type="text" placeholder="Error with prefix" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--></span></span>
+</div>"
+`;
+
+exports[`Input demos > demo: Textarea 1`] = `"<div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;"><span class="ant-input-textarea"><textarea class="ant-input" placeholder="Basic textarea" rows="4" value=""></textarea><!--v-if--></span><span class="ant-input-textarea"><textarea class="ant-input" placeholder="Auto-resize textarea" value=""></textarea><!--v-if--></span><span class="ant-input-textarea ant-input-textarea-show-count" data-count="0 / 100"><textarea class="ant-input" placeholder="With count" maxlength="100" value=""></textarea><span class="ant-input-textarea-suffix"><span class="ant-input-show-count-suffix">0 / 100</span></span></span></div>"`;

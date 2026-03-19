@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Slider > should render snapshot correctly 1`] = `
+"<div class="ant-slider">
+  <div class="ant-slider-rail"></div>
+  <div class="ant-slider-track" style="left: 0%; width: 50%;"></div><!-- Steps/dots -->
+  <!--v-if-->
+  <!-- Marks -->
+  <!--v-if-->
+  <!-- Handle(s) -->
+  <div class="ant-slider-handle" style="left: 50%;" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"></div>
+</div>"
+`;

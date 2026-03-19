@@ -1,0 +1,224 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Rate demos > demo: Basic 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <ul class="ant-rate" role="radiogroup" tabindex="0">
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+  </ul>
+  <ul class="ant-rate" role="radiogroup" tabindex="0">
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="1" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="2" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="3" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">★</div>
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`Rate demos > demo: Character 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <ul class="ant-rate" role="radiogroup" tabindex="0">
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">A</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">A</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">A</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">A</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">A</div>
+    </li>
+  </ul>
+  <ul class="ant-rate" role="radiogroup" tabindex="0">
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">♥</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">♥</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">♥</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">♥</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">♥</div>
+    </li>
+  </ul>
+  <ul class="ant-rate" role="radiogroup" tabindex="0">
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">😀</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">😀</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">😀</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">😀</div>
+    </li>
+    <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+      <!--v-if-->
+      <div class="ant-rate-star-second">😀</div>
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`Rate demos > demo: Clear 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <div><span>allowClear: true (default) — click same star to clear</span><br>
+    <ul class="ant-rate" role="radiogroup" tabindex="0">
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+    </ul>
+  </div>
+  <div><span>allowClear: false</span><br>
+    <ul class="ant-rate" role="radiogroup" tabindex="0">
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+      <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+        <!--v-if-->
+        <div class="ant-rate-star-second">★</div>
+      </li>
+    </ul>
+  </div>
+</div>"
+`;
+
+exports[`Rate demos > demo: Disabled 1`] = `
+"<ul class="ant-rate ant-rate-disabled" role="radiogroup" tabindex="-1">
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+</ul>"
+`;
+
+exports[`Rate demos > demo: Half 1`] = `
+"<ul class="ant-rate" role="radiogroup" tabindex="0">
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+    <div class="ant-rate-star-first">★</div>
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+    <div class="ant-rate-star-first">★</div>
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-half" role="radio" aria-checked="false" aria-posinset="3" aria-setsize="5">
+    <div class="ant-rate-star-first">★</div>
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+    <div class="ant-rate-star-first">★</div>
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+    <div class="ant-rate-star-first">★</div>
+    <div class="ant-rate-star-second">★</div>
+  </li>
+</ul>"
+`;

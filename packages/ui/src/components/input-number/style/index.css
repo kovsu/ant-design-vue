@@ -1,0 +1,245 @@
+@reference '../../../style/tailwind.css';
+
+/* ==============================
+   InputNumber — Base
+   ============================== */
+
+:where(.ant-input-number) {
+  @apply inline-flex items-center relative;
+  @apply box-border bg-white text-neutral;
+  @apply border border-solid border-neutral-border rounded-md;
+  @apply text-sm leading-normal;
+  @apply transition-all;
+  transition-duration: var(--ant-motion-duration);
+  font-family: var(--ant-font-family);
+  width: 90px;
+
+  &:hover {
+    @apply border-accent-hover;
+  }
+
+  &:hover .ant-input-number-handler-wrap {
+    @apply opacity-100;
+  }
+}
+
+:where(.ant-input-number-focused) {
+  @apply border-accent;
+  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb, 22 119 255) / 0.1);
+}
+
+/* ==============================
+   Input element
+   ============================== */
+
+:where(.ant-input-number-input-wrap) {
+  @apply flex-1 min-w-0;
+}
+
+:where(.ant-input-number-input) {
+  @apply w-full bg-transparent border-none outline-none;
+  @apply px-3 py-1 text-sm text-neutral;
+
+  &::placeholder {
+    @apply text-neutral-disabled;
+  }
+}
+
+/* ==============================
+   Prefix
+   ============================== */
+
+:where(.ant-input-number-prefix) {
+  @apply flex items-center pl-3 text-neutral-secondary;
+}
+
+/* ==============================
+   Handler (up/down buttons)
+   ============================== */
+
+:where(.ant-input-number-handler-wrap) {
+  @apply flex flex-col absolute right-0 top-0 bottom-0;
+  @apply border-l border-solid border-neutral-border;
+  @apply opacity-0 transition-opacity;
+  transition-duration: var(--ant-motion-duration);
+  width: 22px;
+  border-radius: 0 var(--ant-border-radius, 6px) var(--ant-border-radius, 6px) 0;
+  overflow: hidden;
+}
+
+:where(.ant-input-number-handler) {
+  @apply flex items-center justify-center cursor-pointer;
+  @apply border-none bg-transparent text-neutral-secondary;
+  @apply transition-colors;
+  transition-duration: var(--ant-motion-duration);
+  flex: 1;
+  padding: 0;
+  font-size: 10px;
+  line-height: 1;
+
+  &:hover {
+    @apply text-accent bg-neutral-disabled-bg;
+  }
+}
+
+:where(.ant-input-number-handler-up) {
+  @apply border-b border-solid border-neutral-border;
+  border-radius: 0 var(--ant-border-radius, 6px) 0 0;
+}
+
+:where(.ant-input-number-handler-down) {
+  border-radius: 0 0 var(--ant-border-radius, 6px) 0;
+}
+
+:where(.ant-input-number-handler-disabled) {
+  @apply cursor-not-allowed text-neutral-disabled;
+
+  &:hover {
+    @apply text-neutral-disabled bg-transparent;
+  }
+}
+
+:where(.ant-input-number-handler-up-inner),
+:where(.ant-input-number-handler-down-inner) {
+  @apply select-none;
+  font-size: 8px;
+}
+
+/* ==============================
+   Sizes
+   ============================== */
+
+:where(.ant-input-number-sm) {
+  border-radius: var(--ant-border-radius-sm, 4px);
+
+  .ant-input-number-input {
+    @apply px-2 py-0 text-xs;
+  }
+}
+
+:where(.ant-input-number-lg) {
+  border-radius: var(--ant-border-radius-lg, 8px);
+
+  .ant-input-number-input {
+    @apply px-3 py-2 text-base;
+  }
+}
+
+/* ==============================
+   Disabled
+   ============================== */
+
+:where(.ant-input-number-disabled) {
+  @apply bg-neutral-disabled-bg text-neutral-disabled cursor-not-allowed;
+  @apply border-neutral-border;
+
+  .ant-input-number-input {
+    @apply cursor-not-allowed text-neutral-disabled;
+  }
+
+  .ant-input-number-handler-wrap {
+    @apply hidden;
+  }
+}
+
+/* ==============================
+   Readonly
+   ============================== */
+
+:where(.ant-input-number-readonly) {
+  .ant-input-number-handler-wrap {
+    @apply hidden;
+  }
+}
+
+/* ==============================
+   Borderless
+   ============================== */
+
+:where(.ant-input-number-borderless) {
+  @apply border-transparent shadow-none;
+
+  &:hover {
+    @apply border-transparent;
+  }
+
+  .ant-input-number-handler-wrap {
+    @apply border-l-0;
+  }
+}
+
+:where(.ant-input-number-focused.ant-input-number-borderless) {
+  @apply border-transparent shadow-none;
+}
+
+/* ==============================
+   Status
+   ============================== */
+
+:where(.ant-input-number-status-error) {
+  @apply border-error;
+
+  &:hover {
+    @apply border-error;
+  }
+}
+
+:where(.ant-input-number-focused.ant-input-number-status-error) {
+  @apply border-error;
+  box-shadow: 0 0 0 2px rgba(var(--color-error-rgb, 255 77 79) / 0.1);
+}
+
+:where(.ant-input-number-status-warning) {
+  @apply border-warning;
+
+  &:hover {
+    @apply border-warning;
+  }
+}
+
+:where(.ant-input-number-focused.ant-input-number-status-warning) {
+  @apply border-warning;
+  box-shadow: 0 0 0 2px rgba(var(--color-warning-rgb, 255 169 64) / 0.1);
+}
+
+/* ==============================
+   Group / Addon
+   ============================== */
+
+:where(.ant-input-number-group-wrapper) {
+  @apply inline-flex;
+}
+
+:where(.ant-input-number-wrapper.ant-input-number-group) {
+  @apply flex items-stretch;
+}
+
+:where(.ant-input-number-group-addon) {
+  @apply flex items-center;
+  @apply bg-neutral-disabled-bg text-neutral;
+  @apply border border-solid border-neutral-border;
+  @apply px-3 py-1 text-sm;
+  @apply whitespace-nowrap;
+
+  &:first-child {
+    @apply rounded-l-md border-r-0;
+  }
+
+  &:last-child {
+    @apply rounded-r-md border-l-0;
+  }
+}
+
+:where(.ant-input-number-group) {
+  > .ant-input-number {
+    @apply rounded-none flex-1;
+  }
+
+  > .ant-input-number:first-child {
+    @apply rounded-l-md;
+  }
+
+  > .ant-input-number:last-child {
+    @apply rounded-r-md;
+  }
+}

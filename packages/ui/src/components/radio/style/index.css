@@ -1,0 +1,230 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Radio Wrapper ── */
+:where(.ant-radio-wrapper) {
+  @apply inline-flex items-center cursor-pointer;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+:where(.ant-radio-wrapper) + :where(.ant-radio-wrapper) {
+  margin-inline-start: 8px;
+}
+
+:where(.ant-radio-wrapper-disabled) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Radio ── */
+:where(.ant-radio) {
+  @apply relative inline-block leading-none;
+  box-sizing: border-box;
+}
+
+/* Hidden native input */
+:where(.ant-radio-input) {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+:where(.ant-radio-disabled) :where(.ant-radio-input) {
+  cursor: not-allowed;
+}
+
+/* ── Custom Radio Inner (the visual circle) ── */
+:where(.ant-radio-inner) {
+  @apply relative block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-radio-inner)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 50%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-accent, #1677ff);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: all var(--ant-motion-duration, 0.2s) cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+/* ── Checked State ── */
+:where(.ant-radio-checked) :where(.ant-radio-inner) {
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-radio-checked) :where(.ant-radio-inner)::after {
+  transform: translate(-50%, -50%) scale(0.375);
+  opacity: 1;
+}
+
+/* ── Disabled State ── */
+:where(.ant-radio-disabled) :where(.ant-radio-inner) {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-radio-disabled.ant-radio-checked) :where(.ant-radio-inner)::after {
+  background-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Hover State ── */
+:where(.ant-radio-wrapper):not(.ant-radio-wrapper-disabled):hover :where(.ant-radio-inner) {
+  border-color: var(--color-accent, #1677ff);
+}
+
+/* ── Focus State ── */
+:where(.ant-radio-input):focus-visible + :where(.ant-radio-inner) {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+}
+
+/* ── Label ── */
+:where(.ant-radio-label) {
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+}
+
+/* ── Radio Group ── */
+:where(.ant-radio-group) {
+  @apply inline-flex flex-wrap items-center;
+  font-size: var(--ant-font-size, 14px);
+}
+
+/* ══════════════════════════════════════════════════
+   Radio Button Style
+   ══════════════════════════════════════════════════ */
+
+/* ── Button Wrapper ── */
+:where(.ant-radio-button-wrapper) {
+  @apply relative inline-flex items-center justify-center cursor-pointer;
+  height: 32px;
+  padding: 0 15px;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 30px;
+  background: #fff;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-inline-start-width: 0;
+  transition: color var(--ant-motion-duration, 0.2s),
+    background var(--ant-motion-duration, 0.2s),
+    border-color var(--ant-motion-duration, 0.2s);
+  box-sizing: border-box;
+}
+
+:where(.ant-radio-button-wrapper):first-child {
+  border-inline-start-width: 1px;
+  border-start-start-radius: var(--ant-border-radius, 6px);
+  border-end-start-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-radio-button-wrapper):last-child {
+  border-start-end-radius: var(--ant-border-radius, 6px);
+  border-end-end-radius: var(--ant-border-radius, 6px);
+}
+
+/* Hidden native input */
+:where(.ant-radio-button-input) {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:where(.ant-radio-button-wrapper-disabled) :where(.ant-radio-button-input) {
+  cursor: not-allowed;
+}
+
+/* ── Button Checked — Outline Style (default) ── */
+:where(.ant-radio-button-wrapper-checked) {
+  color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+  z-index: 1;
+}
+
+:where(.ant-radio-button-wrapper-checked)::before {
+  content: '';
+  position: absolute;
+  inset-block-start: -1px;
+  inset-inline-start: -1px;
+  width: 1px;
+  height: calc(100% + 2px);
+  background-color: var(--color-accent, #1677ff);
+}
+
+/* ── Button Checked — Solid Style ── */
+:where(.ant-radio-group-solid) :where(.ant-radio-button-wrapper-checked) {
+  color: #fff;
+  background: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-radio-group-solid) :where(.ant-radio-button-wrapper-checked):hover {
+  background: var(--color-accent-hover, #4096ff);
+  border-color: var(--color-accent-hover, #4096ff);
+}
+
+/* ── Button Hover ── */
+:where(.ant-radio-button-wrapper):not(
+    .ant-radio-button-wrapper-disabled,
+    .ant-radio-button-wrapper-checked
+  ):hover {
+  color: var(--color-accent, #1677ff);
+}
+
+/* ── Button Disabled ── */
+:where(.ant-radio-button-wrapper-disabled) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-radio-group-solid) :where(.ant-radio-button-wrapper-disabled.ant-radio-button-wrapper-checked) {
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+/* ── Focus State ── */
+:where(.ant-radio-button-input):focus-visible + :where(.ant-radio-button-inner) {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: -2px;
+}
+
+:where(.ant-radio-button-wrapper):has(:where(.ant-radio-button-input):focus-visible) {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+}
+
+/* ── Size Variants ── */
+:where(.ant-radio-group-large) :where(.ant-radio-button-wrapper) {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 38px;
+}
+
+:where(.ant-radio-group-small) :where(.ant-radio-button-wrapper) {
+  height: 24px;
+  padding: 0 7px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 22px;
+}

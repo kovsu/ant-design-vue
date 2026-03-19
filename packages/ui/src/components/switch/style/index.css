@@ -1,0 +1,157 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Switch ── */
+:where(.ant-switch) {
+  @apply relative inline-flex items-center;
+  min-width: 44px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  outline: none;
+  transition: background-color var(--ant-motion-duration, 0.2s);
+  box-sizing: border-box;
+  appearance: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+:where(.ant-switch):focus-visible {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+}
+
+/* ── Checked State ── */
+:where(.ant-switch-checked) {
+  background-color: var(--color-accent, #1677ff);
+}
+
+/* ── Handle (the circle knob) ── */
+:where(.ant-switch-handle) {
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 18px;
+  height: 18px;
+  transition: all var(--ant-motion-duration, 0.2s) ease-in-out;
+}
+
+:where(.ant-switch-handle)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 35, 11, 0.2);
+  transition: all var(--ant-motion-duration, 0.2s) ease-in-out;
+}
+
+:where(.ant-switch-checked) :where(.ant-switch-handle) {
+  inset-inline-start: calc(100% - 20px);
+}
+
+/* ── Inner (text content area) ── */
+:where(.ant-switch-inner) {
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+  color: #fff;
+  line-height: 22px;
+}
+
+:where(.ant-switch-inner-checked) {
+  margin-inline-start: 9px;
+  margin-inline-end: 24px;
+}
+
+:where(.ant-switch-inner-unchecked) {
+  margin-inline-start: 24px;
+  margin-inline-end: 9px;
+}
+
+/* ── Disabled State ── */
+:where(.ant-switch-disabled),
+:where(.ant-switch)[disabled] {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* ── Loading ── */
+:where(.ant-switch-loading) {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+:where(.ant-switch-loading-icon) {
+  @apply absolute inset-0 flex items-center justify-center;
+  color: var(--color-accent, #1677ff);
+  font-size: 12px;
+  line-height: 1;
+}
+
+:where(.ant-switch-checked) :where(.ant-switch-loading-icon) {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-switch):not(.ant-switch-checked) :where(.ant-switch-loading-icon) {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+:where(.ant-switch-loading-svg) {
+  animation: ant-switch-loading-spin 1s linear infinite;
+}
+
+@keyframes ant-switch-loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Small Size ── */
+:where(.ant-switch-small) {
+  min-width: 28px;
+  height: 16px;
+}
+
+:where(.ant-switch-small) :where(.ant-switch-handle) {
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+:where(.ant-switch-small) :where(.ant-switch-handle)::before {
+  width: 12px;
+  height: 12px;
+}
+
+:where(.ant-switch-small.ant-switch-checked) :where(.ant-switch-handle) {
+  inset-inline-start: calc(100% - 14px);
+}
+
+:where(.ant-switch-small) :where(.ant-switch-inner) {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+:where(.ant-switch-small) :where(.ant-switch-inner-checked) {
+  margin-inline-start: 6px;
+  margin-inline-end: 18px;
+}
+
+:where(.ant-switch-small) :where(.ant-switch-inner-unchecked) {
+  margin-inline-start: 18px;
+  margin-inline-end: 6px;
+}
+
+:where(.ant-switch-small) :where(.ant-switch-loading-icon) {
+  font-size: 9px;
+}

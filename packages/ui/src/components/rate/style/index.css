@@ -1,0 +1,67 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-rate) {
+  @apply m-0 p-0 list-none inline-flex;
+  font-size: 20px;
+  line-height: unset;
+  color: #fadb14;
+  outline: none;
+}
+
+:where(.ant-rate) .ant-rate-star {
+  @apply relative inline-block cursor-pointer;
+  margin-inline-end: 8px;
+}
+
+:where(.ant-rate) .ant-rate-star:last-child {
+  margin-inline-end: 0;
+}
+
+:where(.ant-rate) .ant-rate-star-first,
+:where(.ant-rate) .ant-rate-star-second {
+  color: var(--color-neutral-border, #d9d9d9);
+  transition: all 0.3s;
+  user-select: none;
+}
+
+:where(.ant-rate) .ant-rate-star-first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+:where(.ant-rate) .ant-rate-star-half .ant-rate-star-first,
+:where(.ant-rate) .ant-rate-star-full .ant-rate-star-first {
+  opacity: 1;
+}
+
+:where(.ant-rate) .ant-rate-star-half .ant-rate-star-first {
+  color: inherit;
+}
+
+:where(.ant-rate) .ant-rate-star-full .ant-rate-star-first,
+:where(.ant-rate) .ant-rate-star-full .ant-rate-star-second {
+  color: inherit;
+}
+
+:where(.ant-rate).ant-rate-disabled .ant-rate-star {
+  cursor: default;
+}
+
+:where(.ant-rate):focus-visible {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 1px;
+  border-radius: var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-rate) .ant-rate-star:hover {
+  transform: scale(1.1);
+}
+
+:where(.ant-rate).ant-rate-disabled .ant-rate-star:hover {
+  transform: none;
+}

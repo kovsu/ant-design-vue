@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Rate > should render snapshot correctly 1`] = `
+"<ul class="ant-rate" role="radiogroup" tabindex="0">
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="1" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="2" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-full" role="radio" aria-checked="true" aria-posinset="3" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="4" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+  <li class="ant-rate-star ant-rate-star-zero" role="radio" aria-checked="false" aria-posinset="5" aria-setsize="5">
+    <!--v-if-->
+    <div class="ant-rate-star-second">★</div>
+  </li>
+</ul>"
+`;

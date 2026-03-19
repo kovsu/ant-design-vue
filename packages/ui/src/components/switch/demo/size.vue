@@ -1,0 +1,12 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const checked = ref(true)
+</script>
+
+<template>
+  <div style="display: flex; align-items: center; gap: 16px;">
+    <a-switch v-model:checked="checked" />
+    <a-switch v-model:checked="checked" size="small" />
+  </div>
+</template>
