@@ -1,0 +1,171 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-alert) {
+  @apply box-border relative flex items-start w-full p-2 px-3 text-sm leading-relaxed list-none;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  border-radius: var(--ant-border-radius, 8px);
+  border: 1px solid transparent;
+  word-wrap: break-word;
+}
+
+/* ---- Type variants ---- */
+:where(.ant-alert).ant-alert-success {
+  background-color: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+:where(.ant-alert).ant-alert-success .ant-alert-icon,
+:where(.ant-alert).ant-alert-success .ant-alert-message {
+  color: var(--color-success, #52c41a);
+}
+
+:where(.ant-alert).ant-alert-info {
+  background-color: #e6f4ff;
+  border-color: #91caff;
+}
+
+:where(.ant-alert).ant-alert-info .ant-alert-icon,
+:where(.ant-alert).ant-alert-info .ant-alert-message {
+  color: var(--color-info, #1677ff);
+}
+
+:where(.ant-alert).ant-alert-warning {
+  background-color: #fffbe6;
+  border-color: #ffe58f;
+}
+
+:where(.ant-alert).ant-alert-warning .ant-alert-icon,
+:where(.ant-alert).ant-alert-warning .ant-alert-message {
+  color: var(--color-warning, #faad14);
+}
+
+:where(.ant-alert).ant-alert-error {
+  background-color: #fff2f0;
+  border-color: #ffccc7;
+}
+
+:where(.ant-alert).ant-alert-error .ant-alert-icon,
+:where(.ant-alert).ant-alert-error .ant-alert-message {
+  color: var(--color-error, #ff4d4f);
+}
+
+/* ---- Icon ---- */
+:where(.ant-alert) .ant-alert-icon {
+  @apply flex-none leading-none mr-2;
+  font-size: 16px;
+  margin-top: 1px;
+}
+
+:where(.ant-alert) .ant-alert-icon .anticon {
+  @apply inline-flex items-center;
+}
+
+:where(.ant-alert) .ant-alert-icon .anticon > svg {
+  display: block;
+}
+
+/* Larger icon when description is present */
+:where(.ant-alert).ant-alert-with-description .ant-alert-icon {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* ---- Content ---- */
+:where(.ant-alert) .ant-alert-content {
+  @apply flex-1 min-w-0;
+}
+
+:where(.ant-alert) .ant-alert-message {
+  @apply font-medium;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* When it's a type color variant, message inherits the type color */
+:where(.ant-alert).ant-alert-success .ant-alert-message {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-alert).ant-alert-info .ant-alert-message {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-alert).ant-alert-warning .ant-alert-message {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-alert).ant-alert-error .ant-alert-message {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-alert) .ant-alert-description {
+  @apply mt-1 text-sm;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ---- With description ---- */
+:where(.ant-alert).ant-alert-with-description {
+  @apply py-3 px-4 items-start;
+}
+
+:where(.ant-alert).ant-alert-with-description .ant-alert-message {
+  @apply text-base font-semibold mb-1;
+}
+
+/* ---- Action ---- */
+:where(.ant-alert) .ant-alert-action {
+  @apply ml-2 flex-none self-start;
+}
+
+/* ---- Close icon ---- */
+:where(.ant-alert) .ant-alert-close-icon {
+  @apply flex-none cursor-pointer bg-transparent border-none p-0 ml-2 outline-none;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  transition: color 0.2s;
+}
+
+:where(.ant-alert) .ant-alert-close-icon:hover {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-alert) .ant-alert-close-icon .anticon {
+  @apply inline-flex items-center;
+}
+
+:where(.ant-alert) .ant-alert-close-icon .anticon > svg {
+  display: block;
+}
+
+:where(.ant-alert) .ant-alert-close-x {
+  @apply text-sm;
+}
+
+/* ---- Banner ---- */
+:where(.ant-alert).ant-alert-banner {
+  @apply rounded-none border-0;
+}
+
+/* ---- Slide-up transition for close ---- */
+.ant-alert-slide-up-leave-active {
+  overflow: hidden;
+  transition:
+    max-height 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+    opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+    padding 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+    margin 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+    border 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  max-height: 500px;
+}
+
+.ant-alert-slide-up-leave-to {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}

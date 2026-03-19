@@ -1,0 +1,146 @@
+@reference '../../../style/tailwind.css';
+
+/* ---- Base ---- */
+:where(.ant-spin) {
+  @apply box-border relative inline-flex flex-col items-center justify-center;
+  color: var(--color-accent, #1677ff);
+  font-size: 14px;
+  line-height: 1;
+}
+
+:where(.ant-spin).ant-spin-spinning {
+  @apply opacity-100;
+}
+
+/* ---- Size variants ---- */
+:where(.ant-spin).ant-spin-sm .ant-spin-dot {
+  font-size: 14px;
+}
+
+:where(.ant-spin) .ant-spin-dot {
+  font-size: 20px;
+}
+
+:where(.ant-spin).ant-spin-lg .ant-spin-dot {
+  font-size: 32px;
+}
+
+/* ---- Dot spinner ---- */
+:where(.ant-spin) .ant-spin-dot {
+  @apply relative inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+:where(.ant-spin) .ant-spin-dot-spin {
+  animation: ant-spin-rotate 1.2s infinite linear;
+  transform: rotate(45deg);
+}
+
+:where(.ant-spin) .ant-spin-dot-item {
+  @apply absolute block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-accent, #1677ff);
+  border-radius: 100%;
+  transform: scale(0.75);
+  transform-origin: 50% 50%;
+  opacity: 0.3;
+  animation: ant-spin-dot-bounce 1s infinite ease-in-out alternate;
+}
+
+:where(.ant-spin) .ant-spin-dot-item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+:where(.ant-spin) .ant-spin-dot-item:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-delay: 0.4s;
+}
+
+:where(.ant-spin) .ant-spin-dot-item:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  animation-delay: 0.8s;
+}
+
+:where(.ant-spin) .ant-spin-dot-item:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  animation-delay: 1.2s;
+}
+
+/* Size-specific dot sizes */
+:where(.ant-spin).ant-spin-sm .ant-spin-dot-item {
+  width: 6px;
+  height: 6px;
+}
+
+:where(.ant-spin).ant-spin-lg .ant-spin-dot-item {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- Tip text ---- */
+:where(.ant-spin) .ant-spin-text {
+  @apply text-sm pt-1;
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-spin).ant-spin-show-text .ant-spin-text {
+  @apply block;
+}
+
+/* ---- Nested loading mode ---- */
+:where(.ant-spin-nested-loading) {
+  @apply relative;
+}
+
+:where(.ant-spin-nested-loading) .ant-spin-nested-loading-blur {
+  @apply absolute inset-0 z-10 flex items-center justify-center;
+  max-height: 400px;
+}
+
+:where(.ant-spin-nested-loading) .ant-spin-nested-loading-blur .ant-spin {
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---- Container ---- */
+:where(.ant-spin-nested-loading) .ant-spin-container {
+  @apply relative;
+  transition: opacity var(--ant-motion-duration, 0.3s);
+}
+
+:where(.ant-spin-nested-loading) .ant-spin-container.ant-spin-blur {
+  @apply pointer-events-none select-none;
+  opacity: 0.5;
+  filter: blur(0.5px);
+  user-select: none;
+}
+
+/* ---- Keyframes ---- */
+@keyframes ant-spin-rotate {
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes ant-spin-dot-bounce {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.75);
+    opacity: 0.3;
+  }
+}

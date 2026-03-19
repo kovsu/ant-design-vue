@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Alert > should render correctly 1`] = `
+"<transition-stub name="ant-alert-slide-up" appear="false" persisted="false" css="true">
+  <div class="ant-alert ant-alert-info ant-alert-no-icon" role="alert">
+    <!--v-if-->
+    <div class="ant-alert-content">
+      <div class="ant-alert-message">Test message</div>
+      <!--v-if-->
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+  </div>
+</transition-stub>"
+`;

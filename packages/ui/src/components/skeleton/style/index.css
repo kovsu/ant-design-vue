@@ -1,0 +1,176 @@
+@reference '../../../style/tailwind.css';
+
+/* Base skeleton */
+:where(.ant-skeleton) {
+  @apply table w-full;
+}
+
+:where(.ant-skeleton) .ant-skeleton-header {
+  @apply table-cell pr-4 align-top;
+}
+
+:where(.ant-skeleton) .ant-skeleton-content {
+  @apply table-cell w-full align-top;
+}
+
+/* Avatar */
+:where(.ant-skeleton) .ant-skeleton-avatar {
+  @apply inline-block align-top;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+}
+
+:where(.ant-skeleton) .ant-skeleton-avatar-lg {
+  width: 40px;
+  height: 40px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-avatar-sm {
+  width: 24px;
+  height: 24px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-avatar-square {
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+/* Title */
+:where(.ant-skeleton) .ant-skeleton-title {
+  @apply h-4 mt-4 rounded;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+:where(.ant-skeleton).ant-skeleton-with-avatar .ant-skeleton-title {
+  @apply mt-3;
+}
+
+/* Paragraph */
+:where(.ant-skeleton) .ant-skeleton-paragraph {
+  @apply list-none p-0 mt-7;
+}
+
+:where(.ant-skeleton).ant-skeleton-with-avatar .ant-skeleton-paragraph {
+  @apply mt-7;
+}
+
+:where(.ant-skeleton) .ant-skeleton-paragraph li {
+  @apply h-4 rounded list-none w-full;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+:where(.ant-skeleton) .ant-skeleton-paragraph li + li {
+  @apply mt-4;
+}
+
+/* Round variant */
+:where(.ant-skeleton).ant-skeleton-round .ant-skeleton-title,
+:where(.ant-skeleton).ant-skeleton-round .ant-skeleton-paragraph li {
+  border-radius: 100px;
+}
+
+/* Active animation */
+@keyframes ant-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-title,
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-paragraph li,
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-avatar,
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-button,
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-input,
+:where(.ant-skeleton).ant-skeleton-active .ant-skeleton-image {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.15) 37%,
+    rgba(0, 0, 0, 0.06) 63%
+  );
+  background-size: 400% 100%;
+  animation: ant-skeleton-loading 1.4s ease infinite;
+}
+
+/* Element variant (standalone) */
+:where(.ant-skeleton).ant-skeleton-element {
+  @apply inline-block w-auto;
+}
+
+/* Skeleton Button */
+:where(.ant-skeleton) .ant-skeleton-button {
+  @apply inline-block align-top;
+  width: 64px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-lg {
+  width: 80px;
+  height: 40px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-sm {
+  width: 48px;
+  height: 24px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-circle {
+  width: 32px;
+  border-radius: 50%;
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-round {
+  border-radius: 32px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-square {
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-skeleton) .ant-skeleton-button-block {
+  @apply w-full;
+}
+
+/* Skeleton Input */
+:where(.ant-skeleton) .ant-skeleton-input {
+  @apply inline-block align-top;
+  width: 160px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-skeleton) .ant-skeleton-input-lg {
+  width: 200px;
+  height: 40px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-input-sm {
+  width: 120px;
+  height: 24px;
+}
+
+:where(.ant-skeleton) .ant-skeleton-input-block {
+  @apply w-full;
+}
+
+/* Skeleton Image */
+:where(.ant-skeleton) .ant-skeleton-image {
+  @apply flex items-center justify-center align-top;
+  width: 96px;
+  height: 96px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-skeleton) .ant-skeleton-image-svg {
+  width: 48px;
+  height: 48px;
+  fill: #bfbfbf;
+}

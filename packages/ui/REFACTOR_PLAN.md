@@ -27,8 +27,11 @@ Status: `[ ]` todo · `[~]` in progress · `[x]` done
 | Flex / Affix / Divider | Flex rewrite, Affix bugfix, Divider new | [x] |
 | Dev infra | Dev server, demos, demo snapshot tests | [x] |
 | Batch 1 | Row+Col, Space+SpaceCompact, Layout+Header+Footer+Content+Sider, useBreakpoint hook | [x] |
+| Batch 2 | TypographyText, TypographyTitle, TypographyParagraph, TypographyLink (ellipsis CSS, copyable, decorations) | [x] |
+| Batch 3 | Alert, Empty, Result, Spin, Skeleton (+ sub-components), Progress (line/circle/dashboard/steps) | [x] |
+| A11y pass | ARIA roles, keyboard, screen reader support across all Batch 0–3 components | [x] |
 
-### Batch 2: Typography
+### ~~Batch 2: Typography~~ (done)
 > 文本组件家族，互相共享 ellipsis/copyable/editable 逻辑
 
 | Component | Scope |

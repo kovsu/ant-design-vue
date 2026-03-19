@@ -1,0 +1,152 @@
+@reference '../../../style/tailwind.css';
+
+/* Base */
+:where(.ant-progress) {
+  @apply inline-flex items-center text-sm;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-family: var(--ant-font-family);
+}
+
+/* Line */
+:where(.ant-progress).ant-progress-line {
+  @apply w-full;
+}
+
+:where(.ant-progress) .ant-progress-outer {
+  @apply flex-1 inline-block mr-0 pr-0;
+}
+
+:where(.ant-progress) .ant-progress-inner {
+  @apply relative inline-block w-full overflow-hidden align-middle;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 100px;
+}
+
+:where(.ant-progress) .ant-progress-bg {
+  @apply relative;
+  background-color: var(--color-accent, #1677ff);
+  transition: all var(--ant-motion-duration, 0.2s) var(--ant-motion-ease);
+}
+
+:where(.ant-progress) .ant-progress-success-bg {
+  @apply absolute top-0 left-0;
+  background-color: var(--color-success, #52c41a);
+  border-radius: 100px;
+}
+
+/* Text */
+:where(.ant-progress) .ant-progress-text {
+  @apply inline-block text-sm text-center;
+  word-break: normal;
+  width: 2em;
+  margin-inline-start: 8px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-progress).ant-progress-show-info .ant-progress-outer {
+  margin-inline-end: calc(-2em - 8px);
+  padding-inline-end: calc(2em + 8px);
+}
+
+/* Status colors */
+:where(.ant-progress).ant-progress-status-exception .ant-progress-bg {
+  background-color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-progress).ant-progress-status-exception .ant-progress-text {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-progress).ant-progress-status-success .ant-progress-bg {
+  background-color: var(--color-success, #52c41a);
+}
+
+:where(.ant-progress).ant-progress-status-success .ant-progress-text {
+  color: var(--color-success, #52c41a);
+}
+
+/* Active animation (line only) */
+:where(.ant-progress).ant-progress-status-active .ant-progress-bg::before {
+  @apply absolute inset-0;
+  content: '';
+  background: #fff;
+  border-radius: 10px;
+  opacity: 0;
+  animation: ant-progress-active 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+@keyframes ant-progress-active {
+  0% {
+    transform: translateX(-100%) scaleX(0);
+    opacity: 0.1;
+  }
+  20% {
+    transform: translateX(-100%) scaleX(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0;
+  }
+}
+
+/* Circle / Dashboard */
+:where(.ant-progress).ant-progress-circle,
+:where(.ant-progress).ant-progress-dashboard {
+  @apply inline-block;
+}
+
+:where(.ant-progress).ant-progress-circle .ant-progress-inner,
+:where(.ant-progress).ant-progress-dashboard .ant-progress-inner {
+  @apply relative inline-flex;
+  background: none;
+  border-radius: 0;
+}
+
+:where(.ant-progress).ant-progress-circle .ant-progress-text,
+:where(.ant-progress).ant-progress-dashboard .ant-progress-text {
+  @apply absolute inset-0 flex items-center justify-center;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+:where(.ant-progress) .ant-progress-circle-trail {
+  stroke: rgba(0, 0, 0, 0.04);
+}
+
+:where(.ant-progress) .ant-progress-circle-path {
+  stroke: var(--color-accent, #1677ff);
+}
+
+:where(.ant-progress).ant-progress-status-exception .ant-progress-circle-path {
+  stroke: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-progress).ant-progress-status-success .ant-progress-circle-path {
+  stroke: var(--color-success, #52c41a);
+}
+
+/* Steps */
+:where(.ant-progress) .ant-progress-steps-outer {
+  @apply flex;
+  gap: 2px;
+}
+
+:where(.ant-progress) .ant-progress-steps-item {
+  @apply flex-1;
+  min-width: 2px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: var(--ant-border-radius-sm, 4px);
+  transition: all var(--ant-motion-duration, 0.3s);
+}
+
+:where(.ant-progress) .ant-progress-steps-item-active {
+  background-color: var(--color-accent, #1677ff);
+}
+
+/* Small size */
+:where(.ant-progress).ant-progress-small .ant-progress-text {
+  font-size: var(--ant-font-size-sm, 12px);
+}

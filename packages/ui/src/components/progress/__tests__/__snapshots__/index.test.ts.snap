@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Progress > should render snapshot correctly 1`] = `
+"<div class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-show-info" role="progressbar" aria-valuenow="50" aria-valuetext="50%" aria-valuemin="0" aria-valuemax="100">
+  <!-- Line / Steps -->
+  <!-- Steps mode -->
+  <!-- Line mode -->
+  <div class="ant-progress-outer">
+    <div class="ant-progress-inner" style="height: 8px; border-radius: 100px;">
+      <div class="ant-progress-bg" style="width: 50%; height: 8px; border-radius: 100px;"></div>
+      <!--v-if-->
+    </div>
+  </div><span class="ant-progress-text">50%</span>
+</div>"
+`;

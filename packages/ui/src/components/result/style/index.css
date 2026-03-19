@@ -1,0 +1,69 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-result) {
+  @apply py-12 px-8;
+}
+
+:where(.ant-result) .ant-result-icon {
+  @apply text-center mb-6;
+}
+
+:where(.ant-result) .ant-result-icon > svg,
+:where(.ant-result) .ant-result-icon > span {
+  @apply text-7xl inline-block;
+}
+
+:where(.ant-result).ant-result-success .ant-result-icon > svg,
+:where(.ant-result).ant-result-success .ant-result-icon > span {
+  color: var(--color-success, #52c41a);
+}
+
+:where(.ant-result).ant-result-error .ant-result-icon > svg,
+:where(.ant-result).ant-result-error .ant-result-icon > span {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-result).ant-result-info .ant-result-icon > svg,
+:where(.ant-result).ant-result-info .ant-result-icon > span {
+  color: var(--color-info, #1677ff);
+}
+
+:where(.ant-result).ant-result-warning .ant-result-icon > svg,
+:where(.ant-result).ant-result-warning .ant-result-icon > span {
+  color: var(--color-warning, #faad14);
+}
+
+:where(.ant-result) .ant-result-title {
+  @apply text-center text-2xl font-semibold;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-result) .ant-result-subtitle {
+  @apply text-center text-sm mt-2;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-result) .ant-result-extra {
+  @apply text-center mt-6;
+}
+
+:where(.ant-result) .ant-result-extra > * {
+  @apply mr-2;
+}
+
+:where(.ant-result) .ant-result-extra > *:last-child {
+  @apply mr-0;
+}
+
+:where(.ant-result) .ant-result-content {
+  @apply mt-6 py-6 px-10;
+  background-color: var(--color-neutral-bg, #fafafa);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+/* Exception pages (403, 404, 500) */
+:where(.ant-result).ant-result-403 .ant-result-icon > svg,
+:where(.ant-result).ant-result-404 .ant-result-icon > svg,
+:where(.ant-result).ant-result-500 .ant-result-icon > svg {
+  @apply h-[295px] w-[250px] mx-auto text-7xl;
+}

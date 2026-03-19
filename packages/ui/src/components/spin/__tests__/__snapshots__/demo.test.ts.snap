@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spin demos > demo: Basic 1`] = `
+"<div class="ant-spin ant-spin-spinning" role="status" aria-label="Loading"><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`Spin demos > demo: Delay 1`] = `
+"<div>
+  <div class="ant-spin-nested-loading" aria-busy="false">
+    <!--v-if-->
+    <div class="ant-spin-container">
+      <div style="padding: 50px; background: rgba(0, 0, 0, 0.05); border-radius: 4px;"> Content that can load </div>
+    </div>
+  </div>
+  <div style="margin-top: 16px;"><label><input type="checkbox"> Toggle loading (500ms delay)</label></div>
+</div>"
+`;
+
+exports[`Spin demos > demo: Nested 1`] = `
+"<div class="ant-spin-nested-loading" aria-busy="true">
+  <div class="ant-spin-nested-loading-blur">
+    <div class="ant-spin ant-spin-spinning ant-spin-show-text" role="status" aria-label="Loading..."><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+      <div class="ant-spin-text" aria-hidden="true">Loading...</div>
+    </div>
+  </div>
+  <div class="ant-spin-container ant-spin-blur" aria-hidden="true">
+    <div style="padding: 50px; background: rgba(0, 0, 0, 0.05); border-radius: 4px;">
+      <p>Some content</p>
+      <p>More content</p>
+      <p>Loading state...</p>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Spin demos > demo: Size 1`] = `
+"<div style="display: flex; gap: 24px; align-items: center;">
+  <div class="ant-spin ant-spin-spinning ant-spin-sm" role="status" aria-label="Loading"><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+    <!--v-if-->
+  </div>
+  <div class="ant-spin ant-spin-spinning" role="status" aria-label="Loading"><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+    <!--v-if-->
+  </div>
+  <div class="ant-spin ant-spin-spinning ant-spin-lg" role="status" aria-label="Loading"><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+    <!--v-if-->
+  </div>
+</div>"
+`;

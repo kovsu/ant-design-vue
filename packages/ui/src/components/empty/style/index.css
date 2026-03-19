@@ -1,0 +1,43 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-empty) {
+  @apply m-2 text-sm text-center;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-empty) .ant-empty-image {
+  @apply h-auto mb-2 mx-auto;
+}
+
+:where(.ant-empty) .ant-empty-image img {
+  @apply mx-auto h-full;
+}
+
+:where(.ant-empty) .ant-empty-image svg {
+  @apply mx-auto;
+}
+
+:where(.ant-empty) .ant-empty-description {
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-empty) .ant-empty-footer {
+  @apply mt-4;
+}
+
+:where(.ant-empty).ant-empty-normal {
+  @apply my-8 mx-0;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-empty).ant-empty-normal .ant-empty-image {
+  @apply h-10;
+}
+
+:where(.ant-empty).ant-empty-small {
+  @apply mx-0 my-2;
+}
+
+:where(.ant-empty).ant-empty-small .ant-empty-image {
+  @apply h-9;
+}
