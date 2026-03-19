@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Space demos > demo: Basic 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 1</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 2</span>
+  </button><button class="ant-btn ant-btn-dashed ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 3</span>
+  </button></div>"
+`;
+
+exports[`Space demos > demo: Compact 1`] = `
+"<div class="ant-space-compact ant-space-compact-horizontal"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 1</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 2</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 3</span>
+  </button></div>"
+`;
+
+exports[`Space demos > demo: Size 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <div><strong>small (8px)</strong><br>
+    <div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">1</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">2</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">3</span>
+      </button></div>
+  </div>
+  <div><strong>middle (16px)</strong><br>
+    <div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 16px; row-gap: 16px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">1</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">2</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">3</span>
+      </button></div>
+  </div>
+  <div><strong>large (24px)</strong><br>
+    <div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 24px; row-gap: 24px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">1</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">2</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">3</span>
+      </button></div>
+  </div>
+</div>"
+`;
+
+exports[`Space demos > demo: Vertical 1`] = `
+"<div class="ant-space ant-space-vertical" style="column-gap: 16px; row-gap: 16px; width: 100%;"><button class="ant-btn ant-btn-solid ant-btn-md ant-btn-block" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 1</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md ant-btn-block" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 2</span>
+  </button><button class="ant-btn ant-btn-dashed ant-btn-md ant-btn-block" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 3</span>
+  </button></div>"
+`;
+
+exports[`Space demos > demo: Wrap 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px; flex-wrap: wrap;"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 1</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 2</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 3</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 4</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 5</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 6</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 7</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 8</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 9</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 10</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 11</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 12</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 13</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 14</span>
+  </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+    <wave-stub disabled="false"></wave-stub>
+    <!--v-if--><span class="ant-btn-content">Button 15</span>
+  </button></div>"
+`;

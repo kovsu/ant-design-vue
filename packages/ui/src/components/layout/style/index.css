@@ -1,0 +1,88 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-layout) {
+  @apply flex flex-auto;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+/* Vertical layout (default, or when has-sider is false) */
+:where(.ant-layout):not(.ant-layout-has-sider) {
+  @apply flex-col;
+}
+
+:where(.ant-layout).ant-layout-has-sider {
+  @apply flex-row;
+}
+
+:where(.ant-layout) .ant-layout-header {
+  @apply flex-shrink-0 flex-grow-0;
+  height: 64px;
+  padding: 0 50px;
+  line-height: 64px;
+  background: var(--color-base-100, #001529);
+  color: var(--color-base-content, #fff);
+}
+
+:where(.ant-layout) .ant-layout-footer {
+  @apply flex-shrink-0 flex-grow-0;
+  padding: 24px 50px;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  background: var(--color-neutral-bg, #f5f5f5);
+}
+
+:where(.ant-layout) .ant-layout-content {
+  @apply flex-auto;
+  min-height: 0;
+}
+
+/* Sider */
+:where(.ant-layout-sider) {
+  position: relative;
+  min-width: 0;
+  transition: all 0.2s;
+  background: var(--color-base-100, #001529);
+}
+
+:where(.ant-layout-sider).ant-layout-sider-light {
+  background: #fff;
+  border-inline-end: 1px solid var(--color-neutral-border, #f0f0f0);
+}
+
+:where(.ant-layout-sider) .ant-layout-sider-children {
+  height: 100%;
+  overflow: auto;
+}
+
+:where(.ant-layout-sider) .ant-layout-sider-trigger {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+:where(.ant-layout-sider) .ant-layout-sider-trigger:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+:where(.ant-layout-sider).ant-layout-sider-zero-width .ant-layout-sider-trigger {
+  position: absolute;
+  top: 64px;
+  inset-inline-end: -36px;
+  z-index: 1;
+  width: 36px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 0 6px 6px 0;
+  background: var(--color-base-100, #001529);
+}
+
+:where(.ant-layout-sider).ant-layout-sider-collapsed {
+  overflow: hidden;
+}

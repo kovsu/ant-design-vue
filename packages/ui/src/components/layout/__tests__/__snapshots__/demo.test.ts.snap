@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout demos > demo: Basic 1`] = `
+"<section class="ant-layout" style="min-height: 200px;">
+  <header class="ant-layout-header" style="background: rgb(0, 21, 41); color: rgb(255, 255, 255); text-align: center;"> Header </header>
+  <main class="ant-layout-content" style="padding: 24px; background: rgb(255, 255, 255);"> Content </main>
+  <footer class="ant-layout-footer" style="text-align: center; background: rgb(245, 245, 245);"> Footer </footer>
+</section>"
+`;
+
+exports[`Layout demos > demo: SiderDemo 1`] = `
+"<section class="ant-layout ant-layout-has-sider" style="min-height: 300px;">
+  <aside class="ant-layout-sider ant-layout-sider-dark ant-layout-sider-has-trigger" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
+    <div class="ant-layout-sider-children">
+      <div style="padding: 16px; color: rgb(255, 255, 255);">Sider </div>
+    </div>
+    <div class="ant-layout-sider-trigger" style="width: 200px;"><span class="ant-layout-sider-trigger-icon">◀</span></div>
+  </aside>
+  <section class="ant-layout">
+    <header class="ant-layout-header" style="background: rgb(255, 255, 255); padding: 0px 16px;"> Header </header>
+    <main class="ant-layout-content" style="padding: 24px;"> Content area. Sider is expanded. </main>
+  </section>
+</section>"
+`;
+
+exports[`Layout demos > demo: SiderLight 1`] = `
+"<section class="ant-layout ant-layout-has-sider" style="min-height: 200px;">
+  <aside class="ant-layout-sider ant-layout-sider-light" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
+    <div class="ant-layout-sider-children">
+      <div style="padding: 16px;">Light Sider</div>
+    </div>
+    <!--v-if-->
+  </aside>
+  <section class="ant-layout">
+    <main class="ant-layout-content" style="padding: 24px;"> Content with light sider </main>
+  </section>
+</section>"
+`;
