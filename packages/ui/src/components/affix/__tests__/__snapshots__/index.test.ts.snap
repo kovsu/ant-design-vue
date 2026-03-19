@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Affix > should render correctly 1`] = `
+"<div data-measure-status="0">
+  <!--v-if-->
+  <div style="z-index: 10;" class=""><button>Click me</button></div>
+</div>"
+`;

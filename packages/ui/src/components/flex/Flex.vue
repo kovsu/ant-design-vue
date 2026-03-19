@@ -1,43 +1,50 @@
 <script setup lang="ts">
-  import type { CSSProperties } from 'vue'
-  import { computed } from 'vue'
-  import { type FlexProps, flexDefaultProps } from './meta'
-  import { isPresetSize, isValidGapNumber } from '@/utils/gapSize'
-  import createFlexClassNames from './utils'
+import { computed } from 'vue'
+import { type FlexProps, type FlexGapSize, flexDefaultProps } from './types'
 
-  defineOptions({ name: 'AFlex' })
-  const props = withDefaults(defineProps<FlexProps>(), flexDefaultProps)
+defineOptions({ name: 'AFlex' })
+const props = withDefaults(defineProps<FlexProps>(), flexDefaultProps)
 
-  const mergedCls = computed(() => [
-    createFlexClassNames(props.prefixCls, props),
-    {
-      'ant-flex': true,
-      'ant-flex-vertical': props.vertical,
-      'ant-flex-rtl': false,
-      [`ant-flex-gap-${props.gap}`]: isPresetSize(props.gap),
+const gapPresets: Record<FlexGapSize, string> = {
+  small: '8px',
+  middle: '16px',
+  large: '32px',
+}
+
+const isPresetGap = (gap: unknown): gap is FlexGapSize =>
+  typeof gap === 'string' && gap in gapPresets
+
+const mergedStyle = computed(() => {
+  const style: Record<string, unknown> = {}
+
+  if (props.justify) style.justifyContent = props.justify
+  if (props.align) style.alignItems = props.align
+  if (props.flex) style.flex = props.flex
+
+  if (props.wrap != null) {
+    style.flexWrap = props.wrap === true ? 'wrap' : props.wrap
+  }
+
+  if (props.gap != null) {
+    if (isPresetGap(props.gap)) {
+      style.gap = gapPresets[props.gap]
+    } else {
+      const num = Number(props.gap)
+      style.gap = Number.isNaN(num) ? props.gap : `${num}px`
     }
-  ])
+  }
 
-  const mergedStyle = computed(() => {
-    const style: CSSProperties = {}
-    
-    if (props.flex) {
-      style.flex = props.flex
-    }
-
-    if (props.gap && !isPresetSize(props.gap)) {
-      const numGap = Number(props.gap)
-      style.gap = !Number.isNaN(numGap) ? `${numGap}px` : String(props.gap)
-    }
-
-    return style
-  })
+  return style
+})
 </script>
 
 <template>
-  <component :is="componentTag" :class="[$attrs.class, mergedCls]" :style="[$attrs.style, mergedStyle]" v-bind="$attrs">
+  <component
+    :is="props.component"
+    class="ant-flex"
+    :class="{ 'ant-flex-vertical': props.vertical }"
+    :style="mergedStyle"
+  >
     <slot />
   </component>
 </template>
-
-<style scoped></style>

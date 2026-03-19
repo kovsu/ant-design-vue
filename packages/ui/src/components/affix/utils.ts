@@ -75,17 +75,19 @@ export function addObserveTarget<T>(target: HTMLElement | Window | null, affix: 
 
     // Add listener
     TRIGGER_EVENTS.forEach(eventName => {
-      entity!.eventHandlers[eventName] = addEventListener(target, eventName, () => {
-        entity!.affixList.forEach(
-          targetAffix => {
+      const usePassive =
+        (eventName === 'touchstart' || eventName === 'touchmove') && supportsPassive
+      entity!.eventHandlers[eventName] = addEventListener(
+        target,
+        eventName,
+        () => {
+          entity!.affixList.forEach(targetAffix => {
             const { lazyUpdatePosition } = (targetAffix as any).exposed
             lazyUpdatePosition()
-          },
-          (eventName === 'touchstart' || eventName === 'touchmove') && supportsPassive
-            ? ({ passive: true } as EventListenerOptions)
-            : false,
-        )
-      })
+          })
+        },
+        usePassive ? { passive: true } : undefined,
+      )
     })
   }
 }

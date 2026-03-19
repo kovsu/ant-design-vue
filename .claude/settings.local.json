@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(tsx|ts|vue\\)$\")",
+      "Bash(grep -l \"^import\" /Users/jinzhou/Work/ant-design-vue/components/vc-*/index.ts)",
+      "Bash(ls -1d /Users/jinzhou/Work/ant-design-vue/components/vc-*)",
+      "Bash(ls -1d /Users/jinzhou/Work/ant-design-vue/components/[a-z]*)",
+      "Bash(ls -d /Users/jinzhou/Work/ant-design-vue/components/[a-z]*)",
+      "Bash(git checkout:*)",
+      "Bash(npx vitest:*)",
+      "Bash(npm install:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/gh auth:*)",
+      "Bash(GITHUB_TOKEN= /opt/homebrew/bin/gh auth status 2>&1)",
+      "Bash(GITHUB_TOKEN= /opt/homebrew/bin/gh auth login --hostname github.com --git-protocol ssh --web 2>&1)",
+      "Bash(GITHUB_TOKEN= /opt/homebrew/bin/gh pr view 8494 --json baseRefName,headRefName 2>&1)",
+      "Bash(GITHUB_TOKEN= /opt/homebrew/bin/gh pr edit 8494 --base feat/vapor 2>&1)",
+      "Bash(GITHUB_TOKEN= /opt/homebrew/bin/gh pr edit 8495 --base feat/vapor 2>&1)",
+      "Bash(git fetch:*)",
+      "Bash(git rebase:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git branch:*)"
+    ]
+  }
+}

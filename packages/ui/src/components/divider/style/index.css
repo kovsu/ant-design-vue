@@ -1,0 +1,85 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-divider) {
+  @apply box-border m-0 p-0 text-sm list-none border-solid border-[var(--color-neutral-border,theme(colors.neutral.200))];
+}
+
+:where(.ant-divider).ant-divider-horizontal {
+  @apply flex clear-both w-full min-w-full my-6 mx-0;
+  border-block-start: 0 solid transparent;
+
+  &::before,
+  &::after {
+    @apply relative top-1/2 w-1/2;
+    border-block-start: 1px solid transparent;
+    border-block-start-color: inherit;
+    border-block-end: 0;
+    content: '';
+    transform: translateY(50%);
+  }
+}
+
+:where(.ant-divider).ant-divider-vertical {
+  @apply relative top-[-0.06em] inline-block h-[0.9em] mx-2 my-0 align-middle;
+  border-block-start: 0;
+  border-inline-start: 1px solid var(--color-neutral-border, theme(colors.neutral.200));
+}
+
+:where(.ant-divider).ant-divider-dashed {
+  @apply border-dashed border-0;
+}
+
+:where(.ant-divider).ant-divider-horizontal.ant-divider-dashed {
+  &::before,
+  &::after {
+    border-style: dashed none none;
+  }
+}
+
+:where(.ant-divider).ant-divider-vertical.ant-divider-dashed {
+  border-inline-start-style: dashed;
+}
+
+/* Divider with text */
+:where(.ant-divider).ant-divider-with-text {
+  @apply items-center my-4 mx-0;
+  border-block-start: 0 solid transparent;
+  white-space: nowrap;
+  text-align: center;
+
+  &::before,
+  &::after {
+    @apply relative w-1/2;
+    border-block-start: 1px solid transparent;
+    border-block-start-color: inherit;
+    border-block-end: 0;
+    content: '';
+    transform: translateY(50%);
+  }
+}
+
+:where(.ant-divider).ant-divider-with-text-left {
+  &::before {
+    width: 5%;
+  }
+  &::after {
+    width: 95%;
+  }
+}
+
+:where(.ant-divider).ant-divider-with-text-right {
+  &::before {
+    width: 95%;
+  }
+  &::after {
+    width: 5%;
+  }
+}
+
+:where(.ant-divider) .ant-divider-inner-text {
+  @apply inline-block px-4 font-medium text-base;
+}
+
+:where(.ant-divider).ant-divider-plain .ant-divider-inner-text {
+  @apply font-normal;
+}

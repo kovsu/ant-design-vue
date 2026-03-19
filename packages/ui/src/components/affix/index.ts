@@ -3,7 +3,7 @@ import Affix from './Affix.vue'
 import './style/index.css'
 
 export { default as Affix } from './Affix.vue'
-export * from './meta'
+export * from './types'
 
 /* istanbul ignore next */
 Affix.install = function (app: App) {

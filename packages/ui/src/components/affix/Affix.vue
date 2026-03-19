@@ -28,7 +28,7 @@ import {
   AffixState,
   affixDefaultProps,
   AffixEmits,
-} from './meta'
+} from './types'
 import {
   addObserveTarget,
   getFixedBottom,

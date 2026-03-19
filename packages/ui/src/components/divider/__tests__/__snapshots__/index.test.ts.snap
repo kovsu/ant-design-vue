@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Divider > should render correctly 1`] = `
+"<div class="ant-divider ant-divider-horizontal" role="separator">
+  <!--v-if-->
+</div>"
+`;
