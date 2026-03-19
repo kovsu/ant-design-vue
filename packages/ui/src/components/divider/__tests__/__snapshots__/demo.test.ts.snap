@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Divider demos > demo: Basic 1`] = `
+"<div>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. </p>
+  <div class="ant-divider ant-divider-horizontal" role="separator">
+    <!--v-if-->
+  </div>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. </p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-dashed" role="separator">
+    <!--v-if-->
+  </div>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. </p>
+</div>"
+`;
+
+exports[`Divider demos > demo: OrientationMargin 1`] = `
+"<div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left" role="separator"><span class="ant-divider-inner-text" style="margin-left: 0px;"> Left with 0 margin </span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-right" role="separator"><span class="ant-divider-inner-text" style="margin-right: 50px;"> Right with 50px margin </span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>"
+`;
+
+exports[`Divider demos > demo: Vertical 1`] = `
+"<div> Text <div class="ant-divider ant-divider-vertical" role="separator">
+    <!--v-if-->
+  </div><a href="#">Link</a>
+  <div class="ant-divider ant-divider-vertical" role="separator">
+    <!--v-if-->
+  </div><a href="#">Link</a>
+</div>"
+`;
+
+exports[`Divider demos > demo: WithText 1`] = `
+"<div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center" role="separator"><span class="ant-divider-inner-text">Center Text</span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left" role="separator"><span class="ant-divider-inner-text">Left Text</span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-right" role="separator"><span class="ant-divider-inner-text">Right Text</span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="ant-divider ant-divider-horizontal ant-divider-plain ant-divider-with-text ant-divider-with-text-center" role="separator"><span class="ant-divider-inner-text">Plain Text</span></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>"
+`;

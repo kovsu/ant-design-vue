@@ -24,7 +24,9 @@
       "Bash(git fetch:*)",
       "Bash(git rebase:*)",
       "Bash(git cherry-pick:*)",
-      "Bash(git branch:*)"
+      "Bash(git branch:*)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"vite.*vite.dev.config\")"
     ]
   }
 }

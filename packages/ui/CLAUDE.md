@@ -27,8 +27,12 @@ components/[name]/
 ├── composables.ts          # Component-specific composables (if needed)
 ├── style/
 │   └── index.css           # All styles, uses ant-* class names + @apply Tailwind
+├── demo/
+│   ├── basic.vue           # Basic usage demo
+│   └── [feature].vue       # One demo per feature (size.vue, loading.vue, etc.)
 ├── __tests__/
-│   └── index.test.ts       # Vitest + Vue Test Utils
+│   ├── index.test.ts       # Unit tests (Vitest + Vue Test Utils)
+│   └── demo.test.ts        # Demo snapshot tests
 └── index.ts                # Exports + app.component() install
 ```
 
@@ -142,11 +146,26 @@ All use `@floating-ui/vue` for positioning:
 - Use `mount()` from @vue/test-utils
 - Snapshot tests for basic rendering
 - No implementation-detail testing (don't test internal state)
+- **Demo snapshot tests**: Each component MUST have `demo.test.ts` that renders all demos and snapshots them
+- Global test setup (`test/setup.ts`) registers all components via `app.use(UI)` — demos work with `<a-button>` etc.
+
+## Dev Server
+Preview demos locally: `npm run serve` (from packages/ui/)
+- Runs Vite dev server at `http://localhost:3000`
+- Auto-discovers all `demo/*.vue` files via `import.meta.glob`
+- Config: `vite.dev.config.ts`
+
+### Demo Conventions
+- Each demo is a standalone `.vue` SFC — no special blocks needed
+- Use registered component names (`<a-button>`, `<a-divider>`, etc.)
+- One demo per feature, named descriptively: `basic.vue`, `size.vue`, `loading.vue`
+- Keep demos simple and focused — showcase one feature per file
 
 ## PR Workflow
 Each PR contains exactly ONE component (or one foundational change):
 1. Create branch: `feat/[component-name]`
 2. Implement component following conventions above
-3. Write tests
-4. Update `components/index.ts` to export
-5. PR title: `feat([component]): add [Component] component`
+3. Write demos in `demo/` directory
+4. Write unit tests + demo snapshot tests
+5. Update `components/index.ts` to export
+6. PR title: `feat([component]): add [Component] component`

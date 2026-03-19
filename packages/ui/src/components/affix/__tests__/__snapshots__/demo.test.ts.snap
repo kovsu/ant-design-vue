@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Affix demos > demo: Basic 1`] = `
+"<div>
+  <div data-measure-status="0">
+    <!--v-if-->
+    <div style="z-index: 10;" class=""><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content"> Affix top (offset: 10px) </span>
+      </button></div>
+  </div><br><br>
+  <div data-measure-status="0">
+    <!--v-if-->
+    <div style="z-index: 10;" class=""><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content"> Affix bottom (offset: 10px) </span>
+      </button></div>
+  </div>
+</div>"
+`;
+
+exports[`Affix demos > demo: OnChange 1`] = `
+"<div data-measure-status="0">
+  <!--v-if-->
+  <div style="z-index: 10;" class=""><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <wave-stub disabled="false"></wave-stub>
+      <!--v-if--><span class="ant-btn-content">Affix with onChange (offset 120px, check console)</span>
+    </button></div>
+</div>"
+`;
