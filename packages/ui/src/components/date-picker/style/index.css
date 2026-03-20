@@ -1,0 +1,170 @@
+@reference '../../../style/tailwind.css';
+
+/* ========== Picker Input ========== */
+
+.ant-picker {
+  @apply inline-flex items-center relative box-border;
+  @apply bg-white border border-solid border-neutral-border rounded-md;
+  @apply cursor-pointer;
+  padding: 4px 11px;
+  font-family: var(--ant-font-family);
+  font-size: var(--ant-font-size);
+  transition: border-color var(--ant-motion-duration) var(--ant-motion-ease),
+              box-shadow var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker:hover {
+  @apply border-accent-hover;
+}
+
+.ant-picker-focused {
+  @apply border-accent;
+  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb, 22 119 255) / 0.1);
+}
+
+.ant-picker-disabled {
+  @apply bg-neutral-bg/50 cursor-not-allowed;
+  @apply border-neutral-border;
+}
+
+.ant-picker-disabled:hover {
+  @apply border-neutral-border;
+}
+
+.ant-picker-borderless {
+  @apply border-transparent bg-transparent;
+}
+
+.ant-picker-borderless:hover,
+.ant-picker-borderless.ant-picker-focused {
+  @apply border-transparent;
+  box-shadow: none;
+}
+
+/* Size variants */
+.ant-picker-sm {
+  padding: 0 7px;
+}
+
+.ant-picker-sm input {
+  font-size: var(--ant-font-size-sm, 12px);
+}
+
+.ant-picker-lg {
+  padding: 7px 11px;
+}
+
+.ant-picker-lg input {
+  font-size: var(--ant-font-size-lg, 16px);
+}
+
+/* Status variants */
+.ant-picker-status-error {
+  @apply border-error;
+}
+
+.ant-picker-status-error:hover {
+  border-color: var(--color-error-hover, #ff7875);
+}
+
+.ant-picker-status-error.ant-picker-focused {
+  @apply border-error;
+  box-shadow: 0 0 0 2px rgba(var(--color-error-rgb, 255 77 79) / 0.1);
+}
+
+.ant-picker-status-warning {
+  @apply border-warning;
+}
+
+.ant-picker-status-warning:hover {
+  border-color: var(--color-warning-hover, #ffc53d);
+}
+
+.ant-picker-status-warning.ant-picker-focused {
+  @apply border-warning;
+  box-shadow: 0 0 0 2px rgba(var(--color-warning-rgb, 250 173 20) / 0.1);
+}
+
+/* ========== Input Area ========== */
+
+.ant-picker-input {
+  @apply relative inline-flex items-center flex-1;
+}
+
+.ant-picker-input input {
+  @apply w-full bg-transparent border-none outline-none text-neutral;
+  @apply placeholder-neutral-disabled;
+  font-size: inherit;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.ant-picker-input input:disabled {
+  @apply cursor-not-allowed text-neutral-disabled;
+}
+
+/* ========== Suffix & Clear ========== */
+
+.ant-picker-suffix {
+  @apply flex items-center ml-1 text-neutral-disabled;
+  font-size: 14px;
+}
+
+.ant-picker-clear {
+  @apply absolute right-0 flex items-center cursor-pointer;
+  @apply text-neutral-disabled hover:text-neutral-secondary;
+  @apply bg-white;
+  font-size: 14px;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* ========== Range Picker ========== */
+
+.ant-picker-range {
+  @apply inline-flex items-center;
+}
+
+.ant-picker-range .ant-picker-input {
+  @apply flex-1;
+}
+
+.ant-picker-range-separator {
+  @apply flex items-center px-2;
+}
+
+.ant-picker-separator {
+  @apply text-neutral-disabled text-sm;
+}
+
+.ant-picker-range .ant-picker-suffix {
+  @apply ml-1;
+}
+
+.ant-picker-range .ant-picker-clear {
+  right: 11px;
+}
+
+/* ========== Range Panel (two panels side by side) ========== */
+
+.ant-picker-range-panel {
+  @apply inline-flex;
+}
+
+.ant-picker-range-panel .ant-picker-panel {
+  @apply rounded-none shadow-none;
+}
+
+.ant-picker-range-panel .ant-picker-panel:first-child {
+  @apply rounded-l-lg;
+  border-right: 1px solid var(--color-neutral-border);
+}
+
+.ant-picker-range-panel .ant-picker-panel:last-child {
+  @apply rounded-r-lg;
+}
+
+/* ========== Popup wrapper ========== */
+
+.ant-picker-dropdown {
+  @apply absolute z-50;
+}

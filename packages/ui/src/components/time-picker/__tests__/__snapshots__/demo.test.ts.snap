@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TimePicker demos > demo: Basic 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 200px;"><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md"><div class="ant-picker-input"><input placeholder="Select time" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+  <!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+<p>Selected: None</p>
+</div>"
+`;
+
+exports[`TimePicker demos > demo: Disabled 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 200px;"><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md ant-picker-disabled"><div class="ant-picker-input"><input placeholder="Disabled" disabled="" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+  <!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</div>"
+`;
+
+exports[`TimePicker demos > demo: Format 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 200px;"><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md"><div class="ant-picker-input"><input placeholder="HH:mm" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+  <!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end--><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md"><div class="ant-picker-input"><input placeholder="12-hour" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+<!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end--><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md"><div class="ant-picker-input"><input placeholder="With steps" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+<!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</div>"
+`;
+
+exports[`TimePicker demos > demo: Size 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px; max-width: 200px;"><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-sm"><div class="ant-picker-input"><input placeholder="Small" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+  <!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end--><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-md"><div class="ant-picker-input"><input placeholder="Default" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+<!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end--><span class="ant-trigger-wrapper"><div class="ant-picker ant-picker-time ant-picker-lg"><div class="ant-picker-input"><input placeholder="Large" autocomplete="off" value=""><span class="ant-picker-suffix"><span role="img" aria-label="clock-circle" class="anticon anticon-clock-circle"><svg focusable="false" class="" data-icon="clock-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M686.7 638.6L544.1 535.5V288c0-4.4-3.6-8-8-8H488c-4.4 0-8 3.6-8 8v275.4c0 2.6 1.2 5 3.3 6.5l165.4 120.6c3.6 2.6 8.6 1.8 11.2-1.7l28.6-39c2.6-3.7 1.8-8.7-1.8-11.2z"></path></svg></span></span>
+<!--v-if-->
+</div>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</div>"
+`;

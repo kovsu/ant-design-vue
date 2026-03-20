@@ -1,0 +1,290 @@
+@reference '../../../style/tailwind.css';
+
+/* ========== Panel Container ========== */
+
+.ant-picker-panel {
+  @apply inline-flex bg-white rounded-lg;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  font-family: var(--ant-font-family);
+}
+
+.ant-picker-panel-inner {
+  @apply flex flex-col;
+}
+
+/* ========== Panel Header ========== */
+
+.ant-picker-header {
+  @apply flex items-center px-2 border-b border-neutral-border;
+  height: 40px;
+}
+
+.ant-picker-header-view {
+  @apply flex-1 text-center font-medium text-sm;
+}
+
+.ant-picker-header-title-btn {
+  @apply cursor-pointer bg-transparent border-none px-1 py-0 font-medium text-sm text-neutral;
+  @apply hover:text-accent;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-header-super-prev-btn,
+.ant-picker-header-prev-btn,
+.ant-picker-header-next-btn,
+.ant-picker-header-super-next-btn {
+  @apply flex items-center justify-center w-6 h-6 cursor-pointer bg-transparent border-none;
+  @apply text-neutral-secondary hover:text-neutral;
+  font-size: 14px;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* ========== Panel Body (shared table) ========== */
+
+.ant-picker-body {
+  @apply p-2;
+}
+
+.ant-picker-content {
+  @apply w-full table-fixed border-collapse;
+}
+
+.ant-picker-content th {
+  @apply text-center text-xs text-neutral-secondary font-normal;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* ========== Cell ========== */
+
+.ant-picker-cell {
+  @apply text-center cursor-pointer relative;
+  padding: 3px 0;
+}
+
+.ant-picker-cell-inner {
+  @apply inline-flex items-center justify-center rounded-md text-sm;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease),
+              color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-cell:not(.ant-picker-cell-in-view) .ant-picker-cell-inner {
+  @apply text-neutral-disabled;
+}
+
+.ant-picker-cell:not(.ant-picker-cell-disabled):not(.ant-picker-cell-selected) .ant-picker-cell-inner:hover {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner {
+  @apply border border-solid border-accent;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  @apply bg-accent text-white;
+}
+
+.ant-picker-cell-disabled {
+  @apply cursor-not-allowed;
+}
+
+.ant-picker-cell-disabled .ant-picker-cell-inner {
+  @apply text-neutral-disabled bg-neutral-bg/50;
+}
+
+/* ========== Range selection ========== */
+
+.ant-picker-cell-in-range::before {
+  @apply absolute inset-0;
+  content: '';
+  background: var(--color-accent-1, rgba(22, 119, 255, 0.06));
+}
+
+.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-range-end .ant-picker-cell-inner {
+  @apply bg-accent text-white;
+}
+
+.ant-picker-cell-range-start::before {
+  @apply left-1/2;
+}
+
+.ant-picker-cell-range-end::before {
+  @apply right-1/2;
+}
+
+/* ========== Date Panel ========== */
+
+.ant-picker-date-panel .ant-picker-content {
+  width: 252px;
+}
+
+.ant-picker-date-panel .ant-picker-cell-inner {
+  width: 24px;
+  height: 24px;
+}
+
+/* ========== Week Panel ========== */
+
+.ant-picker-week-panel .ant-picker-content {
+  width: 292px;
+}
+
+.ant-picker-cell-week .ant-picker-cell-inner {
+  @apply text-neutral-disabled text-xs;
+}
+
+.ant-picker-week-panel-row:hover td .ant-picker-cell-inner {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-week-panel-row-selected td .ant-picker-cell-inner {
+  @apply bg-accent text-white;
+}
+
+/* ========== Month Panel ========== */
+
+.ant-picker-month-panel .ant-picker-content {
+  width: 252px;
+}
+
+.ant-picker-month-panel .ant-picker-cell-inner {
+  @apply px-2;
+  width: auto;
+  min-width: 60px;
+}
+
+/* ========== Quarter Panel ========== */
+
+.ant-picker-quarter-panel .ant-picker-content {
+  width: 252px;
+}
+
+.ant-picker-quarter-panel .ant-picker-cell-inner {
+  @apply px-4;
+  width: auto;
+  min-width: 50px;
+}
+
+/* ========== Year Panel ========== */
+
+.ant-picker-year-panel .ant-picker-content {
+  width: 252px;
+}
+
+.ant-picker-year-panel .ant-picker-cell-inner {
+  @apply px-2;
+  width: auto;
+  min-width: 60px;
+}
+
+/* ========== Decade Panel ========== */
+
+.ant-picker-decade-panel .ant-picker-content {
+  width: 252px;
+}
+
+.ant-picker-decade-panel .ant-picker-cell-inner {
+  @apply px-1 text-xs;
+  width: auto;
+  min-width: 70px;
+}
+
+/* ========== Time Panel ========== */
+
+.ant-picker-time-panel {
+  @apply border-l border-neutral-border;
+  min-width: 112px;
+}
+
+.ant-picker-time-panel-column-wrap {
+  @apply flex;
+  height: 224px;
+}
+
+.ant-picker-time-panel-column {
+  @apply flex-1 overflow-y-auto list-none m-0 p-0;
+  scrollbar-width: thin;
+}
+
+.ant-picker-time-panel-column::after {
+  content: '';
+  display: block;
+  height: calc(100% - 28px);
+}
+
+.ant-picker-time-panel-cell {
+  @apply cursor-pointer;
+}
+
+.ant-picker-time-panel-cell-inner {
+  @apply flex items-center justify-center text-sm;
+  height: 28px;
+  margin: 0 4px;
+  border-radius: var(--ant-border-radius);
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-time-panel-cell:hover .ant-picker-time-panel-cell-inner {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+  @apply bg-accent-1 font-medium;
+  color: var(--color-accent);
+}
+
+.ant-picker-time-panel-cell-disabled {
+  @apply cursor-not-allowed;
+}
+
+.ant-picker-time-panel-cell-disabled .ant-picker-time-panel-cell-inner {
+  @apply text-neutral-disabled;
+}
+
+/* ========== Footer ========== */
+
+.ant-picker-footer {
+  @apply border-t border-neutral-border px-3 py-2;
+}
+
+.ant-picker-footer-extra {
+  @apply flex items-center justify-between;
+}
+
+.ant-picker-today-btn,
+.ant-picker-now-btn {
+  @apply text-accent text-sm cursor-pointer;
+  @apply hover:text-accent-hover;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-ok-btn {
+  @apply inline-flex items-center justify-center px-3 py-0.5 text-sm;
+  @apply bg-accent text-white border-none rounded-md cursor-pointer;
+  @apply hover:bg-accent-hover;
+  height: 24px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* ========== Presets ========== */
+
+.ant-picker-presets {
+  @apply border-r border-neutral-border;
+  min-width: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.ant-picker-presets ul {
+  @apply list-none m-0 p-1;
+}
+
+.ant-picker-presets li {
+  @apply px-3 py-1.5 rounded-md cursor-pointer text-sm text-neutral;
+  @apply hover:bg-neutral-bg;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}

@@ -1,0 +1,12 @@
+@reference '../../../style/tailwind.css';
+
+/* TimePicker reuses the main .ant-picker styles from date-picker */
+/* Only time-specific overrides here */
+
+.ant-picker-time-panel-wrapper {
+  @apply flex flex-col;
+}
+
+.ant-picker-time-panel-wrapper .ant-picker-time-panel {
+  @apply border-l-0;
+}

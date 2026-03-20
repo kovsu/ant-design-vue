@@ -1,0 +1,227 @@
+@reference '../../../style/tailwind.css';
+
+/* ========== Calendar Container ========== */
+
+.ant-picker-calendar {
+  @apply bg-white;
+  font-family: var(--ant-font-family);
+  font-size: var(--ant-font-size);
+}
+
+/* ========== Header ========== */
+
+.ant-picker-calendar-header {
+  @apply flex items-center justify-between px-4 py-3;
+}
+
+.ant-picker-calendar-header-left {
+  @apply flex items-center gap-2;
+}
+
+.ant-picker-calendar-header-right {
+  @apply flex items-center;
+}
+
+.ant-picker-calendar-year-select,
+.ant-picker-calendar-month-select {
+  @apply border border-solid border-neutral-border rounded-md bg-white text-neutral text-sm;
+  @apply px-2 py-1 cursor-pointer;
+  @apply outline-none;
+  transition: border-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-year-select:hover,
+.ant-picker-calendar-month-select:hover {
+  @apply border-accent-hover;
+}
+
+.ant-picker-calendar-year-select:focus,
+.ant-picker-calendar-month-select:focus {
+  @apply border-accent;
+  box-shadow: 0 0 0 2px rgba(var(--color-accent-rgb, 22 119 255) / 0.1);
+}
+
+/* Mode switch */
+.ant-picker-calendar-mode-switch {
+  @apply inline-flex border border-solid border-neutral-border rounded-md overflow-hidden;
+}
+
+.ant-picker-calendar-mode-btn {
+  @apply px-3 py-1 text-sm bg-transparent border-none cursor-pointer text-neutral;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease),
+              color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-mode-btn:hover {
+  @apply text-accent;
+}
+
+.ant-picker-calendar-mode-btn.active {
+  @apply bg-accent text-white;
+}
+
+.ant-picker-calendar-mode-btn + .ant-picker-calendar-mode-btn {
+  @apply border-l border-solid border-neutral-border;
+}
+
+/* ========== Calendar Body ========== */
+
+.ant-picker-calendar-body {
+  @apply px-2 pb-2;
+}
+
+.ant-picker-calendar-table {
+  @apply w-full table-fixed border-collapse;
+}
+
+.ant-picker-calendar-table th {
+  @apply text-center text-neutral-secondary font-normal text-sm;
+  padding: 8px 0;
+}
+
+/* ========== Full-size Calendar ========== */
+
+.ant-picker-calendar-full .ant-picker-calendar-date {
+  @apply border-t border-solid border-neutral-border cursor-pointer;
+  @apply relative;
+  padding: 4px 8px;
+  min-height: 100px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date:hover {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date:not(.ant-picker-calendar-date-in-view) {
+  @apply opacity-40;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-value {
+  @apply text-sm leading-6;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-today .ant-picker-calendar-date-value {
+  @apply text-accent font-medium;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-selected {
+  @apply bg-accent-1;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-selected .ant-picker-calendar-date-value {
+  @apply text-accent;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-date-content {
+  @apply mt-1 text-xs;
+  min-height: 40px;
+}
+
+/* Full-size month cells */
+.ant-picker-calendar-full .ant-picker-calendar-month {
+  @apply border-t border-solid border-neutral-border cursor-pointer;
+  @apply px-4 py-3;
+  min-height: 100px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month:hover {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month-value {
+  @apply text-sm;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month-selected {
+  @apply bg-accent-1;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month-selected .ant-picker-calendar-month-value {
+  @apply text-accent font-medium;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month-today .ant-picker-calendar-month-value {
+  @apply text-accent font-medium;
+}
+
+.ant-picker-calendar-full .ant-picker-calendar-month-content {
+  @apply mt-1 text-xs;
+  min-height: 40px;
+}
+
+/* ========== Mini Calendar (card mode) ========== */
+
+.ant-picker-calendar-mini {
+  @apply border border-solid border-neutral-border rounded-lg;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-header {
+  @apply px-2 py-2;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date {
+  @apply text-center cursor-pointer relative;
+  padding: 3px 0;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date-value {
+  @apply inline-flex items-center justify-center rounded-md text-sm;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date:hover .ant-picker-calendar-date-value {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date:not(.ant-picker-calendar-date-in-view) .ant-picker-calendar-date-value {
+  @apply text-neutral-disabled;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date-today .ant-picker-calendar-date-value {
+  @apply border border-solid border-accent;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date-selected .ant-picker-calendar-date-value {
+  @apply bg-accent text-white;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date-disabled {
+  @apply cursor-not-allowed;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-date-disabled .ant-picker-calendar-date-value {
+  @apply text-neutral-disabled;
+}
+
+/* Mini month cells */
+.ant-picker-calendar-mini .ant-picker-calendar-month {
+  @apply text-center cursor-pointer;
+  padding: 8px 0;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-month-value {
+  @apply inline-flex items-center justify-center rounded-md text-sm px-3;
+  height: 24px;
+  transition: background var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-month:hover .ant-picker-calendar-month-value {
+  @apply bg-neutral-bg;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-month-selected .ant-picker-calendar-month-value {
+  @apply bg-accent text-white;
+}
+
+.ant-picker-calendar-mini .ant-picker-calendar-month-today .ant-picker-calendar-month-value {
+  @apply border border-solid border-accent;
+}
