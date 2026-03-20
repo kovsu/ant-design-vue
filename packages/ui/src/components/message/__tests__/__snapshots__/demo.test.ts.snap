@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Message demos > demo: Basic 1`] = `
+"<button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+  <!--v-if-->
+  <!--v-if--><span class="ant-btn-content">Display normal message</span>
+</button>"
+`;
+
+exports[`Message demos > demo: Duration 1`] = `
+"<button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+  <!--v-if-->
+  <!--v-if--><span class="ant-btn-content">Customized display duration</span>
+</button>"
+`;
+
+exports[`Message demos > demo: Loading 1`] = `
+"<button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+  <!--v-if-->
+  <!--v-if--><span class="ant-btn-content">Display a loading indicator</span>
+</button>"
+`;
+
+exports[`Message demos > demo: Types 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Success</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Error</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Warning</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Info</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Loading</span>
+  </button></div>"
+`;

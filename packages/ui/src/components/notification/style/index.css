@@ -1,0 +1,165 @@
+@reference '../../../style/tailwind.css';
+
+/* Notification container */
+:where(.ant-notification) {
+  @apply fixed z-[1010];
+  width: 384px;
+  max-width: calc(100vw - 32px);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Placement positions */
+:where(.ant-notification-topRight) {
+  top: 24px;
+  right: 24px;
+}
+
+:where(.ant-notification-topLeft) {
+  top: 24px;
+  left: 24px;
+}
+
+:where(.ant-notification-top) {
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+:where(.ant-notification-bottomRight) {
+  bottom: 24px;
+  right: 24px;
+}
+
+:where(.ant-notification-bottomLeft) {
+  bottom: 24px;
+  left: 24px;
+}
+
+:where(.ant-notification-bottom) {
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Notification notice */
+:where(.ant-notification-notice) {
+  @apply relative;
+  padding: 16px 24px;
+  background: #fff;
+  border-radius: var(--ant-border-radius-lg);
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: all;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* With icon layout */
+:where(.ant-notification-notice-with-icon) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0 12px;
+}
+
+:where(.ant-notification-notice-icon) {
+  font-size: 24px;
+  line-height: 1;
+  grid-row: 1 / 3;
+  padding-top: 2px;
+}
+
+:where(.ant-notification-notice-success) .ant-notification-notice-icon {
+  color: var(--color-success);
+}
+
+:where(.ant-notification-notice-info) .ant-notification-notice-icon {
+  color: var(--color-info);
+}
+
+:where(.ant-notification-notice-warning) .ant-notification-notice-icon {
+  color: var(--color-warning);
+}
+
+:where(.ant-notification-notice-error) .ant-notification-notice-icon {
+  color: var(--color-error);
+}
+
+:where(.ant-notification-notice-message) {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-neutral);
+  margin-bottom: 8px;
+}
+
+:where(.ant-notification-notice-description) {
+  font-size: var(--ant-font-size);
+  line-height: var(--ant-line-height);
+  color: var(--color-neutral);
+}
+
+:where(.ant-notification-notice-btn) {
+  grid-column: 2;
+  margin-top: 12px;
+}
+
+/* Close button */
+:where(.ant-notification-notice-close) {
+  @apply absolute cursor-pointer border-none bg-transparent p-0;
+  top: 16px;
+  right: 22px;
+  font-size: 14px;
+  color: var(--color-neutral-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--ant-border-radius-sm);
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease),
+    background-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-notification-notice-close):hover {
+  color: var(--color-neutral);
+  background-color: var(--color-neutral-bg);
+}
+
+/* Move-down transition */
+.ant-move-down-enter-active {
+  animation: antMoveDownIn var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-move-down-leave-active {
+  animation: antMoveDownOut var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+@keyframes antMoveDownIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes antMoveDownOut {
+  0% {
+    opacity: 1;
+    max-height: 300px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}

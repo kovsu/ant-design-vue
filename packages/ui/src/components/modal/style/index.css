@@ -1,0 +1,224 @@
+@reference '../../../style/tailwind.css';
+
+/* Modal mask */
+:where(.ant-modal-mask) {
+  @apply fixed inset-0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Modal wrap */
+:where(.ant-modal-wrap) {
+  @apply fixed inset-0 overflow-auto;
+  z-index: 1000;
+  outline: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+:where(.ant-modal-centered) {
+  align-items: center;
+  padding: 0;
+}
+
+/* Modal container */
+:where(.ant-modal) {
+  @apply relative;
+  box-sizing: border-box;
+  width: 520px;
+  max-width: calc(100vw - 32px);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: var(--ant-border-radius-lg);
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  outline: 0;
+}
+
+/* Close button */
+:where(.ant-modal-close) {
+  @apply absolute cursor-pointer border-none bg-transparent p-0;
+  top: 17px;
+  right: 17px;
+  z-index: 1010;
+  font-size: 16px;
+  color: var(--color-neutral-secondary);
+  line-height: 1;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ant-border-radius-sm);
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease),
+    background-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-modal-close):hover {
+  color: var(--color-neutral);
+  background-color: var(--color-neutral-bg);
+}
+
+/* Header */
+:where(.ant-modal-header) {
+  @apply m-0;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-neutral-separator);
+  border-radius: var(--ant-border-radius-lg) var(--ant-border-radius-lg) 0 0;
+}
+
+:where(.ant-modal-title) {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-neutral);
+  word-wrap: break-word;
+}
+
+/* Body */
+:where(.ant-modal-body) {
+  padding: 24px;
+  font-size: var(--ant-font-size);
+  line-height: var(--ant-line-height);
+  color: var(--color-neutral);
+  word-wrap: break-word;
+}
+
+/* Footer */
+:where(.ant-modal-footer) {
+  padding: 10px 16px;
+  text-align: right;
+  border-top: 1px solid var(--color-neutral-separator);
+  border-radius: 0 0 var(--ant-border-radius-lg) var(--ant-border-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* ---- Confirm dialog ---- */
+:where(.ant-modal-confirm) .ant-modal-body {
+  padding: 32px 32px 24px;
+}
+
+:where(.ant-modal-confirm-body-wrapper) {
+  display: flex;
+  flex-direction: column;
+}
+
+:where(.ant-modal-confirm-body) {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+:where(.ant-modal-confirm-icon) {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+:where(.ant-modal-confirm-info) .ant-modal-confirm-icon {
+  color: var(--color-info);
+}
+
+:where(.ant-modal-confirm-success) .ant-modal-confirm-icon {
+  color: var(--color-success);
+}
+
+:where(.ant-modal-confirm-error) .ant-modal-confirm-icon {
+  color: var(--color-error);
+}
+
+:where(.ant-modal-confirm-warning) .ant-modal-confirm-icon,
+:where(.ant-modal-confirm-confirm) .ant-modal-confirm-icon {
+  color: var(--color-warning);
+}
+
+:where(.ant-modal-confirm-title) {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-neutral);
+  flex: 1;
+}
+
+:where(.ant-modal-confirm-content) {
+  margin-top: 8px;
+  font-size: var(--ant-font-size);
+  color: var(--color-neutral-secondary);
+  line-height: var(--ant-line-height);
+}
+
+:where(.ant-modal-confirm-btns) {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* ---- Transitions ---- */
+
+/* Zoom transition for modal */
+.ant-zoom-enter-active {
+  animation: antZoomIn var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-zoom-leave-active {
+  animation: antZoomOut var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+@keyframes antZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes antZoomOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Fade transition for mask */
+.ant-fade-enter-active {
+  animation: antFadeIn var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-fade-leave-active {
+  animation: antFadeOut var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+@keyframes antFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes antFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

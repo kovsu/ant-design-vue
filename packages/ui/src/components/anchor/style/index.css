@@ -1,0 +1,88 @@
+@reference '../../../style/tailwind.css';
+
+/* Anchor container */
+:where(.ant-anchor) {
+  @apply relative;
+  font-size: var(--ant-font-size);
+  color: var(--color-neutral);
+}
+
+:where(.ant-anchor-wrapper) {
+  @apply relative;
+}
+
+/* === Vertical direction === */
+:where(.ant-anchor-vertical) .ant-anchor-wrapper {
+  padding-left: 2px;
+}
+
+:where(.ant-anchor-vertical) .ant-anchor-ink {
+  @apply absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--color-neutral-separator);
+}
+
+:where(.ant-anchor-vertical) .ant-anchor-ink::before {
+  content: '';
+  @apply absolute;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: var(--color-accent);
+  transition: top var(--ant-motion-duration) var(--ant-motion-ease),
+    height var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* Link */
+:where(.ant-anchor-link) {
+  padding: 4px 0 4px 16px;
+}
+
+:where(.ant-anchor-link-nested) {
+  padding-left: 28px;
+}
+
+:where(.ant-anchor-link-title) {
+  @apply block no-underline truncate;
+  color: var(--color-neutral);
+  line-height: 1.5;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+  max-width: 240px;
+}
+
+:where(.ant-anchor-link-title):hover {
+  color: var(--color-accent);
+}
+
+:where(.ant-anchor-link-title-active) {
+  color: var(--color-accent);
+}
+
+/* Active link indicator */
+:where(.ant-anchor-vertical) .ant-anchor-link-active > .ant-anchor-link-title {
+  color: var(--color-accent);
+}
+
+/* === Horizontal direction === */
+:where(.ant-anchor-horizontal) .ant-anchor-wrapper {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-anchor-horizontal) .ant-anchor-link {
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-anchor-horizontal) .ant-anchor-link-active {
+  border-bottom-color: var(--color-accent);
+}
+
+:where(.ant-anchor-horizontal) .ant-anchor-link-title {
+  max-width: none;
+}

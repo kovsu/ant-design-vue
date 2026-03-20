@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Notification demos > demo: Basic 1`] = `
+"<button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+  <!--v-if-->
+  <!--v-if--><span class="ant-btn-content">Open Notification</span>
+</button>"
+`;
+
+exports[`Notification demos > demo: Duration 1`] = `
+"<button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+  <!--v-if-->
+  <!--v-if--><span class="ant-btn-content"> Open notification that never closes </span>
+</button>"
+`;
+
+exports[`Notification demos > demo: Placement 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Top Left</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Top Right</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Bottom Left</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Bottom Right</span>
+  </button></div>"
+`;
+
+exports[`Notification demos > demo: Types 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Success</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Info</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Warning</span>
+  </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Error</span>
+  </button></div>"
+`;

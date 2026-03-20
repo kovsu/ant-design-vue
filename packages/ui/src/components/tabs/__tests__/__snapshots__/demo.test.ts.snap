@@ -1,0 +1,187 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tabs demos > demo: Basic 1`] = `
+"<div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md">
+  <!-- Tab bar -->
+  <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+    <!-- Left extra -->
+    <!--v-if-->
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-list">
+        <!-- Tab buttons -->
+        <!-- Ink bar (line type only) -->
+        <div class="ant-tabs-ink-bar"></div>
+      </div>
+    </div><!-- Add button for editable-card -->
+    <!--v-if-->
+    <!-- Right extra -->
+    <!--v-if-->
+  </div><!-- Tab content -->
+  <div class="ant-tabs-content-holder">
+    <div class="ant-tabs-content">
+      <!-- Items-based content -->
+      <!-- Slot-based content (TabPane children) -->
+      <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab Pane 1</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab Pane 2</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab Pane 3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Tabs demos > demo: Card 1`] = `
+"<div class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-md">
+  <!-- Tab bar -->
+  <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+    <!-- Left extra -->
+    <!--v-if-->
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-list">
+        <!-- Tab buttons -->
+        <!-- Ink bar (line type only) -->
+        <!--v-if-->
+      </div>
+    </div><!-- Add button for editable-card -->
+    <!--v-if-->
+    <!-- Right extra -->
+    <!--v-if-->
+  </div><!-- Tab content -->
+  <div class="ant-tabs-content-holder">
+    <div class="ant-tabs-content">
+      <!-- Items-based content -->
+      <!-- Slot-based content (TabPane children) -->
+      <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab Pane 1</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab Pane 2</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab Pane 3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Tabs demos > demo: Centered 1`] = `
+"<div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md ant-tabs-centered">
+  <!-- Tab bar -->
+  <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+    <!-- Left extra -->
+    <!--v-if-->
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-list">
+        <!-- Tab buttons -->
+        <!-- Ink bar (line type only) -->
+        <div class="ant-tabs-ink-bar"></div>
+      </div>
+    </div><!-- Add button for editable-card -->
+    <!--v-if-->
+    <!-- Right extra -->
+    <!--v-if-->
+  </div><!-- Tab content -->
+  <div class="ant-tabs-content-holder">
+    <div class="ant-tabs-content">
+      <!-- Items-based content -->
+      <!-- Slot-based content (TabPane children) -->
+      <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab 1</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 2</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Tabs demos > demo: Disabled 1`] = `
+"<div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md">
+  <!-- Tab bar -->
+  <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+    <!-- Left extra -->
+    <!--v-if-->
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-list">
+        <!-- Tab buttons -->
+        <!-- Ink bar (line type only) -->
+        <div class="ant-tabs-ink-bar"></div>
+      </div>
+    </div><!-- Add button for editable-card -->
+    <!--v-if-->
+    <!-- Right extra -->
+    <!--v-if-->
+  </div><!-- Tab content -->
+  <div class="ant-tabs-content-holder">
+    <div class="ant-tabs-content">
+      <!-- Items-based content -->
+      <!-- Slot-based content (TabPane children) -->
+      <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab 1</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 2</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Tabs demos > demo: Items 1`] = `
+"<div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md">
+  <!-- Tab bar -->
+  <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+    <!-- Left extra -->
+    <!--v-if-->
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-list">
+        <!-- Tab buttons -->
+        <div class="ant-tabs-tab ant-tabs-tab-active" role="tab" aria-selected="true" tabindex="0"><span class="ant-tabs-tab-label">Tab 1</span><!-- Remove button for editable-card -->
+          <!--v-if-->
+        </div>
+        <div class="ant-tabs-tab" role="tab" aria-selected="false" tabindex="-1"><span class="ant-tabs-tab-label">Tab 2</span><!-- Remove button for editable-card -->
+          <!--v-if-->
+        </div>
+        <div class="ant-tabs-tab" role="tab" aria-selected="false" tabindex="-1"><span class="ant-tabs-tab-label">Tab 3</span><!-- Remove button for editable-card -->
+          <!--v-if-->
+        </div><!-- Ink bar (line type only) -->
+        <div class="ant-tabs-ink-bar"></div>
+      </div>
+    </div><!-- Add button for editable-card -->
+    <!--v-if-->
+    <!-- Right extra -->
+    <!--v-if-->
+  </div><!-- Tab content -->
+  <div class="ant-tabs-content-holder">
+    <div class="ant-tabs-content">
+      <!-- Items-based content -->
+      <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab 1</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 2</div>
+      <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Tabs demos > demo: Position 1`] = `
+"<div>
+  <div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px; margin-bottom: 16px;"><span>Tab position:</span>
+    <div class="ant-radio-group ant-radio-group-default ant-radio-group-outline" role="radiogroup"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" checked="" role="radio" aria-checked="true"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Top</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Bottom</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Left</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Right</span></label></div>
+  </div>
+  <div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md">
+    <!-- Tab bar -->
+    <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+      <!-- Left extra -->
+      <!--v-if-->
+      <div class="ant-tabs-nav-wrap">
+        <div class="ant-tabs-nav-list">
+          <!-- Tab buttons -->
+          <!-- Ink bar (line type only) -->
+          <div class="ant-tabs-ink-bar"></div>
+        </div>
+      </div><!-- Add button for editable-card -->
+      <!--v-if-->
+      <!-- Right extra -->
+      <!--v-if-->
+    </div><!-- Tab content -->
+    <div class="ant-tabs-content-holder">
+      <div class="ant-tabs-content">
+        <!-- Items-based content -->
+        <!-- Slot-based content (TabPane children) -->
+        <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">Content of Tab 1</div>
+        <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 2</div>
+        <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">Content of Tab 3</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

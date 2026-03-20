@@ -1,0 +1,200 @@
+@reference '../../../style/tailwind.css';
+
+/* Pagination container */
+:where(.ant-pagination) {
+  @apply flex flex-wrap items-center;
+  gap: 8px;
+  font-size: var(--ant-font-size);
+  color: var(--color-neutral);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:where(.ant-pagination-disabled) {
+  cursor: not-allowed;
+}
+
+/* Page items */
+:where(.ant-pagination-item) {
+  display: inline-flex;
+}
+
+:where(.ant-pagination-item) button {
+  @apply cursor-pointer border bg-transparent;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  font-size: var(--ant-font-size);
+  line-height: 30px;
+  text-align: center;
+  border-color: var(--color-neutral-border);
+  border-radius: var(--ant-border-radius);
+  transition: all var(--ant-motion-duration) var(--ant-motion-ease);
+  outline: none;
+}
+
+:where(.ant-pagination-item) button:hover:not(:disabled) {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+:where(.ant-pagination-item-active) button {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Prev/Next buttons */
+:where(.ant-pagination-prev) button,
+:where(.ant-pagination-next) button {
+  @apply cursor-pointer border bg-transparent;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-color: var(--color-neutral-border);
+  border-radius: var(--ant-border-radius);
+  transition: all var(--ant-motion-duration) var(--ant-motion-ease);
+  outline: none;
+}
+
+:where(.ant-pagination-prev) button:hover:not(:disabled),
+:where(.ant-pagination-next) button:hover:not(:disabled) {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+:where(.ant-pagination-disabled) button {
+  color: var(--color-neutral-disabled) !important;
+  cursor: not-allowed !important;
+  border-color: var(--color-neutral-border) !important;
+}
+
+/* Jump prev/next (ellipsis) */
+:where(.ant-pagination-jump-prev) button,
+:where(.ant-pagination-jump-next) button {
+  @apply cursor-pointer border-none bg-transparent;
+  min-width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-disabled);
+  font-size: 12px;
+  outline: none;
+}
+
+:where(.ant-pagination-jump-prev) button:hover,
+:where(.ant-pagination-jump-next) button:hover {
+  color: var(--color-accent);
+}
+
+/* Total text */
+:where(.ant-pagination-total-text) {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  margin-right: 8px;
+  color: var(--color-neutral);
+}
+
+/* Options (size changer) */
+:where(.ant-pagination-options) {
+  display: inline-flex;
+  align-items: center;
+}
+
+:where(.ant-pagination-options-size-changer) {
+  @apply cursor-pointer;
+  height: 32px;
+  padding: 0 8px;
+  font-size: var(--ant-font-size);
+  border: 1px solid var(--color-neutral-border);
+  border-radius: var(--ant-border-radius);
+  background: #fff;
+  outline: none;
+  transition: border-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-pagination-options-size-changer):hover:not(:disabled),
+:where(.ant-pagination-options-size-changer):focus:not(:disabled) {
+  border-color: var(--color-accent);
+}
+
+/* Quick jumper */
+:where(.ant-pagination-options-quick-jumper) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  color: var(--color-neutral);
+}
+
+:where(.ant-pagination-options-quick-jumper) input {
+  width: 50px;
+  height: 32px;
+  padding: 0 8px;
+  font-size: var(--ant-font-size);
+  border: 1px solid var(--color-neutral-border);
+  border-radius: var(--ant-border-radius);
+  outline: none;
+  text-align: center;
+  transition: border-color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-pagination-options-quick-jumper) input:hover:not(:disabled),
+:where(.ant-pagination-options-quick-jumper) input:focus:not(:disabled) {
+  border-color: var(--color-accent);
+}
+
+/* === Simple mode === */
+:where(.ant-pagination-simple) {
+  gap: 0;
+}
+
+:where(.ant-pagination-simple-pager) {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  margin: 0 8px;
+  color: var(--color-neutral);
+}
+
+:where(.ant-pagination-simple-pager) input {
+  width: 40px;
+  height: 28px;
+  padding: 0 6px;
+  font-size: var(--ant-font-size);
+  border: 1px solid var(--color-neutral-border);
+  border-radius: var(--ant-border-radius);
+  outline: none;
+  text-align: center;
+}
+
+:where(.ant-pagination-slash) {
+  margin: 0 4px;
+}
+
+/* === Small size === */
+:where(.ant-pagination-small) .ant-pagination-item button,
+:where(.ant-pagination-small) .ant-pagination-prev button,
+:where(.ant-pagination-small) .ant-pagination-next button {
+  min-width: 24px;
+  height: 24px;
+  line-height: 22px;
+  font-size: var(--ant-font-size-sm);
+}
+
+:where(.ant-pagination-small) .ant-pagination-options-size-changer {
+  height: 24px;
+}
+
+:where(.ant-pagination-small) .ant-pagination-options-quick-jumper input {
+  height: 24px;
+  width: 40px;
+}

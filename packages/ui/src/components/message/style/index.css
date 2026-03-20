@@ -1,0 +1,97 @@
+@reference '../../../style/tailwind.css';
+
+/* Message container */
+:where(.ant-message) {
+  @apply fixed left-1/2 z-[1010];
+  top: 8px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Message notice */
+:where(.ant-message-notice) {
+  @apply text-center;
+  padding: 0;
+  pointer-events: all;
+}
+
+:where(.ant-message-notice-content) {
+  @apply inline-flex items-center gap-2;
+  padding: 9px 12px;
+  background: #fff;
+  border-radius: var(--ant-border-radius-lg);
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  font-size: var(--ant-font-size);
+  line-height: var(--ant-line-height);
+}
+
+/* Icons by type */
+:where(.ant-message-icon) {
+  @apply inline-flex items-center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+:where(.ant-message-info) .ant-message-icon {
+  color: var(--color-info);
+}
+
+:where(.ant-message-success) .ant-message-icon {
+  color: var(--color-success);
+}
+
+:where(.ant-message-error) .ant-message-icon {
+  color: var(--color-error);
+}
+
+:where(.ant-message-warning) .ant-message-icon {
+  color: var(--color-warning);
+}
+
+:where(.ant-message-loading) .ant-message-icon {
+  color: var(--color-accent);
+}
+
+:where(.ant-message-text) {
+  color: var(--color-neutral);
+}
+
+/* Move-up transition */
+.ant-move-up-enter-active {
+  animation: antMoveUpIn var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+.ant-move-up-leave-active {
+  animation: antMoveUpOut var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+@keyframes antMoveUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes antMoveUpOut {
+  0% {
+    opacity: 1;
+    max-height: 150px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}

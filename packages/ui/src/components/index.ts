@@ -72,3 +72,16 @@ export { default as Menu } from './menu'
 export { MenuItem, SubMenu, MenuItemGroup, MenuDivider } from './menu'
 export { default as Dropdown } from './dropdown'
 export { DropdownButton } from './dropdown'
+
+// Batch 9: Modal Family
+export { default as Modal } from './modal'
+export { default as Drawer } from './drawer'
+export { message } from './message'
+export { notification } from './notification'
+
+// Batch 10: Navigation
+export { default as Tabs } from './tabs'
+export { TabPane } from './tabs'
+export { default as Pagination } from './pagination'
+export { default as Anchor } from './anchor'
+export { AnchorLink } from './anchor'

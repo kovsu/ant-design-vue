@@ -1,0 +1,288 @@
+@reference '../../../style/tailwind.css';
+
+/* Tabs container */
+:where(.ant-tabs) {
+  @apply relative;
+  box-sizing: border-box;
+  font-size: var(--ant-font-size);
+  color: var(--color-neutral);
+  line-height: var(--ant-line-height);
+}
+
+/* === Tab nav === */
+:where(.ant-tabs-nav) {
+  @apply relative flex;
+  align-items: center;
+}
+
+:where(.ant-tabs-nav-wrap) {
+  @apply relative flex-1 overflow-hidden;
+}
+
+:where(.ant-tabs-nav-list) {
+  @apply relative flex;
+  transition: transform var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* === Tab item === */
+:where(.ant-tabs-tab) {
+  @apply relative cursor-pointer select-none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: var(--ant-font-size);
+  color: var(--color-neutral);
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+  outline: none;
+}
+
+:where(.ant-tabs-tab):hover {
+  color: var(--color-accent-hover);
+}
+
+:where(.ant-tabs-tab-active) {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+:where(.ant-tabs-tab-disabled) {
+  color: var(--color-neutral-disabled) !important;
+  cursor: not-allowed;
+}
+
+:where(.ant-tabs-tab-remove) {
+  @apply border-none bg-transparent cursor-pointer p-0 m-0;
+  font-size: 12px;
+  color: var(--color-neutral-secondary);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-tabs-tab-remove):hover {
+  color: var(--color-neutral);
+}
+
+/* === Ink bar === */
+:where(.ant-tabs-ink-bar) {
+  @apply absolute;
+  background: var(--color-accent);
+  pointer-events: none;
+  transition: width var(--ant-motion-duration) var(--ant-motion-ease),
+    height var(--ant-motion-duration) var(--ant-motion-ease),
+    transform var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+/* === Position: top (default) === */
+:where(.ant-tabs-top) .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+:where(.ant-tabs-top) .ant-tabs-nav-list {
+  border-bottom: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-top) .ant-tabs-tab {
+  margin: 0 32px 0 0;
+}
+
+:where(.ant-tabs-top) .ant-tabs-tab:last-of-type {
+  margin-right: 0;
+}
+
+:where(.ant-tabs-top) .ant-tabs-ink-bar {
+  bottom: 0;
+  height: 2px;
+}
+
+/* === Position: bottom === */
+:where(.ant-tabs-bottom) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+:where(.ant-tabs-bottom) .ant-tabs-nav {
+  margin-top: 16px;
+}
+
+:where(.ant-tabs-bottom) .ant-tabs-nav-list {
+  border-top: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-bottom) .ant-tabs-tab {
+  margin: 0 32px 0 0;
+}
+
+:where(.ant-tabs-bottom) .ant-tabs-ink-bar {
+  top: 0;
+  height: 2px;
+}
+
+/* === Position: left === */
+:where(.ant-tabs-left) {
+  display: flex;
+  flex-direction: row;
+}
+
+:where(.ant-tabs-left) .ant-tabs-nav {
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+:where(.ant-tabs-left) .ant-tabs-nav-list {
+  flex-direction: column;
+  border-right: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-left) .ant-tabs-tab {
+  padding: 8px 24px 8px 0;
+  margin: 0;
+}
+
+:where(.ant-tabs-left) .ant-tabs-ink-bar {
+  right: 0;
+  width: 2px;
+}
+
+:where(.ant-tabs-left) .ant-tabs-content-holder {
+  flex: 1;
+  min-width: 0;
+}
+
+/* === Position: right === */
+:where(.ant-tabs-right) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+:where(.ant-tabs-right) .ant-tabs-nav {
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+:where(.ant-tabs-right) .ant-tabs-nav-list {
+  flex-direction: column;
+  border-left: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-right) .ant-tabs-tab {
+  padding: 8px 0 8px 24px;
+  margin: 0;
+}
+
+:where(.ant-tabs-right) .ant-tabs-ink-bar {
+  left: 0;
+  width: 2px;
+}
+
+:where(.ant-tabs-right) .ant-tabs-content-holder {
+  flex: 1;
+  min-width: 0;
+}
+
+/* === Card type === */
+:where(.ant-tabs-card) .ant-tabs-nav-list {
+  border-bottom: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-card) .ant-tabs-tab {
+  padding: 8px 16px;
+  margin: 0;
+  background: var(--color-neutral-bg);
+  border: 1px solid var(--color-neutral-separator);
+  border-bottom: none;
+  border-radius: var(--ant-border-radius-lg) var(--ant-border-radius-lg) 0 0;
+  margin-right: 2px;
+  transition: all var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-tabs-card) .ant-tabs-tab-active {
+  background: #fff;
+  border-bottom-color: #fff;
+}
+
+/* === Editable card === */
+:where(.ant-tabs-editable-card) .ant-tabs-nav-list {
+  border-bottom: 1px solid var(--color-neutral-separator);
+}
+
+:where(.ant-tabs-editable-card) .ant-tabs-tab {
+  padding: 8px 16px;
+  margin: 0;
+  background: var(--color-neutral-bg);
+  border: 1px solid var(--color-neutral-separator);
+  border-bottom: none;
+  border-radius: var(--ant-border-radius-lg) var(--ant-border-radius-lg) 0 0;
+  margin-right: 2px;
+}
+
+:where(.ant-tabs-editable-card) .ant-tabs-tab-active {
+  background: #fff;
+  border-bottom-color: #fff;
+}
+
+:where(.ant-tabs-nav-add) {
+  @apply border-none bg-transparent cursor-pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--color-neutral);
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-neutral-separator);
+  border-bottom: none;
+  border-radius: var(--ant-border-radius-lg) var(--ant-border-radius-lg) 0 0;
+  transition: color var(--ant-motion-duration) var(--ant-motion-ease);
+}
+
+:where(.ant-tabs-nav-add):hover {
+  color: var(--color-accent-hover);
+}
+
+/* === Centered === */
+:where(.ant-tabs-centered) .ant-tabs-nav-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* === Extra === */
+:where(.ant-tabs-extra) {
+  display: flex;
+  align-items: center;
+}
+
+:where(.ant-tabs-extra-left) {
+  margin-right: 16px;
+}
+
+:where(.ant-tabs-extra-right) {
+  margin-left: 16px;
+}
+
+/* === Size variants === */
+:where(.ant-tabs-sm) .ant-tabs-tab {
+  padding: 8px 0;
+  font-size: var(--ant-font-size-sm);
+}
+
+:where(.ant-tabs-lg) .ant-tabs-tab {
+  padding: 16px 0;
+  font-size: var(--ant-font-size-lg);
+}
+
+/* === Content === */
+:where(.ant-tabs-content-holder) {
+  flex: auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+:where(.ant-tabs-content) {
+  @apply relative;
+  width: 100%;
+}
+
+:where(.ant-tabs-tabpane) {
+  outline: none;
+}

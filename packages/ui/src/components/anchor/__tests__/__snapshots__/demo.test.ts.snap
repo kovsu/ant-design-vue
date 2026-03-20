@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Anchor demos > demo: Basic 1`] = `
+"<div class="ant-anchor ant-anchor-vertical">
+  <div class="ant-anchor-wrapper">
+    <!-- Ink indicator (vertical only) --><span class="ant-anchor-ink" style="display: none;"></span><!-- Items-based rendering -->
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#basic" title="Basic Usage">Basic Usage</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#api" title="API">API</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#examples" title="Examples">Examples</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Anchor demos > demo: Horizontal 1`] = `
+"<div class="ant-anchor ant-anchor-horizontal">
+  <div class="ant-anchor-wrapper">
+    <!-- Ink indicator (vertical only) -->
+    <!--v-if-->
+    <!-- Items-based rendering -->
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#overview" title="Overview">Overview</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#installation" title="Installation">Installation</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#usage" title="Usage">Usage</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#api" title="API">API</a><!-- Nested children (vertical only) -->
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Anchor demos > demo: SlotDemo 1`] = `
+"<div class="ant-anchor ant-anchor-vertical">
+  <div class="ant-anchor-wrapper">
+    <!-- Ink indicator (vertical only) --><span class="ant-anchor-ink" style="display: none;"></span><!-- Items-based rendering -->
+    <!-- Slot-based rendering -->
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-1" title="Section 1">Section 1</a><!-- Nested links -->
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-2" title="Section 2">Section 2</a><!-- Nested links -->
+      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-2-1" title="Section 2.1">Section 2.1</a><!-- Nested links -->
+      </div>
+      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-2-2" title="Section 2.2">Section 2.2</a><!-- Nested links -->
+      </div>
+    </div>
+    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-3" title="Section 3">Section 3</a><!-- Nested links -->
+    </div>
+  </div>
+</div>"
+`;
