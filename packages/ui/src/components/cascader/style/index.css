@@ -1,0 +1,154 @@
+@reference '../../../style/tailwind.css';
+
+/* Cascader uses Select styles for the selector — this file adds cascade-specific styles */
+
+/* ==================== Dropdown ==================== */
+.ant-cascader-dropdown {
+  @apply bg-white rounded-lg;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 3px 6px -4px rgba(0, 0, 0, 0.12),
+              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  padding: 4px 0;
+}
+
+.ant-cascader-dropdown-content {
+  @apply overflow-hidden;
+}
+
+/* ==================== Cascading menus ==================== */
+.ant-cascader-menus {
+  @apply flex;
+}
+
+.ant-cascader-menu {
+  @apply list-none m-0 p-1;
+  min-width: 112px;
+  max-height: 256px;
+  overflow-y: auto;
+  border-right: 1px solid var(--color-neutral-border);
+}
+
+.ant-cascader-menu:last-child {
+  border-right: none;
+}
+
+.ant-cascader-menu-empty {
+  @apply flex items-center justify-center;
+  color: var(--color-neutral-disabled);
+  padding: 8px 12px;
+  min-height: 64px;
+}
+
+/* ==================== Menu items ==================== */
+.ant-cascader-menu-item {
+  @apply relative flex items-center cursor-pointer;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: var(--ant-border-radius);
+  transition: background 0.15s;
+  padding-right: 24px;
+}
+
+.ant-cascader-menu-item:hover:not(.ant-cascader-menu-item-disabled) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled) {
+  @apply font-semibold;
+  background-color: var(--color-accent-1, rgba(22, 119, 255, 0.06));
+}
+
+.ant-cascader-menu-item-disabled {
+  @apply cursor-not-allowed;
+  color: var(--color-neutral-disabled);
+}
+
+.ant-cascader-menu-item-content {
+  @apply flex-1 truncate;
+}
+
+.ant-cascader-menu-item-expand-icon {
+  @apply absolute flex items-center;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-neutral-secondary);
+  font-size: 12px;
+}
+
+.ant-cascader-menu-item-expand-arrow {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ant-cascader-menu-item-loading-icon {
+  @apply absolute flex items-center;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Checkbox in multiple mode */
+.ant-cascader-menu-item-checkbox {
+  @apply inline-block mr-2;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-neutral-border);
+  border-radius: 2px;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.ant-cascader-menu-item-checkbox-checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.ant-cascader-menu-item-checkbox-checked::after {
+  content: '';
+  @apply block;
+  width: 5px;
+  height: 9px;
+  border: 2px solid white;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg) translate(-1px, -1px);
+  margin: 1px auto;
+}
+
+/* ==================== Search results ==================== */
+.ant-cascader-search-list {
+  @apply p-1;
+  max-height: 256px;
+  overflow-y: auto;
+}
+
+.ant-cascader-search-item {
+  @apply flex items-center cursor-pointer;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: var(--ant-border-radius);
+  transition: background 0.15s;
+}
+
+.ant-cascader-search-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.ant-cascader-search-item-selected {
+  @apply font-semibold;
+  background-color: var(--color-accent-1, rgba(22, 119, 255, 0.06));
+}
+
+.ant-cascader-search-item-separator {
+  @apply mx-1;
+  color: var(--color-neutral-secondary);
+}
+
+.ant-cascader-search-item-empty {
+  @apply text-center cursor-default;
+  color: var(--color-neutral-disabled);
+  padding: 8px 12px;
+}

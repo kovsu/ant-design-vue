@@ -1,0 +1,19 @@
+@reference '../../../style/tailwind.css';
+
+/* AutoComplete uses Select styles — only override what's specific */
+.ant-select-auto-complete .ant-select-selector {
+  @apply cursor-text;
+}
+
+.ant-select-auto-complete .ant-select-selection-search {
+  @apply static w-full;
+  padding: 0;
+}
+
+.ant-select-auto-complete .ant-select-selection-search-input {
+  @apply w-full;
+}
+
+.ant-select-auto-complete .ant-select-selection-search-input::placeholder {
+  color: var(--color-neutral-disabled);
+}

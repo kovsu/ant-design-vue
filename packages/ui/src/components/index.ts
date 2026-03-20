@@ -85,3 +85,10 @@ export { TabPane } from './tabs'
 export { default as Pagination } from './pagination'
 export { default as Anchor } from './anchor'
 export { AnchorLink } from './anchor'
+
+// Batch 11: Select Family
+export { default as Select } from './select'
+export { default as AutoComplete } from './auto-complete'
+export { default as Mentions } from './mentions'
+export { default as Cascader } from './cascader'
+export { default as TreeSelect } from './tree-select'
