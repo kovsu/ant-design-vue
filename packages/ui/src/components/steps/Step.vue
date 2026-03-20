@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { computed, inject, useSlots } from 'vue'
+import CheckOutlined from '@ant-design/icons-vue/CheckOutlined'
+import CloseOutlined from '@ant-design/icons-vue/CloseOutlined'
 import type { StepProps, StepSlots } from './types'
 import { stepsContextKey } from './types'
 
@@ -44,11 +46,9 @@ const hasDescription = computed(() => !!props.description || !!$slots.descriptio
 const hasSubTitle = computed(() => !!props.subTitle || !!$slots.subTitle)
 const hasCustomIcon = computed(() => !!$slots.icon)
 
-const iconContent = computed(() => {
-  if (currentStatus.value === 'finish') return '\u2713'
-  if (currentStatus.value === 'error') return '\u2715'
-  return String(stepIndex + 1)
-})
+const isFinish = computed(() => currentStatus.value === 'finish')
+const isError = computed(() => currentStatus.value === 'error')
+const stepNumber = computed(() => String(stepIndex + 1))
 
 const classes = computed(() => ({
   'ant-steps-item': true,
@@ -73,7 +73,11 @@ const classes = computed(() => ({
       <div class="ant-steps-item-tail" />
       <div class="ant-steps-item-icon">
         <slot name="icon">
-          <span class="ant-steps-icon">{{ iconContent }}</span>
+          <span class="ant-steps-icon">
+            <CheckOutlined v-if="isFinish" />
+            <CloseOutlined v-else-if="isError" />
+            <template v-else>{{ stepNumber }}</template>
+          </span>
         </slot>
       </div>
       <div class="ant-steps-item-content">

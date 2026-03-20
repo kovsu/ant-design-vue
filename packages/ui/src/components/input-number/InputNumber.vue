@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, useSlots, watch } from 'vue'
+import UpOutlined from '@ant-design/icons-vue/UpOutlined'
+import DownOutlined from '@ant-design/icons-vue/DownOutlined'
 import type { InputNumberProps, InputNumberEmits, InputNumberSlots } from './types'
 import { inputNumberDefaultProps } from './types'
 
@@ -250,7 +252,7 @@ defineExpose({
             @click="stepUp"
           >
             <slot name="upIcon">
-              <span class="ant-input-number-handler-up-inner">&#9650;</span>
+              <UpOutlined class="ant-input-number-handler-up-inner" />
             </slot>
           </button>
           <button
@@ -263,7 +265,7 @@ defineExpose({
             @click="stepDown"
           >
             <slot name="downIcon">
-              <span class="ant-input-number-handler-down-inner">&#9660;</span>
+              <DownOutlined class="ant-input-number-handler-down-inner" />
             </slot>
           </button>
         </div>

@@ -5,6 +5,7 @@
   @apply inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 whitespace-nowrap;
   @apply border-1 text-sm;
   @apply box-border rounded-md px-4 transition-all select-none;
+  width: fit-content;
   transition-duration: var(--ant-motion-duration);
   font-family: var(--ant-font-family);
   line-height: var(--ant-line-height);

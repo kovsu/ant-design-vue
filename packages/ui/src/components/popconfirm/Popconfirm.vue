@@ -68,7 +68,7 @@ import { computed, ref, shallowRef, useSlots, getCurrentInstance } from 'vue'
 import { Trigger } from '@/_internal/trigger'
 import { useConfigInject } from '@/hooks'
 import { resolveFloatingPlacement } from '../tooltip/types'
-import ExclamationCircleFilled from './ExclamationCircleFilled.vue'
+import ExclamationCircleFilled from '@ant-design/icons-vue/ExclamationCircleFilled'
 import type { PopconfirmProps, PopconfirmEmits, PopconfirmSlots } from './types'
 import { popconfirmDefaultProps } from './types'
 

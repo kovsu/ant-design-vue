@@ -4,6 +4,7 @@
 :where(.ant-switch) {
   @apply relative inline-flex items-center;
   min-width: 44px;
+  width: fit-content;
   height: 22px;
   padding: 0;
   border: 0;

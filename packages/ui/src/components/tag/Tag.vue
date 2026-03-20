@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import CloseOutlined from '@ant-design/icons-vue/CloseOutlined'
 import type { TagProps, TagEmits, TagSlots } from './types'
 import { tagDefaultProps, isPresetColor, isPresetStatusColor } from './types'
 
@@ -55,7 +56,7 @@ function handleClick(e: MouseEvent) {
       @click.stop="handleClose"
     >
       <slot name="closeIcon">
-        <span class="ant-tag-close-x">&times;</span>
+        <CloseOutlined />
       </slot>
     </button>
   </span>
