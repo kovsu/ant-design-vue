@@ -66,3 +66,9 @@ export { default as Slider } from './slider'
 export { default as Tooltip } from './tooltip'
 export { default as Popover } from './popover'
 export { default as Popconfirm } from './popconfirm'
+
+// Batch 8: Dropdown & Menu
+export { default as Menu } from './menu'
+export { MenuItem, SubMenu, MenuItemGroup, MenuDivider } from './menu'
+export { default as Dropdown } from './dropdown'
+export { DropdownButton } from './dropdown'

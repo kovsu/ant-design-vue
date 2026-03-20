@@ -1,0 +1,344 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu demos > demo: Basic 1`] = `
+"<div style="width: 256px;">
+  <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light" role="menu">
+    <!-- Inline mode: expand/collapse in place -->
+    <li class="ant-menu-submenu ant-menu-submenu-open ant-menu-submenu-inline">
+      <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="true" aria-haspopup="true">
+        <!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+      </div>
+      <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+        <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu">
+          <li class="ant-menu-item-group" role="presentation">
+            <div class="ant-menu-item-group-title" role="presentation">Item 1</div>
+            <ul class="ant-menu-item-group-list" role="group">
+              <li class="ant-menu-item ant-menu-item-selected" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+              </li>
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+              </li>
+            </ul>
+          </li>
+          <li class="ant-menu-item-group" role="presentation">
+            <div class="ant-menu-item-group-title" role="presentation">Item 2</div>
+            <ul class="ant-menu-item-group-list" role="group">
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+              </li>
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </transition-stub>
+    </li><!-- Inline mode: expand/collapse in place -->
+    <li class="ant-menu-submenu ant-menu-submenu-inline">
+      <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+        <!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i>
+      </div>
+      <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+        <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 5</span>
+          </li>
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 6</span>
+          </li><!-- Inline mode: expand/collapse in place -->
+          <li class="ant-menu-submenu ant-menu-submenu-inline">
+            <div class="ant-menu-submenu-title" style="padding-left: 24px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+              <!--v-if--><span class="ant-menu-title-content">Submenu</span><i class="ant-menu-submenu-arrow"></i>
+            </div>
+            <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+              <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+                <li class="ant-menu-item" style="padding-left: 48px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 7</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 48px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 8</span>
+                </li>
+              </ul>
+            </transition-stub>
+          </li>
+        </ul>
+      </transition-stub>
+    </li><!-- Inline mode: expand/collapse in place -->
+    <li class="ant-menu-submenu ant-menu-submenu-inline">
+      <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+        <!--v-if--><span class="ant-menu-title-content">Navigation Three</span><i class="ant-menu-submenu-arrow"></i>
+      </div>
+      <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+        <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 9</span>
+          </li>
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 10</span>
+          </li>
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 11</span>
+          </li>
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 12</span>
+          </li>
+        </ul>
+      </transition-stub>
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`Menu demos > demo: Horizontal 1`] = `
+"<div>
+  <ul class="ant-menu ant-menu-root ant-menu-horizontal ant-menu-light" role="menu">
+    <li class="ant-menu-item ant-menu-item-selected" role="menuitem" tabindex="0">
+      <!--v-if--><span class="ant-menu-title-content">Navigation One</span>
+    </li>
+    <li class="ant-menu-item" role="menuitem" tabindex="0">
+      <!--v-if--><span class="ant-menu-title-content">Navigation Two</span>
+    </li><!-- Inline mode: expand/collapse in place -->
+    <!-- Popup mode: vertical/horizontal -->
+    <li class="ant-menu-submenu ant-menu-submenu-horizontal"><span class="ant-trigger-wrapper"><div class="ant-menu-submenu-title" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true"><!--v-if--><span class="ant-menu-title-content">Navigation Three - Submenu</span><i class="ant-menu-submenu-arrow"></i>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="0">
+  <!--v-if--><span class="ant-menu-title-content"><a href="https://antdv.com" target="_blank">Navigation Four - Link</a></span>
+</li>
+</ul>
+</div>"
+`;
+
+exports[`Menu demos > demo: InlineCollapsed 1`] = `
+"<div><button class="ant-btn ant-btn-solid ant-btn-md" style="margin-bottom: 16px;" type="button">
+    <!--v-if-->
+    <!--v-if--><span class="ant-btn-content">Collapse</span>
+  </button>
+  <div style="width: 256px;">
+    <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light" role="menu">
+      <li class="ant-menu-item ant-menu-item-selected" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+      </li><!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li><!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 5</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 6</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li>
+    </ul>
+  </div>
+</div>"
+`;
+
+exports[`Menu demos > demo: Items 1`] = `
+"<div style="width: 256px;">
+  <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light" role="menu">
+    <!-- Inline mode: expand/collapse in place -->
+    <li class="ant-menu-submenu ant-menu-submenu-open ant-menu-submenu-inline">
+      <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="true" aria-haspopup="true">
+        <!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+      </div>
+      <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+        <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu">
+          <li class="ant-menu-item-group" role="presentation">
+            <div class="ant-menu-item-group-title" role="presentation">Item 1</div>
+            <ul class="ant-menu-item-group-list" role="group">
+              <li class="ant-menu-item ant-menu-item-selected" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+              </li>
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+              </li>
+            </ul>
+          </li>
+          <li class="ant-menu-item-group" role="presentation">
+            <div class="ant-menu-item-group-title" role="presentation">Item 2</div>
+            <ul class="ant-menu-item-group-list" role="group">
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+              </li>
+              <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </transition-stub>
+    </li><!-- Inline mode: expand/collapse in place -->
+    <li class="ant-menu-submenu ant-menu-submenu-inline">
+      <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+        <!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i>
+      </div>
+      <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+        <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 5</span>
+          </li>
+          <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+            <!--v-if--><span class="ant-menu-title-content">Option 6</span>
+          </li>
+          <li role="separator" class="ant-menu-item-divider"></li><!-- Inline mode: expand/collapse in place -->
+          <li class="ant-menu-submenu ant-menu-submenu-inline">
+            <div class="ant-menu-submenu-title" style="padding-left: 24px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+              <!--v-if--><span class="ant-menu-title-content">Submenu</span><i class="ant-menu-submenu-arrow"></i>
+            </div>
+            <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+              <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+                <li class="ant-menu-item" style="padding-left: 48px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 7</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 48px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 8</span>
+                </li>
+              </ul>
+            </transition-stub>
+          </li>
+        </ul>
+      </transition-stub>
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`Menu demos > demo: Theme 1`] = `
+"<div style="display: flex; gap: 24px;">
+  <div style="width: 256px;">
+    <h4 style="margin-bottom: 16px;">Light Theme</h4>
+    <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light" role="menu">
+      <!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-open ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="true" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu">
+            <li class="ant-menu-item ant-menu-item-selected" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li><!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li>
+    </ul>
+  </div>
+  <div style="width: 256px;">
+    <h4 style="margin-bottom: 16px;">Dark Theme</h4>
+    <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-dark" role="menu">
+      <!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-open ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="true" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu">
+            <li class="ant-menu-item ant-menu-item-selected" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li><!-- Inline mode: expand/collapse in place -->
+      <li class="ant-menu-submenu ant-menu-submenu-inline">
+        <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+          <!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i>
+        </div>
+        <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+          <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+            </li>
+            <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+              <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+            </li>
+          </ul>
+        </transition-stub>
+      </li>
+    </ul>
+  </div>
+</div>"
+`;
+
+exports[`Menu demos > demo: Vertical 1`] = `
+"<div style="width: 256px;">
+  <ul class="ant-menu ant-menu-root ant-menu-vertical ant-menu-light" role="menu">
+    <!-- Inline mode: expand/collapse in place -->
+    <!-- Popup mode: vertical/horizontal -->
+    <li class="ant-menu-submenu ant-menu-submenu-vertical"><span class="ant-trigger-wrapper"><div class="ant-menu-submenu-title" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true"><!--v-if--><span class="ant-menu-title-content">Navigation One</span><i class="ant-menu-submenu-arrow"></i>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</li><!-- Inline mode: expand/collapse in place -->
+<!-- Popup mode: vertical/horizontal -->
+<li class="ant-menu-submenu ant-menu-submenu-vertical"><span class="ant-trigger-wrapper"><div class="ant-menu-submenu-title" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true"><!--v-if--><span class="ant-menu-title-content">Navigation Two</span><i class="ant-menu-submenu-arrow"></i></div></span>
+  <!--teleport start-->
+  <transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end-->
+</li><!-- Inline mode: expand/collapse in place -->
+<!-- Popup mode: vertical/horizontal -->
+<li class="ant-menu-submenu ant-menu-submenu-vertical"><span class="ant-trigger-wrapper"><div class="ant-menu-submenu-title" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true"><!--v-if--><span class="ant-menu-title-content">Navigation Three</span><i class="ant-menu-submenu-arrow"></i></div></span>
+  <!--teleport start-->
+  <transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end-->
+</li>
+</ul>
+</div>"
+`;

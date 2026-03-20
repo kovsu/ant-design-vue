@@ -1,0 +1,365 @@
+@reference '../../../style/tailwind.css';
+@import '../../../_internal/trigger/style/index.css';
+
+/* ====================================================================
+   Menu — root
+   ==================================================================== */
+
+:where(.ant-menu) {
+  @apply relative m-0 list-none p-0 text-sm;
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--ant-font-family);
+  color: var(--color-neutral);
+  line-height: 0;
+  transition: width var(--ant-motion-duration) cubic-bezier(0.2, 0, 0, 1);
+}
+
+:where(.ant-menu)::before,
+:where(.ant-menu)::after {
+  display: table;
+  content: '';
+}
+
+:where(.ant-menu)::after {
+  clear: both;
+}
+
+/* ====================================================================
+   Light theme (default)
+   ==================================================================== */
+
+:where(.ant-menu-light),
+:where(.ant-menu-light .ant-menu-sub) {
+  background: var(--color-neutral-bg-container, #fff);
+  color: var(--color-neutral);
+}
+
+/* ====================================================================
+   Dark theme
+   ==================================================================== */
+
+:where(.ant-menu-dark),
+:where(.ant-menu-dark .ant-menu-sub) {
+  background: var(--color-neutral-bg-elevated, #001529);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:where(.ant-menu-dark) :where(.ant-menu-item) {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+:where(.ant-menu-dark) :where(.ant-menu-item:hover),
+:where(.ant-menu-dark) :where(.ant-menu-submenu-title:hover) {
+  color: #fff;
+  background: transparent;
+}
+
+:where(.ant-menu-dark) :where(.ant-menu-item-selected) {
+  color: #fff;
+  background: var(--color-accent);
+}
+
+:where(.ant-menu-dark) :where(.ant-menu-item-group-title) {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+:where(.ant-menu-dark) :where(.ant-menu-submenu-arrow) {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ====================================================================
+   Menu item — shared
+   ==================================================================== */
+
+:where(.ant-menu-item),
+:where(.ant-menu-submenu-title) {
+  @apply relative m-0 flex cursor-pointer items-center;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: var(--ant-border-radius, 6px);
+  transition: all var(--ant-motion-duration);
+  margin-inline: 4px;
+  margin-block: 4px;
+  width: calc(100% - 8px);
+}
+
+:where(.ant-menu-item:hover),
+:where(.ant-menu-submenu-title:hover) {
+  background: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.06));
+}
+
+:where(.ant-menu-item:active),
+:where(.ant-menu-submenu-title:active) {
+  background: var(--color-accent-bg, rgba(0, 0, 0, 0.1));
+}
+
+/* Selected */
+:where(.ant-menu-light) :where(.ant-menu-item-selected) {
+  color: var(--color-accent);
+  background: var(--color-accent-bg, rgba(22, 119, 255, 0.06));
+}
+
+/* Disabled */
+:where(.ant-menu-item-disabled),
+:where(.ant-menu-submenu-disabled > .ant-menu-submenu-title) {
+  @apply cursor-not-allowed;
+  color: var(--color-neutral-disabled) !important;
+  background: transparent !important;
+}
+
+/* Danger */
+:where(.ant-menu-item-danger) {
+  color: var(--color-error);
+}
+
+:where(.ant-menu-item-danger:hover) {
+  color: var(--color-error);
+  background: var(--color-error-bg, rgba(255, 77, 79, 0.06));
+}
+
+:where(.ant-menu-item-danger.ant-menu-item-selected) {
+  color: var(--color-error);
+  background: var(--color-error-bg, rgba(255, 77, 79, 0.06));
+}
+
+/* ====================================================================
+   Menu item — icon & content
+   ==================================================================== */
+
+:where(.ant-menu-item-icon) {
+  @apply inline-flex shrink-0 items-center;
+  min-width: 14px;
+  margin-inline-end: 10px;
+  font-size: 14px;
+}
+
+:where(.ant-menu-title-content) {
+  @apply inline-flex flex-auto items-center overflow-hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ====================================================================
+   Horizontal mode
+   ==================================================================== */
+
+:where(.ant-menu-horizontal) {
+  @apply flex flex-row items-center;
+  border-bottom: 1px solid var(--color-neutral-border, #f0f0f0);
+  line-height: 46px;
+}
+
+:where(.ant-menu-horizontal) > :where(.ant-menu-item),
+:where(.ant-menu-horizontal) > :where(.ant-menu-submenu) > :where(.ant-menu-submenu-title) {
+  height: 46px;
+  line-height: 46px;
+  margin: 0;
+  padding: 0 20px;
+  border-radius: 0;
+  width: auto;
+  margin-inline: 0;
+  margin-block: 0;
+}
+
+:where(.ant-menu-horizontal) > :where(.ant-menu-item::after),
+:where(.ant-menu-horizontal) > :where(.ant-menu-submenu::after) {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--ant-motion-duration);
+}
+
+:where(.ant-menu-horizontal) > :where(.ant-menu-item-selected::after),
+:where(.ant-menu-horizontal) > :where(.ant-menu-submenu-open::after) {
+  border-bottom-color: var(--color-accent);
+}
+
+:where(.ant-menu-horizontal) > :where(.ant-menu-item:hover),
+:where(.ant-menu-horizontal) > :where(.ant-menu-submenu:hover > .ant-menu-submenu-title) {
+  color: var(--color-accent);
+  background: transparent;
+}
+
+:where(.ant-menu-horizontal) > :where(.ant-menu-item-selected) {
+  color: var(--color-accent);
+  background: transparent;
+}
+
+/* ====================================================================
+   Vertical mode
+   ==================================================================== */
+
+:where(.ant-menu-vertical) {
+  @apply flex flex-col;
+  border-inline-end: 1px solid var(--color-neutral-border, #f0f0f0);
+}
+
+:where(.ant-menu-vertical.ant-menu-sub) {
+  border-inline-end: none;
+  min-width: 160px;
+}
+
+/* ====================================================================
+   Inline mode
+   ==================================================================== */
+
+:where(.ant-menu-inline) {
+  @apply flex flex-col;
+  border-inline-end: 1px solid var(--color-neutral-border, #f0f0f0);
+}
+
+/* ====================================================================
+   SubMenu
+   ==================================================================== */
+
+:where(.ant-menu-submenu) {
+  @apply relative;
+}
+
+:where(.ant-menu-submenu-inline) > :where(.ant-menu-sub) {
+  @apply p-0;
+}
+
+/* SubMenu arrow icon */
+:where(.ant-menu-submenu-arrow) {
+  @apply absolute;
+  top: 50%;
+  right: 16px;
+  width: 10px;
+  transform: translateY(-50%);
+  transition: transform var(--ant-motion-duration);
+}
+
+:where(.ant-menu-submenu-arrow)::before,
+:where(.ant-menu-submenu-arrow)::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform var(--ant-motion-duration), background var(--ant-motion-duration);
+}
+
+:where(.ant-menu-submenu-arrow)::before {
+  transform: rotate(-45deg) translateX(2.5px);
+}
+
+:where(.ant-menu-submenu-arrow)::after {
+  transform: rotate(45deg) translateX(-2.5px);
+}
+
+/* Rotate arrow when open (inline) */
+:where(.ant-menu-submenu-open.ant-menu-submenu-inline) > :where(.ant-menu-submenu-title) > :where(.ant-menu-submenu-arrow)::before {
+  transform: rotate(45deg) translateX(2.5px);
+}
+
+:where(.ant-menu-submenu-open.ant-menu-submenu-inline) > :where(.ant-menu-submenu-title) > :where(.ant-menu-submenu-arrow)::after {
+  transform: rotate(-45deg) translateX(-2.5px);
+}
+
+/* Horizontal SubMenu has no arrow, use down-arrow style */
+:where(.ant-menu-horizontal) > :where(.ant-menu-submenu) > :where(.ant-menu-submenu-title) > :where(.ant-menu-submenu-arrow) {
+  display: none;
+}
+
+/* ====================================================================
+   SubMenu popup
+   ==================================================================== */
+
+:where(.ant-menu-submenu-popup) {
+  @apply rounded-lg;
+  box-shadow: var(--ant-box-shadow, 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05));
+}
+
+:where(.ant-menu-submenu-popup) :where(.ant-menu) {
+  border-inline-end: none;
+}
+
+/* ====================================================================
+   Item Group
+   ==================================================================== */
+
+:where(.ant-menu-item-group) {
+  @apply list-none p-0;
+}
+
+:where(.ant-menu-item-group-title) {
+  @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  padding: 8px 16px;
+  color: var(--color-neutral-secondary);
+  font-size: var(--ant-font-size-sm, 12px);
+  line-height: var(--ant-line-height);
+}
+
+:where(.ant-menu-item-group-list) {
+  @apply m-0 list-none p-0;
+}
+
+/* ====================================================================
+   Divider
+   ==================================================================== */
+
+:where(.ant-menu-item-divider) {
+  @apply m-0 overflow-hidden leading-[0];
+  padding: 0;
+  height: 1px;
+  margin-block: 4px;
+  margin-inline: 12px;
+  border: none;
+  background: var(--color-neutral-border, #f0f0f0);
+}
+
+:where(.ant-menu-item-divider-dashed) {
+  background: transparent;
+  border-top: 1px dashed var(--color-neutral-border, #f0f0f0);
+}
+
+/* ====================================================================
+   Inline collapsed
+   ==================================================================== */
+
+:where(.ant-menu-inline-collapsed) {
+  width: 80px;
+}
+
+:where(.ant-menu-inline-collapsed) > :where(.ant-menu-item),
+:where(.ant-menu-inline-collapsed) > :where(.ant-menu-submenu) > :where(.ant-menu-submenu-title) {
+  @apply justify-center;
+  padding: 0 calc(50% - 7px);
+}
+
+:where(.ant-menu-inline-collapsed) :where(.ant-menu-title-content) {
+  @apply hidden;
+}
+
+:where(.ant-menu-inline-collapsed) :where(.ant-menu-submenu-arrow) {
+  @apply hidden;
+}
+
+/* ====================================================================
+   Collapse motion (for inline SubMenu)
+   ==================================================================== */
+
+.ant-motion-collapse-enter-active,
+.ant-motion-collapse-leave-active {
+  overflow: hidden;
+  transition: height var(--ant-motion-duration) cubic-bezier(0.645, 0.045, 0.355, 1),
+              opacity var(--ant-motion-duration) cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-motion-collapse-enter-from,
+.ant-motion-collapse-leave-to {
+  height: 0 !important;
+  opacity: 0;
+}
+
+.ant-motion-collapse-enter-to,
+.ant-motion-collapse-leave-from {
+  opacity: 1;
+}

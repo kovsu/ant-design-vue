@@ -3,7 +3,7 @@
 exports[`Collapse demos > demo: Accordion 1`] = `
 "<div class="ant-collapse" role="tablist">
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -14,7 +14,7 @@ exports[`Collapse demos > demo: Accordion 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -25,7 +25,7 @@ exports[`Collapse demos > demo: Accordion 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -41,7 +41,7 @@ exports[`Collapse demos > demo: Accordion 1`] = `
 exports[`Collapse demos > demo: Basic 1`] = `
 "<div class="ant-collapse" role="tablist">
   <div class="ant-collapse-item ant-collapse-item-active">
-    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -52,7 +52,7 @@ exports[`Collapse demos > demo: Basic 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -63,7 +63,7 @@ exports[`Collapse demos > demo: Basic 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -79,7 +79,7 @@ exports[`Collapse demos > demo: Basic 1`] = `
 exports[`Collapse demos > demo: Borderless 1`] = `
 "<div class="ant-collapse ant-collapse-borderless" role="tablist">
   <div class="ant-collapse-item ant-collapse-item-active">
-    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -90,7 +90,7 @@ exports[`Collapse demos > demo: Borderless 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -101,7 +101,7 @@ exports[`Collapse demos > demo: Borderless 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item ant-collapse-item-disabled">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="-1"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="-1"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -118,7 +118,7 @@ exports[`Collapse demos > demo: Collapsible 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 16px;">
   <div class="ant-collapse" role="tablist">
     <div class="ant-collapse-item ant-collapse-item-active">
-      <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This panel can only be collapsed by clicking text</span>
+      <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This panel can only be collapsed by clicking text</span>
         <!--v-if-->
         <!--v-if-->
       </div>
@@ -145,7 +145,7 @@ exports[`Collapse demos > demo: Collapsible 1`] = `
   </div>
   <div class="ant-collapse" role="tablist">
     <div class="ant-collapse-item ant-collapse-item-disabled">
-      <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="-1"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This panel can't be collapsed</span>
+      <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="-1"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This panel can't be collapsed</span>
         <!--v-if-->
         <!--v-if-->
       </div>
@@ -162,7 +162,7 @@ exports[`Collapse demos > demo: Collapsible 1`] = `
 exports[`Collapse demos > demo: Custom 1`] = `
 "<div class="ant-collapse ant-collapse-borderless" role="tablist" style="background: rgb(255, 255, 255);">
   <div class="ant-collapse-item ant-collapse-item-active" style="background: rgb(247, 247, 247); border-radius: 4px; margin-bottom: 24px; border: 0px; overflow: hidden;">
-    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -173,7 +173,7 @@ exports[`Collapse demos > demo: Custom 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item" style="background: rgb(247, 247, 247); border-radius: 4px; margin-bottom: 24px; border: 0px; overflow: hidden;">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -184,7 +184,7 @@ exports[`Collapse demos > demo: Custom 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item" style="background: rgb(247, 247, 247); border-radius: 4px; margin-bottom: 24px; border: 0px; overflow: hidden;">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -200,7 +200,7 @@ exports[`Collapse demos > demo: Custom 1`] = `
 exports[`Collapse demos > demo: Ghost 1`] = `
 "<div class="ant-collapse ant-collapse-ghost" role="tablist">
   <div class="ant-collapse-item ant-collapse-item-active">
-    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -211,7 +211,7 @@ exports[`Collapse demos > demo: Ghost 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -222,7 +222,7 @@ exports[`Collapse demos > demo: Ghost 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -238,7 +238,7 @@ exports[`Collapse demos > demo: Ghost 1`] = `
 exports[`Collapse demos > demo: Mix 1`] = `
 "<div class="ant-collapse" role="tablist">
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 1</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -246,7 +246,7 @@ exports[`Collapse demos > demo: Mix 1`] = `
       <div class="ant-collapse-content-box">
         <div class="ant-collapse" role="tablist">
           <div class="ant-collapse-item ant-collapse-item-active">
-            <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is nested panel</span>
+            <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is nested panel</span>
               <!--v-if-->
               <!--v-if-->
             </div>
@@ -261,7 +261,7 @@ exports[`Collapse demos > demo: Mix 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 2</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -272,7 +272,7 @@ exports[`Collapse demos > demo: Mix 1`] = `
     </div>
   </div>
   <div class="ant-collapse-item">
-    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header 3</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
       <!--v-if-->
       <!--v-if-->
     </div>
@@ -288,7 +288,7 @@ exports[`Collapse demos > demo: Mix 1`] = `
 exports[`Collapse demos > demo: Noarrow 1`] = `
 "<div class="ant-collapse" role="tablist">
   <div class="ant-collapse-item ant-collapse-item-active">
-    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span><span class="ant-collapse-header-text">This is panel header with arrow icon</span>
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header with arrow icon</span>
       <!--v-if-->
       <!--v-if-->
     </div>

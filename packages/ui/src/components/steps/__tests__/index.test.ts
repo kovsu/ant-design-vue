@@ -186,16 +186,16 @@ describe('Step', () => {
     expect(icons[1].text()).toBe('2')
   })
 
-  it('shows checkmark for finish status', () => {
+  it('shows checkmark icon for finish status', () => {
     const wrapper = createSteps({ current: 2 })
     const icons = wrapper.findAll('.ant-steps-icon')
-    expect(icons[0].text()).toBe('\u2713')
+    expect(icons[0].find('.anticon-check').exists()).toBe(true)
   })
 
-  it('shows cross mark for error status', () => {
+  it('shows close icon for error status', () => {
     const wrapper = createSteps({ current: 1, status: 'error' })
     const icons = wrapper.findAll('.ant-steps-icon')
-    expect(icons[1].text()).toBe('\u2715')
+    expect(icons[1].find('.anticon-close').exists()).toBe(true)
   })
 
   it('supports icon slot', () => {

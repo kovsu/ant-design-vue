@@ -1,0 +1,100 @@
+@reference '../../../style/tailwind.css';
+@import '../../../_internal/trigger/style/index.css';
+@import '../../menu/style/index.css';
+
+/* ====================================================================
+   Dropdown
+   ==================================================================== */
+
+:where(.ant-dropdown) {
+  @apply rounded-lg;
+  box-shadow: var(--ant-box-shadow, 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05));
+  background: var(--color-neutral-bg-container, #fff);
+}
+
+:where(.ant-dropdown) :where(.ant-menu) {
+  border-inline-end: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+:where(.ant-dropdown) :where(.ant-menu-root) {
+  padding: 4px;
+}
+
+/* Arrow */
+:where(.ant-dropdown-show-arrow) {
+  padding-top: 4px;
+}
+
+/* ====================================================================
+   DropdownButton
+   ==================================================================== */
+
+:where(.ant-dropdown-button) {
+  @apply inline-flex;
+}
+
+:where(.ant-dropdown-button) > :where(.ant-btn:last-child:not(:first-child)) {
+  padding-inline: 8px;
+}
+
+/* ====================================================================
+   Slide-up transition
+   ==================================================================== */
+
+.ant-slide-up-enter-active,
+.ant-slide-up-leave-active {
+  transition: opacity var(--ant-motion-duration) cubic-bezier(0.23, 1, 0.32, 1),
+              transform var(--ant-motion-duration) cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: 0 0;
+}
+
+.ant-slide-up-enter-from {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
+
+.ant-slide-up-enter-to {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ant-slide-up-leave-from {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ant-slide-up-leave-to {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
+
+/* Slide-down (for top-placed dropdowns) */
+
+.ant-slide-down-enter-active,
+.ant-slide-down-leave-active {
+  transition: opacity var(--ant-motion-duration) cubic-bezier(0.23, 1, 0.32, 1),
+              transform var(--ant-motion-duration) cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: 0 100%;
+}
+
+.ant-slide-down-enter-from {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
+
+.ant-slide-down-enter-to {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ant-slide-down-leave-from {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ant-slide-down-leave-to {
+  opacity: 0;
+  transform: scaleY(0.8);
+}
