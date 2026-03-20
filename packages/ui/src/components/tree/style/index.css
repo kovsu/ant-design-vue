@@ -1,0 +1,430 @@
+@reference '../../../style/tailwind.css';
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Tree
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-tree) {
+  @apply relative;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1.5714;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* ── Tree node ── */
+:where(.ant-tree .ant-tree-treenode) {
+  @apply flex items-center;
+  padding: 0 0 4px 0;
+  min-height: 28px;
+  outline: none;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+}
+
+:where(.ant-tree .ant-tree-treenode-disabled) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-tree .ant-tree-treenode-active) > :where(.ant-tree-node-content-wrapper) {
+  background-color: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+/* ── Indent ── */
+:where(.ant-tree .ant-tree-indent) {
+  @apply inline-flex self-stretch;
+  white-space: nowrap;
+  user-select: none;
+}
+
+:where(.ant-tree .ant-tree-indent-unit) {
+  @apply inline-block;
+  width: 24px;
+}
+
+/* Show-line indent lines */
+:where(.ant-tree-show-line .ant-tree-indent-unit) {
+  position: relative;
+}
+
+:where(.ant-tree-show-line .ant-tree-indent-unit)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -4px;
+  inset-inline-end: 12px;
+  border-inline-end: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-tree-show-line .ant-tree-indent-unit-end)::before {
+  display: none;
+}
+
+/* ── Switcher (expand/collapse) ── */
+:where(.ant-tree .ant-tree-switcher) {
+  @apply relative inline-flex items-center justify-center flex-shrink-0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  line-height: 24px;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
+:where(.ant-tree .ant-tree-switcher-noop) {
+  cursor: default;
+}
+
+:where(.ant-tree .ant-tree-switcher-icon) {
+  @apply inline-flex items-center justify-center;
+  font-size: 10px;
+  transition: transform var(--ant-motion-duration, 0.2s) ease;
+}
+
+:where(.ant-tree .ant-tree-switcher-icon)::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  transition: transform var(--ant-motion-duration, 0.2s) ease;
+}
+
+:where(.ant-tree .ant-tree-switcher_open) > :where(.ant-tree-switcher-icon)::before {
+  transform: rotate(90deg);
+}
+
+/* Loading spinner in switcher */
+:where(.ant-tree .ant-tree-switcher-loading-icon) {
+  @apply inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-accent, #1677ff);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: ant-tree-spin 1s linear infinite;
+}
+
+@keyframes ant-tree-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Show-line switcher */
+:where(.ant-tree-show-line .ant-tree-switcher) {
+  background-color: var(--color-neutral-bg, #fff);
+  z-index: 1;
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher-line-icon) {
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius-sm, 2px);
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher-line-icon)::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background: var(--color-neutral-border, #d9d9d9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher_open .ant-tree-switcher-line-icon)::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 6px;
+  background: var(--color-neutral-border, #d9d9d9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher_close .ant-tree-switcher-line-icon)::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 6px;
+  background: var(--color-neutral-border, #d9d9d9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher-leaf-line) {
+  position: relative;
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher-leaf-line)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -4px;
+  inset-inline-start: 50%;
+  border-inline-start: 1px solid var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-tree-show-line .ant-tree-switcher-leaf-line)::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  top: 50%;
+  inset-inline-start: 50%;
+  background: var(--color-neutral-border, #d9d9d9);
+}
+
+/* Leaf icon in show-line mode */
+:where(.ant-tree .ant-tree-switcher-leaf-icon) {
+  @apply inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  border-radius: 50%;
+}
+
+/* ── Checkbox ── */
+:where(.ant-tree .ant-tree-checkbox) {
+  @apply relative inline-flex items-center justify-center flex-shrink-0;
+  width: 16px;
+  height: 16px;
+  margin: 0 4px 0 2px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+:where(.ant-tree .ant-tree-checkbox-inner) {
+  @apply block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius-sm, 2px);
+  background-color: var(--color-neutral-bg, #fff);
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-tree .ant-tree-checkbox-checked) > :where(.ant-tree-checkbox-inner) {
+  background-color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-tree .ant-tree-checkbox-checked) > :where(.ant-tree-checkbox-inner)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 22%;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-inline-start: 0;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+}
+
+:where(.ant-tree .ant-tree-checkbox-indeterminate) > :where(.ant-tree-checkbox-inner)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent, #1677ff);
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+}
+
+:where(.ant-tree .ant-tree-checkbox-disabled) {
+  cursor: not-allowed;
+}
+
+:where(.ant-tree .ant-tree-checkbox-disabled) > :where(.ant-tree-checkbox-inner) {
+  background-color: var(--color-neutral-bg-container-disabled, rgba(0, 0, 0, 0.04));
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-tree .ant-tree-checkbox-disabled.ant-tree-checkbox-checked) > :where(.ant-tree-checkbox-inner) {
+  background-color: var(--color-neutral-bg-container-disabled, rgba(0, 0, 0, 0.04));
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-tree .ant-tree-checkbox-disabled.ant-tree-checkbox-checked) > :where(.ant-tree-checkbox-inner)::after {
+  border-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Node content wrapper ── */
+:where(.ant-tree .ant-tree-node-content-wrapper) {
+  @apply relative inline-flex items-center;
+  min-height: 24px;
+  padding: 0 4px;
+  cursor: pointer;
+  border-radius: var(--ant-border-radius-sm, 4px);
+  transition: all var(--ant-motion-duration, 0.2s);
+  line-height: 24px;
+  flex: auto;
+}
+
+:where(.ant-tree .ant-tree-node-content-wrapper:hover) {
+  background-color: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected) {
+  background-color: var(--color-accent-bg, rgba(22, 119, 255, 0.08));
+}
+
+:where(.ant-tree .ant-tree-treenode-disabled) > :where(.ant-tree-node-content-wrapper) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-tree .ant-tree-treenode-disabled) > :where(.ant-tree-node-content-wrapper:hover) {
+  background-color: transparent;
+}
+
+/* Block node mode */
+:where(.ant-tree-block-node .ant-tree-treenode) {
+  position: relative;
+}
+
+:where(.ant-tree-block-node .ant-tree-node-content-wrapper) {
+  flex: auto;
+}
+
+/* ── Icon ── */
+:where(.ant-tree .ant-tree-iconEle) {
+  @apply inline-flex items-center justify-center flex-shrink-0;
+  width: 24px;
+  height: 24px;
+  margin-inline-end: 2px;
+  line-height: 24px;
+  text-align: center;
+}
+
+:where(.ant-tree-icon-hide .ant-tree-iconEle) {
+  display: none;
+}
+
+/* ── Title ── */
+:where(.ant-tree .ant-tree-title) {
+  @apply inline-block;
+  user-select: none;
+}
+
+/* ── Drag ── */
+:where(.ant-tree .ant-tree-treenode-dragging) {
+  opacity: 0.4;
+}
+
+:where(.ant-tree .ant-tree-treenode-drag-over) > :where(.ant-tree-node-content-wrapper) {
+  background-color: var(--color-accent, #1677ff);
+  color: #fff;
+}
+
+:where(.ant-tree .ant-tree-treenode-drag-over-gap-top) {
+  position: relative;
+}
+
+:where(.ant-tree .ant-tree-treenode-drag-over-gap-top)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 2px;
+  background-color: var(--color-accent, #1677ff);
+  border-radius: 1px;
+}
+
+:where(.ant-tree .ant-tree-treenode-drag-over-gap-bottom) {
+  position: relative;
+}
+
+:where(.ant-tree .ant-tree-treenode-drag-over-gap-bottom)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  height: 2px;
+  background-color: var(--color-accent, #1677ff);
+  border-radius: 1px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Directory Tree
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-tree-directory .ant-tree-treenode) {
+  position: relative;
+}
+
+:where(.ant-tree-directory .ant-tree-treenode)::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 4px 0;
+  border-radius: var(--ant-border-radius, 6px);
+  transition: background-color var(--ant-motion-duration, 0.2s);
+  pointer-events: none;
+}
+
+:where(.ant-tree-directory .ant-tree-treenode:hover)::before {
+  background-color: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-tree-directory .ant-tree-treenode-selected)::before {
+  background-color: var(--color-accent-bg, rgba(22, 119, 255, 0.08));
+}
+
+:where(.ant-tree-directory .ant-tree-node-content-wrapper) {
+  background: transparent !important;
+}
+
+:where(.ant-tree-directory .ant-tree-node-content-wrapper.ant-tree-node-selected) {
+  color: var(--color-accent, #1677ff);
+}
+
+/* Directory tree icons */
+:where(.ant-tree-directory .ant-tree-icon-folder),
+:where(.ant-tree-directory .ant-tree-icon-folder-open) {
+  @apply inline-block;
+  width: 14px;
+  height: 14px;
+  color: var(--color-warning, #faad14);
+}
+
+:where(.ant-tree-directory .ant-tree-icon-folder)::before {
+  content: '📁';
+  font-size: 14px;
+  line-height: 1;
+}
+
+:where(.ant-tree-directory .ant-tree-icon-folder-open)::before {
+  content: '📂';
+  font-size: 14px;
+  line-height: 1;
+}
+
+:where(.ant-tree-directory .ant-tree-icon-file)::before {
+  content: '📄';
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Animations
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-tree .ant-tree-treenode) {
+  transition: background-color var(--ant-motion-duration, 0.2s);
+}

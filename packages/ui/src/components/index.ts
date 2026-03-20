@@ -92,3 +92,7 @@ export { default as AutoComplete } from './auto-complete'
 export { default as Mentions } from './mentions'
 export { default as Cascader } from './cascader'
 export { default as TreeSelect } from './tree-select'
+
+// Batch 12: Tree
+export { default as Tree } from './tree'
+export { DirectoryTree } from './tree'

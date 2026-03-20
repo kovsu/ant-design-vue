@@ -1,0 +1,177 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tree demos > demo: Basic 1`] = `
+"<div class="ant-tree ant-tree-icon-hide" role="tree" tabindex="0">
+  <!-- Virtual scroll mode -->
+  <!-- Non-virtual mode -->
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-0</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="false" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_close"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-1</span></span>
+  </div>
+</div>"
+`;
+
+exports[`Tree demos > demo: Checkable 1`] = `
+"<div class="ant-tree ant-tree-icon-hide" role="tree" tabindex="0">
+  <!-- Virtual scroll mode -->
+  <!-- Non-virtual mode -->
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-checked="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox --><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1</span></span>
+  </div>
+  <div class="ant-tree-treenode ant-tree-treenode-disabled" role="treeitem" aria-expanded="true" aria-selected="false" aria-checked="false" aria-disabled="true" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox --><span class="ant-tree-checkbox ant-tree-checkbox-disabled"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-0</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-checked="true" aria-disabled="false" aria-level="3">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox --><span class="ant-tree-checkbox ant-tree-checkbox-checked ant-tree-checkbox-disabled"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-checked="false" aria-disabled="false" aria-level="3">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox --><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-checked="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox --><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-1</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-checked="false" aria-disabled="false" aria-level="3">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox --><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">sss</span></span>
+  </div>
+</div>"
+`;
+
+exports[`Tree demos > demo: CustomIcon 1`] = `
+"<div class="ant-tree" role="tree" tabindex="0">
+  <!-- Virtual scroll mode -->
+  <!-- Non-virtual mode -->
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><span class="ant-tree-iconEle"><span>🔽</span></span><!-- Title --><span class="ant-tree-title"><span style="color: var(--color-accent);">parent 1</span></span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><span class="ant-tree-iconEle"><span>🍃</span></span><!-- Title --><span class="ant-tree-title"><span style="color: var(--color-accent);">leaf 1-0</span></span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><span class="ant-tree-iconEle"><span>🍃</span></span><!-- Title --><span class="ant-tree-title"><span style="color: var(--color-accent);">leaf 1-1</span></span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><span class="ant-tree-iconEle"><span>🔽</span></span><!-- Title --><span class="ant-tree-title"><span style="color: var(--color-accent);">parent 2</span></span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><span class="ant-tree-iconEle"><span>🍃</span></span><!-- Title --><span class="ant-tree-title"><span style="color: var(--color-accent);">leaf 2-0</span></span></span>
+  </div>
+</div>"
+`;
+
+exports[`Tree demos > demo: Directory 1`] = `
+"<div class="ant-tree ant-tree-block-node ant-tree-directory" role="tree" tabindex="0" aria-multiselectable="true">
+  <!-- Virtual scroll mode -->
+  <!-- Non-virtual mode -->
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><span class="ant-tree-iconEle"><span class="ant-tree-icon-folder-open"></span></span><!-- Title --><span class="ant-tree-title">parent 0</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><span class="ant-tree-iconEle"><span class="ant-tree-icon-file"></span></span><!-- Title --><span class="ant-tree-title">leaf 0-0</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="2">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop"><!--v-if--></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><span class="ant-tree-iconEle"><span class="ant-tree-icon-file"></span></span><!-- Title --><span class="ant-tree-title">leaf 0-1</span></span>
+  </div>
+  <div class="ant-tree-treenode" role="treeitem" aria-expanded="false" aria-selected="false" aria-disabled="false" aria-level="1">
+    <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_close"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+    <!--v-if-->
+    <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"><!-- Icon --><span class="ant-tree-iconEle"><span class="ant-tree-icon-folder"></span></span><!-- Title --><span class="ant-tree-title">parent 1</span></span>
+  </div>
+</div>"
+`;
+
+exports[`Tree demos > demo: ShowLine 1`] = `
+"<div>
+  <div style="margin-bottom: 8px;"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" role="checkbox" aria-checked="false"><span class="ant-checkbox-inner"></span></span><span class="ant-checkbox-label">showLeafIcon</span></label></div>
+  <div class="ant-tree ant-tree-show-line ant-tree-icon-hide" role="tree" tabindex="0">
+    <!-- Virtual scroll mode -->
+    <!-- Non-virtual mode -->
+    <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="1">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open ant-tree-switcher-line-icon"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="2">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open ant-tree-switcher-line-icon"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-0</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="2">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open ant-tree-switcher-line-icon"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-1</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-expanded="true" aria-selected="false" aria-disabled="false" aria-level="2">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher_open ant-tree-switcher-line-icon"><span class="ant-tree-switcher-icon"></span></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">parent 1-2</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+    <div class="ant-tree-treenode" role="treeitem" aria-selected="false" aria-disabled="false" aria-level="3">
+      <!-- Indent --><span class="ant-tree-indent" aria-hidden="true"><span class="ant-tree-indent-unit"></span><span class="ant-tree-indent-unit"></span></span><!-- Switcher --><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-switcher-leaf-line"><!--v-if--></span><!-- Checkbox -->
+      <!--v-if-->
+      <!-- Content --><span class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><!-- Icon --><!--v-if--><!-- Title --><span class="ant-tree-title">leaf</span></span>
+    </div>
+  </div>
+</div>"
+`;
