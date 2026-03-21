@@ -102,3 +102,33 @@ export { default as DatePicker } from './date-picker'
 export { RangePicker } from './date-picker'
 export { default as TimePicker } from './time-picker'
 export { default as Calendar } from './calendar'
+
+// Batch 14: Segmented & List
+export { default as Segmented } from './segmented'
+export { default as List } from './list'
+export { ListItem, ListItemMeta } from './list'
+
+// Batch 14 (continued): Transfer & Upload
+export { default as Transfer } from './transfer'
+export { default as Upload } from './upload'
+export { UploadDragger } from './upload'
+
+// Batch 14 (continued): Image & Carousel
+export { default as Image } from './image'
+export { ImagePreviewGroup } from './image'
+export { default as Carousel } from './carousel'
+
+// Batch 15: Utility
+export { default as QRCode } from './qrcode'
+export { default as Watermark } from './watermark'
+export { default as FloatButton } from './float-button'
+export { FloatButtonGroup, BackTop } from './float-button'
+export { default as Tour } from './tour'
+
+// Batch 16: App
+export { default as App } from './app'
+export { useApp } from './app'
+
+// Batch 16: Form + Integration
+export { default as Form } from './form'
+export { FormItem } from './form'

@@ -1,0 +1,310 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Transfer Container ── */
+:where(.ant-transfer) {
+  @apply flex items-stretch;
+  gap: 0;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  box-sizing: border-box;
+}
+
+:where(.ant-transfer-disabled) {
+  opacity: 0.65;
+}
+
+/* ── Transfer List (Panel) ── */
+:where(.ant-transfer-list) {
+  @apply flex flex-col;
+  width: 200px;
+  min-height: 300px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  background: var(--color-neutral-bg-container, #fff);
+  overflow: hidden;
+}
+
+/* ── Panel Header ── */
+:where(.ant-transfer-list-header) {
+  @apply flex items-center;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+  background: var(--color-neutral-bg-container, #fff);
+  min-height: 40px;
+  gap: 8px;
+}
+
+:where(.ant-transfer-list-header-select-all) {
+  @apply flex items-center cursor-pointer;
+  flex-shrink: 0;
+}
+
+:where(.ant-transfer-list-header-title) {
+  @apply flex-1 truncate;
+  font-weight: 500;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-transfer-list-header-count) {
+  @apply flex-shrink-0;
+  font-size: var(--ant-font-size-sm, 12px);
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+/* ── Panel Body ── */
+:where(.ant-transfer-list-body) {
+  @apply flex-1 flex flex-col overflow-hidden;
+}
+
+/* ── Search ── */
+:where(.ant-transfer-list-search) {
+  @apply relative flex items-center;
+  padding: 8px 12px;
+}
+
+:where(.ant-transfer-list-search-icon) {
+  @apply absolute flex items-center justify-center;
+  left: 20px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: 12px;
+  pointer-events: none;
+}
+
+:where(.ant-transfer-list-search-input) {
+  @apply w-full;
+  padding: 4px 24px 4px 28px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  background: var(--color-neutral-bg-container, #fff);
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  outline: none;
+  transition: border-color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-transfer-list-search-input):focus {
+  border-color: var(--color-accent, #1677ff);
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+
+:where(.ant-transfer-list-search-input)::placeholder {
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-transfer-list-search-input):disabled {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-transfer-list-search-clear) {
+  @apply absolute flex items-center justify-center;
+  right: 20px;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: 12px;
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-transfer-list-search-clear):hover {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ── Content List ── */
+:where(.ant-transfer-list-content) {
+  @apply flex-1 overflow-auto;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+}
+
+:where(.ant-transfer-list-content-item) {
+  @apply flex items-center;
+  padding: 6px 12px;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color var(--ant-motion-duration, 0.2s);
+  min-height: 32px;
+}
+
+:where(.ant-transfer-list-content-item):hover {
+  background-color: var(--color-neutral-bg, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-transfer-list-content-item-selected) {
+  background-color: var(--color-accent-bg, #e6f4ff);
+}
+
+:where(.ant-transfer-list-content-item-disabled) {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+:where(.ant-transfer-list-content-item-disabled):hover {
+  background-color: transparent;
+}
+
+:where(.ant-transfer-list-content-item-text) {
+  @apply flex-1 truncate;
+  font-size: var(--ant-font-size, 14px);
+}
+
+:where(.ant-transfer-list-content-item-remove) {
+  @apply flex items-center justify-center flex-shrink-0;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: 12px;
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-transfer-list-content-item-remove):hover {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-transfer-list-content-item-remove):disabled {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Empty State ── */
+:where(.ant-transfer-list-empty) {
+  @apply flex-1 flex items-center justify-center;
+  padding: 24px 12px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: var(--ant-font-size, 14px);
+}
+
+/* ── Footer ── */
+:where(.ant-transfer-list-footer) {
+  padding: 8px 12px;
+  border-top: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+/* ── Operation Buttons ── */
+:where(.ant-transfer-operation) {
+  @apply flex flex-col items-center justify-center self-center;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+:where(.ant-transfer-operation) :where(.ant-btn) {
+  @apply inline-flex items-center justify-center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 4px;
+  border-radius: var(--ant-border-radius, 6px);
+  border: 1px solid transparent;
+  background-color: var(--color-accent, #1677ff);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all var(--ant-motion-duration, 0.2s);
+  gap: 4px;
+}
+
+:where(.ant-transfer-operation) :where(.ant-btn):hover {
+  background-color: var(--color-accent-hover, #4096ff);
+}
+
+:where(.ant-transfer-operation) :where(.ant-btn):active {
+  background-color: var(--color-accent-active, #0958d9);
+}
+
+:where(.ant-transfer-operation) :where(.ant-btn):disabled {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  cursor: not-allowed;
+}
+
+:where(.ant-transfer-operation-text) {
+  font-size: var(--ant-font-size-sm, 12px);
+}
+
+/* ── Checkbox in Transfer (reuse ant-checkbox styles) ── */
+:where(.ant-transfer-list) :where(.ant-checkbox) {
+  @apply relative inline-block leading-none flex-shrink-0;
+  box-sizing: border-box;
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-input) {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-disabled) :where(.ant-checkbox-input) {
+  cursor: not-allowed;
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-inner) {
+  @apply relative block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius-sm, 4px);
+  background-color: #fff;
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-inner)::after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 50%;
+  inset-inline-start: 21.5%;
+  width: 5.71px;
+  height: 9.14px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-inline-start: 0;
+  transform: rotate(45deg) scale(0) translate(-50%, -50%);
+  transition: all var(--ant-motion-duration, 0.2s) cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-checked) :where(.ant-checkbox-inner) {
+  background-color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-checked) :where(.ant-checkbox-inner)::after {
+  display: block;
+  transform: rotate(45deg) scale(1) translate(-50%, -50%);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-indeterminate) :where(.ant-checkbox-inner)::after {
+  display: block;
+  top: 50%;
+  inset-inline-start: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent, #1677ff);
+  border: 0;
+  border-radius: 1px;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-disabled) :where(.ant-checkbox-inner) {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-disabled.ant-checkbox-checked) :where(.ant-checkbox-inner) {
+  background-color: var(--color-neutral-bg, #f5f5f5);
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-transfer-list) :where(.ant-checkbox-disabled.ant-checkbox-checked) :where(.ant-checkbox-inner)::after {
+  border-color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}

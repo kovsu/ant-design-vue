@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`List > should render correctly 1`] = `
+"<div class="ant-list ant-list-split">
+  <!--v-if-->
+  <ul class="ant-list-items">
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">a</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">b</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">c</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <!--v-if-->
+  </ul>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`ListItem > should render correctly 1`] = `
+"<li class="ant-list-item">
+  <div class="ant-list-item-content">Item content</div>
+  <!--v-if-->
+  <!--v-if-->
+</li>"
+`;
+
+exports[`ListItemMeta > should render correctly 1`] = `
+"<div class="ant-list-item-meta">
+  <!--v-if-->
+  <div class="ant-list-item-meta-content">
+    <h4 class="ant-list-item-meta-title">Title</h4>
+    <div class="ant-list-item-meta-description">Description</div>
+  </div>
+</div>"
+`;

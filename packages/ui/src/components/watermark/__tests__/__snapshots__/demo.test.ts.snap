@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Watermark demos > demo: basic 1`] = `
+"<div class="ant-watermark" style="position: relative;">
+  <div style="height: 300px; display: flex; align-items: center; justify-content: center;">
+    <p style="color: rgba(0, 0, 0, 0.45);">Content area</p>
+  </div>
+</div>"
+`;
+
+exports[`Watermark demos > demo: custom 1`] = `
+"<div class="ant-watermark" style="position: relative;">
+  <div style="height: 300px; display: flex; align-items: center; justify-content: center;">
+    <p style="color: rgba(0, 0, 0, 0.45);">Custom font and rotation</p>
+  </div>
+</div>"
+`;
+
+exports[`Watermark demos > demo: multi-line 1`] = `
+"<div class="ant-watermark" style="position: relative;">
+  <div style="height: 300px; display: flex; align-items: center; justify-content: center;">
+    <p style="color: rgba(0, 0, 0, 0.45);">Multi-line watermark</p>
+  </div>
+</div>"
+`;

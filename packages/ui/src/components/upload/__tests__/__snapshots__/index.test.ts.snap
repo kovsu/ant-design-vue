@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Upload > should render correctly 1`] = `
+"<div class="ant-upload-wrapper ant-upload-wrapper-text">
+  <!-- Picture card: list before trigger -->
+  <!-- Text / Picture: trigger before list -->
+  <div class="ant-upload ant-upload-text" role="button" tabindex="0"><input type="file" class="ant-upload-input"><button type="button" class="ant-btn"><span role="img" aria-label="upload" class="anticon anticon-upload"><svg focusable="false" class="" data-icon="upload" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M400 317.7h73.9V656c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V317.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 163a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"></path></svg></span><span>Click to Upload</span></button></div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`UploadDragger > should render correctly 1`] = `
+"<div class="ant-upload-wrapper ant-upload-wrapper-text">
+  <!-- Picture card: list before trigger -->
+  <!-- Text / Picture: trigger before list -->
+  <div class="ant-upload ant-upload-drag ant-upload-text" role="button" tabindex="0"><input type="file" class="ant-upload-input">
+    <p class="ant-upload-drag-icon"><span role="img" aria-label="upload" class="anticon anticon-upload"><svg focusable="false" class="" data-icon="upload" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M400 317.7h73.9V656c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V317.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 163a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"></path></svg></span></p>
+    <p class="ant-upload-text">Click or drag file to this area to upload</p>
+    <p class="ant-upload-hint">Support for a single or bulk upload.</p>
+  </div>
+  <!--v-if-->
+</div>"
+`;

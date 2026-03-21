@@ -1,0 +1,341 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`List demos > demo: Actions 1`] = `
+"<div class="ant-list ant-list-split">
+  <!--v-if-->
+  <ul class="ant-list-items">
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">
+        <div class="ant-list-item-meta">
+          <!--v-if-->
+          <div class="ant-list-item-meta-content">
+            <h4 class="ant-list-item-meta-title">Ant Design Vue</h4>
+            <div class="ant-list-item-meta-description">An enterprise-class UI components based on Ant Design and Vue.</div>
+          </div>
+        </div>
+      </div>
+      <ul class="ant-list-item-action"><a href="#">edit</a><a href="#">delete</a></ul>
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">
+        <div class="ant-list-item-meta">
+          <!--v-if-->
+          <div class="ant-list-item-meta-content">
+            <h4 class="ant-list-item-meta-title">Ant Design</h4>
+            <div class="ant-list-item-meta-description">A design system for enterprise-level products.</div>
+          </div>
+        </div>
+      </div>
+      <ul class="ant-list-item-action"><a href="#">edit</a><a href="#">delete</a></ul>
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">
+        <div class="ant-list-item-meta">
+          <!--v-if-->
+          <div class="ant-list-item-meta-content">
+            <h4 class="ant-list-item-meta-title">Ant Design Pro</h4>
+            <div class="ant-list-item-meta-description">An out-of-box UI solution for enterprise applications.</div>
+          </div>
+        </div>
+      </div>
+      <ul class="ant-list-item-action"><a href="#">edit</a><a href="#">delete</a></ul>
+      <!--v-if-->
+    </li>
+    <!--v-if-->
+  </ul>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`List demos > demo: Basic 1`] = `
+"<div class="ant-list ant-list-bordered ant-list-split">
+  <div class="ant-list-header">Header</div>
+  <ul class="ant-list-items">
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">Racing car sprance the finish line just ahead of her competitor.</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">Japanese princess to wed commoner.</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">Australian walks 100km after outback crash.</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">Man charged over missing weddings.</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-content">Los Angeles battles water supply crisis.</div>
+      <!--v-if-->
+      <!--v-if-->
+    </li>
+    <!--v-if-->
+  </ul>
+  <div class="ant-list-footer">Footer</div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`List demos > demo: Grid 1`] = `
+"<div class="ant-list ant-list-split ant-list-grid">
+  <!--v-if-->
+  <ul class="ant-list-items" style="margin-left: -8px; margin-right: -8px;">
+    <div class="ant-list-item-col" style="padding-left: 8px; padding-right: 8px; width: 50%; max-width: 50%;">
+      <li class="ant-list-item">
+        <div class="ant-list-item-content">
+          <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head">
+              <div class="ant-card-head-wrapper">
+                <div class="ant-card-head-title">Title 1</div>
+                <!--v-if-->
+              </div>
+            </div>
+            <!--v-if-->
+            <div class="ant-card-body">Card content</div>
+            <!--v-if-->
+          </div>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </li>
+    </div>
+    <div class="ant-list-item-col" style="padding-left: 8px; padding-right: 8px; width: 50%; max-width: 50%;">
+      <li class="ant-list-item">
+        <div class="ant-list-item-content">
+          <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head">
+              <div class="ant-card-head-wrapper">
+                <div class="ant-card-head-title">Title 2</div>
+                <!--v-if-->
+              </div>
+            </div>
+            <!--v-if-->
+            <div class="ant-card-body">Card content</div>
+            <!--v-if-->
+          </div>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </li>
+    </div>
+    <div class="ant-list-item-col" style="padding-left: 8px; padding-right: 8px; width: 50%; max-width: 50%;">
+      <li class="ant-list-item">
+        <div class="ant-list-item-content">
+          <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head">
+              <div class="ant-card-head-wrapper">
+                <div class="ant-card-head-title">Title 3</div>
+                <!--v-if-->
+              </div>
+            </div>
+            <!--v-if-->
+            <div class="ant-card-body">Card content</div>
+            <!--v-if-->
+          </div>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </li>
+    </div>
+    <div class="ant-list-item-col" style="padding-left: 8px; padding-right: 8px; width: 50%; max-width: 50%;">
+      <li class="ant-list-item">
+        <div class="ant-list-item-content">
+          <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head">
+              <div class="ant-card-head-wrapper">
+                <div class="ant-card-head-title">Title 4</div>
+                <!--v-if-->
+              </div>
+            </div>
+            <!--v-if-->
+            <div class="ant-card-body">Card content</div>
+            <!--v-if-->
+          </div>
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </li>
+    </div>
+    <!--v-if-->
+  </ul>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`List demos > demo: Loading 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;"><button type="button" role="switch" aria-checked="true" class="ant-switch ant-switch-checked">
+    <div class="ant-switch-handle">
+      <!--v-if-->
+    </div><span class="ant-switch-inner"><span class="ant-switch-inner-checked"></span></span>
+  </button>
+  <div class="ant-list ant-list-bordered ant-list-split ant-list-loading">
+    <!--v-if-->
+    <div class="ant-list-spin">
+      <div class="ant-spin-nested-loading" aria-busy="true">
+        <div class="ant-spin-nested-loading-blur">
+          <div class="ant-spin ant-spin-spinning" role="status" aria-label="Loading"><span class="ant-spin-dot ant-spin-dot-spin" aria-hidden="true"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span>
+            <!--v-if-->
+          </div>
+        </div>
+        <div class="ant-spin-container ant-spin-blur" aria-hidden="true">
+          <div class="ant-list-items">
+            <li class="ant-list-item">
+              <div class="ant-list-item-content">Item 1</div>
+              <!--v-if-->
+              <!--v-if-->
+            </li>
+            <li class="ant-list-item">
+              <div class="ant-list-item-content">Item 2</div>
+              <!--v-if-->
+              <!--v-if-->
+            </li>
+            <li class="ant-list-item">
+              <div class="ant-list-item-content">Item 3</div>
+              <!--v-if-->
+              <!--v-if-->
+            </li>
+            <!--v-if-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`List demos > demo: Size 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 24px;">
+  <div>
+    <h4>Small</h4>
+    <div class="ant-list ant-list-bordered ant-list-split ant-list-sm">
+      <div class="ant-list-header">Header</div>
+      <ul class="ant-list-items">
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 1</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 2</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 3</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <!--v-if-->
+      </ul>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div>
+    <h4>Default (Medium)</h4>
+    <div class="ant-list ant-list-bordered ant-list-split">
+      <div class="ant-list-header">Header</div>
+      <ul class="ant-list-items">
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 1</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 2</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 3</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <!--v-if-->
+      </ul>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div>
+    <h4>Large</h4>
+    <div class="ant-list ant-list-bordered ant-list-split ant-list-lg">
+      <div class="ant-list-header">Header</div>
+      <ul class="ant-list-items">
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 1</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 2</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <li class="ant-list-item">
+          <div class="ant-list-item-content">Item 3</div>
+          <!--v-if-->
+          <!--v-if-->
+        </li>
+        <!--v-if-->
+      </ul>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`List demos > demo: Vertical 1`] = `
+"<div class="ant-list ant-list-split ant-list-vertical">
+  <!--v-if-->
+  <ul class="ant-list-items">
+    <li class="ant-list-item">
+      <div class="ant-list-item-main">
+        <div class="ant-list-item-content">
+          <div class="ant-list-item-meta">
+            <!--v-if-->
+            <div class="ant-list-item-meta-content">
+              <h4 class="ant-list-item-meta-title">Ant Design Vue</h4>
+              <div class="ant-list-item-meta-description">An enterprise-class UI components based on Ant Design and Vue.</div>
+            </div>
+          </div> We supply a series of design principles, practical patterns and high quality design resources, to help people create their product prototypes beautifully and efficiently.
+        </div>
+        <ul class="ant-list-item-action"><span>likes: 156</span><span>comments: 2</span></ul>
+      </div>
+      <div class="ant-list-item-extra"><img src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" alt="cover" width="272"></div>
+    </li>
+    <li class="ant-list-item">
+      <div class="ant-list-item-main">
+        <div class="ant-list-item-content">
+          <div class="ant-list-item-meta">
+            <!--v-if-->
+            <div class="ant-list-item-meta-content">
+              <h4 class="ant-list-item-meta-title">Ant Design</h4>
+              <div class="ant-list-item-meta-description">A design system for enterprise-level products.</div>
+            </div>
+          </div> Ant Design provides sufficient design guidelines, best practices, resources, and tools to help designers produce high-quality product prototypes.
+        </div>
+        <ul class="ant-list-item-action"><span>likes: 156</span><span>comments: 2</span></ul>
+      </div>
+      <div class="ant-list-item-extra"><img src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" alt="cover" width="272"></div>
+    </li>
+    <!--v-if-->
+  </ul>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;

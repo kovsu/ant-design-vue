@@ -1,0 +1,151 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Carousel container ── */
+:where(.ant-carousel) {
+  @apply relative box-border;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-size: var(--ant-font-size, 14px);
+  line-height: var(--ant-line-height, 1.5714);
+}
+
+:where(.ant-carousel):focus-visible {
+  outline: 2px solid var(--color-accent, #1677ff);
+  outline-offset: 2px;
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+/* ── Container (overflow hidden) ── */
+:where(.ant-carousel-container) {
+  @apply relative overflow-hidden;
+}
+
+/* ── Track ── */
+:where(.ant-carousel-track) {
+  @apply relative flex;
+  touch-action: pan-y;
+}
+
+:where(.ant-carousel-vertical) :where(.ant-carousel-track) {
+  flex-direction: column;
+  touch-action: pan-x;
+}
+
+:where(.ant-carousel-track-fade) {
+  @apply relative;
+  display: grid;
+}
+
+/* ── Slides ── */
+:where(.ant-carousel-slide) {
+  @apply relative overflow-hidden;
+  flex-shrink: 0;
+}
+
+:where(.ant-carousel-slide) > * {
+  @apply block w-full;
+}
+
+:where(.ant-carousel-slide-fade) {
+  grid-area: 1 / 1;
+  pointer-events: none;
+}
+
+:where(.ant-carousel-slide-fade.ant-carousel-slide-active) {
+  pointer-events: auto;
+}
+
+/* ── Dot indicators ── */
+:where(.ant-carousel-dots) {
+  @apply relative flex items-center justify-center gap-2 p-0 m-0;
+  list-style: none;
+  margin-top: 12px;
+}
+
+:where(.ant-carousel-dot) {
+  @apply relative inline-block p-0;
+}
+
+:where(.ant-carousel-dot) button {
+  @apply block cursor-pointer border-none p-0;
+  width: 16px;
+  height: 3px;
+  background: var(--color-neutral-border, #d9d9d9);
+  border-radius: 1px;
+  opacity: 0.3;
+  transition: all var(--ant-motion-duration, 0.2s) var(--ant-motion-ease, ease);
+}
+
+:where(.ant-carousel-dot):hover button {
+  opacity: 0.75;
+}
+
+:where(.ant-carousel-dot-active) button {
+  width: 24px;
+  background: var(--color-accent, #1677ff);
+  opacity: 1;
+}
+
+/* ── Dot positions ── */
+
+/* Top */
+:where(.ant-carousel-dots-top) :where(.ant-carousel-dots) {
+  @apply absolute left-0 right-0;
+  top: 12px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+/* Bottom (default) */
+:where(.ant-carousel-dots-bottom) :where(.ant-carousel-dots) {
+  /* default, just below content */
+}
+
+/* Left */
+:where(.ant-carousel-dots-left) :where(.ant-carousel-dots) {
+  @apply absolute top-0 bottom-0 flex-col;
+  left: 12px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+:where(.ant-carousel-dots-left) :where(.ant-carousel-dot) button {
+  width: 3px;
+  height: 16px;
+}
+
+:where(.ant-carousel-dots-left) :where(.ant-carousel-dot-active) button {
+  width: 3px;
+  height: 24px;
+}
+
+/* Right */
+:where(.ant-carousel-dots-right) :where(.ant-carousel-dots) {
+  @apply absolute top-0 bottom-0 flex-col;
+  right: 12px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+:where(.ant-carousel-dots-right) :where(.ant-carousel-dot) button {
+  width: 3px;
+  height: 16px;
+}
+
+:where(.ant-carousel-dots-right) :where(.ant-carousel-dot-active) button {
+  width: 3px;
+  height: 24px;
+}
+
+/* ── Vertical layout ── */
+:where(.ant-carousel-vertical) :where(.ant-carousel-container) {
+  height: 100%;
+}
+
+/* ── Swipe cursor ── */
+:where(.ant-carousel-container) {
+  cursor: grab;
+}
+
+:where(.ant-carousel-container):active {
+  cursor: grabbing;
+}

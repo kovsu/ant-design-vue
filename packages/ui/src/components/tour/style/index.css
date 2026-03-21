@@ -1,0 +1,278 @@
+@reference '../../../style/tailwind.css';
+
+/* --- Root container --- */
+:where(.ant-tour-root) {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* --- Mask overlay --- */
+:where(.ant-tour-mask) {
+  position: fixed;
+  inset: 0;
+  pointer-events: auto;
+  z-index: 1001;
+}
+
+/* --- Target spotlight cutout --- */
+:where(.ant-tour-target-placeholder) {
+  position: fixed;
+  border-radius: 4px;
+  z-index: 1002;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* --- Panel --- */
+:where(.ant-tour) {
+  --tour-bg: #fff;
+  --tour-color: var(--color-neutral);
+  --tour-color-secondary: var(--color-neutral-secondary);
+  --tour-border-radius: var(--ant-border-radius-lg, 8px);
+  --tour-panel-width: 520px;
+  --tour-primary-bg: var(--color-accent, #1677ff);
+  --tour-primary-color: var(--color-accent-content, #fff);
+
+  @apply text-sm;
+  position: fixed;
+  width: var(--tour-panel-width);
+  max-width: calc(100vw - 32px);
+  color: var(--tour-color);
+  background: var(--tour-bg);
+  border-radius: var(--tour-border-radius);
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  pointer-events: auto;
+  z-index: 1002;
+}
+
+/* --- Primary variant --- */
+:where(.ant-tour-primary) {
+  --tour-bg: var(--color-accent, #1677ff);
+  --tour-color: var(--color-accent-content, #fff);
+  --tour-color-secondary: rgba(255, 255, 255, 0.65);
+}
+
+:where(.ant-tour-primary) .ant-tour-arrow::before {
+  background: var(--color-accent, #1677ff);
+}
+
+/* --- Cover image --- */
+:where(.ant-tour) .ant-tour-cover {
+  @apply px-4 pt-4;
+}
+
+:where(.ant-tour) .ant-tour-cover img {
+  @apply w-full rounded;
+  display: block;
+}
+
+/* --- Header --- */
+:where(.ant-tour) .ant-tour-header {
+  @apply px-4 pt-4 pb-1;
+}
+
+:where(.ant-tour) .ant-tour-title {
+  @apply font-semibold leading-normal;
+  font-size: 16px;
+  color: var(--tour-color);
+}
+
+/* --- Description --- */
+:where(.ant-tour) .ant-tour-description {
+  @apply px-4 pb-2 leading-relaxed;
+  color: var(--tour-color-secondary);
+}
+
+/* --- Footer --- */
+:where(.ant-tour) .ant-tour-footer {
+  @apply px-4 pb-4 pt-1 flex items-center justify-between;
+}
+
+/* --- Indicators --- */
+:where(.ant-tour) .ant-tour-indicators {
+  @apply flex items-center gap-1.5;
+}
+
+:where(.ant-tour) .ant-tour-indicator {
+  @apply inline-block rounded-full;
+  width: 6px;
+  height: 6px;
+  background: var(--color-neutral-border, #d9d9d9);
+  transition: background 0.2s;
+}
+
+:where(.ant-tour) .ant-tour-indicator-active {
+  background: var(--color-accent, #1677ff);
+}
+
+:where(.ant-tour-primary) .ant-tour-indicator {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+:where(.ant-tour-primary) .ant-tour-indicator-active {
+  background: #fff;
+}
+
+/* --- Buttons --- */
+:where(.ant-tour) .ant-tour-buttons {
+  @apply flex items-center gap-2;
+}
+
+:where(.ant-tour) .ant-tour-prev-btn,
+:where(.ant-tour) .ant-tour-next-btn {
+  @apply inline-flex items-center justify-center rounded px-3 cursor-pointer;
+  height: 28px;
+  font-size: 13px;
+  line-height: 1;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  background: var(--tour-bg);
+  color: var(--tour-color);
+  transition: all 0.2s;
+}
+
+:where(.ant-tour) .ant-tour-prev-btn:hover,
+:where(.ant-tour) .ant-tour-next-btn:hover {
+  border-color: var(--color-accent, #1677ff);
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-tour) .ant-tour-next-btn.ant-tour-primary-btn {
+  background: var(--color-accent, #1677ff);
+  color: var(--color-accent-content, #fff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-tour) .ant-tour-next-btn.ant-tour-primary-btn:hover {
+  background: var(--color-accent-hover, #4096ff);
+  border-color: var(--color-accent-hover, #4096ff);
+  color: var(--color-accent-content, #fff);
+}
+
+/* Primary variant button overrides */
+:where(.ant-tour-primary) .ant-tour-prev-btn {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: var(--color-accent-content, #fff);
+}
+
+:where(.ant-tour-primary) .ant-tour-prev-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+:where(.ant-tour-primary) .ant-tour-next-btn {
+  background: #fff;
+  color: var(--color-accent, #1677ff);
+  border-color: #fff;
+}
+
+:where(.ant-tour-primary) .ant-tour-next-btn:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Arrow --- */
+:where(.ant-tour) .ant-tour-arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+:where(.ant-tour) .ant-tour-arrow::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--tour-bg);
+  border-radius: 0 0 2px 0;
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+/* Arrow placement: bottom* — arrow on top */
+:where(.ant-tour-placement-bottom) .ant-tour-arrow,
+:where(.ant-tour-placement-bottomLeft) .ant-tour-arrow,
+:where(.ant-tour-placement-bottomRight) .ant-tour-arrow {
+  top: -6px;
+  left: calc(50% - 6px);
+}
+
+:where(.ant-tour-placement-bottomLeft) .ant-tour-arrow {
+  left: 24px;
+}
+
+:where(.ant-tour-placement-bottomRight) .ant-tour-arrow {
+  left: auto;
+  right: 24px;
+}
+
+/* Arrow placement: top* — arrow on bottom */
+:where(.ant-tour-placement-top) .ant-tour-arrow,
+:where(.ant-tour-placement-topLeft) .ant-tour-arrow,
+:where(.ant-tour-placement-topRight) .ant-tour-arrow {
+  bottom: -6px;
+  left: calc(50% - 6px);
+  transform: rotate(180deg);
+}
+
+:where(.ant-tour-placement-topLeft) .ant-tour-arrow {
+  left: 24px;
+}
+
+:where(.ant-tour-placement-topRight) .ant-tour-arrow {
+  left: auto;
+  right: 24px;
+}
+
+/* Arrow placement: left* — arrow on right */
+:where(.ant-tour-placement-left) .ant-tour-arrow,
+:where(.ant-tour-placement-leftTop) .ant-tour-arrow,
+:where(.ant-tour-placement-leftBottom) .ant-tour-arrow {
+  right: -6px;
+  top: calc(50% - 6px);
+  transform: rotate(90deg);
+}
+
+:where(.ant-tour-placement-leftTop) .ant-tour-arrow {
+  top: 24px;
+}
+
+:where(.ant-tour-placement-leftBottom) .ant-tour-arrow {
+  top: auto;
+  bottom: 24px;
+}
+
+/* Arrow placement: right* — arrow on left */
+:where(.ant-tour-placement-right) .ant-tour-arrow,
+:where(.ant-tour-placement-rightTop) .ant-tour-arrow,
+:where(.ant-tour-placement-rightBottom) .ant-tour-arrow {
+  left: -6px;
+  top: calc(50% - 6px);
+  transform: rotate(-90deg);
+}
+
+:where(.ant-tour-placement-rightTop) .ant-tour-arrow {
+  top: 24px;
+}
+
+:where(.ant-tour-placement-rightBottom) .ant-tour-arrow {
+  top: auto;
+  bottom: 24px;
+}
+
+/* --- Transition --- */
+.ant-fade-enter-active,
+.ant-fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.ant-fade-enter-from,
+.ant-fade-leave-to {
+  opacity: 0;
+}

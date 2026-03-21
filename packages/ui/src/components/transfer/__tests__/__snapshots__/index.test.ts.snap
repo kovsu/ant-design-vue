@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Transfer > should render correctly 1`] = `
+"<div class="ant-transfer">
+  <div class="ant-transfer-list">
+    <div class="ant-transfer-list-header"><label class="ant-transfer-list-header-select-all"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span></label><span class="ant-transfer-list-header-title"></span><span class="ant-transfer-list-header-count"><!--v-if-->4 items </span></div>
+    <div class="ant-transfer-list-body">
+      <!--v-if-->
+      <ul class="ant-transfer-list-content" role="listbox">
+        <li class="ant-transfer-list-content-item" role="option" aria-selected="false"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span><span class="ant-transfer-list-content-item-text">Item 1</span>
+          <!--v-if-->
+        </li>
+        <li class="ant-transfer-list-content-item" role="option" aria-selected="false"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span><span class="ant-transfer-list-content-item-text">Item 2</span>
+          <!--v-if-->
+        </li>
+        <li class="ant-transfer-list-content-item" role="option" aria-selected="false"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span><span class="ant-transfer-list-content-item-text">Item 4</span>
+          <!--v-if-->
+        </li>
+        <li class="ant-transfer-list-content-item" role="option" aria-selected="false"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span><span class="ant-transfer-list-content-item-text">Item 5</span>
+          <!--v-if-->
+        </li>
+      </ul>
+    </div>
+    <!--v-if-->
+  </div>
+  <div class="ant-transfer-operation"><button type="button" class="ant-btn ant-btn-primary ant-btn-sm ant-btn-icon-only" disabled="" aria-label="Move selected to right"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span>
+      <!--v-if-->
+    </button><button type="button" class="ant-btn ant-btn-primary ant-btn-sm ant-btn-icon-only" disabled="" aria-label="Move selected to left"><span role="img" aria-label="left" class="anticon anticon-left"><svg focusable="false" class="" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></span>
+      <!--v-if-->
+    </button></div>
+  <div class="ant-transfer-list">
+    <div class="ant-transfer-list-header"><label class="ant-transfer-list-header-select-all"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span></label><span class="ant-transfer-list-header-title"></span><span class="ant-transfer-list-header-count"><!--v-if-->1 items </span></div>
+    <div class="ant-transfer-list-body">
+      <!--v-if-->
+      <ul class="ant-transfer-list-content" role="listbox">
+        <li class="ant-transfer-list-content-item" role="option" aria-selected="false"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input"><span class="ant-checkbox-inner"></span></span><span class="ant-transfer-list-content-item-text">Item 3</span>
+          <!--v-if-->
+        </li>
+      </ul>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;

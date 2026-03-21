@@ -129,7 +129,7 @@ const classes = computed(() => ({
         :style="thumbStyle"
         aria-hidden="true"
       />
-      <label
+      <div
         v-for="(opt, index) in normalizedOptions"
         :key="opt.value"
         :ref="(el) => setOptionRef(el, index)"
@@ -143,23 +143,16 @@ const classes = computed(() => ({
         :aria-checked="mergedValue === opt.value"
         :aria-disabled="opt.disabled || disabled || undefined"
         :tabindex="opt.disabled || disabled ? -1 : mergedValue === opt.value ? 0 : -1"
+        :title="opt.title || (typeof opt.label === 'string' ? opt.label : String(opt.value))"
         @click="handleSelect(opt)"
         @keydown="handleKeydown($event, index)"
       >
-        <input
-          type="radio"
-          class="ant-segmented-item-input"
-          :value="opt.value"
-          :checked="mergedValue === opt.value"
-          :disabled="opt.disabled || disabled"
-          :title="opt.title || (typeof opt.label === 'string' ? opt.label : String(opt.value))"
-        />
         <span class="ant-segmented-item-label">
           <slot name="label" :value="opt.value" :label="typeof opt.label === 'string' ? opt.label : String(opt.value)" :disabled="opt.disabled">
             {{ typeof opt.label === 'string' ? opt.label : opt.value }}
           </slot>
         </span>
-      </label>
+      </div>
     </div>
   </div>
 </template>

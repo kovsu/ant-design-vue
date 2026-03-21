@@ -1,0 +1,269 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Form demos > demo: Basic 1`] = `
+"<form class="ant-form ant-form-horizontal">
+  <div class="ant-form-item" data-field-id="username">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="username"><span class="ant-form-item-required" aria-hidden="true">*</span>Username
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Plain input --><input class="ant-input" type="text" value="">
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="password">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="password"><span class="ant-form-item-required" aria-hidden="true">*</span>Password
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <div class="ant-input-password">
+            <!-- With addon wrapper -->
+            <!-- With prefix/suffix but no addon --><span class="ant-input-affix-wrapper"><!--v-if--><input class="ant-input" type="password" value=""><span class="ant-input-suffix"><!--v-if--><!--v-if--><button type="button" class="ant-input-password-icon" aria-label="Show password" tabindex="-1"><span class="ant-input-password-icon-hidden">○</span></button></span></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="">
+    <!--v-if-->
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%; margin-inline-start: 25%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary">Submit</button></div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+</form>"
+`;
+
+exports[`Form demos > demo: Dynamic 1`] = `
+"<form class="ant-form ant-form-horizontal">
+  <div style="margin-bottom: 8px;">
+    <div class="ant-form-item" data-field-id="users_0_name">
+      <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="users_0_name"><span class="ant-form-item-required" aria-hidden="true">*</span>Name 1
+          <!--v-if--><span class="ant-form-item-colon">:</span>
+          <!--v-if-->
+        </label></div>
+      <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+        <div class="ant-form-item-control-input">
+          <div class="ant-form-item-control-input-content">
+            <div style="display: flex; gap: 8px;">
+              <!-- With addon wrapper -->
+              <!-- Plain input --><input class="ant-input" type="text" placeholder="Name" style="flex: 1 1 0%;" value=""><button type="button" class="ant-btn" disabled=""> Remove </button>
+            </div>
+          </div>
+          <!--v-if-->
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+    <div class="ant-form-item" data-field-id="users_0_email">
+      <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="users_0_email"><span class="ant-form-item-required" aria-hidden="true">*</span>Email 1
+          <!--v-if--><span class="ant-form-item-colon">:</span>
+          <!--v-if-->
+        </label></div>
+      <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+        <div class="ant-form-item-control-input">
+          <div class="ant-form-item-control-input-content">
+            <!-- With addon wrapper -->
+            <!-- Plain input --><input class="ant-input" type="text" placeholder="Email" value="">
+          </div>
+          <!--v-if-->
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="">
+    <!--v-if-->
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%; margin-inline-start: 25%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content"><button type="button" class="ant-btn" style="margin-right: 8px;"> Add User </button><button type="submit" class="ant-btn ant-btn-primary">Submit All</button></div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+</form>"
+`;
+
+exports[`Form demos > demo: Layout 1`] = `
+"<div>
+  <div style="margin-bottom: 16px;">
+    <div class="ant-radio-group ant-radio-group-default ant-radio-group-outline" role="radiogroup"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" checked="" role="radio" aria-checked="true"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Horizontal</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Vertical</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Inline</span></label></div>
+  </div>
+  <form class="ant-form ant-form-horizontal">
+    <div class="ant-form-item" data-field-id="field1">
+      <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="field1"><span class="ant-form-item-required" aria-hidden="true">*</span>Field A
+          <!--v-if--><span class="ant-form-item-colon">:</span>
+          <!--v-if-->
+        </label></div>
+      <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+        <div class="ant-form-item-control-input">
+          <div class="ant-form-item-control-input-content">
+            <!-- With addon wrapper -->
+            <!-- Plain input --><input class="ant-input" type="text" placeholder="Enter something" value="">
+          </div>
+          <!--v-if-->
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+    <div class="ant-form-item" data-field-id="field2">
+      <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="field2"><span class="ant-form-item-required" aria-hidden="true">*</span>Field B
+          <!--v-if--><span class="ant-form-item-colon">:</span>
+          <!--v-if-->
+        </label></div>
+      <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+        <div class="ant-form-item-control-input">
+          <div class="ant-form-item-control-input-content">
+            <!-- With addon wrapper -->
+            <!-- Plain input --><input class="ant-input" type="text" placeholder="Enter something" value="">
+          </div>
+          <!--v-if-->
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+    <div class="ant-form-item" data-field-id="">
+      <!--v-if-->
+      <div class="ant-form-item-control" style="width: 75%; max-width: 75%; margin-inline-start: 25%;">
+        <div class="ant-form-item-control-input">
+          <div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary">Submit</button></div>
+          <!--v-if-->
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+    </div>
+  </form>
+</div>"
+`;
+
+exports[`Form demos > demo: Validation 1`] = `
+"<form class="ant-form ant-form-horizontal">
+  <div class="ant-form-item" data-field-id="name">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="name"><span class="ant-form-item-required" aria-hidden="true">*</span>Name
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Plain input --><input class="ant-input" type="text" placeholder="2-20 characters" value="">
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="email">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="email"><span class="ant-form-item-required" aria-hidden="true">*</span>Email
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Plain input --><input class="ant-input" type="text" placeholder="user@example.com" value="">
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="age">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="age"><span class="ant-form-item-required" aria-hidden="true">*</span>Age
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Standard (no addon) -->
+          <div class="ant-input-number" style="width: 100%;">
+            <!--v-if-->
+            <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" type="text" inputmode="decimal" role="spinbutton" aria-valuemin="0" aria-valuemax="150" value=""></div>
+            <div class="ant-input-number-handler-wrap"><button type="button" class="ant-input-number-handler ant-input-number-handler-up" aria-label="Increase value" tabindex="-1"><span class="ant-input-number-handler-up-inner">▲</span></button><button type="button" class="ant-input-number-handler ant-input-number-handler-down ant-input-number-handler-disabled" disabled="" aria-label="Decrease value" tabindex="-1"><span class="ant-input-number-handler-down-inner">▼</span></button></div>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="website">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="website">
+        <!--v-if-->Website
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Plain input --><input class="ant-input" type="text" placeholder="https://example.com" value="">
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="note">
+    <div class="ant-form-item-label" style="width: 25%; max-width: 25%;"><label for="note"><span class="ant-form-item-required" aria-hidden="true">*</span>Note
+        <!--v-if--><span class="ant-form-item-colon">:</span>
+        <!--v-if-->
+      </label></div>
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content">
+          <!-- With addon wrapper -->
+          <!-- Plain input --><input class="ant-input" type="text" placeholder="At least 10 characters" value="">
+        </div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-form-item" data-field-id="">
+    <!--v-if-->
+    <div class="ant-form-item-control" style="width: 75%; max-width: 75%; margin-inline-start: 25%;">
+      <div class="ant-form-item-control-input">
+        <div class="ant-form-item-control-input-content"><button type="submit" class="ant-btn ant-btn-primary">Validate &amp; Submit</button></div>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </div>
+</form>"
+`;

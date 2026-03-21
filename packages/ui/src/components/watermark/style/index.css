@@ -1,0 +1,5 @@
+@reference '../../../style/tailwind.css';
+
+:where(.ant-watermark) {
+  @apply relative overflow-hidden;
+}

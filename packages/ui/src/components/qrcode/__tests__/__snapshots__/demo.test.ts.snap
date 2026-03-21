@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QRCode demos > demo: basic 1`] = `
+"<div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`QRCode demos > demo: custom-color 1`] = `
+"<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div class="ant-qrcode ant-qrcode-borderless"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`QRCode demos > demo: icon 1`] = `
+"<div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`QRCode demos > demo: status 1`] = `
+"<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <div class="ant-qrcode-mask"><span class="ant-qrcode-loading"><span class="ant-qrcode-loading-icon"></span></span></div>
+  </div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <div class="ant-qrcode-mask">
+      <p class="ant-qrcode-expired-text">QR code expired</p><button class="ant-qrcode-expired-btn" type="button"> Refresh </button>
+    </div>
+  </div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <div class="ant-qrcode-mask">
+      <p class="ant-qrcode-scanned-text">Scanned</p>
+    </div>
+  </div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+</div>"
+`;

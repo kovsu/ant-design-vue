@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Segmented > should render correctly 1`] = `
+"<div class="ant-segmented" role="radiogroup">
+  <div class="ant-segmented-group">
+    <div class="ant-segmented-thumb" aria-hidden="true"></div>
+    <div class="ant-segmented-item" role="radio" aria-checked="false" tabindex="-1" title="A"><span class="ant-segmented-item-label">A</span></div>
+    <div class="ant-segmented-item" role="radio" aria-checked="false" tabindex="-1" title="B"><span class="ant-segmented-item-label">B</span></div>
+    <div class="ant-segmented-item" role="radio" aria-checked="false" tabindex="-1" title="C"><span class="ant-segmented-item-label">C</span></div>
+  </div>
+</div>"
+`;

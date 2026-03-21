@@ -1,0 +1,249 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Form Base ── */
+:where(.ant-form) {
+  box-sizing: border-box;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1.5714;
+}
+
+/* ── Horizontal Layout (default) ── */
+:where(.ant-form-horizontal) :where(.ant-form-item) {
+  @apply flex flex-row flex-wrap;
+}
+
+:where(.ant-form-horizontal) :where(.ant-form-item-label) {
+  @apply flex-shrink-0 flex-grow-0;
+}
+
+:where(.ant-form-horizontal) :where(.ant-form-item-control) {
+  @apply flex-grow flex-shrink;
+  min-width: 0;
+}
+
+/* ── Vertical Layout ── */
+:where(.ant-form-vertical) :where(.ant-form-item) {
+  @apply flex flex-col;
+}
+
+:where(.ant-form-vertical) :where(.ant-form-item-label) {
+  @apply text-left;
+  padding-bottom: 8px;
+}
+
+:where(.ant-form-vertical) :where(.ant-form-item-label) > label::after {
+  display: none;
+}
+
+/* ── Inline Layout ── */
+:where(.ant-form-inline) {
+  @apply flex flex-wrap;
+  gap: 16px;
+}
+
+:where(.ant-form-inline) :where(.ant-form-item) {
+  @apply flex flex-row flex-wrap;
+  margin-bottom: 0;
+}
+
+/* ── Form Item ── */
+:where(.ant-form-item) {
+  @apply relative;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5714;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ── Label ── */
+:where(.ant-form-item-label) {
+  @apply inline-flex items-center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: end;
+  vertical-align: middle;
+  padding: 0 8px 0 0;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+:where(.ant-form-item-label) > label {
+  @apply relative inline-flex items-center;
+  height: 32px;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-form-item-label-left) {
+  text-align: start;
+}
+
+:where(.ant-form-item-label-wrap) {
+  overflow: unset;
+  white-space: unset;
+  line-height: 1.5714;
+}
+
+/* ── Required Asterisk ── */
+:where(.ant-form-item-required) {
+  color: var(--color-error, #ff4d4f);
+  font-size: var(--ant-font-size, 14px);
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  margin-inline-end: 4px;
+}
+
+:where(.ant-form-hide-required-mark) :where(.ant-form-item-required) {
+  display: none;
+}
+
+/* ── Optional Mark ── */
+:where(.ant-form-item-optional) {
+  @apply inline-block;
+  margin-inline-start: 4px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: var(--ant-font-size, 14px);
+}
+
+/* ── Colon ── */
+:where(.ant-form-item-colon) {
+  margin-inline: 2px 8px;
+}
+
+/* ── Tooltip ── */
+:where(.ant-form-item-tooltip) {
+  @apply inline-flex items-center;
+  margin-inline-start: 4px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  cursor: help;
+}
+
+/* ── Control Wrapper ── */
+:where(.ant-form-item-control) {
+  @apply flex flex-col;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+:where(.ant-form-item-control-input) {
+  @apply relative flex items-center;
+  min-height: 32px;
+}
+
+:where(.ant-form-item-control-input-content) {
+  @apply flex-auto;
+  max-width: 100%;
+}
+
+/* ── Help / Explain ── */
+:where(.ant-form-item-explain) {
+  min-height: 22px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5714;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-form-item-explain-error) {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-form-item-explain-warning) {
+  color: var(--color-warning, #faad14);
+}
+
+:where(.ant-form-item-explain-success) {
+  color: var(--color-success, #52c41a);
+}
+
+/* ── Extra ── */
+:where(.ant-form-item-extra) {
+  min-height: 22px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5714;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+/* ── Error state: red border on inputs ── */
+:where(.ant-form-item-has-error) :where(.ant-input),
+:where(.ant-form-item-has-error) :where(.ant-input-affix-wrapper),
+:where(.ant-form-item-has-error) :where(.ant-input-number),
+:where(.ant-form-item-has-error) :where(.ant-select-selector),
+:where(.ant-form-item-has-error) :where(.ant-cascader-selector),
+:where(.ant-form-item-has-error) :where(.ant-picker) {
+  border-color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-form-item-has-error) :where(.ant-input):hover,
+:where(.ant-form-item-has-error) :where(.ant-input-affix-wrapper):hover,
+:where(.ant-form-item-has-error) :where(.ant-input-number):hover,
+:where(.ant-form-item-has-error) :where(.ant-select-selector):hover {
+  border-color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-form-item-has-error) :where(.ant-input):focus,
+:where(.ant-form-item-has-error) :where(.ant-input-affix-wrapper):focus-within,
+:where(.ant-form-item-has-error) :where(.ant-input-number):focus-within {
+  border-color: var(--color-error, #ff4d4f);
+  box-shadow: 0 0 0 2px rgba(255, 38, 5, 0.06);
+}
+
+/* ── Warning state: gold border on inputs ── */
+:where(.ant-form-item-has-warning) :where(.ant-input),
+:where(.ant-form-item-has-warning) :where(.ant-input-affix-wrapper),
+:where(.ant-form-item-has-warning) :where(.ant-input-number),
+:where(.ant-form-item-has-warning) :where(.ant-select-selector) {
+  border-color: var(--color-warning, #faad14);
+}
+
+:where(.ant-form-item-has-warning) :where(.ant-input):focus,
+:where(.ant-form-item-has-warning) :where(.ant-input-affix-wrapper):focus-within {
+  border-color: var(--color-warning, #faad14);
+  box-shadow: 0 0 0 2px rgba(250, 173, 20, 0.1);
+}
+
+/* ── Success state ── */
+:where(.ant-form-item-has-success) :where(.ant-input):focus,
+:where(.ant-form-item-has-success) :where(.ant-input-affix-wrapper):focus-within {
+  border-color: var(--color-success, #52c41a);
+  box-shadow: 0 0 0 2px rgba(82, 196, 26, 0.1);
+}
+
+/* ── Feedback Icon ── */
+:where(.ant-form-item-feedback-icon) {
+  @apply inline-flex items-center;
+  margin-inline-start: 8px;
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1;
+}
+
+:where(.ant-form-item-has-success) :where(.ant-form-item-feedback-icon) {
+  color: var(--color-success, #52c41a);
+}
+
+:where(.ant-form-item-has-error) :where(.ant-form-item-feedback-icon) {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-form-item-has-warning) :where(.ant-form-item-feedback-icon) {
+  color: var(--color-warning, #faad14);
+}
+
+:where(.ant-form-item-is-validating) :where(.ant-form-item-feedback-icon) {
+  color: var(--color-accent, #1677ff);
+}
+
+/* ── Size Variants ── */
+:where(.ant-form-sm) :where(.ant-form-item-label) > label,
+:where(.ant-form-sm) :where(.ant-form-item-control-input) {
+  min-height: 24px;
+  height: 24px;
+}
+
+:where(.ant-form-lg) :where(.ant-form-item-label) > label,
+:where(.ant-form-lg) :where(.ant-form-item-control-input) {
+  min-height: 40px;
+  height: 40px;
+}

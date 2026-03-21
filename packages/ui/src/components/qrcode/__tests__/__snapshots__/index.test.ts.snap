@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QRCode > should render correctly 1`] = `
+"<div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+  <!--v-if-->
+</div>"
+`;

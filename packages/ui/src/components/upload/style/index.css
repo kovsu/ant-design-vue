@@ -1,0 +1,354 @@
+@reference '../../../style/tailwind.css';
+
+/* ── Upload Wrapper ── */
+:where(.ant-upload-wrapper) {
+  @apply inline-block;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:where(.ant-upload-wrapper-picture-card) {
+  @apply flex flex-wrap;
+  gap: 8px;
+}
+
+/* ── Upload Trigger ── */
+:where(.ant-upload) {
+  @apply inline-block;
+  cursor: pointer;
+  outline: none;
+}
+
+:where(.ant-upload-input) {
+  @apply hidden;
+}
+
+:where(.ant-upload-disabled) {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* ── Trigger Button (default slot fallback) ── */
+:where(.ant-upload) :where(.ant-btn) {
+  @apply inline-flex items-center gap-1;
+  padding: 4px 15px;
+  height: 32px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  background: var(--color-neutral-bg-container, #fff);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-size: var(--ant-font-size, 14px);
+  cursor: pointer;
+  transition: all var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-upload) :where(.ant-btn):hover {
+  color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-upload) :where(.ant-btn):disabled {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  border-color: var(--color-neutral-border, #d9d9d9);
+  background-color: var(--color-neutral-bg, #f5f5f5);
+}
+
+/* ── Drag Zone ── */
+:where(.ant-upload-drag) {
+  @apply block;
+  padding: 16px;
+  border: 1px dashed var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  background: var(--color-neutral-bg, rgba(0, 0, 0, 0.02));
+  text-align: center;
+  cursor: pointer;
+  transition: border-color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-upload-drag):hover {
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-upload-drag-hover) {
+  border-color: var(--color-accent, #1677ff);
+  background: var(--color-accent-bg, #e6f4ff);
+}
+
+:where(.ant-upload-drag-icon) {
+  @apply flex justify-center;
+  margin-bottom: 8px;
+  font-size: 48px;
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-upload-text) {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-upload-hint) {
+  margin: 0;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-upload-drag.ant-upload-disabled) {
+  cursor: not-allowed;
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-upload-drag.ant-upload-disabled):hover {
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+/* ── Picture Card Trigger ── */
+:where(.ant-upload-picture-card) {
+  @apply flex items-center justify-center;
+  width: 104px;
+  height: 104px;
+  border: 1px dashed var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  background: var(--color-neutral-bg, rgba(0, 0, 0, 0.02));
+  cursor: pointer;
+  transition: border-color var(--ant-motion-duration, 0.2s);
+  vertical-align: top;
+}
+
+:where(.ant-upload-picture-card):hover {
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-upload-picture-card.ant-upload-disabled) {
+  cursor: not-allowed;
+  border-color: var(--color-neutral-border, #d9d9d9);
+}
+
+:where(.ant-upload-card-trigger) {
+  @apply flex flex-col items-center justify-center gap-1;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: 14px;
+}
+
+:where(.ant-upload-card-trigger-text) {
+  margin-top: 4px;
+}
+
+/* ── Upload List ── */
+:where(.ant-upload-list) {
+  @apply block;
+  margin-top: 8px;
+}
+
+:where(.ant-upload-wrapper-picture-card) :where(.ant-upload-list) {
+  @apply inline-flex flex-wrap;
+  gap: 8px;
+  margin-top: 0;
+}
+
+/* ── List Item (text / picture) ── */
+:where(.ant-upload-list-item) {
+  @apply relative;
+  padding: 4px 0;
+  font-size: var(--ant-font-size, 14px);
+  transition: background-color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-upload-list-text) :where(.ant-upload-list-item),
+:where(.ant-upload-list-picture) :where(.ant-upload-list-item) {
+  @apply flex items-center;
+  padding: 4px 8px;
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-upload-list-text) :where(.ant-upload-list-item):hover,
+:where(.ant-upload-list-picture) :where(.ant-upload-list-item):hover {
+  background: var(--color-neutral-bg, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-upload-list-item-info) {
+  @apply flex items-center flex-1 overflow-hidden;
+  gap: 8px;
+}
+
+:where(.ant-upload-list-item-icon) {
+  @apply flex items-center justify-center flex-shrink-0;
+  font-size: 14px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-upload-list-picture) :where(.ant-upload-list-item-icon) {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  overflow: hidden;
+  font-size: 24px;
+}
+
+:where(.ant-upload-list-item-thumbnail) {
+  @apply w-full h-full;
+  object-fit: cover;
+}
+
+:where(.ant-upload-list-item-name) {
+  @apply flex-1 truncate;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  cursor: pointer;
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-upload-list-item-name):hover {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-upload-list-item-actions) {
+  @apply flex items-center flex-shrink-0;
+  gap: 4px;
+  margin-inline-start: 8px;
+}
+
+:where(.ant-upload-list-item-action) {
+  @apply inline-flex items-center justify-center;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 2px;
+  cursor: pointer;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: 14px;
+  transition: color var(--ant-motion-duration, 0.2s);
+}
+
+:where(.ant-upload-list-item-action):hover {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-upload-list-item-action):disabled {
+  cursor: not-allowed;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Progress Bar ── */
+:where(.ant-upload-list-item-progress) {
+  @apply absolute bottom-0 left-0 right-0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.04);
+  pointer-events: none;
+}
+
+:where(.ant-upload-list-item-progress-bar) {
+  height: 100%;
+  background-color: var(--color-accent, #1677ff);
+  transition: width 0.3s;
+}
+
+/* ── Error Status ── */
+:where(.ant-upload-list-item-error) :where(.ant-upload-list-item-name) {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-upload-list-item-error) :where(.ant-upload-list-item-icon) {
+  color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-upload-list-item-error) :where(.ant-upload-list-item-progress-bar) {
+  background-color: var(--color-error, #ff4d4f);
+}
+
+/* ── Picture Card List Items ── */
+:where(.ant-upload-list-picture-card) :where(.ant-upload-list-item) {
+  @apply inline-flex;
+  width: 104px;
+  height: 104px;
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+  padding: 8px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+
+:where(.ant-upload-list-picture-card) :where(.ant-upload-list-item-error) {
+  border-color: var(--color-error, #ff4d4f);
+}
+
+:where(.ant-upload-list-item-container) {
+  @apply relative w-full h-full;
+}
+
+:where(.ant-upload-list-item-thumbnail-wrapper) {
+  @apply flex items-center justify-center w-full h-full overflow-hidden;
+  border-radius: var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-upload-list-item-card-image) {
+  @apply w-full h-full;
+  object-fit: cover;
+  border-radius: var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-upload-list-item-card-file-icon) {
+  font-size: 36px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-upload-list-item-uploading) {
+  @apply flex flex-col items-center justify-center w-full h-full;
+  gap: 4px;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-upload-list-item-uploading-text) {
+  font-size: var(--ant-font-size-sm, 12px);
+}
+
+/* Card actions overlay */
+:where(.ant-upload-list-item-card-actions) {
+  @apply absolute inset-0 flex items-center justify-center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity var(--ant-motion-duration, 0.2s);
+  border-radius: var(--ant-border-radius-sm, 4px);
+}
+
+:where(.ant-upload-list-item-container):hover :where(.ant-upload-list-item-card-actions) {
+  opacity: 1;
+}
+
+:where(.ant-upload-list-item-card-actions) :where(.ant-upload-list-item-action) {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  padding: 4px;
+}
+
+:where(.ant-upload-list-item-card-actions) :where(.ant-upload-list-item-action):hover {
+  color: #fff;
+}
+
+/* ── Picture Card Progress ── */
+:where(.ant-upload-list-picture-card) :where(.ant-upload-list-item-progress) {
+  @apply bottom-0 left-0 right-0;
+  padding: 0;
+}
+
+/* ── Transition Animations ── */
+:where(.ant-upload-list-item-enter-active),
+:where(.ant-upload-list-item-leave-active) {
+  transition: all 0.3s;
+}
+
+:where(.ant-upload-list-item-enter-from),
+:where(.ant-upload-list-item-leave-to) {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+:where(.ant-upload-list-picture-card) :where(.ant-upload-list-item-enter-from),
+:where(.ant-upload-list-picture-card) :where(.ant-upload-list-item-leave-to) {
+  transform: scale(0.8);
+}

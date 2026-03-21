@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Carousel > should render correctly 1`] = `
+"<div class="ant-carousel ant-carousel-dots-bottom" role="region" aria-roledescription="carousel" tabindex="0">
+  <div class="ant-carousel-container">
+    <!-- Scrollx mode -->
+    <div class="ant-carousel-track" style="transform: translateX(-20%); transition: none; width: 500%;">
+      <!-- Clone last slide at beginning (for infinite) -->
+      <div class="ant-carousel-slide" style="width: 20%;" aria-hidden="true">
+        <div class="slide">Slide 3</div>
+      </div><!-- Actual slides -->
+      <div class="ant-carousel-slide ant-carousel-slide-active" style="width: 20%;" aria-hidden="false" role="tabpanel">
+        <div class="slide">Slide 1</div>
+      </div>
+      <div class="ant-carousel-slide" style="width: 20%;" aria-hidden="true" role="tabpanel">
+        <div class="slide">Slide 2</div>
+      </div>
+      <div class="ant-carousel-slide" style="width: 20%;" aria-hidden="true" role="tabpanel">
+        <div class="slide">Slide 3</div>
+      </div><!-- Clone first slide at end (for infinite) -->
+      <div class="ant-carousel-slide" style="width: 20%;" aria-hidden="true">
+        <div class="slide">Slide 1</div>
+      </div>
+    </div>
+  </div><!-- Dot indicators -->
+  <ul class="ant-carousel-dots" role="tablist">
+    <li class="ant-carousel-dot ant-carousel-dot-active" role="presentation"><button type="button" role="tab" aria-selected="true" aria-label="Slide 1"></button></li>
+    <li class="ant-carousel-dot" role="presentation"><button type="button" role="tab" aria-selected="false" aria-label="Slide 2"></button></li>
+    <li class="ant-carousel-dot" role="presentation"><button type="button" role="tab" aria-selected="false" aria-label="Slide 3"></button></li>
+  </ul>
+</div>"
+`;

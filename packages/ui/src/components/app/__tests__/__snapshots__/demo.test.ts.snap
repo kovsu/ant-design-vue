@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App demos > demo: Basic 1`] = `
+"<div class="ant-app">
+  <div style="display: flex; gap: 8px;"><button class="ant-btn ant-btn-solid">Show Message</button><button class="ant-btn ant-btn-solid">Show Notification</button><button class="ant-btn ant-btn-solid">Show Modal</button></div>
+</div>"
+`;
