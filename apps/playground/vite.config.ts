@@ -15,6 +15,8 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src'),
       '~': resolve(__dirname, './assets'),
+      // Use full Vue build with runtime compiler for playground template compilation
+      vue: 'vue/dist/vue.esm-bundler.js',
     },
   },
 })

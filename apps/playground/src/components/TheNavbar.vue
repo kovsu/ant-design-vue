@@ -7,6 +7,15 @@
             tabindex="0"
             class="bg-base-100 z-[1] mt-3 flex w-52 origin-top scale-95 flex-col flex-wrap rounded-lg p-2 text-sm capitalize"
           >
+            <li>
+              <RouterLink
+                to="/playground"
+                class="hover:bg-base-content/10 flex cursor-pointer flex-col rounded-lg px-3 py-2 font-semibold transition duration-200"
+              >
+                Playground
+              </RouterLink>
+            </li>
+            <li class="my-1 border-t border-base-content/10"></li>
             <li v-for="item in items" :key="item.name">
               <RouterLink
                 :aria-disabled="item.path === route.path"

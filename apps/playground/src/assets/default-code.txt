@@ -1,0 +1,26 @@
+<template>
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <h3>Ant Design Vue Playground</h3>
+
+    <a-space>
+      <a-button variant="solid" @click="count++">
+        Clicked {{ count }} times
+      </a-button>
+      <a-button variant="outlined" @click="count = 0">Reset</a-button>
+    </a-space>
+
+    <a-space direction="vertical">
+      <a-input
+        v-model:value="name"
+        placeholder="Type your name"
+        style="width: 300px"
+      />
+      <p v-if="name">Hello, {{ name }}!</p>
+    </a-space>
+  </div>
+</template>
+
+<script setup>
+const count = ref(0)
+const name = ref('')
+</script>

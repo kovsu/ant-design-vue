@@ -1,38 +1,57 @@
 import { RouteRecordRaw, RouterView } from 'vue-router'
 import BasicLayout from './components/BasicLayout.vue'
+import DemoBlock from './components/DemoBlock.vue'
+import PlaygroundPage from './views/PlaygroundPage.vue'
 import { Fragment, h } from 'vue'
 
 // /pages/button/basic.vue
 const items = import.meta.glob('./pages/*/*.vue', { import: 'default', eager: true })
+const rawItems = import.meta.glob('./pages/*/*.vue', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+})
 
-const categoryRoutes: Record<string, RouteRecordRaw[]> = {}
+interface DemoInfo {
+  path: string
+  component: any
+  raw: string
+}
 
-Object.keys(items).forEach(path => {
-  const route = path.replace('./pages/', '').replace('.vue', '')
+const categoryDemos: Record<string, DemoInfo[]> = {}
+
+Object.keys(items).forEach(filePath => {
+  const route = filePath.replace('./pages/', '').replace('.vue', '')
   const [category, demo] = route.split('/')
 
-  if (!categoryRoutes[category]) {
-    categoryRoutes[category] = []
+  if (!categoryDemos[category]) {
+    categoryDemos[category] = []
   }
 
-  categoryRoutes[category].push({
+  categoryDemos[category].push({
     path: demo,
-    component: items[path],
+    component: items[filePath],
+    raw: rawItems[filePath] as string,
   })
 })
 
-const routes: RouteRecordRaw[] = Object.entries(categoryRoutes).map(([category, children]) => {
+const routes: RouteRecordRaw[] = Object.entries(categoryDemos).map(([category, demos]) => {
   const renderComponents = () =>
     h(
       'div',
-      children.map(child => h(child.component)),
+      demos.map(demo =>
+        h(DemoBlock, { title: demo.path, source: demo.raw }, () => h(demo.component)),
+      ),
     )
   renderComponents.displayName = 'renderComponents'
   return {
     path: `/${category}`,
     component: RouterView,
     children: [
-      ...children,
+      ...demos.map(d => ({
+        path: d.path,
+        component: d.component,
+      })),
       {
         path: ':demo*',
         component: renderComponents,
@@ -41,12 +60,12 @@ const routes: RouteRecordRaw[] = Object.entries(categoryRoutes).map(([category, 
   }
 })
 
-const navs = Object.keys(categoryRoutes).map(category => ({
+const navs = Object.keys(categoryDemos).map(category => ({
   name: category,
   path: `/${category}`,
-  children: categoryRoutes[category].map(child => ({
-    name: child.path,
-    path: `/${category}/${child.path}`,
+  children: categoryDemos[category].map(d => ({
+    name: d.path,
+    path: `/${category}/${d.path}`,
   })),
 }))
 routes.push({
@@ -55,6 +74,10 @@ routes.push({
 })
 export default [
   {
+    path: '/playground',
+    component: PlaygroundPage,
+  },
+  {
     path: '/',
     component: BasicLayout,
     children: routes,
@@ -62,4 +85,4 @@ export default [
       navs,
     },
   },
-]
+] as RouteRecordRaw[]
