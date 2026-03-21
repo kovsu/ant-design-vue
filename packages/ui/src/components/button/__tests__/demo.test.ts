@@ -10,6 +10,8 @@ import Ghost from '../demo/ghost.vue'
 import Block from '../demo/block.vue'
 import Shape from '../demo/shape.vue'
 import Href from '../demo/href.vue'
+import IconDemo from '../demo/icon.vue'
+import Multiple from '../demo/multiple.vue'
 
 const demos = {
   Basic,
@@ -22,6 +24,8 @@ const demos = {
   Block,
   Shape,
   Href,
+  IconDemo,
+  Multiple,
 }
 
 describe('Button demos', () => {

@@ -10,13 +10,14 @@ import Collapsible from '../demo/collapsible.vue'
 import Custom from '../demo/custom.vue'
 import Mix from '../demo/mix.vue'
 import Noarrow from '../demo/noarrow.vue'
+import Extra from '../demo/extra.vue'
 
 const globalComponents = {
   ACollapse: Collapse,
   ACollapsePanel: CollapsePanel,
 }
 
-const demos = { Basic, Borderless, Ghost, Accordion, Collapsible, Custom, Mix, Noarrow }
+const demos = { Basic, Borderless, Ghost, Accordion, Collapsible, Custom, Mix, Noarrow, Extra }
 
 describe('Collapse demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

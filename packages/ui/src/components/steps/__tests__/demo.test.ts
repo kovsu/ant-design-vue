@@ -14,6 +14,7 @@ import Nav from '../demo/nav.vue'
 import ProgressDot from '../demo/progress-dot.vue'
 import Progress from '../demo/progress.vue'
 import LabelPlacement from '../demo/label-placement.vue'
+import CustomizedProgressDot from '../demo/customized-progress-dot.vue'
 
 const demos = {
   Basic,
@@ -30,6 +31,7 @@ const demos = {
   ProgressDot,
   Progress,
   LabelPlacement,
+  CustomizedProgressDot,
 }
 
 describe('Steps demos', () => {

@@ -197,6 +197,44 @@ exports[`Collapse demos > demo: Custom 1`] = `
 </div>"
 `;
 
+exports[`Collapse demos > demo: Extra 1`] = `
+"<div class="ant-collapse" role="tablist">
+  <div class="ant-collapse-item ant-collapse-item-active">
+    <div class="ant-collapse-header" role="tab" aria-expanded="true" tabindex="0"><span class="ant-collapse-arrow ant-collapse-arrow-active" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 1</span>
+      <div class="ant-collapse-extra"><span style="cursor: pointer;">⚙</span></div>
+      <!--v-if-->
+    </div>
+    <div class="ant-collapse-content ant-collapse-content-active" role="tabpanel">
+      <div class="ant-collapse-content-box">
+        <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ant-collapse-item">
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 2</span>
+      <div class="ant-collapse-extra"><span style="cursor: pointer;">⚙</span></div>
+      <!--v-if-->
+    </div>
+    <div class="ant-collapse-content" role="tabpanel" style="display: none;">
+      <div class="ant-collapse-content-box">
+        <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ant-collapse-item">
+    <div class="ant-collapse-header" role="tab" aria-expanded="false" tabindex="0"><span class="ant-collapse-arrow" aria-hidden="true"><span role="img" aria-label="right" class="anticon anticon-right"><svg focusable="false" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></span><span class="ant-collapse-header-text">This is panel header 3</span>
+      <div class="ant-collapse-extra"><span style="cursor: pointer;">⚙</span></div>
+      <!--v-if-->
+    </div>
+    <div class="ant-collapse-content" role="tabpanel" style="display: none;">
+      <div class="ant-collapse-content-box">
+        <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness.</p>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Collapse demos > demo: Ghost 1`] = `
 "<div class="ant-collapse ant-collapse-ghost" role="tablist">
   <div class="ant-collapse-item ant-collapse-item-active">

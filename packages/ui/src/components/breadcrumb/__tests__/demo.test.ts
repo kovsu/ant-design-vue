@@ -5,13 +5,14 @@ import BreadcrumbItem from '../BreadcrumbItem.vue'
 import Basic from '../demo/basic.vue'
 import Separator from '../demo/separator.vue'
 import WithIcon from '../demo/withIcon.vue'
+import Overlay from '../demo/overlay.vue'
 
 const globalComponents = {
   ABreadcrumb: Breadcrumb,
   ABreadcrumbItem: BreadcrumbItem,
 }
 
-const demos = { Basic, Separator, WithIcon }
+const demos = { Basic, Separator, WithIcon, Overlay }
 
 describe('Breadcrumb demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

@@ -126,6 +126,39 @@ exports[`Timeline demos > demo: Custom 1`] = `
 </ul>"
 `;
 
+exports[`Timeline demos > demo: Label 1`] = `
+"<div>
+  <div class="ant-radio-group ant-radio-group-default ant-radio-group-outline" role="radiogroup" style="margin-bottom: 20px;"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" checked="" role="radio" aria-checked="true"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Left</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Right</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Alternate</span></label></div>
+  <ul class="ant-timeline ant-timeline-left">
+    <li class="ant-timeline-item">
+      <div class="ant-timeline-item-label">2015-09-01</div>
+      <div class="ant-timeline-item-tail"></div>
+      <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+      <div class="ant-timeline-item-content">Create a services site</div>
+    </li>
+    <li class="ant-timeline-item">
+      <div class="ant-timeline-item-label">2015-09-01 09:12:11</div>
+      <div class="ant-timeline-item-tail"></div>
+      <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+      <div class="ant-timeline-item-content">Solve initial network problems</div>
+    </li>
+    <li class="ant-timeline-item">
+      <!--v-if-->
+      <div class="ant-timeline-item-tail"></div>
+      <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+      <div class="ant-timeline-item-content">Technical testing</div>
+    </li>
+    <li class="ant-timeline-item">
+      <div class="ant-timeline-item-label">2015-09-01 09:12:11</div>
+      <div class="ant-timeline-item-tail"></div>
+      <div class="ant-timeline-item-head ant-timeline-item-head-blue"></div>
+      <div class="ant-timeline-item-content">Network problems being solved</div>
+    </li>
+    <!--v-if-->
+  </ul>
+</div>"
+`;
+
 exports[`Timeline demos > demo: Pending 1`] = `
 "<div>
   <ul class="ant-timeline ant-timeline-pending">

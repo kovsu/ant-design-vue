@@ -6,8 +6,10 @@ import Ellipsis from '../demo/ellipsis.vue'
 import Copyable from '../demo/copyable.vue'
 import LinkDemo from '../demo/link.vue'
 import Title from '../demo/title.vue'
+import Interactive from '../demo/interactive.vue'
+import Suffix from '../demo/suffix.vue'
 
-const demos = { Basic, TextDemo, Ellipsis, Copyable, LinkDemo, Title }
+const demos = { Basic, TextDemo, Ellipsis, Copyable, LinkDemo, Title, Interactive, Suffix }
 
 describe('Typography demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

@@ -9,6 +9,30 @@ exports[`Badge demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Badge demos > demo: Change 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 24px;">
+  <div style="display: flex; gap: 24px; align-items: center;">
+    <!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="5">5</sup></transition-stub></span>
+    <div class="ant-btn-group" role="group"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">-</span>
+      </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+        <wave-stub disabled="false"></wave-stub>
+        <!--v-if--><span class="ant-btn-content">+</span>
+      </button></div>
+  </div>
+  <div style="display: flex; gap: 24px; align-items: center;">
+    <!-- Status badge (no children, dot + text) -->
+    <!-- Badge with children or standalone count --><span class="ant-badge"><div style="width: 42px; height: 42px; background: rgb(235, 235, 235); border-radius: 6px;"></div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-dot"></sup></transition-stub></span><button type="button" role="switch" aria-checked="true" class="ant-switch ant-switch-checked">
+      <div class="ant-switch-handle">
+        <!--v-if-->
+      </div><span class="ant-switch-inner"><span class="ant-switch-inner-checked"></span></span>
+    </button>
+  </div>
+</div>"
+`;
+
 exports[`Badge demos > demo: Colors 1`] = `
 "<div>
   <h4>Presets</h4>

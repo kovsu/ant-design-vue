@@ -9,8 +9,9 @@ import Colors from '../demo/colors.vue'
 import Link from '../demo/link.vue'
 import NoWrapper from '../demo/no-wrapper.vue'
 import Title from '../demo/title.vue'
+import Change from '../demo/change.vue'
 
-const demos = { Basic, Dot, Overflow, Status, RibbonDemo, Colors, Link, NoWrapper, Title }
+const demos = { Basic, Dot, Overflow, Status, RibbonDemo, Colors, Link, NoWrapper, Title, Change }
 
 describe('Badge demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

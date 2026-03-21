@@ -123,6 +123,85 @@ exports[`Steps demos > demo: Clickable 1`] = `
 </div>"
 `;
 
+exports[`Steps demos > demo: CustomizedProgressDot 1`] = `
+"<div data-v-4de08a48="">
+  <div data-v-4de08a48="" class="ant-steps ant-steps-horizontal" role="navigation" aria-label="Steps">
+    <div data-v-4de08a48="" class="ant-steps-item ant-steps-item-finish ant-steps-item-clickable ant-steps-item-custom" role="button" tabindex="0">
+      <div class="ant-steps-item-container">
+        <div class="ant-steps-item-tail"></div>
+        <div class="ant-steps-item-icon"><span class="ant-trigger-wrapper"><span data-v-4de08a48="" class="custom-dot"></span></span>
+          <!--teleport start-->
+          <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+            <!--v-if-->
+          </transition-stub>
+          <!--teleport end-->
+        </div>
+        <div class="ant-steps-item-content">
+          <div class="ant-steps-item-title">Finished
+            <!--v-if-->
+          </div>
+          <div class="ant-steps-item-description">You can hover on the dot.</div>
+        </div>
+      </div>
+    </div>
+    <div data-v-4de08a48="" class="ant-steps-item ant-steps-item-process ant-steps-item-clickable ant-steps-item-custom" role="button" tabindex="0" aria-current="step">
+      <div class="ant-steps-item-container">
+        <div class="ant-steps-item-tail"></div>
+        <div class="ant-steps-item-icon"><span class="ant-trigger-wrapper"><span data-v-4de08a48="" class="custom-dot"></span></span>
+          <!--teleport start-->
+          <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+            <!--v-if-->
+          </transition-stub>
+          <!--teleport end-->
+        </div>
+        <div class="ant-steps-item-content">
+          <div class="ant-steps-item-title">In Progress
+            <!--v-if-->
+          </div>
+          <div class="ant-steps-item-description">You can hover on the dot.</div>
+        </div>
+      </div>
+    </div>
+    <div data-v-4de08a48="" class="ant-steps-item ant-steps-item-wait ant-steps-item-clickable ant-steps-item-custom" role="button" tabindex="0">
+      <div class="ant-steps-item-container">
+        <div class="ant-steps-item-tail"></div>
+        <div class="ant-steps-item-icon"><span class="ant-trigger-wrapper"><span data-v-4de08a48="" class="custom-dot"></span></span>
+          <!--teleport start-->
+          <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+            <!--v-if-->
+          </transition-stub>
+          <!--teleport end-->
+        </div>
+        <div class="ant-steps-item-content">
+          <div class="ant-steps-item-title">Waiting
+            <!--v-if-->
+          </div>
+          <div class="ant-steps-item-description">You can hover on the dot.</div>
+        </div>
+      </div>
+    </div>
+    <div data-v-4de08a48="" class="ant-steps-item ant-steps-item-wait ant-steps-item-clickable ant-steps-item-custom" role="button" tabindex="0">
+      <div class="ant-steps-item-container">
+        <div class="ant-steps-item-tail"></div>
+        <div class="ant-steps-item-icon"><span class="ant-trigger-wrapper"><span data-v-4de08a48="" class="custom-dot"></span></span>
+          <!--teleport start-->
+          <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+            <!--v-if-->
+          </transition-stub>
+          <!--teleport end-->
+        </div>
+        <div class="ant-steps-item-content">
+          <div class="ant-steps-item-title">Waiting
+            <!--v-if-->
+          </div>
+          <div class="ant-steps-item-description">You can hover on the dot.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
 exports[`Steps demos > demo: Error 1`] = `
 "<div class="ant-steps ant-steps-horizontal" role="navigation" aria-label="Steps">
   <div class="ant-steps-item ant-steps-item-finish ant-steps-item-clickable" role="button" tabindex="0">

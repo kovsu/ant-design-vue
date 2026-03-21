@@ -5,8 +5,9 @@ import Bordered from '../demo/bordered.vue'
 import Size from '../demo/size.vue'
 import Vertical from '../demo/vertical.vue'
 import Responsive from '../demo/responsive.vue'
+import VerticalBorder from '../demo/vertical-border.vue'
 
-const demos = { Basic, Bordered, Size, Vertical, Responsive }
+const demos = { Basic, Bordered, Size, Vertical, Responsive, VerticalBorder }
 
 describe('Descriptions demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

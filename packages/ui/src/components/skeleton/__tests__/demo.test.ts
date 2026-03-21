@@ -5,8 +5,9 @@ import Active from '../demo/active.vue'
 import Complex from '../demo/complex.vue'
 import Element from '../demo/element.vue'
 import Children from '../demo/children.vue'
+import List from '../demo/list.vue'
 
-const demos = { Basic, Active, Complex, Element, Children }
+const demos = { Basic, Active, Complex, Element, Children, List }
 
 describe('Skeleton demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

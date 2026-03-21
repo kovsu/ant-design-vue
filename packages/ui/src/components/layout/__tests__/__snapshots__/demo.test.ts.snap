@@ -8,6 +8,143 @@ exports[`Layout demos > demo: Basic 1`] = `
 </section>"
 `;
 
+exports[`Layout demos > demo: Fixed 1`] = `
+"<section class="ant-layout">
+  <header class="ant-layout-header" style="position: sticky; top: 0px; z-index: 1; width: 100%; display: flex; align-items: center; background: rgb(0, 21, 41);">
+    <div style="width: 120px; height: 31px; margin-right: 24px; background: rgba(255, 255, 255, 0.2); border-radius: 4px;"></div>
+    <ul class="ant-menu ant-menu-root ant-menu-horizontal ant-menu-dark" role="menu" style="flex: 1 1 0%; min-width: 0;">
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Home</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Products</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">About</span>
+      </li>
+    </ul>
+  </header>
+  <main class="ant-layout-content" style="padding: 0px 48px;">
+    <div style="padding: 24px; min-height: 600px; background: rgb(255, 255, 255); margin-top: 16px;"> Scroll down to see the fixed header remain at the top. <br><br>
+      <p>Content line 1</p>
+      <p>Content line 2</p>
+      <p>Content line 3</p>
+      <p>Content line 4</p>
+      <p>Content line 5</p>
+      <p>Content line 6</p>
+      <p>Content line 7</p>
+      <p>Content line 8</p>
+      <p>Content line 9</p>
+      <p>Content line 10</p>
+      <p>Content line 11</p>
+      <p>Content line 12</p>
+      <p>Content line 13</p>
+      <p>Content line 14</p>
+      <p>Content line 15</p>
+      <p>Content line 16</p>
+      <p>Content line 17</p>
+      <p>Content line 18</p>
+      <p>Content line 19</p>
+      <p>Content line 20</p>
+    </div>
+  </main>
+  <footer class="ant-layout-footer" style="text-align: center; background: rgb(245, 245, 245);"> Ant Design Vue © 2024 </footer>
+</section>"
+`;
+
+exports[`Layout demos > demo: FixedSider 1`] = `
+"<section class="ant-layout ant-layout-has-sider" style="min-height: 400px;">
+  <aside class="ant-layout-sider ant-layout-sider-dark" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px; overflow: auto; height: 100vh; position: sticky; top: 0px; left: 0px;">
+    <div class="ant-layout-sider-children">
+      <div style="padding: 16px; color: rgb(255, 255, 255);">Logo</div>
+      <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-dark" role="menu">
+        <li class="ant-menu-item ant-menu-item-selected" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 1</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 2</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 3</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 4</span>
+        </li>
+      </ul>
+    </div>
+    <!--v-if-->
+  </aside>
+  <section class="ant-layout">
+    <header class="ant-layout-header" style="background: rgb(255, 255, 255); padding: 0px 16px;"> Header </header>
+    <main class="ant-layout-content" style="padding: 24px; overflow: initial;">
+      <div style="padding: 24px; background: rgb(255, 255, 255);">
+        <p>Content line 1 — scroll to see the fixed sider.</p>
+        <p>Content line 2 — scroll to see the fixed sider.</p>
+        <p>Content line 3 — scroll to see the fixed sider.</p>
+        <p>Content line 4 — scroll to see the fixed sider.</p>
+        <p>Content line 5 — scroll to see the fixed sider.</p>
+        <p>Content line 6 — scroll to see the fixed sider.</p>
+        <p>Content line 7 — scroll to see the fixed sider.</p>
+        <p>Content line 8 — scroll to see the fixed sider.</p>
+        <p>Content line 9 — scroll to see the fixed sider.</p>
+        <p>Content line 10 — scroll to see the fixed sider.</p>
+        <p>Content line 11 — scroll to see the fixed sider.</p>
+        <p>Content line 12 — scroll to see the fixed sider.</p>
+        <p>Content line 13 — scroll to see the fixed sider.</p>
+        <p>Content line 14 — scroll to see the fixed sider.</p>
+        <p>Content line 15 — scroll to see the fixed sider.</p>
+        <p>Content line 16 — scroll to see the fixed sider.</p>
+        <p>Content line 17 — scroll to see the fixed sider.</p>
+        <p>Content line 18 — scroll to see the fixed sider.</p>
+        <p>Content line 19 — scroll to see the fixed sider.</p>
+        <p>Content line 20 — scroll to see the fixed sider.</p>
+        <p>Content line 21 — scroll to see the fixed sider.</p>
+        <p>Content line 22 — scroll to see the fixed sider.</p>
+        <p>Content line 23 — scroll to see the fixed sider.</p>
+        <p>Content line 24 — scroll to see the fixed sider.</p>
+        <p>Content line 25 — scroll to see the fixed sider.</p>
+        <p>Content line 26 — scroll to see the fixed sider.</p>
+        <p>Content line 27 — scroll to see the fixed sider.</p>
+        <p>Content line 28 — scroll to see the fixed sider.</p>
+        <p>Content line 29 — scroll to see the fixed sider.</p>
+        <p>Content line 30 — scroll to see the fixed sider.</p>
+      </div>
+    </main>
+    <footer class="ant-layout-footer" style="text-align: center; background: rgb(245, 245, 245);"> Footer </footer>
+  </section>
+</section>"
+`;
+
+exports[`Layout demos > demo: Responsive 1`] = `
+"<section class="ant-layout ant-layout-has-sider" style="min-height: 300px;">
+  <aside class="ant-layout-sider ant-layout-sider-dark" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
+    <div class="ant-layout-sider-children">
+      <div style="padding: 16px; color: rgb(255, 255, 255);">Logo</div>
+      <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-dark" role="menu">
+        <li class="ant-menu-item ant-menu-item-selected" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 1</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 2</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 3</span>
+        </li>
+        <li class="ant-menu-item" role="menuitem" tabindex="0">
+          <!--v-if--><span class="ant-menu-title-content">Nav 4</span>
+        </li>
+      </ul>
+    </div>
+    <!--v-if-->
+  </aside>
+  <section class="ant-layout">
+    <header class="ant-layout-header" style="background: rgb(255, 255, 255); padding: 0px 16px;"> Header </header>
+    <main class="ant-layout-content" style="padding: 24px;"> Content — resize the browser to see the sider collapse. </main>
+    <footer class="ant-layout-footer" style="text-align: center; background: rgb(245, 245, 245);"> Footer </footer>
+  </section>
+</section>"
+`;
+
 exports[`Layout demos > demo: SiderDemo 1`] = `
 "<section class="ant-layout ant-layout-has-sider" style="min-height: 300px;">
   <aside class="ant-layout-sider ant-layout-sider-dark ant-layout-sider-has-trigger" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
@@ -32,6 +169,97 @@ exports[`Layout demos > demo: SiderLight 1`] = `
   </aside>
   <section class="ant-layout">
     <main class="ant-layout-content" style="padding: 24px;"> Content with light sider </main>
+  </section>
+</section>"
+`;
+
+exports[`Layout demos > demo: Top 1`] = `
+"<section class="ant-layout">
+  <header class="ant-layout-header" style="display: flex; align-items: center; background: rgb(0, 21, 41);">
+    <div style="width: 120px; height: 31px; margin-right: 24px; background: rgba(255, 255, 255, 0.2); border-radius: 4px;"></div>
+    <ul class="ant-menu ant-menu-root ant-menu-horizontal ant-menu-dark" role="menu" style="flex: 1 1 0%; min-width: 0;">
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Home</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Products</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">About</span>
+      </li>
+    </ul>
+  </header>
+  <main class="ant-layout-content" style="padding: 0px 48px;">
+    <div style="padding: 24px; min-height: 280px; background: rgb(255, 255, 255); margin-top: 16px;"> Content </div>
+  </main>
+  <footer class="ant-layout-footer" style="text-align: center; background: rgb(245, 245, 245);"> Ant Design Vue © 2024 </footer>
+</section>"
+`;
+
+exports[`Layout demos > demo: TopSide 1`] = `
+"<section class="ant-layout">
+  <header class="ant-layout-header" style="display: flex; align-items: center; background: rgb(0, 21, 41);">
+    <div style="width: 120px; height: 31px; margin-right: 24px; background: rgba(255, 255, 255, 0.2); border-radius: 4px;"></div>
+    <ul class="ant-menu ant-menu-root ant-menu-horizontal ant-menu-dark" role="menu" style="flex: 1 1 0%; min-width: 0;">
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Navigation One</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Navigation Two</span>
+      </li>
+      <li class="ant-menu-item" role="menuitem" tabindex="0">
+        <!--v-if--><span class="ant-menu-title-content">Navigation Three</span>
+      </li>
+    </ul>
+  </header>
+  <section class="ant-layout ant-layout-has-sider">
+    <aside class="ant-layout-sider ant-layout-sider-light" style="flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;">
+      <div class="ant-layout-sider-children">
+        <ul class="ant-menu ant-menu-root ant-menu-inline ant-menu-light" role="menu" style="height: 100%; border-right: 0px;">
+          <!-- Inline mode: expand/collapse in place -->
+          <li class="ant-menu-submenu ant-menu-submenu-inline">
+            <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+              <!--v-if--><span class="ant-menu-title-content">Subnav 1</span><i class="ant-menu-submenu-arrow"></i>
+            </div>
+            <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+              <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 1</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 2</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 3</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 4</span>
+                </li>
+              </ul>
+            </transition-stub>
+          </li><!-- Inline mode: expand/collapse in place -->
+          <li class="ant-menu-submenu ant-menu-submenu-inline">
+            <div class="ant-menu-submenu-title" style="padding-left: 0px;" role="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true">
+              <!--v-if--><span class="ant-menu-title-content">Subnav 2</span><i class="ant-menu-submenu-arrow"></i>
+            </div>
+            <transition-stub name="ant-motion-collapse" appear="false" persisted="true" css="true">
+              <ul class="ant-menu ant-menu-sub ant-menu-inline" role="menu" style="display: none;">
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 5</span>
+                </li>
+                <li class="ant-menu-item" style="padding-left: 24px;" role="menuitem" tabindex="0">
+                  <!--v-if--><span class="ant-menu-title-content">Option 6</span>
+                </li>
+              </ul>
+            </transition-stub>
+          </li>
+        </ul>
+      </div>
+      <!--v-if-->
+    </aside>
+    <section class="ant-layout" style="padding: 24px;">
+      <main class="ant-layout-content" style="padding: 24px; min-height: 280px; background: rgb(255, 255, 255);"> Content </main>
+    </section>
   </section>
 </section>"
 `;

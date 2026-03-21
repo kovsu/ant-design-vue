@@ -26,6 +26,57 @@ exports[`Space demos > demo: Compact 1`] = `
   </button></div>"
 `;
 
+exports[`Space demos > demo: CompactButtons 1`] = `
+"<div class="ant-space-compact ant-space-compact-horizontal" role="group"><span class="ant-trigger-wrapper"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button"><wave-stub disabled="false"></wave-stub><!--v-if--><span class="ant-btn-content">Like</span></button></span>
+  <!--teleport start-->
+  <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end--><span class="ant-trigger-wrapper"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button"><wave-stub disabled="false"></wave-stub><!--v-if--><span class="ant-btn-content">Comment</span></button></span>
+  <!--teleport start-->
+  <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end--><span class="ant-trigger-wrapper"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button"><wave-stub disabled="false"></wave-stub><!--v-if--><span class="ant-btn-content">Star</span></button></span>
+  <!--teleport start-->
+  <transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end--><span class="ant-trigger-wrapper"><button class="ant-btn ant-btn-outlined ant-btn-md" type="button"><wave-stub disabled="false"></wave-stub><!--v-if--><span class="ant-btn-content">More</span></button></span>
+  <!--teleport start-->
+  <transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+    <!--v-if-->
+  </transition-stub>
+  <!--teleport end-->
+</div>"
+`;
+
+exports[`Space demos > demo: Customize 1`] = `
+"<div>
+  <div style="margin-bottom: 16px;"><span>Gap: 8px</span>
+    <div class="ant-slider" style="max-width: 300px;">
+      <div class="ant-slider-rail"></div>
+      <div class="ant-slider-track" style="left: 0%; width: 16.666666666666664%;"></div><!-- Steps/dots -->
+      <!--v-if-->
+      <!-- Marks -->
+      <!--v-if-->
+      <!-- Handle(s) -->
+      <div class="ant-slider-handle" style="left: 16.666666666666664%;" role="slider" aria-valuemin="0" aria-valuemax="48" aria-valuenow="8" tabindex="0"></div>
+    </div>
+  </div>
+  <div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 8px; row-gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <wave-stub disabled="false"></wave-stub>
+      <!--v-if--><span class="ant-btn-content">Button 1</span>
+    </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <wave-stub disabled="false"></wave-stub>
+      <!--v-if--><span class="ant-btn-content">Button 2</span>
+    </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <wave-stub disabled="false"></wave-stub>
+      <!--v-if--><span class="ant-btn-content">Button 3</span>
+    </button></div>
+</div>"
+`;
+
 exports[`Space demos > demo: Size 1`] = `
 "<div style="display: flex; flex-direction: column; gap: 16px;">
   <div><strong>small (8px)</strong><br>
@@ -64,6 +115,31 @@ exports[`Space demos > demo: Size 1`] = `
         <!--v-if--><span class="ant-btn-content">3</span>
       </button></div>
   </div>
+</div>"
+`;
+
+exports[`Space demos > demo: Split 1`] = `
+"<div class="ant-space ant-space-horizontal ant-space-align-center" style="column-gap: 4px; row-gap: 8px;">
+  <div class="ant-space-item"><a class="ant-typography">Link 1
+      <!--v-if-->
+    </a></div>
+  <div class="ant-space-item-split">
+    <div class="ant-divider ant-divider-vertical" role="separator" aria-orientation="vertical">
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-space-item"><a class="ant-typography">Link 2
+      <!--v-if-->
+    </a></div>
+  <div class="ant-space-item-split">
+    <div class="ant-divider ant-divider-vertical" role="separator" aria-orientation="vertical">
+      <!--v-if-->
+    </div>
+  </div>
+  <div class="ant-space-item"><a class="ant-typography">Link 3
+      <!--v-if-->
+    </a></div>
+  <!--v-if-->
 </div>"
 `;
 

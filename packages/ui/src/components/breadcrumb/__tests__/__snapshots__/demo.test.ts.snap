@@ -10,6 +10,22 @@ exports[`Breadcrumb demos > demo: Basic 1`] = `
 </nav>"
 `;
 
+exports[`Breadcrumb demos > demo: Overlay 1`] = `
+"<nav class="ant-breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><a href="/">Home</a></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span></li>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><a href="/apps"><span class="ant-trigger-wrapper"><a>Applications</a></span>
+      <!--teleport start-->
+      <transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+        <!--v-if-->
+      </transition-stub>
+      <!--teleport end--></a></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span>
+    </li>
+    <li class="ant-breadcrumb-item"><span class="ant-breadcrumb-link"><span>Current Page</span></span><span class="ant-breadcrumb-separator" aria-hidden="true">/</span></li>
+  </ol>
+</nav>"
+`;
+
 exports[`Breadcrumb demos > demo: Separator 1`] = `
 "<nav class="ant-breadcrumb" aria-label="Breadcrumb">
   <ol>

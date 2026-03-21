@@ -8,8 +8,9 @@ import BorderLess from '../demo/border-less.vue'
 import Colorful from '../demo/colorful.vue'
 import HotTags from '../demo/hot-tags.vue'
 import Icon from '../demo/icon.vue'
+import Control from '../demo/control.vue'
 
-const demos = { Basic, Color, Status, Checkable, BorderLess, Colorful, HotTags, Icon }
+const demos = { Basic, Color, Status, Checkable, BorderLess, Colorful, HotTags, Icon, Control }
 
 describe('Tag demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

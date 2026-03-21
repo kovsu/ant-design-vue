@@ -23,6 +23,90 @@ exports[`Empty demos > demo: Basic 1`] = `
 </div>"
 `;
 
+exports[`Empty demos > demo: ConfigProviderDemo 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 24px;">
+  <div>
+    <h4>Select</h4><span class="ant-trigger-wrapper"><div class="ant-select ant-select-single ant-select-show-arrow" tabindex="0" style="width: 200px;"><div class="ant-select-selector"><!-- Multiple mode --><!-- Single mode --><span class="ant-select-selection-search"><input class="ant-select-selection-search-input" readonly="" role="combobox" aria-expanded="false" aria-haspopup="listbox" tabindex="-1" style="opacity: 0; width: 0px; position: absolute;"></span>
+    <!--v-if--><span class="ant-select-selection-placeholder"></span>
+  </div><!-- Clear icon -->
+  <!--v-if-->
+  <!-- Arrow / Loading --><span class="ant-select-arrow"><span class="ant-select-arrow-icon"></span></span>
+</div></span>
+<!--teleport start-->
+<transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</div>
+<div>
+  <h4>TreeSelect</h4><span class="ant-trigger-wrapper"><div class="ant-select ant-tree-select ant-select-single ant-select-show-arrow" tabindex="0" style="width: 200px;"><div class="ant-select-selector"><!-- Multiple mode --><!-- Single mode --><span class="ant-select-selection-search"><input class="ant-select-selection-search-input" readonly="" role="combobox" tabindex="-1" style="opacity: 0; width: 0px; position: absolute;"></span>
+  <!--v-if--><span class="ant-select-selection-placeholder"></span>
+</div><!-- Clear -->
+<!--v-if-->
+<!-- Arrow --><span class="ant-select-arrow"><span class="ant-select-arrow-icon"></span></span></div></span>
+<!--teleport start-->
+<transition-stub name="ant-slide-up" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+<!--teleport end-->
+</div>
+<div>
+  <h4>Table</h4>
+  <div class="ant-table-wrapper">
+    <!-- Spin wrapper -->
+    <!-- Without Spin wrapper -->
+    <div class="ant-table ant-table-middle ant-table-ping-right ant-table-empty">
+      <!-- Title -->
+      <!--v-if-->
+      <!-- Pagination top -->
+      <!--v-if-->
+      <!-- Table content -->
+      <div class="ant-table-container">
+        <div class="ant-table-content">
+          <table class="" role="table">
+            <!-- Colgroup -->
+            <colgroup>
+              <col>
+              <col>
+            </colgroup><!-- Header -->
+            <thead class="ant-table-thead">
+              <tr>
+                <th class="ant-table-cell">
+                  <!-- Selection column header -->
+                  <!-- Regular column header -->
+                  <div class=""><span class="ant-table-column-title">Name</span>
+                    <!--v-if-->
+                  </div>
+                </th>
+                <th class="ant-table-cell">
+                  <!-- Selection column header -->
+                  <!-- Regular column header -->
+                  <div class=""><span class="ant-table-column-title">Age</span>
+                    <!--v-if-->
+                  </div>
+                </th>
+              </tr>
+            </thead><!-- Body -->
+            <tbody class="ant-table-tbody">
+              <tr class="ant-table-placeholder">
+                <td colspan="2" class="ant-table-cell">
+                  <div class="ant-table-empty"><span>No data</span></div>
+                </td>
+              </tr>
+            </tbody><!-- Summary -->
+            <!--v-if-->
+          </table>
+        </div>
+      </div><!-- Footer -->
+      <!--v-if-->
+      <!-- Pagination bottom -->
+      <!--v-if-->
+    </div>
+  </div>
+</div>
+</div>"
+`;
+
 exports[`Empty demos > demo: Customize 1`] = `
 "<div class="ant-empty" role="status">
   <div class="ant-empty-image" style="height: 60px;" aria-hidden="true"><img src="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg" alt=""></div>

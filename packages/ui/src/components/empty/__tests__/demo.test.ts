@@ -4,8 +4,9 @@ import Basic from '../demo/basic.vue'
 import Simple from '../demo/simple.vue'
 import Customize from '../demo/customize.vue'
 import Description from '../demo/description.vue'
+import ConfigProviderDemo from '../demo/config-provider.vue'
 
-const demos = { Basic, Simple, Customize, Description }
+const demos = { Basic, Simple, Customize, Description, ConfigProviderDemo }
 
 describe('Empty demos', () => {
   Object.entries(demos).forEach(([name, component]) => {

@@ -11,6 +11,7 @@ import Responsive from '../demo/responsive.vue'
 import ResponsiveMore from '../demo/responsive-more.vue'
 import Sort from '../demo/sort.vue'
 import UseBreakpoint from '../demo/use-breakpoint.vue'
+import Playground from '../demo/playground.vue'
 
 const demos = {
   Basic,
@@ -24,6 +25,7 @@ const demos = {
   ResponsiveMore,
   Sort,
   UseBreakpoint,
+  Playground,
 }
 
 describe('Grid demos', () => {

@@ -64,6 +64,15 @@ exports[`Typography demos > demo: Ellipsis 1`] = `
 </div>"
 `;
 
+exports[`Typography demos > demo: Interactive 1`] = `
+"<div style="display: flex; flex-direction: column; gap: 16px;">
+  <div class="ant-radio-group ant-radio-group-default ant-radio-group-outline" role="radiogroup"><label class="ant-radio-wrapper ant-radio-wrapper-checked"><span class="ant-radio ant-radio-checked"><input type="radio" class="ant-radio-input" checked="" role="radio" aria-checked="true"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Copyable</span></label><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" role="radio" aria-checked="false"><span class="ant-radio-inner"></span></span><span class="ant-radio-label">Editable</span></label></div>
+  <div class="ant-typography">This is a copyable text.
+    <!--v-if--><button type="button" class="ant-typography-copy" aria-label="Copy">⎘</button>
+  </div><span class="ant-typography">Inline copyable text<!--v-if--><button type="button" class="ant-typography-copy" aria-label="Copy">⎘</button></span>
+</div>"
+`;
+
 exports[`Typography demos > demo: LinkDemo 1`] = `
 "<div class="ant-space ant-space-vertical" style="column-gap: 8px; row-gap: 8px;"><a class="ant-typography" href="https://vue.ant.design" target="_blank" rel="noopener noreferrer">Ant Design Vue
     <!--v-if-->
@@ -72,6 +81,26 @@ exports[`Typography demos > demo: LinkDemo 1`] = `
   </a><a class="ant-typography ant-typography-disabled">Disabled Link
     <!--v-if-->
   </a></div>"
+`;
+
+exports[`Typography demos > demo: Suffix 1`] = `
+"<div style="max-width: 400px;">
+  <div style="margin-bottom: 16px;"><span>Rows: 1</span>
+    <div class="ant-slider">
+      <div class="ant-slider-rail"></div>
+      <div class="ant-slider-track" style="left: 0%; width: 0%;"></div><!-- Steps/dots -->
+      <!--v-if-->
+      <!-- Marks -->
+      <!--v-if-->
+      <!-- Handle(s) -->
+      <div class="ant-slider-handle" style="left: 0%;" role="slider" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" tabindex="0"></div>
+    </div>
+  </div>
+  <div class="ant-typography" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team.
+    <!--v-if-->
+    <!--v-if-->
+  </div>
+</div>"
 `;
 
 exports[`Typography demos > demo: TextDemo 1`] = `"<div class="ant-space ant-space-vertical" style="column-gap: 8px; row-gap: 8px;"><span class="ant-typography">Default text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-secondary">Secondary text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-success">Success text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-warning">Warning text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-danger">Danger text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-disabled">Disabled text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-strong">Bold text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-italic">Italic text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-underline">Underline text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-delete">Deleted text<!--v-if--><!--v-if--></span><span class="ant-typography ant-typography-mark">Marked text<!--v-if--><!--v-if--></span><span class="ant-typography"><code>Code text</code><!--v-if--><!--v-if--></span><span class="ant-typography"><kbd>Ctrl + C</kbd><!--v-if--><!--v-if--></span></div>"`;

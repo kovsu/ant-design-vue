@@ -260,3 +260,52 @@ exports[`Card demos > demo: Simple 1`] = `
   <!--v-if-->
 </div>"
 `;
+
+exports[`Card demos > demo: TabsDemo 1`] = `
+"<div style="max-width: 500px;">
+  <div class="ant-card ant-card-bordered">
+    <div class="ant-card-head">
+      <div class="ant-card-head-wrapper">
+        <div class="ant-card-head-title">Card with Tabs</div>
+        <div class="ant-card-extra"><a href="#">More</a></div>
+      </div>
+    </div>
+    <!--v-if-->
+    <div class="ant-card-body">
+      <div class="ant-tabs ant-tabs-top ant-tabs-line ant-tabs-md">
+        <!-- Tab bar -->
+        <div class="ant-tabs-nav" role="tablist" aria-orientation="horizontal">
+          <!-- Left extra -->
+          <!--v-if-->
+          <div class="ant-tabs-nav-wrap">
+            <div class="ant-tabs-nav-list">
+              <!-- Tab buttons -->
+              <!-- Ink bar (line type only) -->
+              <div class="ant-tabs-ink-bar"></div>
+            </div>
+          </div><!-- Add button for editable-card -->
+          <!--v-if-->
+          <!-- Right extra -->
+          <!--v-if-->
+        </div><!-- Tab content -->
+        <div class="ant-tabs-content-holder">
+          <div class="ant-tabs-content">
+            <!-- Items-based content -->
+            <!-- Slot-based content (TabPane children) -->
+            <div class="ant-tabs-tabpane ant-tabs-tabpane-active" role="tabpanel" aria-hidden="false">
+              <p>Article content</p>
+            </div>
+            <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">
+              <p>App content</p>
+            </div>
+            <div class="ant-tabs-tabpane" role="tabpanel" aria-hidden="true" style="display: none;">
+              <p>Project content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>"
+`;

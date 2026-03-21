@@ -5,8 +5,11 @@ import Size from '../demo/size.vue'
 import Vertical from '../demo/vertical.vue'
 import Compact from '../demo/compact.vue'
 import Wrap from '../demo/wrap.vue'
+import Customize from '../demo/customize.vue'
+import Split from '../demo/split.vue'
+import CompactButtons from '../demo/compact-buttons.vue'
 
-const demos = { Basic, Size, Vertical, Compact, Wrap }
+const demos = { Basic, Size, Vertical, Compact, Wrap, Customize, Split, CompactButtons }
 
 describe('Space demos', () => {
   Object.entries(demos).forEach(([name, component]) => {
