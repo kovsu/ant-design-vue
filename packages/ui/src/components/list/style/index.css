@@ -1,0 +1,253 @@
+@reference '../../../style/tailwind.css';
+
+/* ── List Container ── */
+:where(.ant-list) {
+  @apply relative;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  font-size: var(--ant-font-size, 14px);
+  font-family: inherit;
+  line-height: 1.5714;
+  box-sizing: border-box;
+}
+
+/* ── Bordered ── */
+:where(.ant-list-bordered) {
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-list-bordered) :where(.ant-list-header) {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+:where(.ant-list-bordered) :where(.ant-list-footer) {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+:where(.ant-list-bordered) :where(.ant-list-items) {
+  padding: 0;
+}
+
+:where(.ant-list-bordered) :where(.ant-list-item) {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ── Header ── */
+:where(.ant-list-header) {
+  padding: 12px 0;
+  font-weight: 500;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-list-bordered) :where(.ant-list-header) {
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+/* ── Footer ── */
+:where(.ant-list-footer) {
+  padding: 12px 0;
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-list-bordered) :where(.ant-list-footer) {
+  border-top: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+/* ── Items Container ── */
+:where(.ant-list-items) {
+  @apply m-0 p-0;
+  list-style: none;
+}
+
+/* ── Split (divider lines) ── */
+:where(.ant-list-split) :where(.ant-list-item) {
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-list-split) :where(.ant-list-item):last-child {
+  border-bottom: none;
+}
+
+:where(.ant-list-split.ant-list-bordered) :where(.ant-list-item):last-child {
+  border-bottom: none;
+}
+
+/* ── List Item ── */
+:where(.ant-list-item) {
+  @apply flex items-center;
+  padding: 12px 0;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+/* ── Item Content ── */
+:where(.ant-list-item-content) {
+  @apply flex-1 min-w-0;
+}
+
+/* ── Item Main (vertical layout) ── */
+:where(.ant-list-item-main) {
+  @apply flex-1 min-w-0;
+}
+
+/* ── Item Actions ── */
+:where(.ant-list-item-action) {
+  @apply flex items-center gap-4 m-0 p-0;
+  list-style: none;
+  margin-inline-start: 24px;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-list-item-action) > * {
+  @apply inline-flex;
+}
+
+:where(.ant-list-item-action) :where(a) {
+  color: var(--color-accent, #1677ff);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+:where(.ant-list-item-action) :where(a):hover {
+  color: var(--color-accent-hover, #4096ff);
+}
+
+/* ── Item Extra ── */
+:where(.ant-list-item-extra) {
+  margin-inline-start: 24px;
+  flex-shrink: 0;
+}
+
+/* ── Vertical Layout ── */
+:where(.ant-list-vertical) :where(.ant-list-item) {
+  @apply flex-row items-start;
+}
+
+:where(.ant-list-vertical) :where(.ant-list-item-main) {
+  @apply flex flex-col;
+}
+
+:where(.ant-list-vertical) :where(.ant-list-item-action) {
+  margin-inline-start: 0;
+  margin-top: 12px;
+}
+
+:where(.ant-list-vertical) :where(.ant-list-item-extra) {
+  margin-inline-start: 40px;
+}
+
+/* ── Item Meta ── */
+:where(.ant-list-item-meta) {
+  @apply flex items-start flex-1 min-w-0;
+}
+
+:where(.ant-list-item-meta-avatar) {
+  margin-inline-end: 16px;
+  flex-shrink: 0;
+}
+
+:where(.ant-list-item-meta-content) {
+  @apply flex-1 min-w-0;
+}
+
+:where(.ant-list-item-meta-title) {
+  @apply m-0;
+  font-size: var(--ant-font-size, 14px);
+  font-weight: 500;
+  line-height: 1.5714;
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+}
+
+:where(.ant-list-item-meta-title) :where(a) {
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  transition: color 0.2s;
+}
+
+:where(.ant-list-item-meta-title) :where(a):hover {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-list-item-meta-description) {
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+  font-size: var(--ant-font-size, 14px);
+  line-height: 1.5714;
+}
+
+/* ── Size: sm ── */
+:where(.ant-list-sm) :where(.ant-list-item) {
+  padding: 8px 0;
+}
+
+:where(.ant-list-sm) :where(.ant-list-header),
+:where(.ant-list-sm) :where(.ant-list-footer) {
+  padding: 8px 0;
+}
+
+:where(.ant-list-sm.ant-list-bordered) :where(.ant-list-item) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+:where(.ant-list-sm.ant-list-bordered) :where(.ant-list-header),
+:where(.ant-list-sm.ant-list-bordered) :where(.ant-list-footer) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ── Size: lg ── */
+:where(.ant-list-lg) :where(.ant-list-item) {
+  padding: 16px 0;
+}
+
+:where(.ant-list-lg) :where(.ant-list-header),
+:where(.ant-list-lg) :where(.ant-list-footer) {
+  padding: 16px 0;
+}
+
+:where(.ant-list-lg.ant-list-bordered) :where(.ant-list-item) {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+:where(.ant-list-lg.ant-list-bordered) :where(.ant-list-header),
+:where(.ant-list-lg.ant-list-bordered) :where(.ant-list-footer) {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* ── Grid Layout ── */
+:where(.ant-list-grid) :where(.ant-list-items) {
+  @apply flex flex-wrap;
+}
+
+:where(.ant-list-item-col) {
+  box-sizing: border-box;
+}
+
+:where(.ant-list-grid) :where(.ant-list-item) {
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+/* ── Loading / Spin ── */
+:where(.ant-list-spin) {
+  @apply relative;
+  min-height: 56px;
+}
+
+/* ── Empty ── */
+:where(.ant-list-empty-text) {
+  @apply flex items-center justify-center;
+  padding: 24px;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+}
+
+/* ── Load More ── */
+:where(.ant-list-load-more) {
+  @apply flex items-center justify-center;
+  padding: 12px 0;
+}
