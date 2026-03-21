@@ -1,0 +1,613 @@
+@reference '../../../style/tailwind.css';
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Table
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Wrapper ── */
+:where(.ant-table-wrapper) {
+  @apply relative;
+  font-size: var(--ant-font-size, 14px);
+  color: var(--color-neutral, rgba(0, 0, 0, 0.88));
+  line-height: 1.5714;
+  box-sizing: border-box;
+}
+
+:where(.ant-table-wrapper-rtl) {
+  direction: rtl;
+}
+
+/* ── Table base ── */
+:where(.ant-table) {
+  @apply relative;
+  background: var(--color-neutral-bg-container, #fff);
+  border-radius: var(--ant-border-radius, 6px);
+}
+
+:where(.ant-table table) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: start;
+}
+
+:where(.ant-table-layout-fixed) {
+  table-layout: fixed;
+}
+
+/* ── Container ── */
+:where(.ant-table-container) {
+  border-top-left-radius: var(--ant-border-radius, 6px);
+  border-top-right-radius: var(--ant-border-radius, 6px);
+}
+
+/* ── Content scroll area ── */
+:where(.ant-table-content) {
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+/* ── Header ── */
+:where(.ant-table-thead > tr > th) {
+  position: relative;
+  padding: 16px;
+  font-weight: 600;
+  text-align: start;
+  background: var(--color-neutral-bg-layout, #fafafa);
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+  transition: background 0.2s ease;
+}
+
+:where(.ant-table-thead > tr > th:not(:last-child))::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 0;
+  width: 1px;
+  height: 1.6em;
+  background: var(--color-neutral-border-secondary, #f0f0f0);
+  transform: translateY(-50%);
+}
+
+/* ── Body ── */
+:where(.ant-table-tbody > tr > td) {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+  transition: background 0.2s ease;
+}
+
+:where(.ant-table-tbody > tr:hover > td) {
+  background: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-table-tbody > tr.ant-table-row-selected > td) {
+  background: var(--color-accent-1, #e6f4ff);
+}
+
+:where(.ant-table-tbody > tr.ant-table-row-selected:hover > td) {
+  background: var(--color-accent-2, #bae0ff);
+}
+
+/* ── Cell alignment ── */
+:where(.ant-table-cell-align-left) {
+  text-align: left;
+}
+
+:where(.ant-table-cell-align-center) {
+  text-align: center;
+}
+
+:where(.ant-table-cell-align-right) {
+  text-align: right;
+}
+
+/* ── Cell ellipsis ── */
+:where(.ant-table-cell-ellipsis) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+
+:where(.ant-table-cell-ellipsis .ant-table-cell-content) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Size Variants
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Middle (default) */
+:where(.ant-table-middle .ant-table-thead > tr > th),
+:where(.ant-table-middle .ant-table-tbody > tr > td),
+:where(.ant-table-middle .ant-table-summary-row > td) {
+  padding: 12px 8px;
+}
+
+/* Small */
+:where(.ant-table-small .ant-table-thead > tr > th),
+:where(.ant-table-small .ant-table-tbody > tr > td),
+:where(.ant-table-small .ant-table-summary-row > td) {
+  padding: 8px;
+}
+
+:where(.ant-table-small) {
+  font-size: var(--ant-font-size-sm, 12px);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Bordered
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-bordered .ant-table-container) {
+  border-left: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+  border-top: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-bordered .ant-table-thead > tr > th),
+:where(.ant-table-bordered .ant-table-tbody > tr > td),
+:where(.ant-table-bordered .ant-table-summary-row > td) {
+  border-right: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-bordered .ant-table-thead > tr > th)::before {
+  display: none;
+}
+
+:where(.ant-table-bordered .ant-table-container) {
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Fixed Columns (Sticky)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-cell-fix-left),
+:where(.ant-table-cell-fix-right) {
+  position: sticky !important;
+  z-index: 2;
+  background: inherit;
+}
+
+:where(.ant-table-thead .ant-table-cell-fix-left),
+:where(.ant-table-thead .ant-table-cell-fix-right) {
+  z-index: 3;
+  background: var(--color-neutral-bg-layout, #fafafa);
+}
+
+/* Left shadow */
+:where(.ant-table-ping-right .ant-table-cell-fix-left-last)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  inset-inline-end: -1px;
+  width: 20px;
+  transform: translateX(100%);
+  pointer-events: none;
+  box-shadow: inset 10px 0 8px -8px rgba(5, 5, 5, 0.06);
+}
+
+/* Right shadow */
+:where(.ant-table-ping-left .ant-table-cell-fix-right-first)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  inset-inline-start: -1px;
+  width: 20px;
+  transform: translateX(-100%);
+  pointer-events: none;
+  box-shadow: inset -10px 0 8px -8px rgba(5, 5, 5, 0.06);
+}
+
+/* Fixed header */
+:where(.ant-table-fixed-header .ant-table-thead > tr > th) {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--color-neutral-bg-layout, #fafafa);
+}
+
+:where(.ant-table-fixed-header .ant-table-thead .ant-table-cell-fix-left),
+:where(.ant-table-fixed-header .ant-table-thead .ant-table-cell-fix-right) {
+  z-index: 4;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Sorting
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-column-has-sorters) {
+  cursor: pointer;
+  user-select: none;
+}
+
+:where(.ant-table-column-has-sorters:hover) {
+  background: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-table-column-sorters) {
+  @apply inline-flex items-center gap-1;
+}
+
+:where(.ant-table-column-title) {
+  @apply relative flex-1;
+}
+
+:where(.ant-table-column-sorter) {
+  @apply inline-flex flex-col items-center;
+  margin-inline-start: 4px;
+  color: var(--color-neutral-disabled, #bfbfbf);
+  font-size: 0;
+  transition: color 0.2s ease;
+}
+
+:where(.ant-table-column-sorter-inner) {
+  @apply inline-flex flex-col items-center;
+}
+
+:where(.ant-table-column-sorter-up),
+:where(.ant-table-column-sorter-down) {
+  font-size: 11px;
+  line-height: 1;
+  height: 0.5em;
+  display: flex;
+  align-items: center;
+  color: var(--color-neutral-disabled, #bfbfbf);
+  transition: color 0.2s ease;
+}
+
+:where(.ant-table-column-sorter-up svg),
+:where(.ant-table-column-sorter-down svg) {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+:where(.ant-table-column-sorter-up.active),
+:where(.ant-table-column-sorter-down.active) {
+  color: var(--color-accent, #1677ff);
+}
+
+/* Sorted column background */
+:where(.ant-table-column-sort) {
+  background: var(--color-neutral-bg-layout, #fafafa);
+}
+
+:where(.ant-table-tbody > tr > .ant-table-column-sort) {
+  background: var(--color-neutral-bg, rgba(0, 0, 0, 0.01));
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Filtering
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-filter-column) {
+  @apply flex items-center justify-between;
+}
+
+:where(.ant-table-filter-trigger) {
+  @apply inline-flex items-center justify-center;
+  width: 24px;
+  height: 24px;
+  margin-inline-start: 4px;
+  padding: 0;
+  color: var(--color-neutral-disabled, #bfbfbf);
+  font-size: 12px;
+  border-radius: var(--ant-border-radius-sm, 4px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+:where(.ant-table-filter-trigger:hover) {
+  background: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+  color: var(--color-neutral-secondary, rgba(0, 0, 0, 0.45));
+}
+
+:where(.ant-table-filter-trigger-active) {
+  color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-table-filter-icon) {
+  @apply inline-flex items-center justify-center;
+}
+
+:where(.ant-table-filter-icon svg) {
+  width: 12px;
+  height: 12px;
+}
+
+/* Filter dropdown */
+:where(.ant-table-filter-dropdown) {
+  @apply absolute;
+  z-index: 1050;
+  min-width: 120px;
+  background: var(--color-neutral-bg-container, #fff);
+  border-radius: var(--ant-border-radius, 6px);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+:where(.ant-table-filter-dropdown-overlay) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1049;
+}
+
+:where(.ant-table-filter-dropdown-search) {
+  padding: 8px;
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-filter-dropdown-search-input) {
+  width: 100%;
+  padding: 4px 8px;
+  font-size: var(--ant-font-size, 14px);
+  border: 1px solid var(--color-neutral-border, #d9d9d9);
+  border-radius: var(--ant-border-radius-sm, 4px);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+:where(.ant-table-filter-dropdown-search-input:focus) {
+  border-color: var(--color-accent, #1677ff);
+  box-shadow: 0 0 0 2px var(--color-accent-2, rgba(5, 145, 255, 0.1));
+}
+
+:where(.ant-table-filter-dropdown-menu) {
+  @apply list-none m-0;
+  padding: 4px 0;
+  max-height: 264px;
+  overflow-y: auto;
+}
+
+:where(.ant-table-filter-dropdown-menu-item) {
+  @apply flex items-center gap-2;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+:where(.ant-table-filter-dropdown-menu-item:hover) {
+  background: var(--color-neutral-bg-hover, rgba(0, 0, 0, 0.04));
+}
+
+:where(.ant-table-filter-dropdown-menu-item-empty) {
+  padding: 5px 12px;
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
+:where(.ant-table-filter-dropdown-btns) {
+  @apply flex justify-between items-center;
+  padding: 7px 8px;
+  border-top: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-filter-dropdown-link) {
+  padding: 0 4px;
+  font-size: var(--ant-font-size-sm, 12px);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-accent, #1677ff);
+  transition: color 0.2s ease;
+}
+
+:where(.ant-table-filter-dropdown-link:hover) {
+  color: var(--color-accent-hover, #4096ff);
+}
+
+:where(.ant-table-filter-dropdown-link:disabled) {
+  color: var(--color-neutral-disabled, rgba(0, 0, 0, 0.25));
+  cursor: not-allowed;
+}
+
+:where(.ant-table-filter-dropdown-link-confirm) {
+  font-weight: 600;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Selection Column
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-selection-column) {
+  text-align: center;
+  width: 32px;
+}
+
+:where(.ant-table-selection-extra) {
+  margin-inline-start: 4px;
+}
+
+/* Checkbox / Radio inside table (use the component styles from checkbox/radio) */
+:where(.ant-table .ant-checkbox-wrapper),
+:where(.ant-table .ant-radio-wrapper) {
+  @apply inline-flex items-center;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Expandable Rows
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-expand-column) {
+  text-align: center;
+  width: 32px;
+}
+
+:where(.ant-table-row-expand-icon) {
+  @apply inline-flex items-center justify-center;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  color: inherit;
+  line-height: 17px;
+  background: var(--color-neutral-bg-container, #fff);
+  border: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+  border-radius: var(--ant-border-radius-sm, 4px);
+  outline: none;
+  cursor: pointer;
+  transform: scale(0.94);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+:where(.ant-table-row-expand-icon:focus-visible) {
+  border-color: var(--color-accent, #1677ff);
+  outline: 2px solid var(--color-accent-2, rgba(5, 145, 255, 0.1));
+}
+
+:where(.ant-table-row-expand-icon:hover) {
+  color: var(--color-accent, #1677ff);
+  border-color: var(--color-accent, #1677ff);
+}
+
+:where(.ant-table-row-expand-icon-expanded)::before,
+:where(.ant-table-row-expand-icon-collapsed)::before,
+:where(.ant-table-row-expand-icon-expanded)::after,
+:where(.ant-table-row-expand-icon-collapsed)::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  transition: transform 0.2s ease;
+}
+
+/* Horizontal line */
+:where(.ant-table-row-expand-icon-expanded)::before,
+:where(.ant-table-row-expand-icon-collapsed)::before {
+  top: 50%;
+  left: 3px;
+  right: 3px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+/* Vertical line */
+:where(.ant-table-row-expand-icon-expanded)::after,
+:where(.ant-table-row-expand-icon-collapsed)::after {
+  top: 3px;
+  bottom: 3px;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+:where(.ant-table-row-expand-icon-expanded)::after {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+:where(.ant-table-row-expand-icon-spaced) {
+  visibility: hidden;
+  border: 0;
+  background: transparent;
+}
+
+:where(.ant-table-row-expand-icon-inline) {
+  margin-inline-end: 8px;
+  vertical-align: -2px;
+}
+
+/* Expanded row */
+:where(.ant-table-expanded-row > td) {
+  background: var(--color-neutral-bg-layout, #fafafa);
+}
+
+:where(.ant-table-expanded-row:hover > td) {
+  background: var(--color-neutral-bg-layout, #fafafa);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Tree Data
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-row-indent) {
+  display: inline-block;
+  height: 1px;
+  float: left;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Summary
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-summary) {
+  background: var(--color-neutral-bg-container, #fff);
+}
+
+:where(.ant-table-summary-row > td) {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-summary-fixed) {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Title & Footer
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-title) {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+:where(.ant-table-footer) {
+  padding: 16px;
+  background: var(--color-neutral-bg-layout, #fafafa);
+  border-top: 1px solid var(--color-neutral-border-secondary, #f0f0f0);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Pagination
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-pagination) {
+  @apply flex flex-wrap;
+  padding: 16px 0;
+  gap: 8px;
+}
+
+:where(.ant-table-pagination-start) {
+  justify-content: flex-start;
+}
+
+:where(.ant-table-pagination-center) {
+  justify-content: center;
+}
+
+:where(.ant-table-pagination-end) {
+  justify-content: flex-end;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Empty State
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-placeholder) {
+  text-align: center;
+}
+
+:where(.ant-table-placeholder:hover > td) {
+  background: var(--color-neutral-bg-container, #fff);
+}
+
+:where(.ant-table-empty .ant-table-empty) {
+  padding: 32px 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Loading
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:where(.ant-table-wrapper .ant-spin-nested-loading) {
+  width: 100%;
+}

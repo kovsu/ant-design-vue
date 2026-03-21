@@ -132,3 +132,7 @@ export { useApp } from './app'
 // Batch 16: Form + Integration
 export { default as Form } from './form'
 export { FormItem } from './form'
+
+// Table
+export { default as Table } from './table'
+export { TableColumn, TableColumnGroup, TableSummary, TableSummaryRow, TableSummaryCell } from './table'
