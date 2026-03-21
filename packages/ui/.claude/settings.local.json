@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsof -iTCP -sTCP:LISTEN -P -n)",
+      "Bash(sort -t: -k2 -n)",
+      "Bash(kill:*)"
+    ]
+  }
+}
