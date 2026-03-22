@@ -1,0 +1,48 @@
+<template>
+  <div style="width: 256px;">
+    <a-menu
+      v-model:selectedKeys="selectedKeys"
+      mode="inline"
+      :open-keys="openKeys"
+      @openChange="onOpenChange"
+    >
+      <a-sub-menu menu-key="sub1" title="Navigation One">
+        <a-menu-item item-key="1">Option 1</a-menu-item>
+        <a-menu-item item-key="2">Option 2</a-menu-item>
+        <a-menu-item item-key="3">Option 3</a-menu-item>
+        <a-menu-item item-key="4">Option 4</a-menu-item>
+      </a-sub-menu>
+      <a-sub-menu menu-key="sub2" title="Navigation Two">
+        <a-menu-item item-key="5">Option 5</a-menu-item>
+        <a-menu-item item-key="6">Option 6</a-menu-item>
+        <a-sub-menu menu-key="sub3" title="Submenu">
+          <a-menu-item item-key="7">Option 7</a-menu-item>
+          <a-menu-item item-key="8">Option 8</a-menu-item>
+        </a-sub-menu>
+      </a-sub-menu>
+      <a-sub-menu menu-key="sub4" title="Navigation Three">
+        <a-menu-item item-key="9">Option 9</a-menu-item>
+        <a-menu-item item-key="10">Option 10</a-menu-item>
+        <a-menu-item item-key="11">Option 11</a-menu-item>
+        <a-menu-item item-key="12">Option 12</a-menu-item>
+      </a-sub-menu>
+    </a-menu>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const rootSubmenuKeys = ['sub1', 'sub2', 'sub4']
+const selectedKeys = ref<string[]>([])
+const openKeys = ref<string[]>(['sub1'])
+
+function onOpenChange(keys: string[]) {
+  const latestOpenKey = keys.find(key => !openKeys.value.includes(key))
+  if (latestOpenKey && !rootSubmenuKeys.includes(latestOpenKey)) {
+    openKeys.value = keys
+  } else {
+    openKeys.value = latestOpenKey ? [latestOpenKey] : []
+  }
+}
+</script>
