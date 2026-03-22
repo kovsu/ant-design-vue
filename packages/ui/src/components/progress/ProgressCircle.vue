@@ -18,13 +18,15 @@ const circleSize = computed(() => props.size)
 const pathRadius = computed(() => 50 - props.strokeWidth / 2)
 
 function getPathD(radius: number, beginAngle: number, endAngle: number) {
+  // SVG arcs can't draw a full circle (start === end point), so cap at 359.9
+  const clampedEnd = Math.min(endAngle, 359.9)
   const startRad = (beginAngle / 180) * Math.PI
-  const endRad = ((beginAngle + endAngle) / 180) * Math.PI
+  const endRad = ((beginAngle + clampedEnd) / 180) * Math.PI
   const x1 = 50 + radius * Math.sin(startRad)
   const y1 = 50 - radius * Math.cos(startRad)
   const x2 = 50 + radius * Math.sin(endRad)
   const y2 = 50 - radius * Math.cos(endRad)
-  const largeArc = endAngle > 180 ? 1 : 0
+  const largeArc = clampedEnd > 180 ? 1 : 0
   return `M ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}`
 }
 

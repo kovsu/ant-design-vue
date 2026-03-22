@@ -8,14 +8,31 @@
       <input v-model="search" placeholder="Filter..." class="sidebar-search-input" />
     </div>
 
-    <RouterLink to="/playground" :class="['sidebar-item sidebar-playground', { active: isPlayground }]">
-      Playground
-    </RouterLink>
+    <div class="sidebar-modes">
+      <RouterLink to="/playground" :class="['sidebar-item sidebar-playground', { active: isPlayground }]">
+        Playground
+      </RouterLink>
+    </div>
+
+    <div class="sidebar-view-toggle">
+      <button
+        :class="['view-btn', { active: !compareMode }]"
+        @click="compareMode = false"
+      >
+        Browse
+      </button>
+      <button
+        :class="['view-btn', { active: compareMode }]"
+        @click="compareMode = true"
+      >
+        Compare
+      </button>
+    </div>
 
     <nav class="sidebar-nav">
       <div v-for="group in filtered" :key="group.name" class="sidebar-group">
         <RouterLink
-          :to="`/${group.name}`"
+          :to="compareMode ? `/compare/${group.name}` : `/${group.name}`"
           :class="['sidebar-item sidebar-component', { active: group.name === activeComponent }]"
         >
           <span>{{ group.name }}</span>
@@ -37,16 +54,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { componentGroups } from '#/data/demos'
 
 const route = useRoute()
 const search = ref('')
+const compareMode = ref(false)
 
 const activeComponent = computed(() => route.params.component as string | undefined)
 const activeDemo = computed(() => route.params.demo as string | undefined)
 const isPlayground = computed(() => route.path === '/playground')
+
+// Auto-detect compare mode from route
+watchEffect(() => {
+  compareMode.value = route.path.startsWith('/compare/')
+})
 
 const filtered = computed(() => {
   const q = search.value.toLowerCase()
@@ -100,11 +123,44 @@ const filtered = computed(() => {
   border-color: #1677ff;
 }
 
+.sidebar-modes {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 4px;
+}
+
 .sidebar-playground {
   margin: 0 12px 4px;
   font-weight: 600;
+}
+
+.sidebar-view-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px 12px 8px;
   border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 10px !important;
+}
+
+.view-btn {
+  flex: 1;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.15s;
+}
+
+.view-btn:hover {
+  border-color: #1677ff;
+  color: #1677ff;
+}
+
+.view-btn.active {
+  background: #1677ff;
+  border-color: #1677ff;
+  color: #fff;
 }
 
 .sidebar-nav {

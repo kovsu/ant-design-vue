@@ -6,6 +6,7 @@ import { defineConfig, Plugin } from 'vite'
 
 const uiSrc = resolve(__dirname, '../../packages/ui/src')
 const monorepoRoot = resolve(__dirname, '../..')
+const oldCompsDir = resolve(monorepoRoot, 'components')
 
 /** Scan demo .vue files from UI source at build/serve time */
 function demoGlobPlugin(): Plugin {
@@ -50,9 +51,90 @@ function demoGlobPlugin(): Plugin {
   }
 }
 
+/**
+ * Strip <docs> blocks from old demo .vue files.
+ */
+function stripDocsPlugin(): Plugin {
+  return {
+    name: 'strip-docs-block',
+    enforce: 'pre',
+    load(id) {
+      if (!id.endsWith('.vue')) return
+      if (!id.includes('/components/') || !id.includes('/demo/')) return
+      // Only strip from old components dir (not packages/ui)
+      if (id.includes('/packages/')) return
+      const code = readFileSync(id, 'utf-8')
+      if (code.includes('<docs')) {
+        return code.replace(/<docs[\s\S]*?<\/docs>\s*/gi, '')
+      }
+    },
+  }
+}
+
+/**
+ * Scan old demo .vue files for comparison (rendered with new components).
+ * Only includes components that also exist in new packages.
+ */
+function oldDemoGlobPlugin(): Plugin {
+  const VIRTUAL_ID = 'virtual:old-demo-glob'
+  const RESOLVED_ID = '\0' + VIRTUAL_ID
+
+  function getComparableComponents(): Set<string> {
+    const newCompsDir = resolve(uiSrc, 'components')
+    const oldComps = new Set(
+      readdirSync(oldCompsDir).filter(
+        f => !f.startsWith('_') && !f.startsWith('.') && !f.endsWith('.ts'),
+      ),
+    )
+    const newComps = new Set(
+      readdirSync(newCompsDir).filter(
+        f => !f.startsWith('_') && !f.startsWith('.') && !f.endsWith('.ts'),
+      ),
+    )
+    return new Set([...oldComps].filter(c => newComps.has(c)))
+  }
+
+  function scanDemos() {
+    const comparable = getComparableComponents()
+    const result: Record<string, string[]> = {}
+    for (const comp of comparable) {
+      const demoDir = resolve(oldCompsDir, comp, 'demo')
+      try {
+        const files = readdirSync(demoDir).filter(
+          f => f.endsWith('.vue') && f !== 'index.vue',
+        )
+        if (files.length) result[comp] = files.map(f => f.replace('.vue', ''))
+      } catch {}
+    }
+    return result
+  }
+
+  return {
+    name: 'old-demo-glob',
+    resolveId(id) {
+      if (id === VIRTUAL_ID) return RESOLVED_ID
+    },
+    load(id) {
+      if (id !== RESOLVED_ID) return
+      const demos = scanDemos()
+      // Use dynamic imports so demos with missing deps don't break the whole app
+      const entries: string[] = []
+      for (const [comp, names] of Object.entries(demos).sort(([a], [b]) => a.localeCompare(b))) {
+        for (const name of names) {
+          const path = `${oldCompsDir}/${comp}/demo/${name}.vue`
+          entries.push(
+            `  { component: ${JSON.stringify(comp)}, name: ${JSON.stringify(name)}, load: () => import(${JSON.stringify(path)}) }`,
+          )
+        }
+      }
+      return `export default [\n${entries.join(',\n')}\n]\n`
+    },
+  }
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), tailwindcss(), demoGlobPlugin()],
+  plugins: [stripDocsPlugin(), vue(), tailwindcss(), demoGlobPlugin(), oldDemoGlobPlugin()],
   server: {
     fs: { allow: [monorepoRoot] },
   },

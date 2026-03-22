@@ -56,7 +56,7 @@ const badgeStyle = computed(() => {
 
 const classes = computed(() => ({
   'ant-badge': true,
-  'ant-badge-status': !!props.status,
+  'ant-badge-status': !!props.status || (!!props.color && !hasChildren.value),
   'ant-badge-not-a-wrapper': !hasChildren.value,
 }))
 
@@ -71,11 +71,14 @@ const supClasses = computed(() => ({
 </script>
 
 <template>
-  <!-- Status badge (no children, dot + text) -->
-  <span v-if="status && !hasChildren" :class="classes">
+  <!-- Status badge or color badge (no children, dot + text) -->
+  <span v-if="(status || color) && !hasChildren" :class="classes">
     <span
       class="ant-badge-status-dot"
-      :class="`ant-badge-status-${status}`"
+      :class="[
+        status ? `ant-badge-status-${status}` : undefined,
+        presetColor ? `ant-badge-color-${color}` : undefined,
+      ]"
       :style="customColor ? { backgroundColor: color } : undefined"
     />
     <span v-if="text || $slots.text" class="ant-badge-status-text">

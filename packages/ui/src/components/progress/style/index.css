@@ -99,6 +99,8 @@
 :where(.ant-progress).ant-progress-circle .ant-progress-inner,
 :where(.ant-progress).ant-progress-dashboard .ant-progress-inner {
   @apply relative inline-flex;
+  width: auto;
+  overflow: visible;
   background: none;
   border-radius: 0;
 }

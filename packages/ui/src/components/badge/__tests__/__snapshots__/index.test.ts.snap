@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Badge > should render correctly 1`] = `
-"<!-- Status badge (no children, dot + text) -->
+"<!-- Status badge or color badge (no children, dot + text) -->
 <!-- Badge with children or standalone count -->
 <span class="ant-badge"><div class="target">child</div><transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="5">5</sup></transition-stub></span>"
 `;
