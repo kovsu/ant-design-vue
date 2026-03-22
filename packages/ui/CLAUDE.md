@@ -153,11 +153,12 @@ All use `@floating-ui/vue` for positioning:
 - **Demo snapshot tests**: Each component MUST have `demo.test.ts` that renders all demos and snapshots them
 - Global test setup (`test/setup.ts`) registers all components via `app.use(UI)` — demos work with `<a-button>` etc.
 
-## Dev Server
-Preview demos locally: `npm run serve` (from packages/ui/)
-- Runs Vite dev server at `http://localhost:3000`
-- Auto-discovers all `demo/*.vue` files via `import.meta.glob`
-- Config: `vite.dev.config.ts`
+## Dev Server (Playground)
+Preview demos locally: `cd apps/playground && pnpm dev`
+- Runs Vite dev server at `http://localhost:5173`
+- Auto-discovers all `components/*/demo/*.vue` files via custom `demoGlobPlugin`
+- Supports live code editing, theme toggle, source code preview
+- Config: `apps/playground/vite.config.ts`
 
 ### Demo Conventions
 - Each demo is a standalone `.vue` SFC — no special blocks needed
