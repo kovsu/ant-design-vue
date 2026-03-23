@@ -8,7 +8,9 @@
       :source="demo.raw"
       :edit-link="`/${group.name}/${demo.name}`"
     >
-      <component :is="demo.component" />
+      <ErrorBoundary>
+        <component :is="demo.component" />
+      </ErrorBoundary>
     </DemoBlock>
   </div>
   <div v-else class="browse-empty">Component not found</div>
@@ -19,6 +21,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { findComponent } from '#/data/demos'
 import DemoBlock from '#/components/DemoBlock.vue'
+import ErrorBoundary from '#/components/ErrorBoundary.vue'
 
 const route = useRoute()
 const group = computed(() => findComponent(route.params.component as string))

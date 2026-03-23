@@ -23,7 +23,6 @@ function handleClickChange(visible: boolean) {
 <template>
   <div style="padding: 40px;">
     <a-popover
-      style="width: 500px"
       title="Hover title"
       trigger="hover"
       :open="hovered"
