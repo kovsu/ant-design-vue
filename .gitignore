@@ -111,3 +111,4 @@ vite.config.*.timestamp*
 .npmrc
 .tsup/
 .gstack/
+**/settings.local.json
