@@ -139,12 +139,14 @@ export default defineConfig({
     fs: { allow: [monorepoRoot] },
   },
   resolve: {
+    dedupe: ['@codemirror/state', '@codemirror/view', '@codemirror/language'],
     alias: {
       // Point to UI source for HMR, no build needed
       '@ant-design-vue/ui/style.css': resolve(uiSrc, 'style/base.css'),
       '@ant-design-vue/ui/tailwind.css': resolve(uiSrc, 'style/tailwind.css'),
       '@ant-design-vue/ui': resolve(uiSrc, 'index.ts'),
-      // @/ is used by UI source internally
+      // @/ and @ui/ are used by UI source internally
+      '@ui/': `${uiSrc}/`,
       '@/': `${uiSrc}/`,
       // Playground own aliases
       '~/': resolve(__dirname, './assets') + '/',
