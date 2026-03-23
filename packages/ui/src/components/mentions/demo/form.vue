@@ -10,7 +10,7 @@
         <a-mentions
           v-model:value="formState.coders"
           :options="options"
-          rows="1"
+          :rows="1"
         />
       </a-form-item>
       <a-form-item
@@ -20,7 +20,7 @@
       >
         <a-mentions
           v-model:value="formState.bio"
-          rows="3"
+          :rows="3"
           placeholder="You can use @ to mention someone"
           :options="options"
         />
