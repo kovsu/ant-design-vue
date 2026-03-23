@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Empty from './Empty.vue'
 import DefaultEmpty from './DefaultEmpty.vue'
 import SimpleEmpty from './SimpleEmpty.vue'

@@ -1,3 +1,4 @@
+import type { InjectionKey } from 'vue'
 import type { Slot } from '@/utils/types'
 
 export type SpaceSizePreset = 'small' | 'middle' | 'large'
@@ -49,4 +50,4 @@ export interface SpaceCompactContext {
   compactDirection?: string
 }
 
-export const spaceCompactContextKey = Symbol('spaceCompact') as import('vue').InjectionKey<SpaceCompactContext>
+export const spaceCompactContextKey = Symbol('spaceCompact') as InjectionKey<SpaceCompactContext>

@@ -1,7 +1,7 @@
 <template>
   <a-pagination
     v-model:current="current"
-    v-model:pageSize="pageSize"
+    v-model:page-size="pageSize"
     :page-size-options="[10, 20, 30, 40, 50]"
     :total="50"
     show-size-changer

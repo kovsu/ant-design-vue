@@ -3,7 +3,7 @@
     <div style="margin-bottom: 16px">
       <a-button @click="add">ADD</a-button>
     </div>
-    <a-tabs v-model:activeKey="activeKey" hide-add type="editable-card" @edit="onEdit">
+    <a-tabs v-model:active-key="activeKey" hide-add type="editable-card" @edit="onEdit">
       <a-tab-pane
         v-for="pane in panes"
         :key="pane.key"

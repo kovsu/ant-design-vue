@@ -81,7 +81,7 @@ provide(LIST_KEY, {
             </div>
           </template>
           <template v-else>
-            <slot name="renderItem" v-for="(item, index) in dataSource" :item="item" :index="index" />
+            <slot v-for="(item, index) in dataSource" name="renderItem" :item="item" :index="index" />
           </template>
           <slot v-if="!dataSource.length && $slots.default" />
         </div>
@@ -107,7 +107,7 @@ provide(LIST_KEY, {
             </div>
           </template>
           <template v-else>
-            <slot name="renderItem" v-for="(item, index) in dataSource" :item="item" :index="index" />
+            <slot v-for="(item, index) in dataSource" name="renderItem" :item="item" :index="index" />
           </template>
           <slot v-if="!dataSource.length && $slots.default" />
         </ul>

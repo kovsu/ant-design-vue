@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import TimePicker from './TimePicker.vue'
 import TimeRangePicker from './TimeRangePicker.vue'
 import './style/index.css'

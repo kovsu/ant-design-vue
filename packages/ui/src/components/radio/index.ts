@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Radio from './Radio.vue'
 import RadioButton from './RadioButton.vue'
 import RadioGroup from './RadioGroup.vue'

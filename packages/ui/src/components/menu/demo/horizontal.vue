@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-menu v-model:selectedKeys="current" mode="horizontal">
+    <a-menu v-model:selected-keys="current" mode="horizontal">
       <a-menu-item item-key="mail">Navigation One</a-menu-item>
       <a-menu-item item-key="app">Navigation Two</a-menu-item>
       <a-sub-menu menu-key="sub1" title="Navigation Three - Submenu">

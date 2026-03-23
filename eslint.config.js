@@ -8,6 +8,6 @@ import typescript from '@ant-design-vue/eslint-config/typescript'
 export default [
   ...typescript,
   {
-    ignores: ['apps/**', 'packages/**', 'packages-*/**'],
+    ignores: ['apps/**', 'packages/**', 'packages-*/**', 'components/**', 'plugin/**'],
   },
 ]

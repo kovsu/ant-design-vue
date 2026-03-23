@@ -11,7 +11,7 @@ const openKeys = ref(['sub1'])
     <a-layout-header style="background: #001529; color: #fff; display: flex; align-items: center;">
       <div style="width: 120px; height: 31px; margin: 0 24px 0 0; background: rgba(255, 255, 255, 0.3);" />
       <a-menu
-        v-model:selectedKeys="selectedKeys1"
+        v-model:selected-keys="selectedKeys1"
         theme="dark"
         mode="horizontal"
         style="line-height: 64px; flex: 1;"
@@ -24,8 +24,8 @@ const openKeys = ref(['sub1'])
     <a-layout>
       <a-layout-sider width="200" style="background: #fff;">
         <a-menu
-          v-model:selectedKeys="selectedKeys2"
-          v-model:openKeys="openKeys"
+          v-model:selected-keys="selectedKeys2"
+          v-model:open-keys="openKeys"
           mode="inline"
           style="height: 100%; border-right: 0;"
         >

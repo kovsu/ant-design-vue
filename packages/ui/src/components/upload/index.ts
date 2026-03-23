@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Upload from './Upload.vue'
 import UploadDragger from './UploadDragger.vue'
 import './style/index.css'

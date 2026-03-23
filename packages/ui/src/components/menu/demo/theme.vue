@@ -3,8 +3,8 @@
     <div style="width: 256px;">
       <h4 style="margin-bottom: 16px;">Light Theme</h4>
       <a-menu
-        v-model:selectedKeys="lightSelected"
-        v-model:openKeys="lightOpen"
+        v-model:selected-keys="lightSelected"
+        v-model:open-keys="lightOpen"
         mode="inline"
         theme="light"
       >
@@ -21,8 +21,8 @@
     <div style="width: 256px;">
       <h4 style="margin-bottom: 16px;">Dark Theme</h4>
       <a-menu
-        v-model:selectedKeys="darkSelected"
-        v-model:openKeys="darkOpen"
+        v-model:selected-keys="darkSelected"
+        v-model:open-keys="darkOpen"
         mode="inline"
         theme="dark"
       >

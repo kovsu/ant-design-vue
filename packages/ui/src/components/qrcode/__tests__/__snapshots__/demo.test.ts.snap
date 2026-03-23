@@ -1,5 +1,17 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`QRCode demos > demo: base 1`] = `
+"<div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div style="margin-top: 16px;">
+    <!-- With addon wrapper -->
+    <!-- Plain input --><input class="ant-input" type="text" placeholder="Enter text" maxlength="60" value="https://ant-design-vue.com">
+  </div>
+</div>"
+`;
+
 exports[`QRCode demos > demo: basic 1`] = `
 "<div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
   <!--v-if-->
@@ -20,10 +32,97 @@ exports[`QRCode demos > demo: custom-color 1`] = `
 </div>"
 `;
 
+exports[`QRCode demos > demo: customColor 1`] = `
+"<div style="display: flex; gap: 16px;">
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`QRCode demos > demo: customSize 1`] = `
+"<div>
+  <div style="display: flex; gap: 8px; margin-bottom: 16px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content"> Smaller </span>
+    </button><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content"> Larger </span>
+    </button></div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`QRCode demos > demo: customType 1`] = `
+"<div style="display: flex; gap: 16px;">
+  <div>
+    <div style="margin-bottom: 8px;">Canvas</div>
+    <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+      <!--v-if-->
+    </div>
+  </div>
+  <div>
+    <div style="margin-bottom: 8px;">SVG (via icon)</div>
+    <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+      <!--v-if-->
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`QRCode demos > demo: download 1`] = `
+"<div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div style="margin-top: 16px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content">Download</span>
+    </button></div>
+</div>"
+`;
+
+exports[`QRCode demos > demo: errorLevel 1`] = `
+"<div>
+  <div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
+    <!--v-if-->
+  </div>
+  <div style="margin-top: 16px; display: flex; gap: 8px;"><button class="ant-btn ant-btn-solid ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content">L</span>
+    </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content">M</span>
+    </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content">Q</span>
+    </button><button class="ant-btn ant-btn-outlined ant-btn-md" type="button">
+      <!--v-if-->
+      <!--v-if--><span class="ant-btn-content">H</span>
+    </button></div>
+</div>"
+`;
+
 exports[`QRCode demos > demo: icon 1`] = `
 "<div class="ant-qrcode"><canvas width="160" height="160" style="width: 160px; height: 160px;"></canvas><!-- Mask overlay for non-active states -->
   <!--v-if-->
 </div>"
+`;
+
+exports[`QRCode demos > demo: popover 1`] = `
+"<span class="ant-trigger-wrapper"><button class="ant-btn ant-btn-solid ant-btn-md" type="button"><!--v-if--><!--v-if--><span class="ant-btn-content">Hover to see QR Code</span></button></span>
+<!--teleport start-->
+
+<transition-stub name="ant-zoom-big-fast" appear="false" persisted="false" css="true">
+  <!--v-if-->
+</transition-stub>
+
+<!--teleport end-->"
 `;
 
 exports[`QRCode demos > demo: status 1`] = `

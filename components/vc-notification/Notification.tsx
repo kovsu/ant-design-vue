@@ -33,7 +33,7 @@ export interface NoticeContent extends Omit<NoticeProps, 'prefixCls' | 'noticeKe
   content?: string | ((arg: { prefixCls: string }) => VueNode) | VueNode;
   onClose?: () => void;
   style?: CSSProperties;
-  class?: String;
+  class?: string;
 }
 export type Placement = 'top' | 'topLeft' | 'topRight' | 'bottom' | 'bottomLeft' | 'bottomRight';
 

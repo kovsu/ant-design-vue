@@ -495,9 +495,9 @@ defineExpose({
       ref="selectorRef"
       :class="selectorClasses"
       :tabindex="isSearchable ? undefined : (disabled ? undefined : 0)"
+      v-bind="$attrs"
       @click="handleSelectorClick"
       @mousedown="handleSelectorMousedown"
-      v-bind="$attrs"
     >
       <div class="ant-select-selector">
         <!-- Multiple mode -->
@@ -508,7 +508,7 @@ defineExpose({
               :value="tag.value"
               :label="tag.label"
               :closable="!disabled"
-              :onClose="() => removeTag(tag.value)"
+              :on-close="() => removeTag(tag.value)"
             >
               <span class="ant-select-selection-item">
                 <span class="ant-select-selection-item-content">{{ tag.label }}</span>
@@ -524,7 +524,7 @@ defineExpose({
           </template>
 
           <span v-if="omittedValues.length > 0" class="ant-select-selection-item ant-select-selection-item-overflow">
-            <slot name="maxTagPlaceholder" :omittedValues="omittedValues">
+            <slot name="maxTagPlaceholder" :omitted-values="omittedValues">
               + {{ omittedValues.length }} ...
             </slot>
           </span>
@@ -639,7 +639,7 @@ defineExpose({
                 @click="handleExpandClick($event, flat)"
               >
                 <template v-if="!flat.isLeaf">
-                  <slot name="switcherIcon" :expanded="flat.expanded" :isLeaf="false">
+                  <slot name="switcherIcon" :expanded="flat.expanded" :is-leaf="false">
                     <span class="ant-tree-select-tree-switcher-icon">{{ flat.expanded ? '▾' : '▸' }}</span>
                   </slot>
                 </template>

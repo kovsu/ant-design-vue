@@ -10,7 +10,7 @@ const disabled = ref(false)
     <a-slider v-model:value="value" />
     <a-slider v-model:value="value" :disabled="disabled" />
     <div style="margin-top: 16px;">
-      Disabled: <input type="checkbox" v-model="disabled" />
+      Disabled: <input v-model="disabled" type="checkbox" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <a-transfer
-    v-model:targetKeys="targetKeys"
+    v-model:target-keys="targetKeys"
     :data-source="mockData"
     show-search
     :list-style="{ width: '250px', height: '300px' }"

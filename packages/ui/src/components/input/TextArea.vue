@@ -125,6 +125,7 @@ defineExpose({
 <template>
   <span :class="wrapperClasses" :data-count="showCount ? countText : undefined">
     <textarea
+      :id="id"
       ref="textareaRef"
       class="ant-input"
       :class="{
@@ -138,7 +139,6 @@ defineExpose({
       :rows="rows"
       :maxlength="maxlength"
       :autofocus="autofocus"
-      :id="id"
       :name="name"
       :style="textareaStyle"
       @input="handleInput"

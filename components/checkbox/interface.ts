@@ -78,8 +78,8 @@ export const checkboxProps = () => {
 export type CheckboxProps = Partial<ExtractPropTypes<ReturnType<typeof checkboxProps>>>;
 
 export type CheckboxGroupContext = {
-  cancelValue: (id: Symbol) => void;
-  registerValue: (id: Symbol, value: string) => void;
+  cancelValue: (id: symbol) => void;
+  registerValue: (id: symbol, value: string) => void;
   toggleOption: (option: CheckboxOptionType) => void;
   name: Ref<string>;
   disabled: Ref<boolean>;

@@ -452,9 +452,9 @@ defineExpose({
       ref="selectorRef"
       :class="selectorClasses"
       :tabindex="isSearchable ? undefined : (disabled ? undefined : 0)"
+      v-bind="$attrs"
       @click="handleSelectorClick"
       @mousedown="handleSelectorMousedown"
-      v-bind="$attrs"
     >
       <div class="ant-select-selector">
         <!-- Multiple mode tags -->
@@ -474,7 +474,7 @@ defineExpose({
             </span>
           </span>
           <span v-if="omittedCount > 0" class="ant-select-selection-item ant-select-selection-item-overflow">
-            <slot name="maxTagPlaceholder" :omittedValues="selectedPaths.slice(maxTagCount as number)">
+            <slot name="maxTagPlaceholder" :omitted-values="selectedPaths.slice(maxTagCount as number)">
               + {{ omittedCount }} ...
             </slot>
           </span>
@@ -535,7 +535,7 @@ defineExpose({
             v-if="selectedPaths.length > 0 && !currentSearchValue"
             class="ant-select-selection-item"
           >
-            <slot name="displayRender" :labels="displayLabels[0] ?? []" :selectedOptions="findPath(options ?? [], selectedPaths[0])">
+            <slot name="displayRender" :labels="displayLabels[0] ?? []" :selected-options="findPath(options ?? [], selectedPaths[0])">
               {{ displayText }}
             </slot>
           </span>

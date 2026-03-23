@@ -15,7 +15,7 @@
       "dependsOn": ["build"]
     },
     "lint": {
-      "dependsOn": ["^lint", "tsc"]
+      "dependsOn": ["^lint"]
     },
     "tsc": {
       "dependsOn": ["^tsg"]

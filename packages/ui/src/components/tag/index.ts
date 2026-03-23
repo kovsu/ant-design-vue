@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Tag from './Tag.vue'
 import CheckableTag from './CheckableTag.vue'
 import './style/index.css'

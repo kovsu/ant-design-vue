@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import List from './List.vue'
 import ListItem from './ListItem.vue'
 import ListItemMeta from './ListItemMeta.vue'

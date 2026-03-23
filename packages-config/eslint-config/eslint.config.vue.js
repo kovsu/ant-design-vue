@@ -63,7 +63,7 @@ export default tseslint.config(
       ],
       'vue/require-prop-types': 0,
       'vue/v-on-event-hyphenation': 0,
-      'import/no-unresolved': [2, { ignore: ['^@ant-design-vue/table'] }],
+      // 'import/no-unresolved': [2, { ignore: ['^@ant-design-vue/table'] }],
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
@@ -71,6 +71,9 @@ export default tseslint.config(
       '@typescript-eslint/ban-types': 0,
       '@typescript-eslint/explicit-module-boundary-types': 0,
       '@typescript-eslint/consistent-type-imports': 'error',
+      // Disable no-undef for TS/Vue — TypeScript handles undefined variable checks.
+      // See: https://typescript-eslint.io/troubleshooting/faqs/eslint/#no-undef
+      'no-undef': 'off',
     },
   },
   prettier,

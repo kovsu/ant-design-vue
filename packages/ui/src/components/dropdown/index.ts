@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Dropdown from './Dropdown.vue'
 import DropdownButton from './DropdownButton.vue'
 import './style/index.css'

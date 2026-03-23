@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Text from './Text.vue'
 import Title from './Title.vue'
 import Paragraph from './Paragraph.vue'

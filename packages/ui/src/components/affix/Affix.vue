@@ -21,13 +21,14 @@ import {
   onUpdated,
   onUnmounted,
 } from 'vue'
+import type {
+  AffixProps,
+  AffixState,
+  AffixEmits} from './types';
 import {
   AFFIX_STATUS_NONE,
   AFFIX_STATUS_PREPARE,
-  AffixProps,
-  AffixState,
-  affixDefaultProps,
-  AffixEmits,
+  affixDefaultProps
 } from './types'
 import {
   addObserveTarget,

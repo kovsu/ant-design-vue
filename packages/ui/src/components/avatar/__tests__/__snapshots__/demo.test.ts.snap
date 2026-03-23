@@ -2,9 +2,9 @@
 
 exports[`Avatar demos > demo: BadgeDemo 1`] = `
 "<div style="display: flex; gap: 24px;">
-  <!-- Status badge (no children, dot + text) -->
+  <!-- Status badge or color badge (no children, dot + text) -->
   <!-- Badge with children or standalone count --><span class="ant-badge"><span class="ant-avatar ant-avatar-square ant-avatar-image" role="img"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=1" draggable="false"></span>
-  <transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="1">1</sup></transition-stub></span><!-- Status badge (no children, dot + text) -->
+  <transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-count" title="1">1</sup></transition-stub></span><!-- Status badge or color badge (no children, dot + text) -->
   <!-- Badge with children or standalone count --><span class="ant-badge"><span class="ant-avatar ant-avatar-square ant-avatar-image" role="img"><img src="https://api.dicebear.com/7.x/miniavs/svg?seed=2" draggable="false"></span>
   <transition-stub name="ant-badge-zoom" appear="false" persisted="false" css="true"><sup class="ant-badge-dot"></sup></transition-stub></span>
 </div>"

@@ -7,7 +7,7 @@ const fileList = ref<UploadFile[]>([])
 
 <template>
   <a-upload
-    v-model:fileList="fileList"
+    v-model:file-list="fileList"
     action="https://httpbin.org/post"
     drag
     multiple

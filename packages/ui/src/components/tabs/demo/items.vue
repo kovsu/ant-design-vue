@@ -1,5 +1,5 @@
 <template>
-  <a-tabs v-model:activeKey="activeKey" :items="items" />
+  <a-tabs v-model:active-key="activeKey" :items="items" />
 </template>
 
 <script setup lang="ts">

@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Select from './Select.vue'
 import SelectOption from './SelectOption.vue'
 import SelectOptGroup from './SelectOptGroup.vue'

@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Mentions from './Mentions.vue'
 import './style/index.css'
 

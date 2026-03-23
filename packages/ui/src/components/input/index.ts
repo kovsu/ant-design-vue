@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Input from './Input.vue'
 import TextArea from './TextArea.vue'
 import Password from './Password.vue'

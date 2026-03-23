@@ -5,8 +5,8 @@
         <component :is="iconNode" />
       </span>
       <span class="ant-message-text">
-        <component v-if="typeof item.args.content === 'function'" :is="item.args.content" />
-        <component v-else-if="isVNode(item.args.content)" :is="item.args.content" />
+        <component :is="item.args.content" v-if="typeof item.args.content === 'function'" />
+        <component :is="item.args.content" v-else-if="isVNode(item.args.content)" />
         <template v-else>{{ item.args.content }}</template>
       </span>
     </div>

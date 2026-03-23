@@ -8,6 +8,7 @@ export default {
   name: 'ASelectOptGroup',
   props: {
     label: { type: String, default: undefined },
+    // eslint-disable-next-line vue/no-reserved-props
     key: { type: [String, Number], default: undefined },
   },
   render() {

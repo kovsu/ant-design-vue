@@ -69,13 +69,13 @@ defineExpose({ focus, blur })
 <template>
   <label :class="wrapperClasses">
     <input
+      :id="id"
       ref="inputRef"
       type="radio"
       class="ant-radio-button-input"
       :checked="isChecked"
       :disabled="isDisabled"
       :name="resolvedName"
-      :id="id"
       role="radio"
       :aria-checked="isChecked"
       @change="handleChange"

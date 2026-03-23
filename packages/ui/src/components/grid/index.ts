@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Row from './Row.vue'
 import Col from './Col.vue'
 import './style/index.css'

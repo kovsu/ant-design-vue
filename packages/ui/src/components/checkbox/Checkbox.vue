@@ -93,13 +93,13 @@ defineExpose({ focus, blur })
   <label :class="wrapperClasses">
     <span :class="checkboxClasses">
       <input
+        :id="id"
         ref="inputRef"
         type="checkbox"
         class="ant-checkbox-input"
         :checked="isChecked"
         :disabled="isDisabled"
         :name="resolvedName"
-        :id="id"
         role="checkbox"
         :aria-checked="indeterminate ? 'mixed' : isChecked"
         @change="handleChange"

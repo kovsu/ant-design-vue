@@ -1,6 +1,6 @@
 <template>
   <div style="width: 256px;">
-    <a-menu v-model:selectedKeys="selectedKeys" mode="vertical">
+    <a-menu v-model:selected-keys="selectedKeys" mode="vertical">
       <a-sub-menu menu-key="sub1" title="Navigation One">
         <a-menu-item item-key="1">Option 1</a-menu-item>
         <a-menu-item item-key="2">Option 2</a-menu-item>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <a-transfer
-      v-model:targetKeys="targetKeys"
-      v-model:selectedKeys="selectedKeys"
+      v-model:target-keys="targetKeys"
+      v-model:selected-keys="selectedKeys"
       :data-source="mockData"
       :one-way="true"
       :titles="['Source', 'Target']"

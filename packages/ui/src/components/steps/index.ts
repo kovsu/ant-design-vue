@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Steps from './Steps.vue'
 import Step from './Step.vue'
 import './style/index.css'

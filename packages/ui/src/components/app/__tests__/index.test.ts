@@ -177,6 +177,7 @@ describe('App', () => {
 
       const Inner = defineComponent({
         setup() {
+          // eslint-disable-next-line @typescript-eslint/no-var-requires
           const { inject } = require('vue')
           injected = inject(appContextKey)
           return () => h('div')

@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-namespace */
+/* eslint-disable no-inner-declarations */
 /**
  * @license QR Code generator library (TypeScript)
  * Copyright (c) Project Nayuki.
@@ -896,7 +897,7 @@ namespace qrcodegen {
     private static readonly NUMERIC_REGEX: RegExp = /^[0-9]*$/;
 
     // Describes precisely all strings that are encodable in alphanumeric mode.
-    private static readonly ALPHANUMERIC_REGEX: RegExp = /^[A-Z0-9 $%*+.\/:-]*$/;
+    private static readonly ALPHANUMERIC_REGEX: RegExp = /^[A-Z0-9 $%*+./:-]*$/;
 
     // The set of all legal characters in alphanumeric mode,
     // where each character value maps to the index in the string.

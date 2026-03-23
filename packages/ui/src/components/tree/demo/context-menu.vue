@@ -37,7 +37,7 @@ function onContextMenuClick(treeKey: Key, menuKey: string | number) {
 </script>
 
 <template>
-  <a-tree v-model:expandedKeys="expandedKeys" :tree-data="treeData">
+  <a-tree v-model:expanded-keys="expandedKeys" :tree-data="treeData">
     <template #title="{ key: treeKey, title }">
       <a-dropdown :trigger="['contextmenu']">
         <span>{{ title }}</span>

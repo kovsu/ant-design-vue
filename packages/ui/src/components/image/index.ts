@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Image from './Image.vue'
 import ImagePreviewGroup from './ImagePreviewGroup.vue'
 import './style/index.css'

@@ -41,12 +41,12 @@ export default defineComponent({
       });
     });
     const triggerUpdate = ref(Symbol());
-    const registeredValuesMap = ref(new Map<Symbol, string>());
-    const cancelValue = (id: Symbol) => {
+    const registeredValuesMap = ref(new Map<symbol, string>());
+    const cancelValue = (id: symbol) => {
       registeredValuesMap.value.delete(id);
       triggerUpdate.value = Symbol();
     };
-    const registerValue = (id: Symbol, value: string) => {
+    const registerValue = (id: symbol, value: string) => {
       registeredValuesMap.value.set(id, value);
       triggerUpdate.value = Symbol();
     };

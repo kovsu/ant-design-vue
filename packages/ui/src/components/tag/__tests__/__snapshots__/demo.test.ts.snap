@@ -110,11 +110,23 @@ exports[`Tag demos > demo: Icon 1`] = `
 `;
 
 exports[`Tag demos > demo: Status 1`] = `
-"<div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-success"><span class="ant-tag-text">success</span>
-  <!--v-if--></span><span class="ant-tag ant-tag-processing"><span class="ant-tag-text">processing</span>
-  <!--v-if--></span><span class="ant-tag ant-tag-error"><span class="ant-tag-text">error</span>
-  <!--v-if--></span><span class="ant-tag ant-tag-warning"><span class="ant-tag-text">warning</span>
-  <!--v-if--></span><span class="ant-tag ant-tag-default"><span class="ant-tag-text">default</span>
-  <!--v-if--></span>
+"<div>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left" role="separator" aria-orientation="horizontal"><span class="ant-divider-inner-text">Without icon</span></div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-success"><span class="ant-tag-text">success</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-processing"><span class="ant-tag-text">processing</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-error"><span class="ant-tag-text">error</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-warning"><span class="ant-tag-text">warning</span>
+    <!--v-if--></span><span class="ant-tag ant-tag-default"><span class="ant-tag-text">default</span>
+    <!--v-if--></span>
+  </div>
+  <div class="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-left" role="separator" aria-orientation="horizontal"><span class="ant-divider-inner-text">With icon</span></div>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px;"><span class="ant-tag ant-tag-success"><span>✔</span><span class="ant-tag-text"> success </span>
+    <!--v-if--></span><span class="ant-tag ant-tag-processing"><span>↻</span><span class="ant-tag-text"> processing </span>
+    <!--v-if--></span><span class="ant-tag ant-tag-error"><span>✖</span><span class="ant-tag-text"> error </span>
+    <!--v-if--></span><span class="ant-tag ant-tag-warning"><span>⚠</span><span class="ant-tag-text"> warning </span>
+    <!--v-if--></span><span class="ant-tag ant-tag-default"><span>⏱</span><span class="ant-tag-text"> waiting </span>
+    <!--v-if--></span><span class="ant-tag ant-tag-default"><span>◼</span><span class="ant-tag-text"> stop </span>
+    <!--v-if--></span>
+  </div>
 </div>"
 `;

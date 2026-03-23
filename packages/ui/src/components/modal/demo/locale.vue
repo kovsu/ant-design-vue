@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-button variant="solid" @click="open = true">Modal</a-button>
-    <a-button @click="confirm" style="margin-left: 8px">Confirm</a-button>
+    <a-button style="margin-left: 8px" @click="confirm">Confirm</a-button>
     <a-modal
       v-model:open="open"
       title="Modal"

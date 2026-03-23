@@ -4,7 +4,7 @@
       <template #extra>
         <a href="#">More</a>
       </template>
-      <a-tabs v-model:activeKey="activeKey">
+      <a-tabs v-model:active-key="activeKey">
         <a-tab-pane key="article" tab="Article">
           <p>Article content</p>
         </a-tab-pane>

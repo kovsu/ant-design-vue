@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import ConfigProvider from './ConfigProvider.vue'
 
 export { default as ConfigProvider } from './ConfigProvider.vue'

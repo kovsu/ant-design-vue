@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Form from './Form.vue'
 import FormItem from './FormItem.vue'
 import './style/index.css'

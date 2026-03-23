@@ -12,7 +12,7 @@ const reverse = ref(true)
     <a-slider v-model:value="value2" range :reverse="reverse" />
     <div style="margin-top: 16px">
       Reversed:
-      <input type="checkbox" v-model="reverse" />
+      <input v-model="reverse" type="checkbox" />
     </div>
   </div>
 </template>

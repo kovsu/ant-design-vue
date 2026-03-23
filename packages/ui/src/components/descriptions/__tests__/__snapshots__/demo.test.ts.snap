@@ -422,7 +422,7 @@ exports[`Descriptions demos > demo: VerticalBorder 1`] = `
             <!--
     DescriptionsItem is rendered by the parent Descriptions via <component :is="node" />.
     The parent handles the table cell layout; this component just renders its content.
-  --><span class="ant-descriptions-item-content-inner"><!-- Status badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-processing"></span><span class="ant-badge-status-text">Running</span></span></span>
+  --><span class="ant-descriptions-item-content-inner"><!-- Status badge or color badge (no children, dot + text) --><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-processing"></span><span class="ant-badge-status-text">Running</span></span></span>
           </td>
         </tr>
         <tr class="ant-descriptions-row">

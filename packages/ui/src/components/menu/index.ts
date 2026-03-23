@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Menu from './Menu.vue'
 import MenuItem from './MenuItem.vue'
 import SubMenu from './SubMenu.vue'

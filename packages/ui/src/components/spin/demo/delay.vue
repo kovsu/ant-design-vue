@@ -6,7 +6,7 @@
       </div>
     </a-spin>
     <div style="margin-top: 16px;">
-      <label><input type="checkbox" v-model="loading" /> Toggle loading (500ms delay)</label>
+      <label><input v-model="loading" type="checkbox" /> Toggle loading (500ms delay)</label>
     </div>
   </div>
 </template>

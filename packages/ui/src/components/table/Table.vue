@@ -531,7 +531,7 @@ const visibleColumnIndices = computed(() => {
               <!-- Colgroup -->
               <colgroup>
                 <col
-                  v-for="({ col, i }) in visibleColumnIndices"
+                  v-for="({ col }) in visibleColumnIndices"
                   :key="col._key"
                   :style="col.width ? { width: typeof col.width === 'number' ? `${col.width}px` : col.width, minWidth: col.minWidth ? `${col.minWidth}px` : undefined } : undefined"
                 />
@@ -913,7 +913,7 @@ const visibleColumnIndices = computed(() => {
               <!-- Colgroup -->
               <colgroup>
                 <col
-                  v-for="({ col, i }) in visibleColumnIndices"
+                  v-for="({ col }) in visibleColumnIndices"
                   :key="col._key"
                   :style="col.width ? { width: typeof col.width === 'number' ? `${col.width}px` : col.width, minWidth: col.minWidth ? `${col.minWidth}px` : undefined } : undefined"
                 />

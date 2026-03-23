@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Alert from './Alert.vue'
 import './style/index.css'
 

@@ -46,7 +46,7 @@ export default defineComponent({
       const { prefixCls, tipId, overlayInnerStyle } = props;
 
       return [
-        !!props.arrow ? (
+        props.arrow ? (
           <div class={`${prefixCls}-arrow`} key="arrow">
             {getPropsSlot(slots, props, 'arrowContent')}
           </div>

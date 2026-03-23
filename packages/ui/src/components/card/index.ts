@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Card from './Card.vue'
 import CardMeta from './CardMeta.vue'
 import CardGrid from './CardGrid.vue'

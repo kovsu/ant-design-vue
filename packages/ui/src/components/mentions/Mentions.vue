@@ -241,6 +241,7 @@ defineExpose({
   >
     <div ref="wrapperRef" :class="wrapperClasses" v-bind="$attrs">
       <textarea
+        :id="id"
         ref="textareaRef"
         class="ant-mentions-input"
         :value="currentValue"
@@ -249,7 +250,6 @@ defineExpose({
         :readonly="readonly"
         :rows="rows"
         :autofocus="autofocus"
-        :id="id"
         @input="handleInput"
         @keydown="handleKeydown"
         @focus="handleFocus"

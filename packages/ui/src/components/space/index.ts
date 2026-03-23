@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Space from './Space.vue'
 import SpaceCompact from './SpaceCompact.vue'
 import './style/index.css'

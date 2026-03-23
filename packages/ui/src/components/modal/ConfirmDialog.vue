@@ -20,11 +20,11 @@
                   <component :is="iconNode" />
                 </span>
                 <span v-if="config.title" class="ant-modal-confirm-title">
-                  <component v-if="typeof config.title === 'function'" :is="config.title" />
+                  <component :is="config.title" v-if="typeof config.title === 'function'" />
                   <template v-else>{{ config.title }}</template>
                 </span>
                 <div v-if="config.content" class="ant-modal-confirm-content">
-                  <component v-if="typeof config.content === 'function'" :is="config.content" />
+                  <component :is="config.content" v-if="typeof config.content === 'function'" />
                   <template v-else>{{ config.content }}</template>
                 </div>
               </div>

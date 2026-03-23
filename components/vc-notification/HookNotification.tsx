@@ -35,7 +35,7 @@ export interface NoticeContent extends Omit<NoticeProps, 'prefixCls' | 'noticeKe
   content?: any;
   onClose?: () => void;
   style?: CSSProperties;
-  class?: String;
+  class?: string;
   placement?: Placement;
 }
 

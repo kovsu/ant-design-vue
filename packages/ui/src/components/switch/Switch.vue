@@ -66,13 +66,13 @@ defineExpose({ focus, blur })
 
 <template>
   <button
+    :id="id"
     ref="buttonRef"
     type="button"
     role="switch"
     :aria-checked="isChecked"
     :class="classes"
     :disabled="disabled || loading"
-    :id="id"
     @click="toggle"
     @keydown="handleKeydown"
   >

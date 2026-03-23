@@ -9,7 +9,7 @@ const selectedKeys = ref(['1'])
   <a-layout style="min-height: 300px" has-sider>
     <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible theme="dark">
       <div style="height: 32px; margin: 16px; background: rgba(255, 255, 255, 0.3);" />
-      <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
+      <a-menu v-model:selected-keys="selectedKeys" theme="dark" mode="inline">
         <a-menu-item key="1">
           <span>nav 1</span>
         </a-menu-item>

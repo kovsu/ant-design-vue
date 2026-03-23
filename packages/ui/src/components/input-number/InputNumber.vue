@@ -220,6 +220,7 @@ defineExpose({
         </span>
         <div class="ant-input-number-input-wrap">
           <input
+            :id="id"
             ref="inputRef"
             class="ant-input-number-input"
             type="text"
@@ -233,7 +234,6 @@ defineExpose({
             :disabled="disabled"
             :readonly="readonly"
             :autofocus="autofocus"
-            :id="id"
             :name="name"
             @input="handleInput"
             @keydown="handleKeydown"
@@ -283,6 +283,7 @@ defineExpose({
     </span>
     <div class="ant-input-number-input-wrap">
       <input
+        :id="id"
         ref="inputRef"
         class="ant-input-number-input"
         type="text"
@@ -296,7 +297,6 @@ defineExpose({
         :disabled="disabled"
         :readonly="readonly"
         :autofocus="autofocus"
-        :id="id"
         :name="name"
         @input="handleInput"
         @keydown="handleKeydown"

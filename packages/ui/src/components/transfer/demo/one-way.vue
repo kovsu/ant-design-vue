@@ -12,7 +12,7 @@ const targetKeys = ref(['item-3', 'item-6'])
 
 <template>
   <a-transfer
-    v-model:targetKeys="targetKeys"
+    v-model:target-keys="targetKeys"
     :data-source="dataSource"
     :titles="['Source', 'Target']"
     one-way

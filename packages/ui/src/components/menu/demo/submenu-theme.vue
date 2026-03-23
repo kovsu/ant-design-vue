@@ -8,8 +8,8 @@
     <br /><br />
     <div style="width: 256px;">
       <a-menu
-        v-model:selectedKeys="selectedKeys"
-        v-model:openKeys="openKeys"
+        v-model:selected-keys="selectedKeys"
+        v-model:open-keys="openKeys"
         mode="vertical"
         theme="dark"
       >

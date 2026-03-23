@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import FloatButton from './FloatButton.vue'
 import FloatButtonGroup from './FloatButtonGroup.vue'
 import BackTop from './BackTop.vue'

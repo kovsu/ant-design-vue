@@ -110,6 +110,7 @@ defineExpose({
           <slot name="prefix">{{ props.prefix }}</slot>
         </span>
         <input
+          :id="id"
           ref="inputRef"
           class="ant-input"
           :type="type"
@@ -119,7 +120,6 @@ defineExpose({
           :readonly="readonly"
           :maxlength="maxlength"
           :autofocus="autofocus"
-          :id="id"
           :name="name"
           @input="handleInput"
           @change="handleChange"
@@ -146,6 +146,7 @@ defineExpose({
       <!-- plain input inside addon -->
       <input
         v-else
+        :id="id"
         ref="inputRef"
         :class="inputClasses"
         :type="type"
@@ -155,7 +156,6 @@ defineExpose({
         :readonly="readonly"
         :maxlength="maxlength"
         :autofocus="autofocus"
-        :id="id"
         :name="name"
         @input="handleInput"
         @change="handleChange"
@@ -175,6 +175,7 @@ defineExpose({
       <slot name="prefix" />
     </span>
     <input
+      :id="id"
       ref="inputRef"
       class="ant-input"
       :type="type"
@@ -184,7 +185,6 @@ defineExpose({
       :readonly="readonly"
       :maxlength="maxlength"
       :autofocus="autofocus"
-      :id="id"
       :name="name"
       @input="handleInput"
       @change="handleChange"
@@ -212,6 +212,7 @@ defineExpose({
   <!-- Plain input -->
   <input
     v-else
+    :id="id"
     ref="inputRef"
     :class="inputClasses"
     :type="type"
@@ -221,7 +222,6 @@ defineExpose({
     :readonly="readonly"
     :maxlength="maxlength"
     :autofocus="autofocus"
-    :id="id"
     :name="name"
     @input="handleInput"
     @change="handleChange"

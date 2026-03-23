@@ -265,9 +265,9 @@ defineExpose({
     <div
       ref="wrapperRef"
       :class="wrapperClasses"
+      v-bind="$attrs"
       @click="handleSelectorClick"
       @mousedown="handleSelectorMousedown"
-      v-bind="$attrs"
     >
       <div class="ant-select-selector">
         <span class="ant-select-selection-search">

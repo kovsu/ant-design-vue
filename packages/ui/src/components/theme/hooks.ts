@@ -1,4 +1,5 @@
-import { inject, InjectionKey, provide, reactive, computed } from 'vue'
+import type { InjectionKey} from 'vue';
+import { inject, provide, reactive, computed } from 'vue'
 import type { ThemeProps } from './types'
 
 export interface ThemeContext {

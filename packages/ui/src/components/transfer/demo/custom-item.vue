@@ -1,6 +1,6 @@
 <template>
   <a-transfer
-    v-model:targetKeys="targetKeys"
+    v-model:target-keys="targetKeys"
     :data-source="mockData"
     :list-style="{ width: '300px', height: '300px' }"
     @change="handleChange"

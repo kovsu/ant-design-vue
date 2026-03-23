@@ -87,8 +87,8 @@ function clearAll() {
 <template>
   <div>
     <div style="margin-bottom: 16px">
-      <a-button @click="setAgeSort" style="margin-right: 8px">Sort age</a-button>
-      <a-button @click="clearFilters" style="margin-right: 8px">Clear filters</a-button>
+      <a-button style="margin-right: 8px" @click="setAgeSort">Sort age</a-button>
+      <a-button style="margin-right: 8px" @click="clearFilters">Clear filters</a-button>
       <a-button @click="clearAll">Clear filters and sorters</a-button>
     </div>
     <a-table :columns="columns" :data-source="data" @change="handleChange" />

@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-transfer
-      v-model:targetKeys="targetKeys"
+      v-model:target-keys="targetKeys"
       :data-source="mockData"
       :render="(item: any) => item.title"
       :disabled="disabled"

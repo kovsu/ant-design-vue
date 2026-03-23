@@ -1,7 +1,7 @@
 <template>
   <div style="width: 256px;">
     <a-menu
-      v-model:selectedKeys="selectedKeys"
+      v-model:selected-keys="selectedKeys"
       mode="inline"
       :open-keys="openKeys"
       @openChange="onOpenChange"

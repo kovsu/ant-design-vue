@@ -14,8 +14,8 @@ const selectedKeys = ref<string[]>([])
 
 <template>
   <a-transfer
-    v-model:targetKeys="targetKeys"
-    v-model:selectedKeys="selectedKeys"
+    v-model:target-keys="targetKeys"
+    v-model:selected-keys="selectedKeys"
     :data-source="dataSource"
     :titles="['Source', 'Target']"
   />

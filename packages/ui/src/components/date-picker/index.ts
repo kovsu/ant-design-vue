@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import DatePicker from './DatePicker.vue'
 import RangePicker from './RangePicker.vue'
 import './style/index.css'

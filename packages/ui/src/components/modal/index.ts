@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Modal from './Modal.vue'
 import { confirm, modalConfirm, modalInfo, modalSuccess, modalError, modalWarning, destroyAll } from './confirm'
 import { useModal } from './useModal'

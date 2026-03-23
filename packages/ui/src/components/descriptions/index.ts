@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Descriptions from './Descriptions.vue'
 import DescriptionsItem from './DescriptionsItem.vue'
 import './style/index.css'

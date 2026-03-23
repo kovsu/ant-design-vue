@@ -6,18 +6,18 @@
           <component :is="iconNode" />
         </span>
         <div class="ant-notification-notice-message">
-          <component v-if="typeof item.args.message === 'function'" :is="item.args.message" />
-          <component v-else-if="isVNode(item.args.message)" :is="item.args.message" />
+          <component :is="item.args.message" v-if="typeof item.args.message === 'function'" />
+          <component :is="item.args.message" v-else-if="isVNode(item.args.message)" />
           <template v-else>{{ item.args.message }}</template>
         </div>
         <div v-if="item.args.description" class="ant-notification-notice-description">
-          <component v-if="typeof item.args.description === 'function'" :is="item.args.description" />
-          <component v-else-if="isVNode(item.args.description)" :is="item.args.description" />
+          <component :is="item.args.description" v-if="typeof item.args.description === 'function'" />
+          <component :is="item.args.description" v-else-if="isVNode(item.args.description)" />
           <template v-else>{{ item.args.description }}</template>
         </div>
         <div v-if="item.args.btn" class="ant-notification-notice-btn">
-          <component v-if="typeof item.args.btn === 'function'" :is="item.args.btn" />
-          <component v-else :is="item.args.btn" />
+          <component :is="item.args.btn" v-if="typeof item.args.btn === 'function'" />
+          <component :is="item.args.btn" v-else />
         </div>
       </div>
     </div>

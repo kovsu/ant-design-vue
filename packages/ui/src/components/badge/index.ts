@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Badge from './Badge.vue'
 import Ribbon from './Ribbon.vue'
 import './style/index.css'

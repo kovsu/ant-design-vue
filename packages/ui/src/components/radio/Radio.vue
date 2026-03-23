@@ -76,13 +76,13 @@ defineExpose({ focus, blur })
   <label :class="wrapperClasses">
     <span :class="radioClasses">
       <input
+        :id="id"
         ref="inputRef"
         type="radio"
         class="ant-radio-input"
         :checked="isChecked"
         :disabled="isDisabled"
         :name="resolvedName"
-        :id="id"
         role="radio"
         :aria-checked="isChecked"
         @change="handleChange"

@@ -97,8 +97,8 @@ export const useInjectForceRender = () => {
   return inject(ForceRenderKey, false);
 };
 
-const MenuFirstLevelContextKey: InjectionKey<Boolean> = Symbol('menuFirstLevelContextKey');
-const useProvideFirstLevel = (firstLevel: Boolean) => {
+const MenuFirstLevelContextKey: InjectionKey<boolean> = Symbol('menuFirstLevelContextKey');
+const useProvideFirstLevel = (firstLevel: boolean) => {
   provide(MenuFirstLevelContextKey, firstLevel);
 };
 

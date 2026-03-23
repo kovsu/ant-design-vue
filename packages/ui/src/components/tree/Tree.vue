@@ -622,7 +622,7 @@ defineExpose({ scrollTo })
               @click="handleSwitcherClick($event, flat)"
             >
               <template v-if="!flat.isLeaf">
-                <slot name="switcherIcon" :expanded="flat.expanded" :isLeaf="false" :loading="loadingSet.has(flat.key)">
+                <slot name="switcherIcon" :expanded="flat.expanded" :is-leaf="false" :loading="loadingSet.has(flat.key)">
                   <span v-if="loadingSet.has(flat.key)" class="ant-tree-switcher-loading-icon" />
                   <span v-else class="ant-tree-switcher-icon" />
                 </slot>
@@ -701,7 +701,7 @@ defineExpose({ scrollTo })
           @click="handleSwitcherClick($event, flat)"
         >
           <template v-if="!flat.isLeaf">
-            <slot name="switcherIcon" :expanded="flat.expanded" :isLeaf="false" :loading="loadingSet.has(flat.key)">
+            <slot name="switcherIcon" :expanded="flat.expanded" :is-leaf="false" :loading="loadingSet.has(flat.key)">
               <span v-if="loadingSet.has(flat.key)" class="ant-tree-switcher-loading-icon" />
               <span v-else class="ant-tree-switcher-icon" />
             </slot>

@@ -47,7 +47,7 @@ const restCount = computed(() => {
 <template>
   <div class="ant-avatar-group" role="group" aria-label="Avatar group">
     <template v-if="maxCount">
-      <component v-for="(child, i) in visibleChildren" :key="i" :is="child" />
+      <component :is="child" v-for="(child, i) in visibleChildren" :key="i" />
       <span
         v-if="restCount > 0"
         class="ant-avatar ant-avatar-circle"

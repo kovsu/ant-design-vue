@@ -108,7 +108,7 @@ export interface ModalFuncProps {
   okType?: LegacyButtonType;
   cancelText?: string | (() => VueNode) | VueNode;
   icon?: (() => VueNode) | VueNode;
-  wrapClassName?: String;
+  wrapClassName?: string;
   /* Deprecated */
   iconType?: string;
   mask?: boolean;

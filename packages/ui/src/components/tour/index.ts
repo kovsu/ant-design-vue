@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Tour from './Tour.vue'
 import './style/index.css'
 

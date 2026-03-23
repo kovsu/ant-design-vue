@@ -18,7 +18,7 @@ function genId() {
 const placementMap = reactive<Record<string, InternalNotificationItem[]>>({})
 const mountedPlacements = new Set<string>()
 
-let globalConfig: NotificationConfigProps = {
+const globalConfig: NotificationConfigProps = {
   top: 24,
   bottom: 24,
   duration: 4.5,

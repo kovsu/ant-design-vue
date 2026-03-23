@@ -582,10 +582,10 @@ defineExpose({
       ref="selectorRef"
       :class="selectorClasses"
       :tabindex="isSearchable ? undefined : (disabled ? undefined : 0)"
+      v-bind="$attrs"
       @click="handleSelectorClick"
       @mousedown="handleSelectorMousedown"
       @keydown="!isSearchable && handleKeydown($event)"
-      v-bind="$attrs"
     >
       <div class="ant-select-selector">
         <!-- Multiple mode -->
@@ -597,7 +597,7 @@ defineExpose({
               :value="tag.value"
               :label="tag.label"
               :closable="!disabled"
-              :onClose="() => removeTag(tag.value)"
+              :on-close="() => removeTag(tag.value)"
             >
               <span class="ant-select-selection-item">
                 <span class="ant-select-selection-item-content">
@@ -621,7 +621,7 @@ defineExpose({
 
           <!-- Overflow indicator -->
           <span v-if="omittedValues.length > 0" class="ant-select-selection-item ant-select-selection-item-overflow">
-            <slot name="maxTagPlaceholder" :omittedValues="omittedValues">
+            <slot name="maxTagPlaceholder" :omitted-values="omittedValues">
               + {{ omittedValues.length }} ...
             </slot>
           </span>
@@ -733,7 +733,7 @@ defineExpose({
         class="ant-select-dropdown-content"
         @scroll="handlePopupScroll"
       >
-        <slot name="dropdownRender" :menuNode="undefined as any">
+        <slot name="dropdownRender" :menu-node="undefined as any">
           <!-- Virtual list for large datasets -->
           <template v-if="virtual && displayOptions.length > 0">
             <VirtualList

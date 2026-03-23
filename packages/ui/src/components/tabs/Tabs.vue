@@ -12,8 +12,8 @@
         <slot name="leftExtra" />
       </div>
 
-      <div class="ant-tabs-nav-wrap" ref="navWrapRef">
-        <div class="ant-tabs-nav-list" ref="navListRef">
+      <div ref="navWrapRef" class="ant-tabs-nav-wrap">
+        <div ref="navListRef" class="ant-tabs-nav-list">
           <!-- Tab buttons -->
           <div
             v-for="tab in resolvedTabs"
@@ -28,7 +28,7 @@
             @keydown.space.prevent="onTabClick(tab, $event)"
           >
             <span class="ant-tabs-tab-label">
-              <component v-if="isVNode(tab.label)" :is="() => tab.label" />
+              <component :is="() => tab.label" v-if="isVNode(tab.label)" />
               <template v-else>{{ tab.label }}</template>
             </span>
             <!-- Remove button for editable-card -->
@@ -80,14 +80,14 @@
         <template v-if="props.items">
           <div
             v-for="tab in resolvedTabs"
-            :key="tab.key"
             v-show="tab.key === mergedActiveKey"
+            :key="tab.key"
             :class="['ant-tabs-tabpane', { 'ant-tabs-tabpane-active': tab.key === mergedActiveKey }]"
             role="tabpanel"
             :aria-hidden="tab.key !== mergedActiveKey"
           >
             <template v-if="shouldRenderPane(tab)">
-              <component v-if="isVNode(tab.children)" :is="() => tab.children" />
+              <component :is="() => tab.children" v-if="isVNode(tab.children)" />
               <template v-else>{{ tab.children }}</template>
             </template>
           </div>

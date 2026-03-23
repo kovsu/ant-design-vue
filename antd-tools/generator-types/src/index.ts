@@ -8,7 +8,7 @@ import type { Options, VueTag } from './type';
 import { getComponentName, normalizePath, toKebabCase } from './utils';
 import { flatMap } from 'lodash';
 
-async function readMarkdown(options: Options): Promise<Map<String, VueTag>> {
+async function readMarkdown(options: Options): Promise<Map<string, VueTag>> {
   const mdPaths = await glob(normalizePath(`${options.path}/**/*.md`));
   const data = mdPaths
     .filter(md => options.test.test(md))
@@ -21,13 +21,13 @@ async function readMarkdown(options: Options): Promise<Map<String, VueTag>> {
       return formatter(mdParser(fileContent), componentName, kebabComponentName, options.tagPrefix);
     })
     .filter(item => item) as VueTag[][];
-  const tags = new Map<String, VueTag>();
+  const tags = new Map<string, VueTag>();
   flatMap(data, item => item).forEach(mergedTag => mergeTag(tags, mergedTag));
   return tags;
 }
 
-function readTypings(options: Options): Map<String, VueTag> {
-  const tags = new Map<String, VueTag>();
+function readTypings(options: Options): Map<string, VueTag> {
+  const tags = new Map<string, VueTag>();
   const fileContent = readFileSync(options.typingsPath, 'utf-8');
   fileContent
     .split('\n')
@@ -47,7 +47,7 @@ function readTypings(options: Options): Map<String, VueTag> {
   return tags;
 }
 
-function mergeTag(tags: Map<String, VueTag>, mergedTag: VueTag) {
+function mergeTag(tags: Map<string, VueTag>, mergedTag: VueTag) {
   const tagName = mergedTag.name;
   const vueTag = tags.get(tagName);
   if (vueTag) {
@@ -59,9 +59,9 @@ function mergeTag(tags: Map<String, VueTag>, mergedTag: VueTag) {
   }
 }
 
-function mergeTags(mergedTagsArr: Map<String, VueTag>[]): VueTag[] {
+function mergeTags(mergedTagsArr: Map<string, VueTag>[]): VueTag[] {
   if (mergedTagsArr.length === 1) return [...mergedTagsArr[0].values()];
-  const tags = new Map<String, VueTag>();
+  const tags = new Map<string, VueTag>();
   if (mergedTagsArr.length === 0) return [];
   mergedTagsArr.forEach(mergedTags => {
     mergedTags.forEach(mergedTag => mergeTag(tags, mergedTag));
@@ -69,7 +69,7 @@ function mergeTags(mergedTagsArr: Map<String, VueTag>[]): VueTag[] {
   return [...tags.values()];
 }
 
-export async function parseAndWrite(options: Options): Promise<Number> {
+export async function parseAndWrite(options: Options): Promise<number> {
   if (!options.outputDir) {
     throw new Error('outputDir can not be empty.');
   }

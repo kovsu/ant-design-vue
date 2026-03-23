@@ -16,7 +16,7 @@ function genId() {
 
 // Global state
 const messages = reactive<InternalMessageItem[]>([])
-let globalConfig: MessageConfigOptions = {
+const globalConfig: MessageConfigOptions = {
   top: 8,
   duration: 3,
   maxCount: undefined,

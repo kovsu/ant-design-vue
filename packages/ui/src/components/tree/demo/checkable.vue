@@ -38,11 +38,11 @@ function onCheck(keys: Key[]) {
 
 <template>
   <a-tree
-    checkable
-    :tree-data="treeData"
     v-model:expanded-keys="expandedKeys"
     v-model:checked-keys="checkedKeys"
     v-model:selected-keys="selectedKeys"
+    checkable
+    :tree-data="treeData"
     @check="onCheck"
   />
 </template>

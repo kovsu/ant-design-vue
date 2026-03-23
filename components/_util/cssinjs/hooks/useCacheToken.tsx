@@ -182,7 +182,7 @@ export default function useCacheToken<DerivativeToken = object, DesignToken = De
       // Replace token value with css variables
       const actualToken = { ...mergedDerivativeToken };
       let cssVarsStr = '';
-      if (!!cssVar) {
+      if (cssVar) {
         [mergedDerivativeToken, cssVarsStr] = transformToken(mergedDerivativeToken, cssVar.key!, {
           prefix: cssVar.prefix,
           ignore: cssVar.ignore,

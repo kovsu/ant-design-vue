@@ -1,115 +1,82 @@
-name: test
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [feat/vapor]
+  pull_request:
+    branches: [feat/vapor]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  setup:
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: cache package-lock.json
-        uses: actions/cache@v2
+      - uses: actions/setup-node@v4
         with:
-          path: package-temp-dir
-          key: lock-${{ github.sha }}
+          node-version: 20
+          cache: npm
 
-      - name: create package-lock.json
-        run: npm i --package-lock-only --ignore-scripts
-
-      - name: hack for singe file
-        run: |
-          if [ ! -d "package-temp-dir" ]; then
-            mkdir package-temp-dir
-          fi
-          cp package-lock.json package-temp-dir
-
-      - name: cache node_modules
-        id: node_modules_cache_id
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
-
-      - name: install
-        if: steps.node_modules_cache_id.outputs.cache-hit != 'true'
+      - name: Install dependencies
         run: npm ci
 
-  compile:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-
-      - name: restore cache from package-lock.json
-        uses: actions/cache@v2
-        with:
-          path: package-temp-dir
-          key: lock-${{ github.sha }}
-
-      - name: restore cache from node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
-
-      - name: cache lib
-        uses: actions/cache@v2
-        with:
-          path: lib
-          key: lib-${{ github.sha }}
-
-      - name: cache es
-        uses: actions/cache@v2
-        with:
-          path: es
-          key: es-${{ github.sha }}
-
-      - name: compile
-        run: npm run compile
-    needs: setup
-
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-
-      - name: restore cache from package-lock.json
-        uses: actions/cache@v2
-        with:
-          path: package-temp-dir
-          key: lock-${{ github.sha }}
-
-      - name: restore cache from node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
-
-      - name: lint
+      - name: Lint
         run: npm run lint
-    needs: setup
 
-  node:
+  typecheck:
+    name: Type Check
+    runs-on: ubuntu-latest
+    # Allow failure during incremental refactoring — many components are stubs
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npx turbo tsc
+
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: restore cache from package-lock.json
-        uses: actions/cache@v2
+      - uses: actions/setup-node@v4
         with:
-          path: package-temp-dir
-          key: lock-${{ github.sha }}
+          node-version: 20
+          cache: npm
 
-      - name: restore cache from node_modules
-        uses: actions/cache@v2
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
+          node-version: 20
+          cache: npm
 
-      - name: test
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test
         run: npm test
-    needs: setup

@@ -18,7 +18,7 @@ const selectedKeys = ref<Key[]>(['0-0-0'])
 
 <template>
   <a-tree
-    v-model:selectedKeys="selectedKeys"
+    v-model:selected-keys="selectedKeys"
     :tree-data="treeData"
     show-icon
     default-expand-all

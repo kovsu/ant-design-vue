@@ -106,8 +106,8 @@ function toggleVisible() {
         <!-- Custom filter dropdown -->
         <template v-if="column.customFilterDropdown || column.filterDropdown">
           <component
-            v-if="column.filterDropdown"
             :is="column.filterDropdown"
+            v-if="column.filterDropdown"
             :selected-keys="selectedKeys"
             :set-selected-keys="(keys: Key[]) => (selectedKeys = keys)"
             :confirm="handleConfirm"

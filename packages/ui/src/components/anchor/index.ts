@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import type { App, Plugin } from 'vue'
 import Anchor from './Anchor.vue'
 import AnchorLink from './AnchorLink.vue'
 import './style/index.css'

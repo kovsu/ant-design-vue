@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-transfer
-      v-model:targetKeys="targetKeys"
+      v-model:target-keys="targetKeys"
       class="tree-transfer"
       :data-source="dataSource"
       :render="(item: any) => item.title"

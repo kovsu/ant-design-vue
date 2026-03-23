@@ -25,7 +25,7 @@ export default function useResponsiveObserver() {
 
   return computed(() => {
     const responsiveMap: BreakpointMap = getResponsiveMap(token.value);
-    const subscribers = new Map<Number, SubscribeFunc>();
+    const subscribers = new Map<number, SubscribeFunc>();
     let subUid = -1;
     let screens = {};
 

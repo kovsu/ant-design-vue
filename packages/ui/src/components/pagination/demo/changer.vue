@@ -1,7 +1,7 @@
 <template>
   <a-pagination
     v-model:current="current"
-    v-model:pageSize="pageSize"
+    v-model:page-size="pageSize"
     :total="500"
     show-size-changer
     :show-total="(total: number) => `Total ${total} items`"
