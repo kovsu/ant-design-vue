@@ -54,9 +54,9 @@ function handleClear() {
 }
 
 const hasAddon = computed(() => !!slots.addonBefore || !!slots.addonAfter)
-const hasPrefix = computed(() => !!slots.prefix)
+const hasPrefix = computed(() => !!slots.prefix || !!props.prefix)
 const hasSuffix = computed(
-  () => !!slots.suffix || props.allowClear || props.showCount,
+  () => !!slots.suffix || !!props.suffix || props.allowClear || props.showCount,
 )
 const showClearIcon = computed(
   () => props.allowClear && currentValue.value && !props.disabled && !props.readonly,
@@ -107,7 +107,7 @@ defineExpose({
       <!-- affix wrapper inside addon -->
       <span v-if="hasPrefix || hasSuffix" :class="wrapperClasses">
         <span v-if="hasPrefix" class="ant-input-prefix">
-          <slot name="prefix" />
+          <slot name="prefix">{{ props.prefix }}</slot>
         </span>
         <input
           ref="inputRef"
@@ -140,7 +140,7 @@ defineExpose({
             </slot>
           </button>
           <span v-if="showCount" class="ant-input-show-count-suffix">{{ countText }}</span>
-          <slot name="suffix" />
+          <slot name="suffix">{{ props.suffix }}</slot>
         </span>
       </span>
       <!-- plain input inside addon -->

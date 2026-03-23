@@ -19,6 +19,10 @@ export interface InputProps {
   autofocus?: boolean
   id?: string
   name?: string
+  /** Prefix content (string shorthand; use #prefix slot for VNode) */
+  prefix?: string
+  /** Suffix content (string shorthand; use #suffix slot for VNode) */
+  suffix?: string
 }
 
 export const inputDefaultProps = {
